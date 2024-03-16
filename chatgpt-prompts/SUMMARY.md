@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Giới thiệu](README.md)
+* [Hướng dẫn tạo tài khoản và sử dụng ChatGPT tại Việt Nam](huong-dan-tao-tai-khoan-va-su-dung-chatgpt-tai-viet-nam.md)
 * [Tài khoản ChatGPT miễn phí](tai-khoan-chatgpt-mien-phi.md)
 
 ## tìm kiếm thông tin
