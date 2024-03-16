@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Giới thiệu](README.md)
-* [Đôi chút về Cẩm nang NQDEV](<README (1).md>)
+* [Đôi chút về Cẩm nang NQDEV](doi-chut-ve-cam-nang-nqdev.md)
 * [Chính sách bảo mật](chinh-sach-bao-mat.md)
 
 ## Sitemap
