@@ -3,6 +3,7 @@
 ## React
 
 * [Hiểu về hook useRef của React như thế nào cho đúng](README.md)
+* [Tìm hiểu sâu hơn về useEffect từ A-Z](react/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md)
 
 ## Dotnet
 

@@ -176,6 +176,4 @@ function Form() {
 
 **Có thể bạn quan tâm**
 
-* [React hook là gì và lợi ích mà React hook đem lại](https://topdev.vn/blog/react-hook-la-gi-va-loi-ich/)
-* [Sử dụng CSS content như thế nào cho đúng](https://topdev.vn/blog/su-dung-css-content-nhu-the-nao-cho-dung/)
-* [Tìm hiểu sâu hơn về useEffect từ a tới z](https://topdev.vn/blog/useeffect-tu-a-toi-z/)
+* [tim-hieu-sau-hon-ve-useeffect-tu-a-z.md](react/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md "mention")
