@@ -1,7 +1,3 @@
----
-coverY: 0
----
-
 # Share Office 2019 Product Key Professional Plus - active bản quyền vĩnh viễn mới 03/2024
 
 **Key Office 2019** là một dãy mã gồm **25 ký tự** được Microsoft phát hành để hỗ trợ bạn kích hoạt thành công bản quyền [**Office 2019**](https://duockhong.com/microsoft-office-2019/) trên máy tính, laptop của mình. Với **Lisence Office 2019 Professional Plus Product**, bạn có thể sử dụng các ứng dụng Office 2019 1 cách không giới hạn. Nghĩa là sử dụng được mọi tính năng mà không bị giới hạn bất kỳ một giới hạn nào.
@@ -103,13 +99,23 @@ Sau khi cài đặt Office 2019 về máy tính, laptop Windows 10 của mình. 
 
 **Bước 1**: Mở một ứng dụng Office 2019 bất kỳ (Word, Excel, PowerPoint…)
 
+<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/hoi-dap/active-bang-key-office-2019-moi.jpg" alt=""><figcaption><p>Mở ứng dụng Office 2019 bất kỳ</p></figcaption></figure>
+
 **Bước 2**: Chọn **File** ở trong Tab Menu → Chọn **Account**
+
+<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/hoi-dap/active-bang-key-office-2019-moi-1.jpg" alt=""><figcaption><p>Bấm chọn Account để kích hoạt Lisence 2019 Office</p></figcaption></figure>
 
 **Bước 3**: Chọn **Change Product Key** → **Copy và dán** Lisence Office 2019 Product → Chọn **Install**
 
+<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/hoi-dap/active-bang-key-office-2019-moi-2.jpg" alt=""><figcaption><p>Chọn Change Product Key trong Office 2019</p></figcaption></figure>
+
 **Bước 4**: Đợi vài giây để Office 2019 được kích hoạt (Đảm bảo thiết bị của bạn có kết nối Internet)
 
+<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/hoi-dap/active-bang-key-office-2019-moi-3.jpg" alt=""><figcaption><p>Đợi để Office 2019 được kích hoạt</p></figcaption></figure>
+
 **Bước 5**: Xuất hiện thông báo **Product Activated** tức là bạn đã kích hoạt thành côn
+
+<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/hoi-dap/active-bang-key-office-2019-moi-4.jpg" alt=""><figcaption><p>Product Activated tức là bạn đã kích hoạt xong</p></figcaption></figure>
 
 ### **Lời Kết**
 
