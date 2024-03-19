@@ -35,3 +35,5 @@ appendonly yes
 ```
 
 Khi bạn bật thuộc tính này lên bất kì câu lệnh nào làm thay đổi dữ liệu Redis sẽ được lưu vào AOF. **Lưu ý** khi bật AOF có ảnh hưởng tới hiệu suất của Redis. Nếu máy chủ đủ mạnh thì bạn nên chạy câu lệnh snapshots từng giây, phương pháp này không gây ảnh hưởng tới hiệu suất của Redis. Tìm hiểu chi tiết tại [**Redis persistence**](https://redis.io/docs/management/persistence/)**.**
+
+<img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"><img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"> _Nếu thấy nội dung này bổ ích, hãy mời tôi một tách cà phê nha!_ [_**https://me.momo.vn/nhquydev**_](https://me.momo.vn/nhquydev)

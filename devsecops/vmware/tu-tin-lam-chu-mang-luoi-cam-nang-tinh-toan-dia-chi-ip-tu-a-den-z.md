@@ -71,3 +71,5 @@ Bài viết này đã hướng dẫn bạn cách tính địa chỉ IP, bao gồ
 ### **Lưu ý:**
 
 Bài viết này chỉ cung cấp thông tin cơ bản về cách tính địa chỉ IP. Để có thể tính toán chính xác địa chỉ IP cho mạng của bạn, bạn cần tham khảo thêm các tài liệu chuyên môn và có kiến thức về mạng máy tính.
+
+<img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"><img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"> _Nếu thấy nội dung này bổ ích, hãy mời tôi một tách cà phê nha!_ [_**https://me.momo.vn/nhquydev**_](https://me.momo.vn/nhquydev)
