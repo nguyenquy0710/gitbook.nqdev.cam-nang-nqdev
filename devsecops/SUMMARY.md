@@ -8,6 +8,7 @@
 ## VMWare
 
 * [Cách ảo hóa macOS Sierra trong VMWare Windows 10](vmware/cach-ao-hoa-macos-sierra-trong-vmware-windows-10.md)
+* [Tự tin làm chủ mạng lưới: Cẩm nang tính toán địa chỉ IP từ A đến Z](vmware/tu-tin-lam-chu-mang-luoi-cam-nang-tinh-toan-dia-chi-ip-tu-a-den-z.md)
 
 ## 👒 Ansible
 
