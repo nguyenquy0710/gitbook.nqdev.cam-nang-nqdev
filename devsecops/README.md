@@ -37,3 +37,7 @@ DevSecOps là phương pháp hiệu quả để tăng cường bảo mật, tăn
 
 * [https://www.redhat.com/en/topics/devops/what-is-devsecops](https://www.redhat.com/en/topics/devops/what-is-devsecops)
 * [https://bizflycloud.vn/tin-tuc/devsecops-la-gi-kien-thuc-co-ban-ve-devsecops-20220113100737932.htm](https://bizflycloud.vn/tin-tuc/devsecops-la-gi-kien-thuc-co-ban-ve-devsecops-20220113100737932.htm)
+
+{% content-ref url="https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/snippet/10338" %}
+[thank-you](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/snippet/10338)
+{% endcontent-ref %}
