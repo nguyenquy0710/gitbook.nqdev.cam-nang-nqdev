@@ -38,6 +38,4 @@ DevSecOps là phương pháp hiệu quả để tăng cường bảo mật, tăn
 * [https://www.redhat.com/en/topics/devops/what-is-devsecops](https://www.redhat.com/en/topics/devops/what-is-devsecops)
 * [https://bizflycloud.vn/tin-tuc/devsecops-la-gi-kien-thuc-co-ban-ve-devsecops-20220113100737932.htm](https://bizflycloud.vn/tin-tuc/devsecops-la-gi-kien-thuc-co-ban-ve-devsecops-20220113100737932.htm)
 
-{% content-ref url="https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/snippet/10338" %}
-[thank-you](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/snippet/10338)
-{% endcontent-ref %}
+<img src="https://blogs.nhquydev.net/~gitbook/image?url=https:%2F%2Ftwemoji.maxcdn.com%2Fv%2F14.0.2%2F72x72%2F2615.png&#x26;width=40&#x26;dpr=4&#x26;quality=100&#x26;sign=36f9f720407ae10090a8601edcfe1917ea0de7ddf47cd3851213c19f6dcd320f" alt="☕️" data-size="line"><img src="https://blogs.nhquydev.net/~gitbook/image?url=https:%2F%2Ftwemoji.maxcdn.com%2Fv%2F14.0.2%2F72x72%2F2615.png&#x26;width=40&#x26;dpr=4&#x26;quality=100&#x26;sign=36f9f720407ae10090a8601edcfe1917ea0de7ddf47cd3851213c19f6dcd320f" alt="☕️" data-size="line"> _Nếu thấy nội dung này bổ ích, hãy mời tôi một tách cà phê nha!_ [_**https://me.momo.vn/nhquydev**_](https://me.momo.vn/nhquydev)
