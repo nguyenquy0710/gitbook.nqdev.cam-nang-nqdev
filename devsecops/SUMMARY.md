@@ -4,6 +4,7 @@
 * [Redis mất dữ liệu khi restart](redis-mat-du-lieu-khi-restart.md)
 * [Dựng môi trường phát triển nhanh chóng với docker-php-development](dung-moi-truong-phat-trien-nhanh-chong-voi-docker-php-development.md)
 * [Cách dùng Docker để phát triển ứng dụng Wordpress](cach-dung-docker-de-phat-trien-ung-dung-wordpress.md)
+* [Hệ thống phân giải tên miền (DNS) và các loại bản ghi](he-thong-phan-giai-ten-mien-dns-va-cac-loai-ban-ghi.md)
 
 ## VMWare
 
