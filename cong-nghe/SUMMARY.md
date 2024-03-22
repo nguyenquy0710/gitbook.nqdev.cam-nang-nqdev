@@ -11,6 +11,8 @@
 * [SQL Server Basics](sql-server/sql-server-basics.md)
 * [Bảng tạm và sự linh hoạt trong xử lý dữ liệu lớn](sql-server/bang-tam-va-su-linh-hoat-trong-xu-ly-du-lieu-lon.md)
 * [SQL Server Error : 14151, Severity: 18. Replication agent](sql-server/sql-server-error-14151-severity-18.-replication-agent.md)
+* [SQL Server: Tập lệnh](sql-server/sql-server-tap-lenh/README.md)
+  * [SQL Server: Tập lệnh để tìm tất cả các giá trị Mặc định với Cột](sql-server/sql-server-tap-lenh/sql-server-tap-lenh-de-tim-tat-ca-cac-gia-tri-mac-dinh-voi-cot.md)
 
 ## React
 
