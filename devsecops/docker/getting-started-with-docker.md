@@ -1,4 +1,5 @@
 ---
+description: Docker - Beginners | Intermediate | Advanced
 cover: >-
   https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/dockerlabs.jpeg
 coverY: -5

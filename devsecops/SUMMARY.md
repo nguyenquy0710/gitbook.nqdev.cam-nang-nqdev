@@ -14,6 +14,11 @@
 ## Docker
 
 * [🏗️ Getting Started with Docker](docker/getting-started-with-docker.md)
+* [Dockerfile](docker/dockerfile/README.md)
+  * [Dockerfile là gì?](docker/dockerfile/dockerfile-la-gi.md)
+  * [Lab #1: Tạo một hình ảnh có cài đặt GIT](docker/dockerfile/lab-1-tao-mot-hinh-anh-co-cai-dat-git.md)
+  * [Lab #2: Tạo một hình ảnh với lệnh ADD](docker/dockerfile/lab-2-tao-mot-hinh-anh-voi-lenh-add.md)
+  * [Lab #3: Tạo ảnh với lệnh COPY](docker/dockerfile/lab-3-tao-anh-voi-lenh-copy.md)
 * [Docker Cheat Sheet](docker/docker-cheat-sheet.md)
 * [Docker Compose Cheatsheet](docker/docker-compose-cheatsheet.md)
 
