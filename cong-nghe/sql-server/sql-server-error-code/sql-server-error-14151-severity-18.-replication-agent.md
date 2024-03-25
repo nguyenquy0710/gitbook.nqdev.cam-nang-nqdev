@@ -1,3 +1,7 @@
+---
+description: 'SQL Server Error : 14151, Severity: 18. Replication agent'
+---
+
 # SQL Server Error : 14151, Severity: 18. Replication agent
 
 ### SQL Server Error : 14151 Details
