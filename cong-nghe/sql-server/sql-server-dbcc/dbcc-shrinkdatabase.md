@@ -90,7 +90,7 @@ Lệnh `DBCC SHRINKDATABASE` trong SQL Server được sử dụng để thu nh�
 
 Lệnh `DBCC SHRINKDATABASE` **không trực tiếp xóa dữ liệu** khỏi cơ sở dữ liệu. Thay vào đó, nó chỉ thu nhỏ kích thước của tệp dữ liệu bằng cách loại bỏ không gian trống. Do đó, **lệnh này không gây mất dữ liệu hiện có** trong cơ sở dữ liệu.
 
-Tuy nhiên, cần lưu ý rằng:
+#### Tuy nhiên, cần lưu ý rằng:
 
 * **Lỗi trong quá trình thực thi:** Nếu xảy ra lỗi trong khi thực thi lệnh `DBCC SHRINKDATABASE`, có thể dẫn đến mất dữ liệu. Do đó, **nên sao lưu cơ sở dữ liệu trước khi thu nhỏ tệp**.
 * **Mất dữ liệu do phân mảnh nghiêm trọng:** Trong trường hợp tệp dữ liệu bị phân mảnh nghiêm trọng, việc thu nhỏ tệp có thể dẫn đến mất dữ liệu.
