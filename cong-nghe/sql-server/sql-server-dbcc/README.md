@@ -1,5 +1,7 @@
 ---
-description: DBCC - Database console commands
+description: >-
+  DBCC - Database console commands |
+  https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/database-console-commands?view=sql-server-ver16
 ---
 
 # SQL Server: DBCC
