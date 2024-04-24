@@ -5,6 +5,71 @@ description: >-
 
 # DBCC SHRINKDATABASE
 
+## Cách sử dụng lệnh DBCC SHRINKDATABASE
+
+Lệnh `DBCC SHRINKDATABASE` trong SQL Server được sử dụng để thu nhỏ kích thước của một hoặc nhiều tệp dữ liệu (.mdf) và tệp nhật ký (.ldf) trong cơ sở dữ liệu. Việc thu nhỏ tệp cơ sở dữ liệu có thể giải phóng không gian đĩa và cải thiện hiệu suất trong một số trường hợp.
+
+### **Cú pháp cơ bản:**
+
+{% code title="SQL" lineNumbers="true" %}
+```sql
+DBCC SHRINKDATABASE (<tên_cơ_sở_dữ_liệu>);
+```
+{% endcode %}
+
+#### **Giải thích tham số:**
+
+* `tên_cơ_sở_dữ_liệu`: Tên của cơ sở dữ liệu mà bạn muốn thu nhỏ tệp.
+
+#### **Ví dụ:**
+
+Thu nhỏ tệp cho cơ sở dữ liệu `MyDatabase`:
+
+{% code title="SQL" lineNumbers="true" %}
+```sql
+DBCC SHRINKDATABASE (N'MyDatabase');
+```
+{% endcode %}
+
+### **Tùy chọn:**
+
+* **WITH NO\_LOG:** Tùy chọn này ngăn không cho tạo bản ghi nhật ký cho thao tác thu nhỏ.
+* **WITH FILEGROUP = \<tên\_nhóm\_tệp>:** Tùy chọn này cho phép bạn thu nhỏ một nhóm tệp cụ thể.
+* **WITH FILE = \<tên\_tệp>:** Tùy chọn này cho phép bạn thu nhỏ một tệp cụ thể.
+
+#### **Ví dụ:**
+
+Thu nhỏ tệp cho cơ sở dữ liệu `MyDatabase` mà không tạo bản ghi nhật ký:
+
+{% code title="SQL" lineNumbers="true" %}
+```sql
+DBCC SHRINKDATABASE (N'MyDatabase') WITH NO_LOG;
+```
+{% endcode %}
+
+Thu nhỏ tệp cho nhóm tệp `DataFiles` trong cơ sở dữ liệu `MyDatabase`:
+
+{% code title="SQL" lineNumbers="true" %}
+```sql
+DBCC SHRINKDATABASE (N'MyDatabase') WITH FILEGROUP = N'DataFiles';
+```
+{% endcode %}
+
+Thu nhỏ tệp `MyLogFile.ldf` trong cơ sở dữ liệu `MyDatabase`:
+
+{% code title="SQL" lineNumbers="true" %}
+```sql
+DBCC SHRINKDATABASE (N'MyDatabase') WITH FILE = N'MyLogFile.ldf';
+```
+{% endcode %}
+
+### **Lưu ý:**
+
+* Lệnh `DBCC SHRINKDATABASE` có thể chặn truy cập vào cơ sở dữ liệu trong khi nó đang được thực thi. Do đó, cần thực hiện lệnh này vào thời điểm ít người sử dụng hệ thống.
+* Nên sao lưu cơ sở dữ liệu trước khi thu nhỏ tệp.
+* Việc thu nhỏ tệp dữ liệu không phải lúc nào cũng cải thiện hiệu suất. Trong một số trường hợp, thu nhỏ tệp dữ liệu có thể làm giảm hiệu suất.
+* Nên tham khảo ý kiến ​​của chuyên gia SQL Server trước khi thu nhỏ tệp cơ sở dữ liệu của bạn.
+
 ## Ảnh hưởng của lệnh DBCC SHRINKDATABASE
 
 Lệnh `DBCC SHRINKDATABASE` trong SQL Server được sử dụng để thu nhỏ kích thước của tệp dữ liệu (.mdf) và tệp nhật ký (.ldf) trong cơ sở dữ liệu. Việc thu nhỏ tệp cơ sở dữ liệu có thể giải phóng không gian đĩa và cải thiện hiệu suất trong một số trường hợp. Tuy nhiên, cũng có một số tác động tiềm ẩn cần lưu ý:
