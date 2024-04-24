@@ -13,6 +13,7 @@
 * [SQL Server: Error Code](sql-server/sql-server-error-code/README.md)
   * [SQL Server Error : 14151, Severity: 18. Replication agent](sql-server/sql-server-error-code/sql-server-error-14151-severity-18.-replication-agent.md)
 * [SQL Server: DBCC](sql-server/sql-server-dbcc/README.md)
+  * [DBCC](sql-server/sql-server-dbcc/dbcc.md)
   * [DBCC SHOW\_STATISTICS](sql-server/sql-server-dbcc/dbcc-show\_statistics.md)
   * [DBCC SHRINKDATABASE](sql-server/sql-server-dbcc/dbcc-shrinkdatabase.md)
   * [DBCC SHRINKFILE](sql-server/sql-server-dbcc/dbcc-shrinkfile.md)
