@@ -4,7 +4,7 @@ description: >-
   bỏ những thói quen xấu gây ảnh hưởng đến thời gian và sự tập trung của bạn.
 ---
 
-# Review sách "Loại bỏ 30 thói quen xấu đánh cắp thời gian của bạn"
+# Loại bỏ 30 thói quen xấu đánh cắp thời gian của bạn
 
 ## Tóm tắt
 

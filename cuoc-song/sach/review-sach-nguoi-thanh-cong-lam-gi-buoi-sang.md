@@ -5,7 +5,7 @@ description: >-
   tăng cường năng suất, thành công trong cuộc sống.
 ---
 
-# Review sách "Người thành công làm gì buổi sáng ?"
+# Người thành công làm gì buổi sáng ?
 
 ## Tóm tắt sách
 

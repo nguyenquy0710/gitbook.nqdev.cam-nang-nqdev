@@ -1,4 +1,4 @@
-# Review sách "Đắc nhân tâm"
+# Đắc nhân tâm
 
 **Đắc nhân tâm** là cuốn sách kinh điển về nghệ thuật giao tiếp và ứng xử của Dale Carnegie, được xuất bản lần đầu tiên vào năm 1936. Cuốn sách đã được dịch ra hơn 40 ngôn ngữ và bán được hơn 30 triệu bản trên toàn thế giới.
 
