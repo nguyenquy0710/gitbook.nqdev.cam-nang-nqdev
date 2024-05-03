@@ -13,4 +13,4 @@
 
 ## Ứng dụng
 
-* [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/esmsvn-cham-soc-khach-hang-hieu-qua-voi-sms-va-zns.md)
+* [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/su-dung-sms-va-zns-cua-esms-de-quang-cao-va-cham-soc-khach-hang-hieu-qua.md)
