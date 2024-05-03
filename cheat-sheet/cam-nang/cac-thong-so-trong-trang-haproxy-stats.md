@@ -2,7 +2,7 @@
 description: 'Nguồn: viblo.asia'
 ---
 
-# Các thông số trong trang HAproxy Stats
+# HAproxy Stats
 
 * bind: địa chỉ và cổng mà bạn sẽ sử dụng để truy cập trang stats
 * stats uri: đường dẫn của URL

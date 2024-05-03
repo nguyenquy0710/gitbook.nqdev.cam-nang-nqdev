@@ -2,7 +2,7 @@
 description: 'Nguồn: techmaster.vn'
 ---
 
-# Cẩm nang các tập lệnh Linux hay dùng
+# Tập lệnh Linux hay dùng
 
 * `apt-get install` để cài đặt gói
 * `apt-get remove` để xóa gói
