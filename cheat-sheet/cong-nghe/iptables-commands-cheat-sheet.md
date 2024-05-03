@@ -1,4 +1,11 @@
-# IPtables Commands Cheat sheet
+---
+description: >-
+  https://gist.github.com/mcastelino/c38e71eb0809d1427a6650d843c42ac2 &
+  https://ns2.elhacker.net/cheat-sheet/iptables-cheat-sheet.pdf &
+  https://bashsenpai.com/resources/cheatsheets/iptables
+---
+
+# IPTables Commands Cheat sheet
 
 <figure><img src="../.gitbook/assets/IP-Tables-Commands-Cheatsheet.png" alt=""><figcaption><p>IPtables Commands Cheatsheet</p></figcaption></figure>
 

@@ -8,7 +8,7 @@
   * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
 * [HAproxy Commands Cheat sheet](cong-nghe/haproxy-commands-cheat-sheet/README.md)
   * [HAproxy Stats](cong-nghe/haproxy-commands-cheat-sheet/haproxy-stats.md)
-* [IPtables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
+* [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 
 ## Ứng dụng
