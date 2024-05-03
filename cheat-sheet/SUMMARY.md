@@ -4,12 +4,12 @@
 
 ## Cẩm nang
 
-* [Cẩm nang các tập lệnh Linux hay dùng](cam-nang/cam-nang-cac-tap-lenh-linux-hay-dung.md)
-* [Các thông số trong trang HAproxy Stats](cam-nang/cac-thong-so-trong-trang-haproxy-stats.md)
-
-***
-
-* [IPtables Commands Cheatsheet](iptables-commands-cheatsheet.md)
+* [Linux Commands Cheat sheet](cam-nang/linux-commands-cheat-sheet/README.md)
+  * [Tập lệnh Linux hay dùng](cam-nang/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
+* [HAproxy Commands Cheat sheet](cam-nang/haproxy-commands-cheat-sheet/README.md)
+  * [HAproxy Stats](cam-nang/haproxy-commands-cheat-sheet/haproxy-stats.md)
+* [IPtables Commands Cheat sheet](cam-nang/iptables-commands-cheat-sheet.md)
+* [Redis Commands Cheat sheet](cam-nang/redis-commands-cheat-sheet.md)
 
 ## Ứng dụng
 
