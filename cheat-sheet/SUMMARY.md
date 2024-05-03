@@ -2,14 +2,14 @@
 
 * [Giới thiệu](README.md)
 
-## Cẩm nang
+## Công nghệ
 
-* [Linux Commands Cheat sheet](cam-nang/linux-commands-cheat-sheet/README.md)
-  * [Tập lệnh Linux hay dùng](cam-nang/cam-nang-cac-tap-lenh-linux-hay-dung.md)
-* [HAproxy Commands Cheat sheet](cam-nang/haproxy-commands-cheat-sheet/README.md)
-  * [HAproxy Stats](cam-nang/cac-thong-so-trong-trang-haproxy-stats.md)
-* [IPtables Commands Cheat sheet](iptables-commands-cheatsheet.md)
-* [Redis Commands Cheat sheet](cam-nang/redis-commands-cheat-sheet.md)
+* [Linux Commands Cheat sheet](cong-nghe/linux-commands-cheat-sheet/README.md)
+  * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
+* [HAproxy Commands Cheat sheet](cong-nghe/haproxy-commands-cheat-sheet/README.md)
+  * [HAproxy Stats](cong-nghe/haproxy-commands-cheat-sheet/haproxy-stats.md)
+* [IPtables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
+* [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 
 ## Ứng dụng
 
