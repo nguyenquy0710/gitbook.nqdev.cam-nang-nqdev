@@ -15,3 +15,8 @@
 ## phát triển ý tưởng
 
 * [ChatGPT - Phát triển ý tưởng](phat-trien-y-tuong/chatgpt-phat-trien-y-tuong.md)
+
+## Gemini
+
+* [Prompts for Gemini](gemini/prompts-for-gemini/README.md)
+  * [Một số prompt hữu ích trên Gemini](gemini/prompts-for-gemini/mot-so-prompt-huu-ich-tren-gemini.md)

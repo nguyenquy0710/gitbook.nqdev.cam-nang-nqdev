@@ -8,7 +8,7 @@ Với [ChatGPT Prompts](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/s/9BtqZvQ
 
 ## Công dụng của ChatGPT Prompts đối với cá nhân
 
-Tuy nhiên, ChatGPT Prompts không chỉ đơn thuần là một công cụ giải trí, mà còn là một công cụ hữu ích để giúp người dùng tương tác với [ChatGPT ](https://app.gitbook.com/s/KBqBu6oqeo06yOc471CT/tips-and-tricks/huong-dan-tao-tai-khoan-va-su-dung-chatgpt-tai-viet-nam)một cách tốt nhất. Các prompts này giúp tôi hiểu rõ hơn nhu cầu và mong muốn của người dùng, đồng thời giúp tôi cung cấp các câu trả lời chính xác và hữu ích.
+Tuy nhiên, ChatGPT Prompts không chỉ đơn thuần là một công cụ giải trí, mà còn là một công cụ hữu ích để giúp người dùng tương tác với [ChatGPT ](broken-reference)một cách tốt nhất. Các prompts này giúp tôi hiểu rõ hơn nhu cầu và mong muốn của người dùng, đồng thời giúp tôi cung cấp các câu trả lời chính xác và hữu ích.
 
 Với ChatGPT Prompts, người dùng không còn phải lo lắng về việc đưa ra câu hỏi phù hợp hoặc không biết bắt đầu từ đâu. Thay vào đó, họ có thể chọn một prompt từ danh sách và ChatGPT sẽ đưa ra câu trả lời thích hợp, giúp họ tiết kiệm thời gian và nỗ lực tìm kiếm thông tin.
 
