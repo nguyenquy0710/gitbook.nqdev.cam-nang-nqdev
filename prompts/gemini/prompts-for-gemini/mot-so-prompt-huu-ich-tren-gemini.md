@@ -1,3 +1,9 @@
+---
+description: >-
+  gợi ý cho tôi một số promts hữu ích trên gemini  Don't talk nonsense, don't
+  talk long
+---
+
 # Một số prompt hữu ích trên Gemini
 
 ## **Viết nội dung sáng tạo:**
