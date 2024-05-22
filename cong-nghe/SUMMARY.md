@@ -5,6 +5,8 @@
 ## Dotnet
 
 * [Optimize - Một số cách tối ưu code và performance CSharp](dotnet/optimize-mot-so-cach-toi-uu-code-va-performance-csharp.md)
+* [Core CLI](dotnet/core-cli/README.md)
+  * [Installing the tools](dotnet/core-cli/installing-the-tools.md)
 
 ## SQL Server
 
