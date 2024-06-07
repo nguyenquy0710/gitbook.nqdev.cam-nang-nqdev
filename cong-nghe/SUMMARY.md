@@ -36,3 +36,4 @@
 
 * [shadcn-ui/ui](open-source/shadcn-ui-ui.md)
 * [Kuma UI](open-source/kuma-ui.md)
+* [Midone](open-source/midone.md)
