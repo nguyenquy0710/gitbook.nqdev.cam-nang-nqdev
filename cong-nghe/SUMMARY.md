@@ -7,6 +7,8 @@
 * [Optimize - Một số cách tối ưu code và performance CSharp](dotnet/optimize-mot-so-cach-toi-uu-code-va-performance-csharp.md)
 * [Core CLI](dotnet/core-cli/README.md)
   * [Installing the tools](dotnet/core-cli/installing-the-tools.md)
+* [MSTest](dotnet/mstest/README.md)
+  * [MSTest 3.4 đã có mặt với sự hỗ trợ của WinUI và các bộ phân tích mới!](dotnet/mstest/mstest-3.4-da-co-mat-voi-su-ho-tro-cua-winui-va-cac-bo-phan-tich-moi.md)
 
 ## SQL Server
 
