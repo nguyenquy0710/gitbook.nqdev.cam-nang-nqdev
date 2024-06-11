@@ -24,6 +24,10 @@
 * [SQL Server: Tập lệnh](sql-server/sql-server-tap-lenh/README.md)
   * [SQL Server: Tập lệnh để tìm tất cả các giá trị Mặc định với Cột](sql-server/sql-server-tap-lenh/sql-server-tap-lenh-de-tim-tat-ca-cac-gia-tri-mac-dinh-voi-cot.md)
 
+## MySQL
+
+* [MySQL](mysql/mysql.md)
+
 ## React
 
 * [Hiểu về hook useRef của React như thế nào cho đúng](<README (1).md>)
