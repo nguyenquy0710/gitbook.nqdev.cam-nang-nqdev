@@ -7,6 +7,7 @@
 * [Linux Commands Cheat sheet](cong-nghe/linux-commands-cheat-sheet/README.md)
   * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
 * [HAProxy Cheatsheet](cong-nghe/haproxy-cheatsheet/README.md)
+  * [Cheatsheet](cong-nghe/haproxy-cheatsheet/cheatsheet.md)
   * [HAProxy Stats](cong-nghe/haproxy-cheatsheet/haproxy-stats.md)
   * [HAProxy WI](cong-nghe/haproxy-cheatsheet/haproxy-wi.md)
 * [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
