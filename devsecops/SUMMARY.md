@@ -41,6 +41,8 @@
   * [Monitoring](docker/ung-dung-mau/monitoring.md)
   * [Logging](docker/ung-dung-mau/logging.md)
   * [Testing Tools](docker/ung-dung-mau/testing-tools.md)
+* [Services](docker/services/README.md)
+  * [Harbor](docker/services/harbor.md)
 
 ## 👒 Ansible
 
