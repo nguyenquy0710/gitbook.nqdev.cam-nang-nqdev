@@ -37,6 +37,7 @@
 
 * [Top 10 ASP .NET Open Source Projects GitHub 2024](collections/top-10-asp-.net-open-source-projects-github-2024.md)
 * [Free Themes and Templates from Creative Tim](collections/free-themes-and-templates-from-creative-tim.md)
+* [Cách Tối Ưu Hóa Kích Thước Thư Mục .git](collections/cach-toi-uu-hoa-kich-thuoc-thu-muc-.git.md)
 
 ## Open Source
 
