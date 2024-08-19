@@ -97,3 +97,5 @@ Nhóm này liên quan đến các quan hệ hành vi để xử lí các chức 
 \[4] Gang of Four Design Patterns 4.0
 
 \[5] Dive into Design Pattern
+
+\[6] Design Patterns là gì? Tại sao nó lại là trợ thủ đắc lực của Developers - Tổng hợp 23 mẫu Design Pattern.[https://viblo.asia/p/design-patterns-la-gi-tai-sao-no-lai-la-tro-thu-dac-luc-cua-developers-tong-hop-23-mau-design-pattern-GrLZDBQV5k0](https://viblo.asia/p/design-patterns-la-gi-tai-sao-no-lai-la-tro-thu-dac-luc-cua-developers-tong-hop-23-mau-design-pattern-GrLZDBQV5k0)
