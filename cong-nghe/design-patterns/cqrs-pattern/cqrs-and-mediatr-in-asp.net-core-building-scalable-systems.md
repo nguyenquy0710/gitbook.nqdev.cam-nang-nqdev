@@ -1,5 +1,7 @@
 ---
-description: https://codewithmukesh.com/blog/cqrs-and-mediatr-in-aspnet-core/
+description: >-
+  Triển khai CQRS trong ứng dụng của chúng ta có thể tối ưu hiệu suất, khả năng
+  mở rộng và bảo mật của nó.
 ---
 
 # CQRS and MediatR in ASP.NET Core - Building Scalable Systems
