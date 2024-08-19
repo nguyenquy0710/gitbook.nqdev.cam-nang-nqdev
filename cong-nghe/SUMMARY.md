@@ -10,6 +10,11 @@
 * [MSTest](dotnet/mstest/README.md)
   * [MSTest 3.4 đã có mặt với sự hỗ trợ của WinUI và các bộ phân tích mới!](dotnet/mstest/mstest-3.4-da-co-mat-voi-su-ho-tro-cua-winui-va-cac-bo-phan-tich-moi.md)
 
+## Pattern
+
+* [CQRS Pattern](pattern/cqrs-pattern/README.md)
+  * [CQRS and MediatR in ASP.NET Core - Building Scalable Systems](pattern/cqrs-pattern/cqrs-and-mediatr-in-asp.net-core-building-scalable-systems.md)
+
 ## SQL Server
 
 * [SQL Server Basics](sql-server/sql-server-basics.md)
