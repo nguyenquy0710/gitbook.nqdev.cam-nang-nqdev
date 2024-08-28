@@ -6,11 +6,16 @@ description: >-
 
 # CQRS and MediatR in ASP.NET Core - Building Scalable Systems
 
+<figure><img src="https://www.c-sharpcorner.com/article/cqrs-and-mediatr-pattern-implementation-using-net-core-6-web-api/Images/Picture.png" alt=""><figcaption></figcaption></figure>
+
 CQRS là một mẫu thiết kế giúp phân tách trách nhiệm xử lý các lệnh và truy vấn vào các thành phần khác nhau. Mẫu kiến trúc CQRS tập trung chủ yếu vào việc tách biệt cách đọc và ghi dữ liệu. Nó chia thành hai mô hình riêng biệt cho việc đọc và cập nhật dữ liệu trong cơ sở dữ liệu: Truy vấn (Queries) và Lệnh (Commands).
 
 {% hint style="info" %}
 * https://codewithmukesh.com/blog/cqrs-and-mediatr-in-aspnet-core/
 * https://viblo.asia/p/trien-khai-trong-net-core-voi-mediatr-cqrs-pattern-Yym40KKoV91
 * https://github.com/Rezakazemi890/Clean-Architecture-CQRS
+* [https://www.c-sharpcorner.com/article/cqrs-and-mediatr-pattern-implementation-using-net-core-6-web-api/](https://www.c-sharpcorner.com/article/cqrs-and-mediatr-pattern-implementation-using-net-core-6-web-api/)
 {% endhint %}
+
+
 
