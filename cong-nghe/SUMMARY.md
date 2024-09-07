@@ -14,7 +14,7 @@
 
 * [Design Patterns là gì?](design-patterns/design-patterns-la-gi.md)
 * [CQRS Pattern](design-patterns/cqrs-pattern/README.md)
-  * [CQRS and MediatR in ASP.NET Core - Building Scalable Systems](design-patterns/cqrs-pattern/cqrs-and-mediatr-in-asp.net-core-building-scalable-systems.md)
+  * [CQRS and MediatR trong .NET Core](design-patterns/cqrs-pattern/cqrs-and-mediatr-trong-.net-core.md)
 
 ## SQL Server
 
