@@ -16,6 +16,11 @@
 * [CQRS Pattern](design-patterns/cqrs-pattern/README.md)
   * [CQRS and MediatR trong .NET Core](design-patterns/cqrs-pattern/cqrs-and-mediatr-trong-.net-core.md)
 
+***
+
+* [Giới thiệu về Các Loại Cơ Sở Dữ Liệu](gioi-thieu-ve-cac-loai-co-so-du-lieu/README.md)
+  * [1. HSQLDB (HyperSQL Database)](gioi-thieu-ve-cac-loai-co-so-du-lieu/1.-hsqldb-hypersql-database.md)
+
 ## SQL Server
 
 * [SQL Server Basics](sql-server/sql-server-basics.md)
