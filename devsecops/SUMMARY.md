@@ -15,7 +15,8 @@
 
 * [🏗️ Getting Started with Docker](docker/getting-started-with-docker.md)
 * [Docker Cheat Sheet](docker/docker-cheat-sheet.md)
-* [Docker Compose Cheatsheet](docker/docker-compose-cheatsheet.md)
+* [Docker Compose Cheatsheet](docker/docker-compose-cheatsheet/README.md)
+  * [Những Lệnh và Flag Phổ Biến](docker/docker-compose-cheatsheet/nhung-lenh-va-flag-pho-bien.md)
 * [Dockerfile](docker/dockerfile/README.md)
   * [Dockerfile là gì?](docker/dockerfile/dockerfile-la-gi.md)
   * [Lab #1: Tạo một hình ảnh có cài đặt GIT](docker/dockerfile/lab-1-tao-mot-hinh-anh-co-cai-dat-git.md)
@@ -43,10 +44,6 @@
   * [Testing Tools](docker/ung-dung-mau/testing-tools.md)
 * [Services](docker/services/README.md)
   * [Harbor](docker/services/harbor.md)
-
-## 👒 Ansible
-
-* [(Phần 1) Tìm hiểu về Ansible](ansible/phan-1-tim-hieu-ve-ansible.md)
 
 ## System Monitoring
 
