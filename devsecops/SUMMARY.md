@@ -44,6 +44,10 @@
 * [Services](docker/services/README.md)
   * [Harbor](docker/services/harbor.md)
 
+## 👒 Ansible
+
+* [(Phần 1) Tìm hiểu về Ansible](ansible/phan-1-tim-hieu-ve-ansible.md)
+
 ## System Monitoring
 
 * [Grafana Labs](system-monitoring/grafana-labs.md)
