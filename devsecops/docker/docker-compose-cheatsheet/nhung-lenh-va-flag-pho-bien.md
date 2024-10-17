@@ -6,7 +6,7 @@ description: >-
 
 # Những Lệnh và Flag Phổ Biến
 
-Docker Compose là một công cụ mạnh mẽ giúp bạn dễ dàng quản lý và triển khai các ứng dụng đa container. Với Docker Compose, bạn có thể định nghĩa, xây dựng và chạy các ứng dụng phức tạp chỉ bằng một file YAML đơn giản. Trong bài viết này, chúng ta sẽ điểm qua một số lệnh và flag phổ biến khi làm việc với Docker Compose.
+Với Docker Compose, bạn có thể định nghĩa, xây dựng và chạy các ứng dụng phức tạp chỉ bằng một file YAML đơn giản. Trong bài viết này, chúng ta sẽ điểm qua một số lệnh và flag phổ biến khi làm việc với Docker Compose.
 
 ## 1. **Cấu Trúc Docker Compose Cơ Bản**
 
