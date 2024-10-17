@@ -1,12 +1,12 @@
 ---
 description: >-
-  Docker Compose là một công cụ mạnh mẽ giúp bạn dễ dàng quản lý và triển khai
-  các ứng dụng đa container.
+  Docker Compose là một công cụ mạnh mẽ giúp quản lý và triển khai các ứng dụng
+  đa container dễ dàng.
 ---
 
 # Những Lệnh và Flag Phổ Biến
 
-Với Docker Compose, bạn có thể định nghĩa, xây dựng và chạy các ứng dụng phức tạp chỉ bằng một file YAML đơn giản. Trong bài viết này, chúng ta sẽ điểm qua một số lệnh và flag phổ biến khi làm việc với Docker Compose.
+Với Docker Compose, bạn có thể định nghĩa, xây dựng và chạy các ứng dụng phức tạp chỉ bằng một file YAML đơn giản. Trong bài viết này, chúng ta sẽ cùng điểm qua những lệnh, flag phổ biến và một ví dụ thực tế về file `docker-compose.yml` hoàn chỉnh.
 
 ## 1. **Cấu Trúc Docker Compose Cơ Bản**
 
@@ -184,6 +184,145 @@ external_links:
 extra_hosts:
   - "somehost:192.168.1.100"
 ```
+
+## 9. **Ví Dụ Hoàn Chỉnh về File Docker Compose**
+
+Dưới đây là một ví dụ hoàn chỉnh về file `docker-compose.yml`, mô tả một ứng dụng web đơn giản sử dụng Nginx, Flask, và PostgreSQL.
+
+{% code title="docker-compose.yml" %}
+```yaml
+version: '3'
+services:
+  web:
+    build: ./web
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./web:/app
+    environment:
+      - FLASK_ENV=development
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-server
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web
+    networks:
+      - app-network
+
+  db:
+    image: postgres:13
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: mydb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+volumes:
+  postgres-data:
+
+networks:
+  app-network:
+    driver: bridge
+
+```
+{% endcode %}
+
+### Cấu Trúc Thư Mục
+
+```markdown
+project/
+│
+├── docker-compose.yml
+├── web/
+│   ├── Dockerfile
+│   └── app.py
+└── nginx/
+    └── nginx.conf
+```
+
+### File `Dockerfile` cho Flask
+
+Trong thư mục `web`, bạn cần một file `Dockerfile` để build ứng dụng Flask:
+
+{% code title="Dockerfile" %}
+```docker
+# Sử dụng image Python
+FROM python:3.8-slim
+
+# Đặt thư mục làm việc trong container
+WORKDIR /app
+
+# Sao chép toàn bộ file vào container
+COPY . /app
+
+# Cài đặt các thư viện cần thiết
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose cổng 5000
+EXPOSE 5000
+
+# Chạy ứng dụng Flask
+CMD ["python", "app.py"]
+
+```
+{% endcode %}
+
+### File `app.py` cho Flask
+
+Một file Python đơn giản để chạy ứng dụng Flask:
+
+{% code title="app.py" %}
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hello, Docker!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
+```
+{% endcode %}
+
+### File `nginx.conf` cho Nginx
+
+File cấu hình Nginx để phục vụ ứng dụng Flask:
+
+{% code title="nginx.conf" %}
+```nginx
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://flask-app:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
+
+```
+{% endcode %}
+
+
 
 ## Kết Luận
 
