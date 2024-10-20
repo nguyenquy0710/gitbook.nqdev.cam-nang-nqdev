@@ -12,6 +12,8 @@
   * [Message Broker](dotnet-csharp/message-broker/README.md)
     * [MassTransit](dotnet-csharp/message-broker/masstransit/README.md)
       * [MassTransit là gì?](dotnet-csharp/message-broker/masstransit/masstransit-la-gi.md)
+  * [Dev Blogs](dotnet-csharp/dev-blogs/README.md)
+    * [Microsoft.Extensions.AI – Unified AI Building Blocks for .NET](dotnet-csharp/dev-blogs/microsoft.extensions.ai-unified-ai-building-blocks-for-.net.md)
 * [Design Patterns là gì?](design-patterns-la-gi/README.md)
   * [CQRS Pattern](design-patterns/cqrs-pattern/README.md)
     * [CQRS and MediatR trong .NET Core](design-patterns/cqrs-pattern/cqrs-and-mediatr-trong-.net-core.md)
