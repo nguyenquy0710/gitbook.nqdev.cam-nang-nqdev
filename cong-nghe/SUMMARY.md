@@ -13,6 +13,7 @@
     * [MassTransit](dotnet-csharp/message-broker/masstransit/README.md)
       * [MassTransit là gì?](dotnet-csharp/message-broker/masstransit/masstransit-la-gi.md)
   * [Dev Blogs](dotnet-csharp/dev-blogs/README.md)
+    * [ASP.NET Core Web API với ASP.NET Core Web API (Native AOT): Bạn nên chọn loại nào?](dotnet-csharp/dev-blogs/asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao.md)
     * [Microsoft.Extensions.AI – Unified AI Building Blocks for .NET](dotnet-csharp/dev-blogs/microsoft.extensions.ai-unified-ai-building-blocks-for-.net.md)
 * [Design Patterns là gì?](design-patterns-la-gi/README.md)
   * [CQRS Pattern](design-patterns/cqrs-pattern/README.md)
