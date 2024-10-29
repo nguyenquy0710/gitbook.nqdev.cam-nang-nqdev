@@ -12,6 +12,8 @@
   * [HAProxy WI](cong-nghe/haproxy-cheatsheet/haproxy-wi.md)
 * [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
+* [Git Cheat sheet](cong-nghe/git-cheat-sheet/README.md)
+  * [20 lệnh Git hữu ích mọi lập trình viên nên biết](cong-nghe/git-cheat-sheet/20-lenh-git-huu-ich-moi-lap-trinh-vien-nen-biet.md)
 
 ## Ứng dụng
 
