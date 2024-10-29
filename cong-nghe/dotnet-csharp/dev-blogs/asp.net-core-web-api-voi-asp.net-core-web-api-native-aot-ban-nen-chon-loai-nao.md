@@ -6,7 +6,7 @@ description: >-
 
 # ASP.NET Core Web API với ASP.NET Core Web API (Native AOT): Bạn nên chọn loại nào?
 
-Khi xây dựng các ứng dụng web API hiện đại với ASP.NET Core, hiệu suất và khả năng tối ưu hóa bộ nhớ là hai yếu tố được nhiều lập trình viên quan tâm. Microsoft hiện cung cấp hai tùy chọn chính cho việc phát triển web API: **ASP.NET Core Web API** và **ASP.NET Core Web API (Native AOT)**.
+Microsoft hiện cung cấp hai tùy chọn chính cho việc phát triển web API: **ASP.NET Core Web API** và **ASP.NET Core Web API (Native AOT)**.
 
 Trong đó, **Native AOT (Ahead-Of-Time Compilation)** đang được xem là một cải tiến mới, giúp ứng dụng đạt hiệu suất cao hơn. Vậy sự khác biệt chính giữa hai phương pháp này là gì? Bài viết này sẽ giúp bạn hiểu rõ ưu nhược điểm của mỗi tùy chọn để từ đó đưa ra quyết định phù hợp nhất cho dự án của mình.
 
