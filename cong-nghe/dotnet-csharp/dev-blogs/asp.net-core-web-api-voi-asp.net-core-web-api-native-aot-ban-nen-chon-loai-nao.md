@@ -10,7 +10,7 @@ Microsoft hiện cung cấp hai tùy chọn chính cho việc phát triển web 
 
 Trong đó, **Native AOT (Ahead-Of-Time Compilation)** đang được xem là một cải tiến mới, giúp ứng dụng đạt hiệu suất cao hơn. Vậy sự khác biệt chính giữa hai phương pháp này là gì? Bài viết này sẽ giúp bạn hiểu rõ ưu nhược điểm của mỗi tùy chọn để từ đó đưa ra quyết định phù hợp nhất cho dự án của mình.
 
-## So sánh chi tiết ASP.NET Core Web API và Native AOT
+## So sánh chi tiết ASP.NET Core Web API và ASP.NET Core Web API (Native AOT)
 
 * [**Hiệu suất và tốc độ khởi động**](asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao.md#id-1.-kha-nang-toi-uu-hoa-hieu-suat): Nêu bật sự khác biệt trong cách biên dịch giữa JIT và AOT, cùng tác động đến tốc độ khởi động của ứng dụng.
 * [**Kích thước và tài nguyên bộ nhớ**](asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao.md#id-2.-kich-thuoc-ung-dung): Tập trung vào sự khác biệt về kích thước ứng dụng và mức sử dụng tài nguyên của hai phương pháp.
@@ -33,7 +33,7 @@ Một yếu tố quan trọng khác là kích thước của ứng dụng, đi�
 
 ### **3. Tính tương thích và hỗ trợ tính năng**
 
-Tính tương thích với các tính năng động và thư viện .NET đầy đủ là một khía cạnh quan trọng cần xem xét khi lựa chọn giữa ASP.NET Core Web API và Native AOT.
+Tính tương thích với các tính năng động và thư viện .NET đầy đủ là một khía cạnh quan trọng cần xem xét khi lựa chọn giữa ASP.NET Core Web API và ASP.NET Core Web API (Native AOT).
 
 * **ASP.NET Core Web API**: Do sử dụng .NET Runtime đầy đủ, bản thông thường của ASP.NET Core Web API có khả năng hỗ trợ các thư viện và tính năng động của .NET, bao gồm **reflection** và các API động khác. Nếu dự án của bạn cần dùng đến reflection hoặc các thư viện yêu cầu dynamic programming, bản Web API thông thường sẽ là lựa chọn hợp lý hơn.
 * **ASP.NET Core Web API (Native AOT)**: Native AOT gặp một số hạn chế trong việc hỗ trợ các tính năng dynamic. Vì mã đã được biên dịch trước thành mã máy, nên không thể dễ dàng sử dụng các tính năng reflection hoặc dynamic API, vốn yêu cầu biên dịch và thực thi tại thời điểm chạy. Do đó, nếu bạn cần sử dụng các thư viện yêu cầu tính năng này, Native AOT sẽ không phải là lựa chọn tối ưu.
@@ -58,4 +58,4 @@ Dưới đây là bảng tóm tắt so sánh giữa **ASP.NET Core Web API** và
 
 ## **Kết luận**
 
-ASP.NET Core Web API và Native AOT đều có những ưu điểm và hạn chế riêng, và việc chọn lựa phụ thuộc nhiều vào yêu cầu cụ thể của dự án. Nếu bạn cần một ứng dụng linh hoạt, có khả năng mở rộng, hỗ trợ tốt các tính năng động của .NET, thì **ASP.NET Core Web API** là lựa chọn tốt. Trong khi đó, nếu bạn muốn tối ưu hóa kích thước ứng dụng và thời gian khởi động cho các môi trường hạn chế, **Native AOT** sẽ là lựa chọn sáng giá. Mong rằng bài viết này đã giúp bạn hiểu rõ hơn về các lựa chọn này và có thể đưa ra quyết định phù hợp cho dự án của mình.
+ASP.NET Core Web API và ASP.NET Core Web API (Native AOT) đều có những ưu điểm và hạn chế riêng, và việc chọn lựa phụ thuộc nhiều vào yêu cầu cụ thể của dự án. Nếu bạn cần một ứng dụng linh hoạt, có khả năng mở rộng, hỗ trợ tốt các tính năng động của .NET, thì **ASP.NET Core Web API** là lựa chọn tốt. Trong khi đó, nếu bạn muốn tối ưu hóa kích thước ứng dụng và thời gian khởi động cho các môi trường hạn chế, **ASP.NET Core Web API (Native AOT)** sẽ là lựa chọn sáng giá. Mong rằng bài viết này đã giúp bạn hiểu rõ hơn về các lựa chọn này và có thể đưa ra quyết định phù hợp cho dự án của mình.
