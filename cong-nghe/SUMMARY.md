@@ -43,5 +43,5 @@
   * [shadcn-ui/ui](open-source/shadcn-ui-ui.md)
   * [Kuma UI](open-source/kuma-ui.md)
   * [Midone](open-source/midone.md)
-* [Know Share](know-share/README.md)
-  * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](know-share/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
+* [Hướng dẫn](huong-dan/README.md)
+  * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
