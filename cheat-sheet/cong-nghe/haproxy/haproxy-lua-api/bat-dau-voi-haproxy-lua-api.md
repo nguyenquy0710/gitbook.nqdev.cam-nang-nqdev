@@ -1,8 +1,12 @@
-# Bắt đầu với HAProxy Lua API: Hướng dẫn cơ bản
+# Bắt đầu với HAProxy Lua API
 
 ## Giới thiệu về Lập trình Lua trong HAProxy
 
 HAProxy và HAProxy Enterprise tích hợp sẵn bộ thông dịch Lua, cho phép bạn mở rộng khả năng của bộ cân bằng tải với các script Lua tùy chỉnh. Đây là một hướng dẫn nhanh về cách bắt đầu.
+
+Một số liên kết tham khảo hữu ích để giúp bạn làm quen với HAProxy Lua API:
+
+* **Examples on ARP Alert**: Các ví dụ về [ARP Alert](https://www.arpalert.org/haproxy-api.html) có thể cung cấp thông tin chi tiết về cách sử dụng Lua để giám sát và xử lý các yêu cầu liên quan đến ARP (Address Resolution Protocol).
 
 ## Cấu hình cơ bản
 

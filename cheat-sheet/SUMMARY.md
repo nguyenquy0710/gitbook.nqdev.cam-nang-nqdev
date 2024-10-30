@@ -10,7 +10,7 @@
   * [HAProxy Stats](cong-nghe/haproxy/haproxy-stats.md)
   * [HAProxy WI](cong-nghe/haproxy/haproxy-wi.md)
   * [HAProxy Lua API](cong-nghe/haproxy/haproxy-lua-api/README.md)
-    * [Bắt đầu với HAProxy Lua API: Hướng dẫn cơ bản](cong-nghe/haproxy/haproxy-lua-api/bat-dau-voi-haproxy-lua-api-huong-dan-co-ban.md)
+    * [Bắt đầu với HAProxy Lua API](cong-nghe/haproxy/haproxy-lua-api/bat-dau-voi-haproxy-lua-api.md)
 * [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 * [Git Cheat sheet](cong-nghe/git-cheat-sheet/README.md)
