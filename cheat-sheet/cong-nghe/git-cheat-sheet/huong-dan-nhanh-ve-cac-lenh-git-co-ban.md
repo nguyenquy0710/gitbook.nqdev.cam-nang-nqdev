@@ -1,6 +1,12 @@
+---
+description: >-
+  Git là một công cụ quản lý mã nguồn mạnh mẽ, nhưng với rất nhiều lệnh và tùy
+  chọn, việc ghi nhớ tất cả có thể là một thách thức.
+---
+
 # Hướng Dẫn Nhanh về Các Lệnh Git Cơ Bản
 
-Git là một công cụ quản lý mã nguồn mạnh mẽ, nhưng với rất nhiều lệnh và tùy chọn, việc ghi nhớ tất cả có thể là một thách thức. Cheat sheet (bảng tóm tắt) về Git sẽ giúp bạn dễ dàng tra cứu và sử dụng các lệnh một cách hiệu quả. Dưới đây là hướng dẫn chi tiết về các lệnh cơ bản mà bạn cần biết.
+**Cheat sheet** (bảng tóm tắt) về Git sẽ giúp bạn dễ dàng tra cứu và sử dụng các lệnh một cách hiệu quả. Dưới đây là hướng dẫn chi tiết về các lệnh cơ bản mà bạn cần biết.
 
 ### 1. Cài Đặt và Cấu Hình
 
