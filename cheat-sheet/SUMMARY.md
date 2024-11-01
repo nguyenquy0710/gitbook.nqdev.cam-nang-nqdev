@@ -15,6 +15,7 @@
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 * [Git Cheat sheet](cong-nghe/git-cheat-sheet/README.md)
   * [20 lệnh Git hữu ích mọi lập trình viên nên biết](cong-nghe/git-cheat-sheet/20-lenh-git-huu-ich-moi-lap-trinh-vien-nen-biet.md)
+  * [Cách tối ưu hóa kích thước thư mục .git để cải thiện hiệu suất](cong-nghe/git-cheat-sheet/cach-toi-uu-hoa-kich-thuoc-thu-muc-.git-de-cai-thien-hieu-suat.md)
 
 ## Ứng dụng
 
