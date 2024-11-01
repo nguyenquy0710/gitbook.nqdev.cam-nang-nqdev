@@ -14,6 +14,8 @@
 * [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 * [Git Cheat sheet](cong-nghe/git-cheat-sheet/README.md)
+  * [Hướng Dẫn Toàn Diện về Git](cong-nghe/git-cheat-sheet/huong-dan-toan-dien-ve-git.md)
+  * [Hướng Dẫn Nhanh về Các Lệnh Git Cơ Bản](cong-nghe/git-cheat-sheet/huong-dan-nhanh-ve-cac-lenh-git-co-ban.md)
   * [20 lệnh Git hữu ích mọi lập trình viên nên biết](cong-nghe/git-cheat-sheet/20-lenh-git-huu-ich-moi-lap-trinh-vien-nen-biet.md)
   * [Cách tối ưu hóa kích thước thư mục .git để cải thiện hiệu suất](cong-nghe/git-cheat-sheet/cach-toi-uu-hoa-kich-thuoc-thu-muc-.git-de-cai-thien-hieu-suat.md)
 
