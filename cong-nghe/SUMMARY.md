@@ -38,7 +38,6 @@
 * [Collections](collections/README.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](collections/top-10-asp-.net-open-source-projects-github-2024.md)
   * [Free Themes and Templates from Creative Tim](collections/free-themes-and-templates-from-creative-tim.md)
-  * [Cách tối ưu hóa kích thước thư mục .git để cải thiện hiệu suất](collections/cach-toi-uu-hoa-kich-thuoc-thu-muc-.git-de-cai-thien-hieu-suat.md)
 * [Open Source](open-source/README.md)
   * [shadcn-ui/ui](open-source/shadcn-ui-ui.md)
   * [Kuma UI](open-source/kuma-ui.md)
