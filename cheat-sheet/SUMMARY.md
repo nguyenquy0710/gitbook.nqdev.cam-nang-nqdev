@@ -8,6 +8,7 @@
   * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
 * [HAProxy Cheat sheet](cong-nghe/haproxy-cheat-sheet/README.md)
   * [Cấu Hình và Tính Năng Nổi Bật](cong-nghe/haproxy-cheat-sheet/cau-hinh-va-tinh-nang-noi-bat.md)
+  * [Hướng Dẫn Cấu Hình Log Format Trong HAProxy](cong-nghe/haproxy-cheat-sheet/huong-dan-cau-hinh-log-format-trong-haproxy.md)
   * [HAProxy Stats](cong-nghe/haproxy-cheat-sheet/haproxy-stats.md)
   * [HAProxy WI](cong-nghe/haproxy-cheat-sheet/haproxy-wi.md)
   * [HAProxy Lua API](cong-nghe/haproxy-cheat-sheet/haproxy-lua-api/README.md)
