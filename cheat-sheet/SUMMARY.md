@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Giới thiệu](README.md)
+* [Overview](https://blogs.nhquydev.net/?utm\_source=gitbook\&utm\_medium=blogs)
 
 ## Công nghệ
 
-* [Linux Commands Cheat sheet](cong-nghe/linux-commands-cheat-sheet/README.md)
+* [Linux Commands Cheat sheet](README.md)
   * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
 * [HAProxy Cheat sheet](cong-nghe/haproxy-cheat-sheet/README.md)
   * [Cấu Hình và Tính Năng Nổi Bật](cong-nghe/haproxy-cheat-sheet/cau-hinh-va-tinh-nang-noi-bat.md)
@@ -20,9 +20,3 @@
   * [Hướng Dẫn Nhanh về Các Lệnh Git Cơ Bản](cong-nghe/git-cheat-sheet/huong-dan-nhanh-ve-cac-lenh-git-co-ban.md)
   * [20 lệnh Git hữu ích mọi lập trình viên nên biết](cong-nghe/git-cheat-sheet/20-lenh-git-huu-ich-moi-lap-trinh-vien-nen-biet.md)
   * [Cách tối ưu hóa kích thước thư mục .git để cải thiện hiệu suất](cong-nghe/git-cheat-sheet/cach-toi-uu-hoa-kich-thuoc-thu-muc-.git-de-cai-thien-hieu-suat.md)
-
-## Ứng dụng
-
-* [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/su-dung-sms-va-zns-cua-esms-de-quang-cao-va-cham-soc-khach-hang-hieu-qua.md)
-* [Airbyte - Open-Source Data Integration Platform](ung-dung/airbyte-open-source-data-integration-platform/README.md)
-  * [Docker Compose](ung-dung/airbyte-open-source-data-integration-platform/docker-compose.md)
