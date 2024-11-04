@@ -6,6 +6,17 @@ description: 'Hướng Dẫn Sử Dụng HAProxy: Cấu Hình và Tính Năng N�
 
 HAProxy (High Availability Proxy) là một phần mềm mã nguồn mở được sử dụng phổ biến để cân bằng tải và tạo proxy cho các ứng dụng web. Với khả năng xử lý hàng triệu kết nối đồng thời, HAProxy rất phù hợp cho các môi trường yêu cầu cao về hiệu suất và độ tin cậy.
 
+{% hint style="info" %}
+_Một số trang tài liệu từ HAProxy mà có bạn quan tâm:_
+
+* \[HAProxy Runtime API]\([https://www.haproxy.com/documentation/haproxy-runtime-api/](https://www.haproxy.com/documentation/haproxy-runtime-api/))
+* \[HAProxy Lua API]\([https://www.haproxy.com/documentation/haproxy-lua-api/](https://www.haproxy.com/documentation/haproxy-lua-api/))
+* \[Install the HAProxy Data Plane API on HAProxy]\([https://www.haproxy.com/documentation/haproxy-data-plane-api/installation/install-on-haproxy/](https://www.haproxy.com/documentation/haproxy-data-plane-api/installation/install-on-haproxy/))
+* \[HAProxy config tutorials]\([https://www.haproxy.com/documentation/haproxy-configuration-tutorials/](https://www.haproxy.com/documentation/haproxy-configuration-tutorials/))
+{% endhint %}
+
+
+
 ### Tại Sao Nên Sử Dụng HAProxy?
 
 1. **Cân Bằng Tải**: HAProxy có khả năng phân phối tải giữa nhiều máy chủ, giúp cải thiện hiệu suất và đảm bảo rằng không có máy chủ nào bị quá tải.
