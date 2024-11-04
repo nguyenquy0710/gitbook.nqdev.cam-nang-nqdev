@@ -47,3 +47,7 @@
   * [Free Themes and Templates from Creative Tim](huong-dan/free-themes-and-templates-from-creative-tim.md)
 * [So Sánh](so-sanh/README.md)
   * [So Sánh Apache Parquet và CSV: Bảng So Sánh Chi Tiết, Ưu và Nhược Điểm](so-sanh/so-sanh-apache-parquet-va-csv-bang-so-sanh-chi-tiet-uu-va-nhuoc-diem.md)
+* [Ứng dụng](ung-dung/README.md)
+  * [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/esmsvn-cham-soc-khach-hang-hieu-qua-voi-sms-va-zns.md)
+  * [Airbyte: Open-Source Data Integration Platform](ung-dung/airbyte-open-source-data-integration-platform/README.md)
+    * [Docker Compose](ung-dung/airbyte-open-source-data-integration-platform/docker-compose.md)
