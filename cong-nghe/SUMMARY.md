@@ -20,6 +20,8 @@
     * [CQRS and MediatR trong .NET Core](design-patterns/cqrs-pattern/cqrs-and-mediatr-trong-.net-core.md)
 * [Giới thiệu về Các Loại Cơ Sở Dữ Liệu](gioi-thieu-ve-cac-loai-co-so-du-lieu/README.md)
   * [1. HSQLDB (HyperSQL Database)](gioi-thieu-ve-cac-loai-co-so-du-lieu/1.-hsqldb-hypersql-database.md)
+  * [So Sánh Apache Parquet và CSV: Bảng So Sánh Chi Tiết, Ưu và Nhược Điểm](gioi-thieu-ve-cac-loai-co-so-du-lieu/so-sanh-apache-parquet-va-csv-bang-so-sanh-chi-tiet-uu-va-nhuoc-diem.md)
+  * [Giới Thiệu và Hướng Dẫn Về DuckDB](gioi-thieu-ve-cac-loai-co-so-du-lieu/gioi-thieu-va-huong-dan-ve-duckdb.md)
 * [SQL Server](sql-server/README.md)
   * [SQL Server Basics](sql-server/sql-server-basics.md)
   * [Bảng tạm và sự linh hoạt trong xử lý dữ liệu lớn](sql-server/bang-tam-va-su-linh-hoat-trong-xu-ly-du-lieu-lon.md)
