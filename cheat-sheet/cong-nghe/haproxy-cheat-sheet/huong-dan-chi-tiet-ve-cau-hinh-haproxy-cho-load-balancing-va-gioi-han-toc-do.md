@@ -136,9 +136,9 @@ backend backend_maintaince_server
 
 ## Giải thích chi tiết từng thành phần
 
-### Cấu hình `listen stats`
+### [Cấu hình `listen stats`](haproxy-stats.md)
 
-Phần cấu hình [`listen stats`](haproxy-stats.md) trong HAProxy cho phép bạn thiết lập một trang thống kê trên cổng 7001, nơi bạn có thể giám sát tình trạng của các frontend, backend, cũng như các server thành viên. Trang thống kê cung cấp thông tin chi tiết về lưu lượng, hiệu suất và trạng thái của từng thành phần trong HAProxy, rất hữu ích cho việc theo dõi và phân tích.
+Phần cấu hình `listen stats` trong HAProxy cho phép bạn thiết lập một trang thống kê trên cổng 7001, nơi bạn có thể giám sát tình trạng của các frontend, backend, cũng như các server thành viên. Trang thống kê cung cấp thông tin chi tiết về lưu lượng, hiệu suất và trạng thái của từng thành phần trong HAProxy, rất hữu ích cho việc theo dõi và phân tích.
 
 ```plaintext
 listen stats
