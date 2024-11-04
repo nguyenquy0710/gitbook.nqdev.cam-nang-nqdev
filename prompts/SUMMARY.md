@@ -15,6 +15,7 @@
 ## phát triển ý tưởng
 
 * [ChatGPT - Phát triển ý tưởng](phat-trien-y-tuong/chatgpt-phat-trien-y-tuong.md)
+* [Prompt: Sáng tạo nội dung blog](phat-trien-y-tuong/prompt-sang-tao-noi-dung-blog.md)
 
 ## Gemini
 
