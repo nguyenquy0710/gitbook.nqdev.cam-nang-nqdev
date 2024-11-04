@@ -11,6 +11,7 @@
   * [Hướng Dẫn Cấu Hình Log Format Trong HAProxy](cong-nghe/haproxy-cheat-sheet/huong-dan-cau-hinh-log-format-trong-haproxy.md)
   * [HAProxy Stats](cong-nghe/haproxy-cheat-sheet/haproxy-stats.md)
   * [HAProxy Rate Limiting](cong-nghe/haproxy-cheat-sheet/haproxy-rate-limiting/README.md)
+    * [Hướng dẫn cấu hình Rate Limiting trong HAProxy để chống DDoS](cong-nghe/haproxy-cheat-sheet/haproxy-rate-limiting/huong-dan-cau-hinh-rate-limiting-trong-haproxy-de-chong-ddos.md)
     * [Rate Limiting: http-request track](cong-nghe/haproxy-cheat-sheet/haproxy-rate-limiting/rate-limiting-http-request-track.md)
   * [HAProxy WI](cong-nghe/haproxy-cheat-sheet/haproxy-wi.md)
   * [HAProxy Lua API](cong-nghe/haproxy-cheat-sheet/haproxy-lua-api/README.md)
