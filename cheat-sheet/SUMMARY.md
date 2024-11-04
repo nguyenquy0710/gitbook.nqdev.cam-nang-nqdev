@@ -13,6 +13,7 @@
   * [HAProxy WI](cong-nghe/haproxy-cheat-sheet/haproxy-wi.md)
   * [HAProxy Lua API](cong-nghe/haproxy-cheat-sheet/haproxy-lua-api/README.md)
     * [Bắt đầu với HAProxy Lua API](cong-nghe/haproxy-cheat-sheet/haproxy-lua-api/bat-dau-voi-haproxy-lua-api.md)
+    * [Theo Dõi Yêu Cầu HTTP trong HAProxy với http-request track và Timestamp](cong-nghe/haproxy-cheat-sheet/haproxy-lua-api/theo-doi-yeu-cau-http-trong-haproxy-voi-http-request-track-va-timestamp.md)
 * [IPTables Commands Cheat sheet](cong-nghe/iptables-commands-cheat-sheet.md)
 * [Redis Commands Cheat sheet](cong-nghe/redis-commands-cheat-sheet.md)
 * [Git Cheat sheet](cong-nghe/git-cheat-sheet/README.md)
