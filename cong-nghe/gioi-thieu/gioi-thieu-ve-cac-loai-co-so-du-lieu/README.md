@@ -38,7 +38,7 @@ PostgreSQL là một hệ quản trị cơ sở dữ liệu quan hệ mạnh m�
 
 **Ứng dụng**: PostgreSQL được sử dụng rộng rãi trong các hệ thống yêu cầu cao về tính nhất quán dữ liệu và hiệu suất, từ các hệ thống giao dịch đến các ứng dụng phân tích dữ liệu lớn.
 
-## 4. **SQL Server**
+## [4. **SQL Server**](../../sql-server/)
 
 SQL Server là hệ quản trị cơ sở dữ liệu quan hệ của Microsoft, được thiết kế để hoạt động tốt trong các hệ thống lớn và môi trường doanh nghiệp. SQL Server hỗ trợ nhiều tính năng nâng cao:
 
