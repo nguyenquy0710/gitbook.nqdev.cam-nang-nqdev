@@ -8,11 +8,11 @@ description: 'Giới Thiệu và Hướng Dẫn Về DuckDB: Hệ Quản Trị C
 
 ***
 
-## Giới Thiệu Về DuckDB
+### Giới Thiệu Về DuckDB
 
 DuckDB ra đời nhằm cung cấp một giải pháp cơ sở dữ liệu **phân tích** mạnh mẽ, đặc biệt là trong các tình huống xử lý **dữ liệu lớn**. Khác với các cơ sở dữ liệu OLTP (xử lý giao dịch trực tuyến) như SQLite, DuckDB thiên về OLAP (xử lý phân tích trực tuyến), giúp bạn thực hiện các phép tính phức tạp trên nhiều bản ghi với tốc độ rất nhanh.
 
-### Các Tính Năng Nổi Bật của DuckDB
+#### Các Tính Năng Nổi Bật của DuckDB
 
 * **Hiệu Suất Tối Ưu** cho các tác vụ phân tích và xử lý dữ liệu lớn.
 * **Chạy trong Bộ Nhớ** với khả năng xử lý truy vấn tốc độ cao.
@@ -24,11 +24,11 @@ Bạn có thể tham khảo thêm về DuckDB qua tài liệu chính thức tạ
 
 ***
 
-## Hướng Dẫn Cài Đặt DuckDB
+### Hướng Dẫn Cài Đặt DuckDB
 
 DuckDB có thể dễ dàng cài đặt trên các hệ điều hành phổ biến. Dưới đây là hướng dẫn nhanh để cài đặt DuckDB.
 
-### 1. Cài Đặt DuckDB qua Python (pip)
+#### 1. Cài Đặt DuckDB qua Python (pip)
 
 DuckDB có thể cài đặt nhanh chóng thông qua pip:
 
@@ -36,7 +36,7 @@ DuckDB có thể cài đặt nhanh chóng thông qua pip:
 pip install duckdb
 ```
 
-### 2. Cài Đặt DuckDB trên Các Hệ Điều Hành Khác
+#### 2. Cài Đặt DuckDB trên Các Hệ Điều Hành Khác
 
 Bạn có thể tải DuckDB từ [Trang Tải về DuckDB](https://duckdb.org/docs/installation/) và làm theo hướng dẫn cài đặt cụ thể cho hệ điều hành của mình.
 
@@ -44,7 +44,7 @@ Sau khi cài đặt thành công, bạn có thể sử dụng DuckDB qua dòng l
 
 ***
 
-## So Sánh DuckDB với SQLite
+### So Sánh DuckDB với SQLite
 
 Dưới đây là bảng so sánh chi tiết giữa **DuckDB** và **SQLite**, giúp bạn dễ dàng nhận thấy sự khác biệt và lựa chọn hệ cơ sở dữ liệu phù hợp cho dự án của mình.
 
@@ -63,9 +63,9 @@ Dưới đây là bảng so sánh chi tiết giữa **DuckDB** và **SQLite**, g
 
 ***
 
-## Ưu và Nhược Điểm của DuckDB và SQLite
+### Ưu và Nhược Điểm của DuckDB và SQLite
 
-### DuckDB
+#### DuckDB
 
 #### **Ưu Điểm:**
 
@@ -79,7 +79,7 @@ Dưới đây là bảng so sánh chi tiết giữa **DuckDB** và **SQLite**, g
 * **Không phù hợp cho giao dịch nhỏ:** DuckDB không phải là lựa chọn tốt cho các tác vụ OLTP hoặc các giao dịch nhỏ và liên tục.
 * **Ít phổ biến hơn SQLite:** Vì là công nghệ mới hơn, DuckDB chưa có độ phổ biến rộng rãi như SQLite, đặc biệt là trong các ứng dụng nhúng.
 
-### SQLite
+#### SQLite
 
 #### **Ưu Điểm:**
 
@@ -95,15 +95,15 @@ Dưới đây là bảng so sánh chi tiết giữa **DuckDB** và **SQLite**, g
 
 ***
 
-## Khi Nào Nên Sử Dụng DuckDB và SQLite?
+### Khi Nào Nên Sử Dụng DuckDB và SQLite?
 
-### Sử Dụng DuckDB Khi:
+#### Sử Dụng DuckDB Khi:
 
 * Bạn cần thực hiện phân tích dữ liệu lớn, phức tạp trên các bộ dữ liệu lớn.
 * Dự án tập trung vào xử lý và phân tích dữ liệu theo cột, đặc biệt là với Python.
 * Bạn cần một giải pháp nhanh chóng, nhẹ nhàng cho các tác vụ OLAP trên máy tính cá nhân hoặc máy chủ cục bộ.
 
-### Sử Dụng SQLite Khi:
+#### Sử Dụng SQLite Khi:
 
 * Ứng dụng của bạn là các tác vụ OLTP với giao dịch nhỏ và đơn giản.
 * Bạn cần một cơ sở dữ liệu nhẹ, dễ triển khai trong các ứng dụng nhúng và di động.
@@ -111,6 +111,6 @@ Dưới đây là bảng so sánh chi tiết giữa **DuckDB** và **SQLite**, g
 
 ***
 
-## Kết Luận
+### Kết Luận
 
 DuckDB và SQLite đều có các ưu và nhược điểm khác nhau tùy vào mục đích sử dụng. **DuckDB** nổi bật với khả năng xử lý và phân tích dữ liệu lớn nhanh chóng, trong khi **SQLite** lại được ưa chuộng nhờ tính đơn giản và tính phổ biến trong các ứng dụng nhẹ. Nếu bạn đang tìm kiếm một công cụ mạnh mẽ cho phân tích dữ liệu trực tiếp, DuckDB là lựa chọn tuyệt vời. Còn với các ứng dụng giao dịch đơn giản, SQLite vẫn là lựa chọn hàng đầu.
