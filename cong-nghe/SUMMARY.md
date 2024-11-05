@@ -45,6 +45,7 @@
   * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](huong-dan/top-10-asp-.net-open-source-projects-github-2024.md)
   * [Free Themes and Templates from Creative Tim](huong-dan/free-themes-and-templates-from-creative-tim.md)
+  * [Hướng dẫn sử dụng Voler và Mazer Dashboard từ Zuramai](huong-dan/huong-dan-su-dung-voler-va-mazer-dashboard-tu-zuramai.md)
 * [So Sánh](so-sanh/README.md)
   * [So Sánh Apache Parquet và CSV: Bảng So Sánh Chi Tiết, Ưu và Nhược Điểm](so-sanh/so-sanh-apache-parquet-va-csv-bang-so-sanh-chi-tiet-uu-va-nhuoc-diem.md)
 * [Ứng dụng](ung-dung/README.md)
