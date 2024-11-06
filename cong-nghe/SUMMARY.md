@@ -4,6 +4,8 @@
 * [DotNET](dotnet/README.md)
   * [Core CLI](dotnet/core-cli/README.md)
     * [Installing the tools](dotnet/core-cli/installing-the-tools.md)
+  * [ASP.NET Core](dotnet/asp.net-core/README.md)
+    * [Hướng dẫn sử dụng tệp .http trong Visual Studio 2022 để thực hiện HTTP Requests](dotnet/asp.net-core/huong-dan-su-dung-tep-.http-trong-visual-studio-2022-de-thuc-hien-http-requests.md)
   * [MSTest](dotnet/mstest/README.md)
     * [MSTest 3.4 đã có mặt với sự hỗ trợ của WinUI và các bộ phân tích mới!](dotnet/mstest/mstest-3.4-da-co-mat-voi-su-ho-tro-cua-winui-va-cac-bo-phan-tich-moi.md)
   * [Optimize](dotnet/optimize/README.md)
