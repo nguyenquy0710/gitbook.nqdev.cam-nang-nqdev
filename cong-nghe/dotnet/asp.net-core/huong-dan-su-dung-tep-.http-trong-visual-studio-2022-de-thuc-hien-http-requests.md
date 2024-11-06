@@ -107,6 +107,47 @@ Sử dụng tệp `.http` trong Visual Studio mang lại một số lợi ích:
 * **Có thể tùy chỉnh**: Sử dụng các biến và headers để cấu hình các yêu cầu linh hoạt.
 * **Hỗ trợ cho teamwork**: Các tệp `.http` có thể chia sẻ qua Git, giúp đồng đội dễ dàng kiểm tra và debug API.
 
+### Ví dụ
+
+{% code title="demo-vscode.rest" overflow="wrap" %}
+```http
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# REST Client for Visual Studio Code
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# ----------
+# Provide system dynamic variables
+# - {{$guid}}
+# - {{$randomInt min max}}
+# - {{$timestamp [offset option]}}
+# - {{$datetime rfc1123|iso8601 [offset option]}}
+# - {{$localDatetime rfc1123|iso8601 [offset option]}}
+# - {{$processEnv [%]envVarName}}
+# - {{$dotenv [%]variableName}}
+# - {{$aadToken [new] [public|cn|de|us|ppe] [<domain|tenantId>] [aud:<domain|tenantId>]}}
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+@HostAddress = https://httpbin.org
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+@modifiedBy = {{$processEnv USERNAME}}
+
+### 
+
+GET  {{HostAddress}}/headers HTTP/1.1
+Accept: application/json
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-Type: application/json
+Authorization: token xxx
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+```
+{% endcode %}
+
+
+
 ### **Kết Luận**
 
 Tệp `.http` trong Visual Studio 2022 là công cụ tiện lợi giúp bạn kiểm thử các yêu cầu HTTP một cách dễ dàng và hiệu quả. Hy vọng hướng dẫn này sẽ giúp các kỹ thuật viên nhanh chóng làm quen và tận dụng tối đa tính năng này trong công việc hàng ngày.
