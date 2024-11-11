@@ -10,7 +10,7 @@ Một trong những phương pháp tối ưu hóa phổ biến nhất là sử d
 
 ### 1. **Varnish Cache**: Caching Tối Ưu Cho HTTP
 
-**Varnish Cache** là một công cụ reverse proxy caching mạnh mẽ, chuyên dụng để tối ưu hóa các trang web và dịch vụ web. Varnish được thiết kế đặc biệt để xử lý các yêu cầu HTTP/HTTPS, giúp giảm tải cho các máy chủ ứng dụng và nâng cao tốc độ truy cập của người dùng.
+[**Varnish Cache**](https://app.gitbook.com/s/IpMS89tIthA28J59k5Qy/caching/varnish-cache/huong-dan-cai-dat-varnish-cache-voi-haproxy-su-dung-docker-compose) là một công cụ reverse proxy caching mạnh mẽ, chuyên dụng để tối ưu hóa các trang web và dịch vụ web. Varnish được thiết kế đặc biệt để xử lý các yêu cầu HTTP/HTTPS, giúp giảm tải cho các máy chủ ứng dụng và nâng cao tốc độ truy cập của người dùng.
 
 #### **Đặc điểm nổi bật của Varnish:**
 
@@ -20,7 +20,7 @@ Một trong những phương pháp tối ưu hóa phổ biến nhất là sử d
 
 #### **Ứng dụng**:
 
-Varnish rất phù hợp cho các trang web động hoặc các dịch vụ API cần tối ưu hóa hiệu suất, đặc biệt là các trang web có lượng truy cập cao và cần phục vụ nhanh chóng các nội dung tĩnh (ví dụ: ảnh, CSS, JavaScript).
+**Varnish** rất phù hợp cho các trang web động hoặc các dịch vụ API cần tối ưu hóa hiệu suất, đặc biệt là các trang web có lượng truy cập cao và cần phục vụ nhanh chóng các nội dung tĩnh (ví dụ: ảnh, CSS, JavaScript).
 
 ### 2. **Memcached**: Caching Key-Value Đơn Giản
 
@@ -34,7 +34,7 @@ Varnish rất phù hợp cho các trang web động hoặc các dịch vụ API 
 
 #### **Ứng dụng**:
 
-Memcached thường được sử dụng trong các ứng dụng web để lưu trữ các đối tượng tạm thời như phiên người dùng, kết quả truy vấn cơ sở dữ liệu hoặc các dữ liệu yêu cầu tốc độ truy cập nhanh.
+**Memcached** thường được sử dụng trong các ứng dụng web để lưu trữ các đối tượng tạm thời như phiên người dùng, kết quả truy vấn cơ sở dữ liệu hoặc các dữ liệu yêu cầu tốc độ truy cập nhanh.
 
 ### 3. **Redis**: Công Cụ Cache Mạnh Mẽ và Linh Hoạt
 
@@ -48,11 +48,11 @@ Memcached thường được sử dụng trong các ứng dụng web để lưu 
 
 #### **Ứng dụng**:
 
-Redis rất phù hợp cho các ứng dụng đòi hỏi không chỉ caching mà còn cần xử lý các tác vụ phức tạp như hệ thống quản lý hàng đợi, message broker, hoặc cơ sở dữ liệu tạm thời với các tính năng như đồng bộ dữ liệu và Pub/Sub.
+**Redis** rất phù hợp cho các ứng dụng đòi hỏi không chỉ caching mà còn cần xử lý các tác vụ phức tạp như hệ thống quản lý hàng đợi, message broker, hoặc cơ sở dữ liệu tạm thời với các tính năng như đồng bộ dữ liệu và Pub/Sub.
 
 ### So Sánh Tóm Tắt
 
-| Tiêu chí                | **Varnish Cache**                              | **Memcached**                                 | **Redis**                                                       |
+| Tiêu chí                | Varnish Cache                                  | Memcached                                     | Redis                                                           |
 | ----------------------- | ---------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------- |
 | **Mục đích chính**      | HTTP reverse proxy cache                       | Caching dữ liệu key-value                     | Caching, message broker, cơ sở dữ liệu tạm thời                 |
 | **Khả năng lưu trữ**    | Lưu trữ các phản hồi HTTP                      | Lưu trữ key-value trong bộ nhớ RAM            | Lưu trữ key-value và nhiều kiểu dữ liệu phức tạp                |
