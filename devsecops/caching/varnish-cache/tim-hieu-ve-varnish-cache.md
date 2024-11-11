@@ -120,3 +120,13 @@ Lệnh này cho phép bạn xem thống kê chi tiết về các yêu cầu vào
 Varnish Cache là một công cụ mạnh mẽ giúp tối ưu hóa hiệu suất của các website, đặc biệt là với những website có lượng truy cập cao và cần tối ưu tốc độ tải trang. Mặc dù việc cấu hình Varnish có thể đòi hỏi một chút thời gian và công sức, nhưng lợi ích mà nó mang lại cho website là rất lớn. Varnish giúp giảm tải cho server, cải thiện tốc độ và trải nghiệm người dùng, và có khả năng mở rộng tốt khi xử lý lưu lượng truy cập lớn.
 
 Với các lệnh cơ bản và công cụ mạnh mẽ như **Varnish Admin**, **varnishlog**, **varnishstat**, và **varnishhist**, người quản trị có thể dễ dàng theo dõi và quản lý Varnish để tối ưu hóa hiệu suất của hệ thống.
+
+***
+
+{% code title="Tài liệu tham khảo" lineNumbers="true" %}
+```
+- https://www.varnish-cache.org/docs/3.0/reference/index.html 
+- https://www.varnish-cache.org/docs/trunk/reference/varnish-cli.html#help-command
+```
+{% endcode %}
+
