@@ -6,6 +6,7 @@
 * [Cách dùng Docker để phát triển ứng dụng Wordpress](cach-dung-docker-de-phat-trien-ung-dung-wordpress.md)
 * [Hệ thống phân giải tên miền (DNS) và các loại bản ghi](he-thong-phan-giai-ten-mien-dns-va-cac-loai-ban-ghi.md)
 * [OS Linux](os-linux/README.md)
+  * [Tập lệnh Linux hay dùng](os-linux/tap-lenh-linux-hay-dung.md)
   * [Hướng Dẫn Kiểm Tra Các Cổng Đang Mở Trên Hệ Thống CentOS](os-linux/huong-dan-kiem-tra-cac-cong-dang-mo-tren-he-thong-centos.md)
 * [VMware](vmware/README.md)
   * [Cách ảo hóa macOS Sierra trong VMWare Windows 10](vmware/cach-ao-hoa-macos-sierra-trong-vmware-windows-10.md)
