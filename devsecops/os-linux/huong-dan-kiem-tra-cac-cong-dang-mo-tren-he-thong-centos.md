@@ -86,7 +86,31 @@ Lệnh này sẽ trả về danh sách các cổng đang mở trong tường l�
 80/tcp 22/tcp
 ```
 
-### **5. Sử Dụng `nmap` (Network Mapper)**
+### **5. Sử Dụng** `iptables`
+
+Để liệt kê các quy tắc (rules) trong `iptables`, bạn có thể sử dụng lệnh:
+
+```bash
+sudo iptables -L -n -v
+```
+
+* `-L` : Liệt kê các quy tắc trong tường lửa.
+* `-n` : Hiển thị địa chỉ IP và cổng dưới dạng số, không phân giải tên miền.
+* `-v` : Hiển thị chi tiết về số lượng kết nối và lưu lượng mạng qua các quy tắc.
+
+Kết quả sẽ trông giống như sau:
+
+```sql
+Chain INPUT (policy ACCEPT 1234 packets, 23456 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1234  23456 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            state RELATED,ESTABLISHED
+ 5678  67890 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+ 4321  12345 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+```
+
+Ở đây, cổng 22 (SSH) và cổng 80 (HTTP) đang mở và được phép qua firewall. Bạn có thể tìm thấy các cổng mà bạn muốn kiểm tra trong các mục `dpt:<port_number>`.
+
+### **6. Sử Dụng `nmap` (Network Mapper)**
 
 `nmap` là công cụ mạnh mẽ giúp quét các cổng và khám phá các dịch vụ mạng trên một thiết bị. Tuy nhiên, `nmap` có thể không được cài đặt sẵn, bạn có thể cài đặt bằng lệnh:
 
