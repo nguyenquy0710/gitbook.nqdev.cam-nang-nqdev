@@ -35,6 +35,8 @@
 * [ReactJS](reactjs/README.md)
   * [Hiểu về hook useRef của React như thế nào cho đúng](<README (1).md>)
   * [Tìm hiểu sâu hơn về useEffect từ A-Z](react/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md)
+* [Templates](templates/README.md)
+  * [Tabler Admin Template: Xây dựng Dashboard Quản trị đẹp mắt và dễ dàng](templates/tabler-admin-template-xay-dung-dashboard-quan-tri-dep-mat-va-de-dang.md)
 * [Open Source](open-source/README.md)
   * [shadcn-ui/ui](open-source/shadcn-ui-ui.md)
   * [Kuma UI](open-source/kuma-ui.md)
