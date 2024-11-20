@@ -2,6 +2,8 @@
 
 Khi lưu trữ và phân tích dữ liệu, việc lựa chọn định dạng lưu trữ ảnh hưởng rất lớn đến hiệu suất và khả năng mở rộng của hệ thống. **Apache Parquet** và **CSV** là hai định dạng phổ biến nhưng được thiết kế với mục tiêu sử dụng khác nhau. Trong bài viết này, chúng ta sẽ tìm hiểu chi tiết từng định dạng, lập bảng so sánh và phân tích ưu, nhược điểm của từng loại để giúp bạn có cái nhìn rõ ràng và lựa chọn phù hợp cho nhu cầu của mình.
 
+<figure><img src="../.gitbook/assets/Apache-Parquet-vs-CSV.png" alt="Apache Parquet và CSV" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### Tổng Quan Về Apache Parquet và CSV
@@ -65,6 +67,8 @@ Khi lưu trữ và phân tích dữ liệu, việc lựa chọn định dạng l
 * **Thiếu hỗ trợ loại dữ liệu phức tạp:** Dễ mất đi định dạng và loại dữ liệu trong quá trình lưu trữ, gây khó khăn khi phân tích dữ liệu phức tạp.
 * **Không tối ưu cho hệ thống phân tán:** CSV không phù hợp cho việc lưu trữ dữ liệu trên các hệ thống phân tán như Hadoop hay Spark.
 
+
+
 ***
 
 ### Khi Nào Nên Sử Dụng Apache Parquet và CSV?
@@ -90,3 +94,10 @@ Khi lưu trữ và phân tích dữ liệu, việc lựa chọn định dạng l
 Cả Apache Parquet và CSV đều là những định dạng lưu trữ phổ biến nhưng với mục tiêu khác nhau. **Apache Parquet** phù hợp cho các hệ thống phân tán và xử lý dữ liệu lớn, nhờ khả năng nén cao và lưu trữ dữ liệu theo cột. **CSV** lại dễ sử dụng và thân thiện với người dùng, thích hợp cho các dữ liệu nhỏ, không phức tạp và không yêu cầu xử lý nặng.
 
 Hy vọng qua bài viết này, bạn có cái nhìn tổng quan và có thể chọn định dạng lưu trữ phù hợp nhất cho dự án của mình.
+
+{% code title="Tài liệu tham khảo:" %}
+```http
+- https://www.linkedin.com/pulse/apache-parquet-vs-csv-nikhil-tale-gf1sf
+```
+{% endcode %}
+
