@@ -55,3 +55,5 @@
   * [So Sánh Varnish Cache, Memcached và Redis: Ba Công Cụ Caching Phổ Biến trong Tối Ưu Hóa Hiệu Suất](so-sanh/so-sanh-varnish-cache-memcached-va-redis-ba-cong-cu-caching-pho-bien-trong-toi-uu-hoa-hieu-suat.md)
 * [Affiliate](ung-dung/README.md)
   * [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/esmsvn-cham-soc-khach-hang-hieu-qua-voi-sms-va-zns.md)
+* [Elasticsearch](elasticsearch/README.md)
+  * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](elasticsearch/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-\_reindex.md)
