@@ -59,3 +59,4 @@
   * [\_reindex](elasticsearch/\_reindex/README.md)
     * [Tìm hiểu sâu về API \_reindex trong Elasticsearch](elasticsearch/\_reindex/tim-hieu-sau-ve-api-\_reindex-trong-elasticsearch.md)
     * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](elasticsearch/\_reindex/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-\_reindex.md)
+  * [\_transform](elasticsearch/\_transform.md)
