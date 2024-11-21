@@ -11,6 +11,29 @@
 5. [**Đưa cơ sở dữ liệu trở lại chế độ Online**.](cac-buoc-di-chuyen-tep-log-trong-sql-server.md#buoc-5-dua-co-so-du-lieu-tro-lai-che-do-online)
 6. [**Kiểm tra lại trạng thái** của các file để xác nhận rằng các thay đổi đã được áp dụng chính xác.](cac-buoc-di-chuyen-tep-log-trong-sql-server.md#buoc-6-kiem-tra-lai-trang-thai-cua-cac-file)
 
+Nếu bạn gặp phải bất kỳ vấn đề nào trong quá trình này, đừng ngần ngại yêu cầu thêm hướng dẫn!
+
+***
+
+## **Lưu Ý Quan Trọng**
+
+1. **Quyền truy cập thư mục mới**:
+   * Đảm bảo rằng tài khoản SQL Server (thường là `NT Service\MSSQLSERVER` hoặc tài khoản dịch vụ SQL Server) có đủ quyền **đọc và ghi** vào thư mục mới nơi bạn đã di chuyển các file.
+2. **Sao lưu trước khi thực hiện**:
+   * Trước khi thực hiện bất kỳ thay đổi nào, hãy sao lưu cơ sở dữ liệu và tệp log để phòng trường hợp có sự cố xảy ra trong quá trình di chuyển.
+3. **Không có kết nối khi di chuyển**:
+   * Cơ sở dữ liệu phải ở chế độ Offline khi bạn di chuyển các file. Nếu có người dùng hoặc ứng dụng đang kết nối với cơ sở dữ liệu, bạn sẽ không thể thực hiện các thao tác này.
+4. **Kiểm tra không có lỗi sau khi di chuyển**:
+   * Sau khi hoàn tất, luôn kiểm tra các log của SQL Server (tìm lỗi trong SQL Server Error Log) để đảm bảo rằng không có lỗi xảy ra trong quá trình di chuyển file.
+5. **Ảnh hưởng đến hiệu suất**:
+   * Nếu cơ sở dữ liệu của bạn có kích thước lớn và tệp log hoạt động liên tục, quá trình di chuyển có thể mất một khoảng thời gian dài. Hãy chọn thời điểm thực hiện khi không có người dùng kết nối hoặc tác vụ quan trọng.
+6. **Chế độ Offline và Online**:
+   * Trong khi cơ sở dữ liệu ở chế độ Offline, người dùng sẽ không thể truy cập vào cơ sở dữ liệu. Hãy thực hiện vào thời điểm ít người dùng nhất để tránh gián đoạn công việc.
+7. **Thực hiện trong môi trường thử nghiệm**:
+   * Nếu có thể, hãy thử thực hiện các thao tác này trên một cơ sở dữ liệu thử nghiệm trước khi thực hiện trên môi trường sản xuất.
+
+***
+
 ## **Chi Tiết Từng Bước**
 
 ### **Bước 1: Kiểm tra thông tin hiện tại về các file**
@@ -126,23 +149,6 @@ GO
 * **Giải thích**: Kiểm tra lại thông tin về các file để xác nhận rằng các file đã được di chuyển và đường dẫn mới đã được cập nhật đúng.
 
 ***
-
-## **Lưu Ý Quan Trọng**
-
-1. **Quyền truy cập thư mục mới**:
-   * Đảm bảo rằng tài khoản SQL Server (thường là `NT Service\MSSQLSERVER` hoặc tài khoản dịch vụ SQL Server) có đủ quyền **đọc và ghi** vào thư mục mới nơi bạn đã di chuyển các file.
-2. **Sao lưu trước khi thực hiện**:
-   * Trước khi thực hiện bất kỳ thay đổi nào, hãy sao lưu cơ sở dữ liệu và tệp log để phòng trường hợp có sự cố xảy ra trong quá trình di chuyển.
-3. **Không có kết nối khi di chuyển**:
-   * Cơ sở dữ liệu phải ở chế độ Offline khi bạn di chuyển các file. Nếu có người dùng hoặc ứng dụng đang kết nối với cơ sở dữ liệu, bạn sẽ không thể thực hiện các thao tác này.
-4. **Kiểm tra không có lỗi sau khi di chuyển**:
-   * Sau khi hoàn tất, luôn kiểm tra các log của SQL Server (tìm lỗi trong SQL Server Error Log) để đảm bảo rằng không có lỗi xảy ra trong quá trình di chuyển file.
-5. **Ảnh hưởng đến hiệu suất**:
-   * Nếu cơ sở dữ liệu của bạn có kích thước lớn và tệp log hoạt động liên tục, quá trình di chuyển có thể mất một khoảng thời gian dài. Hãy chọn thời điểm thực hiện khi không có người dùng kết nối hoặc tác vụ quan trọng.
-6. **Chế độ Offline và Online**:
-   * Trong khi cơ sở dữ liệu ở chế độ Offline, người dùng sẽ không thể truy cập vào cơ sở dữ liệu. Hãy thực hiện vào thời điểm ít người dùng nhất để tránh gián đoạn công việc.
-7. **Thực hiện trong môi trường thử nghiệm**:
-   * Nếu có thể, hãy thử thực hiện các thao tác này trên một cơ sở dữ liệu thử nghiệm trước khi thực hiện trên môi trường sản xuất.
 
 ## **Kết luận**
 
