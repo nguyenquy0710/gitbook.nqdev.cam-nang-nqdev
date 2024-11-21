@@ -28,6 +28,8 @@
     * [DBCC SHRINKDATABASE](sql-server/sql-server-dbcc/dbcc-shrinkdatabase.md)
     * [DBCC SHRINKFILE](sql-server/sql-server-dbcc/dbcc-shrinkfile.md)
     * [DBCC SQLPERF](sql-server/sql-server-dbcc/dbcc-sqlperf.md)
+  * [SQL Server Replication](sql-server/sql-server-replication/README.md)
+    * [Giới thiệu SQL Server Replication](sql-server/sql-server-replication/gioi-thieu-sql-server-replication.md)
   * [SQL Server: Tập lệnh](sql-server/sql-server-tap-lenh/README.md)
     * [SQL Server: Tập lệnh để tìm tất cả các giá trị Mặc định với Cột](sql-server/sql-server-tap-lenh/sql-server-tap-lenh-de-tim-tat-ca-cac-gia-tri-mac-dinh-voi-cot.md)
   * [Bảng tạm và sự linh hoạt trong xử lý dữ liệu lớn](sql-server/bang-tam-va-su-linh-hoat-trong-xu-ly-du-lieu-lon.md)
