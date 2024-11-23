@@ -21,3 +21,7 @@
 
 * [Prompts for Gemini](gemini/prompts-for-gemini/README.md)
   * [Một số prompt hữu ích trên Gemini](gemini/prompts-for-gemini/mot-so-prompt-huu-ich-tren-gemini.md)
+
+## planning
+
+* [Cách tạo trang Facebook hiệu quả cho cửa hàng giặt ủi](planning/cach-tao-trang-facebook-hieu-qua-cho-cua-hang-giat-ui.md)
