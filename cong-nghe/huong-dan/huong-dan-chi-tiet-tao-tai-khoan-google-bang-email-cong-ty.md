@@ -1,10 +1,10 @@
 # Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty
 
-Với mục tiêu nâng cao tính bảo mật và bảo vệ dữ liệu của công ty, Vihat Group đã ban hành quy định mới từ ngày 01/09 về việc **chỉ chia sẻ dữ liệu qua các tài khoản Google có đuôi **_**@vihatgroup.com**_. Quy định này giúp đảm bảo tất cả các dữ liệu quan trọng của công ty chỉ được chia sẻ qua tài khoản thuộc hệ thống kiểm soát và bảo mật nội bộ. Dưới đây là hướng dẫn chi tiết cách tạo tài khoản Google bằng email công ty, giúp bạn thiết lập tài khoản nhanh chóng và chính xác nhất.
+Với mục tiêu nâng cao tính bảo mật và bảo vệ dữ liệu của công ty, Vihat Group đã ban hành quy định mới từ ngày 01/09 về việc **chỉ chia sẻ dữ liệu qua các tài khoản Google có đuôi&#x20;**_**@vihatgroup.com**_. Quy định này giúp đảm bảo tất cả các dữ liệu quan trọng của công ty chỉ được chia sẻ qua tài khoản thuộc hệ thống kiểm soát và bảo mật nội bộ. Dưới đây là hướng dẫn chi tiết cách tạo tài khoản Google bằng email công ty, giúp bạn thiết lập tài khoản nhanh chóng và chính xác nhất.
 
 ## Bước 1: Truy Cập Google và Tạo Tài Khoản Mới
 
-Để bắt đầu, hãy truy cập vào bất kỳ ứng dụng nào của Google **ngoại trừ Gmail** (như Google Drive, Google Docs, Google Meet, hoặc Google Sheets), vì ứng dụng Gmail sẽ không hỗ trợ tùy chọn nhập email công ty ở bước sau. Bạn cũng có thể truy cập vào trang tạo tài khoản Google qua đường link: [Link Tạo Tài Khoản Google Mới](https://accounts.google.com/lifecycle/steps/signup/name?continue=https://myaccount.google.com/\&ddm=0\&dsh=S-1876268287:1724749674668015\&ec=GAlAwAE\&flowEntry=SignUp\&flowName=GlifWebSignIn\&hl=en\&service=accountsettings\&TL=AKeb6mznnib7A0BKAMYoxoZBtV4mLG9QgI0ULQ4SO7EfuHNYCG0cAkNE\_fYhGzsR).
+Để bắt đầu, hãy truy cập vào bất kỳ ứng dụng nào của Google **ngoại trừ Gmail** (như Google Drive, Google Docs, Google Meet, hoặc Google Sheets), vì ứng dụng Gmail sẽ không hỗ trợ tùy chọn nhập email công ty ở bước sau. Bạn cũng có thể truy cập vào trang tạo tài khoản Google qua đường link: [Link Tạo Tài Khoản Google Mới](https://accounts.google.com/lifecycle/steps/signup/name?continue=https://myaccount.google.com/\&ddm=0\&dsh=S-1876268287:1724749674668015\&ec=GAlAwAE\&flowEntry=SignUp\&flowName=GlifWebSignIn\&hl=en\&service=accountsettings\&TL=AKeb6mznnib7A0BKAMYoxoZBtV4mLG9QgI0ULQ4SO7EfuHNYCG0cAkNE_fYhGzsR).
 
 {% code title="Link Tạo Tài Khoản Google Mới" overflow="wrap" %}
 ```http
