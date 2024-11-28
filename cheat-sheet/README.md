@@ -1,2 +1,2 @@
-# Linux Commands Cheat sheet
+# HAproxy Commands Cheat sheet
 

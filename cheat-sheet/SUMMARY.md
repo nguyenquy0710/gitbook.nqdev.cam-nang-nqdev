@@ -1,12 +1,10 @@
 # Table of contents
 
-* [Overview](https://blogs.nhquydev.net/?utm\_source=gitbook\&utm\_medium=blogs)
+* [Overview](https://blogs.nhquydev.net/?utm_source=gitbook\&utm_medium=blogs)
 
 ## Công nghệ
 
-* [Linux Commands Cheat sheet](README.md)
-  * [Tập lệnh Linux hay dùng](cong-nghe/linux-commands-cheat-sheet/tap-lenh-linux-hay-dung.md)
-* [HAProxy Cheat sheet](cong-nghe/haproxy-cheat-sheet/README.md)
+* [HAProxy Cheat sheet](README.md)
   * [Cấu Hình và Tính Năng Nổi Bật](cong-nghe/haproxy-cheat-sheet/cau-hinh-va-tinh-nang-noi-bat.md)
   * [Hướng Dẫn Cấu Hình Log Format Trong HAProxy](cong-nghe/haproxy-cheat-sheet/huong-dan-cau-hinh-log-format-trong-haproxy.md)
   * [Hướng dẫn chi tiết về cấu hình HAProxy cho Load Balancing và giới hạn tốc độ](cong-nghe/haproxy-cheat-sheet/huong-dan-chi-tiet-ve-cau-hinh-haproxy-cho-load-balancing-va-gioi-han-toc-do.md)

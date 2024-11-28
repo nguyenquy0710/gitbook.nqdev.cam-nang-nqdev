@@ -1,2 +1,0 @@
-# HAproxy Commands Cheat sheet
-
