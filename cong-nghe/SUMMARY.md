@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](README.md)
+* [Introduction](README.md)
 * [DotNET](dotnet/README.md)
   * [Core CLI](dotnet/core-cli/README.md)
     * [Installing the tools](dotnet/core-cli/installing-the-tools.md)
