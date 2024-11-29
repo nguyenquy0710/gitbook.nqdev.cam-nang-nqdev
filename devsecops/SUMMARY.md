@@ -1,9 +1,7 @@
 # Table of contents
 
 * [DevSecOps là gì?](README.md)
-* [Redis mất dữ liệu khi restart](redis-mat-du-lieu-khi-restart.md)
 * [Dựng môi trường phát triển nhanh chóng với docker-php-development](dung-moi-truong-phat-trien-nhanh-chong-voi-docker-php-development.md)
-* [Cách dùng Docker để phát triển ứng dụng Wordpress](cach-dung-docker-de-phat-trien-ung-dung-wordpress.md)
 * [Hệ thống phân giải tên miền (DNS) và các loại bản ghi](he-thong-phan-giai-ten-mien-dns-va-cac-loai-ban-ghi.md)
 * [OS Linux](os-linux/README.md)
   * [Tập lệnh Linux hay dùng](os-linux/tap-lenh-linux-hay-dung.md)
@@ -52,5 +50,11 @@
     * [Tìm Hiểu Về Varnish Cache](caching/varnish-cache/tim-hieu-ve-varnish-cache.md)
     * [Hướng Dẫn Cài Đặt Varnish Cache với HAProxy Sử Dụng Docker Compose](caching/varnish-cache/huong-dan-cai-dat-varnish-cache-voi-haproxy-su-dung-docker-compose.md)
 * [Ứng dụng](ung-dung/README.md)
+  * [NTP - Secure Timeserver](ung-dung/ntp-secure-timeserver/README.md)
+    * [Hướng dẫn cài đặt NTP an toàn với Docker Compose](ung-dung/ntp-secure-timeserver/huong-dan-cai-dat-ntp-an-toan-voi-docker-compose.md)
   * [Airbyte: Open-Source Data Integration Platform](ung-dung/airbyte-open-source-data-integration-platform/README.md)
     * [Docker Compose](ung-dung/airbyte-open-source-data-integration-platform/docker-compose.md)
+  * [Redis](ung-dung/redis/README.md)
+    * [Redis mất dữ liệu khi restart](ung-dung/redis/redis-mat-du-lieu-khi-restart.md)
+  * [Wordpress](ung-dung/wordpress/README.md)
+    * [Cách dùng Docker để phát triển ứng dụng Wordpress](ung-dung/wordpress/cach-dung-docker-de-phat-trien-ung-dung-wordpress.md)

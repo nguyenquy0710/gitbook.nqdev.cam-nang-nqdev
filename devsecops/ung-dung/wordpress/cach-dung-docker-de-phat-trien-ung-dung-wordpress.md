@@ -6,9 +6,9 @@ description: 'Nguồn: viblo.asia'
 
 Trong bài này, mình sẽ hướng dẫn cách dựng môi trường phát triển cho ứng dụng Wordpress một cách nhanh chóng bằng Docker thông qua một boilerplate có sẵn đó là [sun-asterisk-research/docker-php-development](https://github.com/sun-asterisk-research/docker-php-development).
 
-Lần trước mình cũng đã làm một bài giới thiệu chung [Dựng môi trường phát triển nhanh chóng với docker-php-development](dung-moi-truong-phat-trien-nhanh-chong-voi-docker-php-development.md), hôm nay chúng ta sẽ focus vào việc dựng môi trường cho Wordpress nhé.
+Lần trước mình cũng đã làm một bài giới thiệu chung [Dựng môi trường phát triển nhanh chóng với docker-php-development](../../dung-moi-truong-phat-trien-nhanh-chong-voi-docker-php-development.md), hôm nay chúng ta sẽ focus vào việc dựng môi trường cho Wordpress nhé.
 
-### Bạn sẽ học được gì? <a href="#_ban-se-hoc-duoc-gi-0" id="_ban-se-hoc-duoc-gi-0"></a>
+### Bạn sẽ học được gì? <a href="#ban-se-hoc-duoc-gi-0" id="ban-se-hoc-duoc-gi-0"></a>
 
 Qua bài viết này, bạn có thể nhanh chóng áp dựng boilerplate để dựng môi trường cho wordpress hay bất kỳ ứng dụng PHP nào. Bài này sẽ:
 
@@ -16,7 +16,7 @@ Qua bài viết này, bạn có thể nhanh chóng áp dựng boilerplate để 
 * Cách thay đổi config của PHP
 * Hiểu thêm các bước để config boilerplate cho dự án PHP/Wordpress của bạn
 
-### Cấu trúc thư mục <a href="#_cau-truc-thu-muc-1" id="_cau-truc-thu-muc-1"></a>
+### Cấu trúc thư mục <a href="#cau-truc-thu-muc-1" id="cau-truc-thu-muc-1"></a>
 
 Tương tự với bài trước, cấu trúc thư mục sẽ là:
 
@@ -25,14 +25,14 @@ Tương tự với bài trước, cấu trúc thư mục sẽ là:
 |__ docker-php-development
 ```
 
-### Chuẩn bị source code <a href="#_chuan-bi-source-code-2" id="_chuan-bi-source-code-2"></a>
+### Chuẩn bị source code <a href="#chuan-bi-source-code-2" id="chuan-bi-source-code-2"></a>
 
 1. Download source wordpress và giải nén thành thư mục wordpress
 2. Clone repo [sun-asterisk-research/docker-php-development](https://github.com/sun-asterisk-research/docker-php-development) về thư mục `docker-php-development`
 
-### Bật các service / biến môi trường <a href="#_bat-cac-service--bien-moi-truong-3" id="_bat-cac-service--bien-moi-truong-3"></a>
+### Bật các service / biến môi trường <a href="#bat-cac-service--bien-moi-truong-3" id="bat-cac-service--bien-moi-truong-3"></a>
 
-#### 1. Tạo file `services` để chọn các file `compose/*.yml` nào được chạy, chạy lệnh <a href="#_1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4" id="_1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4"></a>
+#### 1. Tạo file `services` để chọn các file `compose/*.yml` nào được chạy, chạy lệnh <a href="#id-1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4" id="id-1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4"></a>
 
 ```bash
 cp services.example services
@@ -46,7 +46,7 @@ mariadb
 
 ```
 
-#### 2. Tạo file `.env` <a href="#_2-tao-file-env-5" id="_2-tao-file-env-5"></a>
+#### 2. Tạo file `.env` <a href="#id-2-tao-file-env-5" id="id-2-tao-file-env-5"></a>
 
 ```bash
 cp .env.example .env
@@ -117,7 +117,7 @@ HOSTS_FILE=/etc/hosts
 
 ```
 
-#### 3. Thay đổi các biến cho phù hợp <a href="#_3-thay-doi-cac-bien-cho-phu-hop-6" id="_3-thay-doi-cac-bien-cho-phu-hop-6"></a>
+#### 3. Thay đổi các biến cho phù hợp <a href="#id-3-thay-doi-cac-bien-cho-phu-hop-6" id="id-3-thay-doi-cac-bien-cho-phu-hop-6"></a>
 
 Các biến chính cần sửa lại đó là:
 
@@ -158,7 +158,7 @@ NGINX_DOCUMENT_ROOT=/php
 NGINX_CONFIG_TEMPLATE=./config/nginx/wordpress.conf
 ```
 
-#### 4. Customize Nginx + PHP cho wordpress <a href="#_4-customize-nginx--php-cho-wordpress-7" id="_4-customize-nginx--php-cho-wordpress-7"></a>
+#### 4. Customize Nginx + PHP cho wordpress <a href="#id-4-customize-nginx--php-cho-wordpress-7" id="id-4-customize-nginx--php-cho-wordpress-7"></a>
 
 1. Sửa lại config Nginx một xíu, do mình khai báo biến `NGINX_CONFIG_TEMPLATE=./config/nginx/wordpress.conf` rồi nên không phải sửa thêm gì nữa:
 
