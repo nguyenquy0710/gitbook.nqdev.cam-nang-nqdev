@@ -11,7 +11,7 @@ Với triết lý "**không cần agent**" (agentless) và cấu hình đơn gi�
 
 ***
 
-<figure><img src="https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/cong-nghe/ansible-gioi-thieu.webp" alt=""><figcaption><p>Ansible: Giới thiệu</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/cong-nghe/ansible-gioi-thieu.webp" alt="" width="563"><figcaption><p>Ansible: Giới thiệu</p></figcaption></figure>
 
 ## 1. **Ansible là gì?**
 
@@ -90,5 +90,5 @@ Bạn có thể tham khảo thêm tại các tài liệu chính thức:
 * [Ansible Developer Guide](https://docs.ansible.com/developers.html)
 * [DevDocs Ansible](https://devdocs.io/ansible/)
 
-Hy vọng bài viết này hữu ích cho bạn đọc của [Cẩm nang NQDEV](../)!
+Hy vọng bài viết này hữu ích cho bạn đọc của [Cẩm nang NQDEV](../../)!
 
