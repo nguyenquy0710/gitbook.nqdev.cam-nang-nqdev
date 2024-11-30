@@ -7,11 +7,11 @@ description: >-
 
 # Ansible: Giới thiệu
 
-Với triết lý "không cần agent" (agentless) và cấu hình đơn giản, Ansible trở thành lựa chọn lý tưởng cho cả các chuyên gia lẫn người mới bắt đầu trong lĩnh vực tự động hóa.
+Với triết lý "**không cần agent**" (agentless) và cấu hình đơn giản, [Ansible](./) trở thành lựa chọn lý tưởng cho cả các chuyên gia lẫn người mới bắt đầu trong lĩnh vực tự động hóa.
 
 ***
 
-
+<figure><img src="https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/cong-nghe/ansible-gioi-thieu.webp" alt=""><figcaption><p>Ansible: Giới thiệu</p></figcaption></figure>
 
 ## 1. **Ansible là gì?**
 
