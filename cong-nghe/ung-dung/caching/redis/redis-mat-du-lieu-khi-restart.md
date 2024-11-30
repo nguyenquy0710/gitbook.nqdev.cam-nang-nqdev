@@ -6,7 +6,7 @@ description: 'Nguồn: devopsvn.tech'
 
 Mặc đinh khi restart thì Redis mất dữ liệu. Làm thế nào để tránh mất dữ liệu?
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Có hai phương pháp khắc phục: sử dụng RDB (Redis Database) hoặc AOF (Append Only File)
 
