@@ -1,35 +1,93 @@
 ---
 description: >-
-  Trong thời đại công nghệ không ngừng phát triển, việc nắm bắt các xu hướng và
-  kỹ năng mới là chìa khóa để thành công.
+  Cẩm nang NQDEV là một bộ tài liệu trực tuyến được thiết kế nhằm cung cấp kiến
+  thức chuyên sâu và hướng dẫn thực hành về các chủ đề công nghệ, lập trình và
+  phát triển phần mềm.
+cover: >-
+  https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/nqdev-introduction-1024%20x%20576.webp
+coverY: 66
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Introduction
 
-Với mục tiêu cung cấp kiến thức toàn diện, dễ hiểu và thực tế, **Cẩm nang NQDEV** ra đời như một người bạn đồng hành dành cho lập trình viên, nhà phát triển, và những ai đam mê công nghệ.
+Được viết bởi đội ngũ chuyên gia giàu kinh nghiệm, Cẩm nang không chỉ tập trung vào việc truyền đạt kiến thức mà còn nhấn mạnh đến các kinh nghiệm thực tế, giúp người đọc dễ dàng áp dụng trong các dự án của mình.
 
-## **Nội dung chính của "Cẩm nang NQDEV"**
+***
 
-1. [**dotNET**](dotnet/) **và Phát triển Kỹ năng Lập trình**
-   * Giới thiệu và hướng dẫn chi tiết về nền tảng **.NET Framework**, [**.NET Core**](dotnet/asp.net-core/), và **.NET 8**, phù hợp cho mọi cấp độ người học.
-   * Tài nguyên hỗ trợ các ngôn ngữ lập trình như **C#**, **VB.NET**, **F#**, và cách sử dụng công cụ mạnh mẽ như **Visual Studio**.
-2. **Tips & Tricks trong Công nghệ**
-   * Khám phá các mẹo và kỹ thuật giúp tối ưu hóa hiệu suất công việc.
-   * Hướng dẫn cách tận dụng công cụ, công nghệ mới như **AI**, **IoT**, **blockchain** để giải quyết vấn đề nhanh chóng và hiệu quả.
-3. [**Cộng đồng Công nghệ**](dotnet/dev-blogs/)
-   * Kết nối với mạng lưới những người cùng đam mê để chia sẻ kinh nghiệm và học hỏi.
-   * Cập nhật những xu hướng công nghệ mới nhất từ cộng đồng lập trình viên quốc tế.
+## **Mục tiêu của Cẩm nang NQDEV**
 
-## **Giá trị mang lại**
+1. **Hỗ trợ học tập và nâng cao kỹ năng**: Cẩm nang cung cấp các bài viết từ cơ bản đến nâng cao về lập trình, DevOps, dữ liệu lớn, bảo mật và nhiều lĩnh vực công nghệ khác.
+2. **Chia sẻ kinh nghiệm thực tế**: Các bài hướng dẫn thường đi kèm với ví dụ minh họa cụ thể, những lời khuyên hữu ích và các bài học từ thực tế dự án.
+3. **Cộng đồng học tập và chia sẻ**: Không chỉ là một nguồn tài liệu, NQDEV còn là nơi khuyến khích các cá nhân chia sẻ kiến thức và đóng góp nội dung.
 
-**Cẩm nang NQDEV** không chỉ giúp bạn học hỏi mà còn truyền cảm hứng sáng tạo và cải thiện kỹ năng sống số. Được xây dựng dựa trên kinh nghiệm thực tế và các nguồn tài nguyên đáng tin cậy, cẩm nang hướng đến việc hỗ trợ độc giả:
+***
 
-* **Hiểu và ứng dụng công nghệ** trong công việc và cuộc sống.
-* **Tăng năng suất và sáng tạo** qua các dự án thực tế.
-* **Theo kịp xu thế** trong kỷ nguyên chuyển đổi số.
+## **Các chủ đề chính trong Cẩm nang**
 
-## **Lời kết**
+[Cẩm nang NQDEV](./) bao gồm nhiều lĩnh vực công nghệ quan trọng, trong đó có:
 
-**Cẩm nang NQDEV** là lựa chọn hoàn hảo cho những ai muốn theo đuổi con đường công nghệ chuyên nghiệp. Hãy cùng khám phá và đồng hành với chúng tôi để nâng cao kỹ năng và bắt kịp thời đại!
+### **1. Lập trình**
+
+* **.NET Framework và** [**.NET Core**](dotnet/asp.net-core/): Hướng dẫn phát triển ứng dụng với ASP.NET, xây dựng API, quản lý session, xác thực người dùng bằng Identity Framework.
+* **Node.js và Next.js**: Các bài viết từ việc xây dựng ứng dụng cơ bản đến tối ưu hóa hiệu năng.
+* **Android Studio**: Phát triển ứng dụng di động từ đầu với Android Studio và Java/Kotlin.
+
+### **2. DevOps và Bảo mật**
+
+* [**HAProxy**](https://app.gitbook.com/s/uksRknmEVZ3bhjhQiFbL/cong-nghe/haproxy-cheat-sheet): Cấu hình rate limiting, tối ưu hóa load balancer để bảo vệ hệ thống khỏi các cuộc tấn công DDoS.
+* [**Docker**](docker/) **& Docker Compose**: Xây dựng môi trường phát triển đa dịch vụ.
+* **CI/CD**: Hướng dẫn tích hợp liên tục và triển khai liên tục.
+
+### **3. Dữ liệu và Hệ quản trị**
+
+* **MongoDB**: Cách triển khai mô hình cơ sở dữ liệu đa tenant.
+* [**SQL Server**](sql-server/) **và MySQL**: Tối ưu hóa truy vấn và quản lý dữ liệu lớn.
+
+### **4. Phát triển ứng dụng thực tế**
+
+* Hướng dẫn xây dựng Mini App cho Zalo, ứng dụng quản lý doanh nghiệp, và các giải pháp thương mại điện tử với kiến trúc microservice.
+
+### **5. Nội dung sáng tạo và Blog kỹ thuật**
+
+* Các bài viết hướng dẫn viết blog kỹ thuật chuyên nghiệp, tối ưu hóa nội dung để chia sẻ trên mạng xã hội.
+
+***
+
+## **Điểm nổi bật của Cẩm nang NQDEV**
+
+1. **Hướng dẫn chi tiết, dễ hiểu**: Mỗi bài viết đều được trình bày rõ ràng, với các bước thực hiện cụ thể và hình minh họa trực quan.
+2. **Ứng dụng thực tế cao**: Nội dung được xây dựng dựa trên các dự án thực tế, phù hợp với nhu cầu của cả lập trình viên mới và những chuyên gia đã có kinh nghiệm.
+3. **Cập nhật liên tục**: Đội ngũ tác giả liên tục bổ sung những nội dung mới nhất, bắt kịp xu hướng công nghệ hiện đại.
+4. **Hỗ trợ người dùng**: Người đọc có thể đặt câu hỏi, thảo luận và nhận phản hồi từ cộng đồng hoặc tác giả bài viết.
+
+***
+
+## **Lợi ích khi sử dụng Cẩm nang NQDEV**
+
+* Nâng cao kỹ năng lập trình và phát triển phần mềm.
+* Tìm kiếm giải pháp cho các vấn đề thực tế trong dự án.
+* Cập nhật các xu hướng công nghệ mới nhất.
+* Kết nối với cộng đồng lập trình viên đam mê học hỏi và chia sẻ.
+
+***
+
+## **Kết luận**
+
+**Cẩm nang NQDEV** không chỉ là một tài liệu tham khảo mà còn là một người bạn đồng hành đáng tin cậy cho các lập trình viên và chuyên gia công nghệ. Với sự đa dạng về nội dung và chất lượng chuyên sâu, đây là nguồn tài nguyên hữu ích để bạn học hỏi, phát triển kỹ năng và giải quyết các thách thức trong công việc.
 
 ☕ **Ủng hộ dự án tại**: [Mua cà phê cho NQDEV](https://me.momo.vn/nhquydev).
+
