@@ -1,2 +1,0 @@
-# NTP - Secure Timeserver
-
