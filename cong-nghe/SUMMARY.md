@@ -67,3 +67,6 @@
     * [Tìm hiểu sâu về API \_reindex trong Elasticsearch](elasticsearch/_reindex/tim-hieu-sau-ve-api-_reindex-trong-elasticsearch.md)
     * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](elasticsearch/_reindex/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-_reindex.md)
   * [\_transform](elasticsearch/_transform.md)
+* [Ansible](ansible/README.md)
+  * [Ansible: Giới thiệu](ansible/ansible-gioi-thieu.md)
+  * [Hướng dẫn chi tiết cài đặt Ansible](ansible/huong-dan-chi-tiet-cai-dat-ansible.md)
