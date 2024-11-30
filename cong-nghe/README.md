@@ -5,11 +5,11 @@ description: >-
   phát triển phần mềm.
 cover: >-
   https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/nqdev-introduction-1024%20x%20576.webp
-coverY: 66
+coverY: 382
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
