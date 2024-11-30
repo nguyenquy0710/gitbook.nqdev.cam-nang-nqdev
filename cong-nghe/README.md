@@ -10,13 +10,13 @@ Với mục tiêu cung cấp kiến thức toàn diện, dễ hiểu và thực 
 
 ## **Nội dung chính của "Cẩm nang NQDEV"**
 
-1. **dotNET và Phát triển Kỹ năng Lập trình**
-   * Giới thiệu và hướng dẫn chi tiết về nền tảng **.NET Framework**, **.NET Core**, và **.NET 5**, phù hợp cho mọi cấp độ người học.
+1. [**dotNET**](dotnet/) **và Phát triển Kỹ năng Lập trình**
+   * Giới thiệu và hướng dẫn chi tiết về nền tảng **.NET Framework**, [**.NET Core**](dotnet/asp.net-core/), và **.NET 8**, phù hợp cho mọi cấp độ người học.
    * Tài nguyên hỗ trợ các ngôn ngữ lập trình như **C#**, **VB.NET**, **F#**, và cách sử dụng công cụ mạnh mẽ như **Visual Studio**.
 2. **Tips & Tricks trong Công nghệ**
    * Khám phá các mẹo và kỹ thuật giúp tối ưu hóa hiệu suất công việc.
    * Hướng dẫn cách tận dụng công cụ, công nghệ mới như **AI**, **IoT**, **blockchain** để giải quyết vấn đề nhanh chóng và hiệu quả.
-3. **Cộng đồng Công nghệ**
+3. [**Cộng đồng Công nghệ**](dotnet/dev-blogs/)
    * Kết nối với mạng lưới những người cùng đam mê để chia sẻ kinh nghiệm và học hỏi.
    * Cập nhật những xu hướng công nghệ mới nhất từ cộng đồng lập trình viên quốc tế.
 
