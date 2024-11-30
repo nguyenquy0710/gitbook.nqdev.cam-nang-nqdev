@@ -86,6 +86,7 @@
   * [Giới thiệu về Các Loại Cơ Sở Dữ Liệu](tin-tuc/gioi-thieu-ve-cac-loai-co-so-du-lieu/README.md)
     * [1. HSQLDB (HyperSQL Database)](tin-tuc/gioi-thieu-ve-cac-loai-co-so-du-lieu/1.-hsqldb-hypersql-database.md)
   * [Hệ thống phân giải tên miền (DNS) và các loại bản ghi](tin-tuc/he-thong-phan-giai-ten-mien-dns-va-cac-loai-ban-ghi.md)
+  * [Giải thích về Tiền Tố Path Nổi Tiếng – /.well-known](tin-tuc/giai-thich-ve-tien-to-path-noi-tieng-.well-known.md)
 * [Hướng dẫn](huong-dan/README.md)
   * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](huong-dan/top-10-asp-.net-open-source-projects-github-2024.md)
