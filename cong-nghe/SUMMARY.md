@@ -30,6 +30,7 @@
     * [DBCC SHRINKDATABASE](sql-server/sql-server-dbcc/dbcc-shrinkdatabase.md)
     * [DBCC SHRINKFILE](sql-server/sql-server-dbcc/dbcc-shrinkfile.md)
     * [DBCC SQLPERF](sql-server/sql-server-dbcc/dbcc-sqlperf.md)
+    * [DBCC FREEPROCCACHE](sql-server/sql-server-dbcc/dbcc-freeproccache.md)
   * [SQL Server Replication](sql-server/sql-server-replication/README.md)
     * [Giới thiệu SQL Server Replication](sql-server/sql-server-replication/gioi-thieu-sql-server-replication.md)
   * [SQL Server: Tập lệnh](sql-server/sql-server-tap-lenh/README.md)
