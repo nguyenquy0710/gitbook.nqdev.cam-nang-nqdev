@@ -83,6 +83,7 @@
     * [Cách dùng Docker để phát triển ứng dụng Wordpress](ung-dung/wordpress/cach-dung-docker-de-phat-trien-ung-dung-wordpress.md)
 * [Tin tức](tin-tuc/README.md)
   * [DevSecOps là gì?](tin-tuc/devsecops-la-gi.md)
+  * [Giới thiệu bộ công cụ hỗ trợ lập trình từ SmallDev.tools và Code Beautify](tin-tuc/gioi-thieu-bo-cong-cu-ho-tro-lap-trinh-tu-smalldev.tools-va-code-beautify.md)
   * [Giới Thiệu và Hướng Dẫn Về DuckDB](tin-tuc/gioi-thieu-va-huong-dan-ve-duckdb.md)
   * [Giới thiệu về Các Loại Cơ Sở Dữ Liệu](tin-tuc/gioi-thieu-ve-cac-loai-co-so-du-lieu/README.md)
     * [1. HSQLDB (HyperSQL Database)](tin-tuc/gioi-thieu-ve-cac-loai-co-so-du-lieu/1.-hsqldb-hypersql-database.md)
