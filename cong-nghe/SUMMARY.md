@@ -101,3 +101,4 @@
   * [So Sánh Varnish Cache, Memcached và Redis: Ba Công Cụ Caching Phổ Biến trong Tối Ưu Hóa Hiệu Suất](so-sanh/so-sanh-varnish-cache-memcached-va-redis-ba-cong-cu-caching-pho-bien-trong-toi-uu-hoa-hieu-suat.md)
 * [Affiliate](ung-dung/README.md)
   * [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/esmsvn-cham-soc-khach-hang-hieu-qua-voi-sms-va-zns.md)
+  * [eSMS.vn: Giải pháp SMS Marketing hiệu quả cùng các chương trình ưu đãi hấp dẫn](affiliate/esms.vn-giai-phap-sms-marketing-hieu-qua-cung-cac-chuong-trinh-uu-dai-hap-dan.md)
