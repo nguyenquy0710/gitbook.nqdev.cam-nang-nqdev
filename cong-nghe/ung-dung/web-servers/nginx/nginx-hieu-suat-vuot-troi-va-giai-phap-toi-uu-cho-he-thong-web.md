@@ -89,4 +89,12 @@ Hãy bắt đầu sử dụng NGINX ngay hôm nay để tối ưu hóa hạ tầ
 
 ***
 
+{% code title="Tài liệu tham khảo" lineNumbers="true" %}
+```markdown
+- [NGINX Product Documentation](https://docs.nginx.com/)
+- [NGINX Open Source](https://nginx.org/en/docs/)
+- [NGINX Agent documentation](https://docs.nginx.com/nginx-agent/)
+```
+{% endcode %}
+
 Hy vọng bài viết này sẽ giúp ích cho blog của bạn! Nếu cần chỉnh sửa hoặc bổ sung thêm thông tin, bạn hãy cho mình biết nhé. 😊
