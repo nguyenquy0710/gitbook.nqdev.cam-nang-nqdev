@@ -15,6 +15,22 @@ Khi nhắc đến các công nghệ máy chủ web hiện đại, **NGINX** luô
 ```
 {% endcode %}
 
+Mẫu prompt GPT sử dụng với ChatGPT:
+
+{% code title="Prompt GPT:" overflow="wrap" %}
+```
+Topic: Nginx Research, Nginx Docker for Alpine
+- [NGINX Product Documentation](https://docs.nginx.com/)
+- [NGINX Open Source](https://nginx.org/en/docs/)
+- [NGINX Agent documentation](https://docs.nginx.com/nginx-agent/)
+
+Dựa trên các nguồn dữ liệu mà GPT được cung cấp, và các link dữ liệu được liệt kê phía trên, cũng như một sô trang web tin cậy trên internet để trả lời tất cả các câu hỏi trong phạm vi cuộc trò chuyện này
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
 ## **NGINX là gì?**
 
 **NGINX** (đọc là "engine-ex") là một phần mềm máy chủ web mã nguồn mở được phát triển bởi Igor Sysoev, ra mắt vào năm 2004. Với kiến trúc hướng sự kiện không đồng bộ (asynchronous event-driven architecture), NGINX được thiết kế đặc biệt để xử lý hàng nghìn kết nối đồng thời với hiệu suất cao, độ trễ thấp, và tiêu tốn ít tài nguyên.
