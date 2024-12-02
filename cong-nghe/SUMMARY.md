@@ -81,6 +81,7 @@
     * [\_transform](ung-dung/elasticsearch/_transform.md)
   * [NGINX Plus](ung-dung/nginx-plus/README.md)
     * [NGINX: Hiệu suất vượt trội và giải pháp tối ưu cho hệ thống web](ung-dung/nginx-plus/nginx-hieu-suat-vuot-troi-va-giai-phap-toi-uu-cho-he-thong-web.md)
+    * [NGINX: Hướng dẫn chi tiết sử dụng GeoIP2 trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-su-dung-geoip2-tren-alpine.md)
   * [NTP - Secure Timeserver](ung-dung/ntp-secure-timeserver/README.md)
     * [Hướng dẫn cài đặt NTP an toàn với Docker Compose](ung-dung/ntp-secure-timeserver/huong-dan-cai-dat-ntp-an-toan-voi-docker-compose.md)
   * [Wordpress](ung-dung/wordpress/README.md)
