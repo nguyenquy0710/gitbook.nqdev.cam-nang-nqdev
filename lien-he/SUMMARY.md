@@ -7,4 +7,4 @@
 
 ## Sitemap
 
-* [Sơ đồ trang web](sitemap/so-do-trang-web.md)
+* [Mục Lục: Cẩm nang NQDEV](sitemap/muc-luc-cam-nang-nqdev.md)
