@@ -2,6 +2,19 @@
 
 Khi nhắc đến các công nghệ máy chủ web hiện đại, **NGINX** luôn được đánh giá là một trong những lựa chọn hàng đầu. Từ một dự án mã nguồn mở, NGINX đã phát triển vượt bậc để trở thành một trong những giải pháp phổ biến nhất cho việc xử lý lưu lượng truy cập lớn và cung cấp các dịch vụ web hiệu quả.
 
+{% code title="Tài liệu tham khảo" lineNumbers="true" %}
+```markdown
+# NGINX Documentation
+- [NGINX Product Documentation](https://docs.nginx.com/)
+- [NGINX Open Source](https://nginx.org/en/docs/)
+- [F5 NGINX Plus](https://docs.nginx.com/nginx)
+- [NGINX Agent documentation](https://docs.nginx.com/nginx-agent/)
+
+# Docker Hub:
+- [nqdev/nginx](https://hub.docker.com/r/nqdev/nginx)
+```
+{% endcode %}
+
 ## **NGINX là gì?**
 
 **NGINX** (đọc là "engine-ex") là một phần mềm máy chủ web mã nguồn mở được phát triển bởi Igor Sysoev, ra mắt vào năm 2004. Với kiến trúc hướng sự kiện không đồng bộ (asynchronous event-driven architecture), NGINX được thiết kế đặc biệt để xử lý hàng nghìn kết nối đồng thời với hiệu suất cao, độ trễ thấp, và tiêu tốn ít tài nguyên.
@@ -88,13 +101,5 @@ Nếu bạn đang tìm kiếm một giải pháp máy chủ web mạnh mẽ, ổ
 Hãy bắt đầu sử dụng NGINX ngay hôm nay để tối ưu hóa hạ tầng web của bạn!
 
 ***
-
-{% code title="Tài liệu tham khảo" lineNumbers="true" %}
-```markdown
-- [NGINX Product Documentation](https://docs.nginx.com/)
-- [NGINX Open Source](https://nginx.org/en/docs/)
-- [NGINX Agent documentation](https://docs.nginx.com/nginx-agent/)
-```
-{% endcode %}
 
 Hy vọng bài viết này sẽ giúp ích cho blog của bạn! Nếu cần chỉnh sửa hoặc bổ sung thêm thông tin, bạn hãy cho mình biết nhé. 😊
