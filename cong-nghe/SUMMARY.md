@@ -42,6 +42,8 @@
     * [SQL Server Error : 14151, Severity: 18. Replication agent](sql-server/sql-server-error-code/sql-server-error-14151-severity-18.-replication-agent.md)
 * [OS Linux](os-linux/README.md)
   * [Tập lệnh Linux hay dùng](os-linux/tap-lenh-linux-hay-dung.md)
+  * [Centos 7](os-linux/centos-7/README.md)
+    * [Hướng dẫn cài đặt và cấu hình Centos 7 dành cho người mới bắt đầu](os-linux/centos-7/huong-dan-cai-dat-va-cau-hinh-centos-7-danh-cho-nguoi-moi-bat-dau.md)
   * [Hướng Dẫn Kiểm Tra Các Cổng Đang Mở Trên Hệ Thống CentOS](os-linux/huong-dan-kiem-tra-cac-cong-dang-mo-tren-he-thong-centos.md)
   * [Hướng dẫn cấu hình iptables để mở tất cả các cổng cho IP private](os-linux/huong-dan-cau-hinh-iptables-de-mo-tat-ca-cac-cong-cho-ip-private.md)
   * [Hướng Dẫn Sử Dụng zip Trên CentOS](os-linux/huong-dan-su-dung-zip-tren-centos.md)
