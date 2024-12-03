@@ -6,6 +6,7 @@ NGINX với module Lua là một giải pháp mạnh mẽ để mở rộng kh�
 ```markdown
 # NGINX Documentation
 - [Lua](https://docs.nginx.com/nginx/admin-guide/dynamic-modules/lua/)
+- [NGINX Lua Module Reference](https://github.com/openresty/lua-nginx-module)
 
 # Docker Hub:
 - [nqdev/nginx](https://hub.docker.com/r/nqdev/nginx)

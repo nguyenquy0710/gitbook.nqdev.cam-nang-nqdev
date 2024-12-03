@@ -2,13 +2,17 @@
 
 Khi nhắc đến các công nghệ máy chủ web hiện đại, **NGINX** luôn được đánh giá là một trong những lựa chọn hàng đầu. Từ một dự án mã nguồn mở, NGINX đã phát triển vượt bậc để trở thành một trong những giải pháp phổ biến nhất cho việc xử lý lưu lượng truy cập lớn và cung cấp các dịch vụ web hiệu quả.
 
-{% code title="Tài liệu tham khảo" lineNumbers="true" %}
+{% code title="Tài liệu tham khảo" overflow="wrap" lineNumbers="true" %}
 ```markdown
 # NGINX Documentation
 - [NGINX Product Documentation](https://docs.nginx.com/)
+- [Technical Specs](https://docs.nginx.com/nginx/technical-specs/)
 - [NGINX Open Source](https://nginx.org/en/docs/)
 - [F5 NGINX Plus](https://docs.nginx.com/nginx)
 - [NGINX Agent documentation](https://docs.nginx.com/nginx-agent/)
+
+# NGINX Installing
+- [Installing NGINX Open Source](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
 
 # Docker Hub:
 - [nqdev/nginx](https://hub.docker.com/r/nqdev/nginx)
