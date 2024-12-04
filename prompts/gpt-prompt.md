@@ -71,6 +71,9 @@ Topic: NextJS Docs Overview
 - [Next.js Templates](https://nextjstemplates.com/templates)
 - [Next.js starter templates and themes](https://vercel.com/templates/next.js)
 - [Node.js Docs](https://nodejs.org/docs/latest/api/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [TypeScript Playground](https://www.typescriptlang.org/play/)
+- [TypeScript Tools](https://www.typescriptlang.org/tools/)
 
 _hãy trả lời các câu hỏi bằng tiếng việt_
 _please answer the questions in Vietnamese_
