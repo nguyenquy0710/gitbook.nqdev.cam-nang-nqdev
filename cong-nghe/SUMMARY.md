@@ -4,6 +4,7 @@
 * [Developer Roadmaps](developer-roadmaps/README.md)
   * [Developer Roadmaps: Mô tả chi tiết](developer-roadmaps/developer-roadmaps-mo-ta-chi-tiet.md)
   * [Bảng phân loại cấp độ nhà phát triển .NET](developer-roadmaps/bang-phan-loai-cap-do-nha-phat-trien-.net.md)
+  * [ClearPath cho Team .NET Core](developer-roadmaps/clearpath-cho-team-.net-core.md)
 * [DotNET](dotnet/README.md)
   * [Core CLI](dotnet/core-cli/README.md)
     * [Installing the tools](dotnet/core-cli/installing-the-tools.md)
