@@ -103,3 +103,45 @@ _please answer the questions in Vietnamese_
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+## Quản lý hạ tầng
+
+{% tabs %}
+{% tab title="Terraform" %}
+{% code title="nqdev - Kết hợp Terraform và Ansible" overflow="wrap" %}
+```
+Topic: Terraform, Ansible
+- [Terraform](https://developer.hashicorp.com/terraform)
+- [Terraform Docs](https://developer.hashicorp.com/terraform/docs)
+- [Terraform CLI Documentation](https://developer.hashicorp.com/terraform/cli)
+- [Plugin Development](https://developer.hashicorp.com/terraform/plugin)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+**Terraform** và **Ansible** là hai công cụ mạnh mẽ trong lĩnh vực quản lý hạ tầng và cấu hình hệ thống. Kết hợp chúng giúp tự động hóa toàn bộ quá trình triển khai và quản lý hạ tầng một cách hiệu quả.
+
+**Terraform** là công cụ "hạ tầng như mã" (Infrastructure as Code) cho phép bạn định nghĩa và cung cấp hạ tầng thông qua mã. Điều này giúp quản lý các tài nguyên như máy chủ, mạng và dịch vụ một cách nhất quán và có thể phiên bản hóa.
+
+**Ansible** là công cụ quản lý cấu hình và tự động hóa, sử dụng các playbook viết bằng YAML để thực thi các tác vụ trên các máy chủ mục tiêu. Ansible không yêu cầu cài đặt agent trên máy chủ đích, giúp đơn giản hóa quá trình triển khai và quản lý cấu hình.
+
+**Kết hợp Terraform và Ansible** cho phép bạn sử dụng Terraform để cung cấp hạ tầng và Ansible để cấu hình các máy chủ sau khi được tạo. Ví dụ, bạn có thể sử dụng Terraform để tạo các máy ảo trên AWS, sau đó sử dụng Ansible để cài đặt phần mềm và cấu hình hệ thống trên các máy ảo đó.
+
+
+
+### **Lợi ích của việc kết hợp này** bao gồm:
+
+* **Tự động hóa toàn diện**: Tự động hóa từ việc cung cấp hạ tầng đến cấu hình hệ thống, giảm thiểu lỗi do con người và tăng hiệu quả.
+* **Quản lý phiên bản**: Cả Terraform và Ansible đều cho phép quản lý phiên bản, giúp theo dõi và kiểm soát các thay đổi trong hạ tầng và cấu hình.
+* **Tính linh hoạt**: Sử dụng Terraform cho việc cung cấp hạ tầng và Ansible cho việc cấu hình cho phép tận dụng tối đa ưu điểm của từng công cụ.
+
+### **Cách tích hợp Terraform và Ansible**:
+
+1. **Sử dụng Terraform để cung cấp hạ tầng**: Định nghĩa và triển khai các tài nguyên hạ tầng như máy chủ, mạng và lưu trữ bằng Terraform.
+2. **Sử dụng Ansible để cấu hình hệ thống**: Sau khi hạ tầng được cung cấp, sử dụng Ansible để cài đặt phần mềm, cấu hình dịch vụ và thực hiện các tác vụ quản lý khác trên các máy chủ.
+3. **Tích hợp quy trình làm việc**: Có thể sử dụng Terraform để gọi Ansible thông qua các provisioner như `local-exec` hoặc sử dụng Ansible như một nhà cung cấp trong Terraform để tích hợp chặt chẽ hơn.
+{% endtab %}
+{% endtabs %}
+
