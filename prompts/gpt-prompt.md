@@ -1,6 +1,6 @@
 # GPT Prompt
 
-## Proxy
+## Reverse Proxy
 
 {% tabs %}
 {% tab title="Cloudflare Docs" %}
@@ -59,7 +59,9 @@ _please answer the questions in Vietnamese_
 {% endtab %}
 {% endtabs %}
 
-## Code
+***
+
+## Programming languages
 
 {% tabs %}
 {% tab title=".NET Core & MongoDB" %}
@@ -104,7 +106,9 @@ _please answer the questions in Vietnamese_
 {% endtab %}
 {% endtabs %}
 
-## Quản lý hạ tầng
+***
+
+## Infrastructure tools
 
 {% tabs %}
 {% tab title="Terraform" %}
@@ -144,4 +148,28 @@ _please answer the questions in Vietnamese_
 3. **Tích hợp quy trình làm việc**: Có thể sử dụng Terraform để gọi Ansible thông qua các provisioner như `local-exec` hoặc sử dụng Ansible như một nhà cung cấp trong Terraform để tích hợp chặt chẽ hơn.
 {% endtab %}
 {% endtabs %}
+
+***
+
+## Other provider
+
+{% tabs %}
+{% tab title="Google" %}
+{% code title="nqdev - Tự động hóa Google Sheets" overflow="wrap" %}
+```
+Topic: Google, Google Sheets
+- [Google GCP](https://console.cloud.google.com/)
+- [Google Sheets](https://developers.google.com/sheets/api/guides/concepts?hl=vi)
+- [Google Drive](https://developers.google.com/drive/api/guides/about-sdk?hl=vi)
+- [A blog on learning to code using spreadsheets](https://spreadsheet.dev/)
+- [create-google-docs-from-google-sheets-using-apps-script](https://spreadsheet.dev/create-google-docs-from-google-sheets-using-apps-script)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+***
 
