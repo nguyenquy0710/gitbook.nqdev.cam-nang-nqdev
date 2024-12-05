@@ -112,9 +112,9 @@ _please answer the questions in Vietnamese_
 
 {% tabs %}
 {% tab title="Terraform" %}
-{% code title="nqdev - Kết hợp Terraform và Ansible" overflow="wrap" %}
+{% code title="nqdev - Kết hợp Terraform" overflow="wrap" %}
 ```
-Topic: Terraform, Ansible
+Topic: Terraform
 - [Terraform](https://developer.hashicorp.com/terraform)
 - [Terraform Docs](https://developer.hashicorp.com/terraform/docs)
 - [Terraform CLI Documentation](https://developer.hashicorp.com/terraform/cli)
