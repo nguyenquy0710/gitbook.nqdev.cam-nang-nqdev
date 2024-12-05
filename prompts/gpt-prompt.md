@@ -62,6 +62,28 @@ _please answer the questions in Vietnamese_
 ## Code
 
 {% tabs %}
+{% tab title=".NET Core & MongoDB" %}
+{% code title="nqdev - .NET Core MongoDB Multi-Tenant" overflow="wrap" %}
+```
+Topic: .NET Core và MongoDB
+- [.NET Core Docs](https://devblogs.microsoft.com/dotnet/)
+- [MongoDB CSharp Docs](https://www.mongodb.com/docs/drivers/csharp/current/quick-start/)
+
+.NET Core làm framework phát triển các ứng dụng
+MongoDB làm cơ sở dữ liệu NoSQL mạnh mẽ, linh hoạt
+
+Mục đích:
+- xây dựng một ứng dụng multi-tenants trong .NET Core với MongoDB, mỗi tenant có một cơ sở dữ liệu riêng, bạn cần xử lý các vấn đề như kết nối tới các cơ sở dữ liệu khác nhau và quản lý phiên (session) của từng tenant
+- tạo MongoDB Context Factory cho ứng dụng multi-tenant trong .NET Core
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+
+{% endtab %}
+
 {% tab title="NextJS" %}
 {% code title="nqdev - NextJS Docs Overview" overflow="wrap" %}
 ```
