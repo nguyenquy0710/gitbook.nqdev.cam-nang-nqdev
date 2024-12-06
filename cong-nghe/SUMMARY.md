@@ -90,6 +90,7 @@
     * [NGINX: Hướng dẫn sử dụng Lua trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-su-dung-lua-tren-alpine.md)
     * [NGINX: Hướng Dẫn Chi Tiết Cấu Hình Load Balancer](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-cau-hinh-load-balancer.md)
     * [NGINX: Hướng Dẫn Sử Dụng Dynamic Modules](ung-dung/nginx-plus/nginx-huong-dan-su-dung-dynamic-modules.md)
+    * [NGINX: Hướng dẫn Cài đặt và Sử dụng Module njs](ung-dung/nginx-plus/nginx-huong-dan-cai-dat-va-su-dung-module-njs.md)
   * [NTP - Secure Timeserver](ung-dung/ntp-secure-timeserver/README.md)
     * [Hướng dẫn cài đặt NTP an toàn với Docker Compose](ung-dung/ntp-secure-timeserver/huong-dan-cai-dat-ntp-an-toan-voi-docker-compose.md)
   * [Wordpress](ung-dung/wordpress/README.md)
