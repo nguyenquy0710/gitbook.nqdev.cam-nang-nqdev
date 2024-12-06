@@ -89,6 +89,7 @@
     * [NGINX: Hướng dẫn chi tiết sử dụng GeoIP2 trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-su-dung-geoip2-tren-alpine.md)
     * [NGINX: Hướng dẫn sử dụng Lua trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-su-dung-lua-tren-alpine.md)
     * [NGINX: Hướng Dẫn Chi Tiết Cấu Hình Load Balancer](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-cau-hinh-load-balancer.md)
+    * [NGINX: Hướng Dẫn Sử Dụng Dynamic Modules](ung-dung/nginx-plus/nginx-huong-dan-su-dung-dynamic-modules.md)
   * [NTP - Secure Timeserver](ung-dung/ntp-secure-timeserver/README.md)
     * [Hướng dẫn cài đặt NTP an toàn với Docker Compose](ung-dung/ntp-secure-timeserver/huong-dan-cai-dat-ntp-an-toan-voi-docker-compose.md)
   * [Wordpress](ung-dung/wordpress/README.md)
