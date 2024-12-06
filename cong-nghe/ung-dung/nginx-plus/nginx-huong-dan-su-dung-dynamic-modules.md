@@ -2,6 +2,10 @@
 
 **Dynamic Modules** cho phép bạn thêm các module vào NGINX mà không cần phải biên dịch lại toàn bộ phần mềm. Tính năng này giúp NGINX linh hoạt hơn, dễ dàng mở rộng với các chức năng bổ sung chỉ khi cần thiết.
 
+<figure><img src="https://docs.nginx.com/nginx/images/nginx-plus-dynamic-module-plug-ins.png" alt="Dynamic Modules" width="375"><figcaption><p>Các mô-đun động cắm vào NGINX Plus để cung cấp chức năng bổ sung.</p></figcaption></figure>
+
+
+
 ***
 
 ## 1. **Dynamic Modules Là Gì?**
