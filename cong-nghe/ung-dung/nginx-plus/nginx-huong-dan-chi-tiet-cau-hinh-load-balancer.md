@@ -224,3 +224,10 @@ http {
 ## 9. **Kết Luận**
 
 Cấu hình Load Balancer trong NGINX là một công cụ quan trọng để cải thiện hiệu suất và độ tin cậy của hệ thống. Với các thuật toán linh hoạt, kiểm tra sức khỏe backend, và khả năng mở rộng, bạn có thể thiết kế hệ thống mạnh mẽ và tối ưu.
+
+{% code title="Tài liệu tham khảo:" lineNumbers="true" %}
+```http
+https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+```
+{% endcode %}
+
