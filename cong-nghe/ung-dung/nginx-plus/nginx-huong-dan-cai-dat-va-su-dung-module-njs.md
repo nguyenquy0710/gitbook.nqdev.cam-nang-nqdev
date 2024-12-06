@@ -192,6 +192,7 @@ njs Scripting Language - https://docs.nginx.com/nginx/admin-guide/dynamic-module
 Tài liệu về mô-đun JavaScript của NGINX - https://nginx.org/en/docs/njs/
 Hướng dẫn cài đặt njs - https://nginx.org/en/docs/njs/install.html
 Tham khảo cú pháp và API của njs - https://nginx.org/en/docs/njs/reference.html
+NGINX JavaScript examples - https://github.com/nginx/njs-examples
 ```
 {% endcode %}
 
