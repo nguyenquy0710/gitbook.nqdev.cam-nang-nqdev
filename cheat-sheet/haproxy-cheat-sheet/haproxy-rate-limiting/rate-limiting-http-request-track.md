@@ -1,4 +1,4 @@
-# Theo Dõi Yêu Cầu HTTP trong HAProxy với http-request track và Timestamp
+# Rate Limiting: http-request track
 
 Trong HAProxy, lệnh `http-request track-sc0` (cùng các biến thể `track-sc1`, `track-sc2`,...) cho phép bạn theo dõi thông tin từ các yêu cầu HTTP và lưu chúng vào `stick table`. Việc này hữu ích khi bạn cần giám sát số lần truy cập từ một địa chỉ IP, theo dõi các yêu cầu theo từng URL cụ thể, hoặc phát hiện hành vi bất thường.
 

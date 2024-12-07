@@ -5,7 +5,7 @@ description: >-
   https://bashsenpai.com/resources/cheatsheets/iptables
 ---
 
-# IPTables Commands Cheat Sheet
+# IPTables Commands
 
 <figure><img src=".gitbook/assets/IP-Tables-Commands-Cheatsheet.png" alt=""><figcaption><p>IPtables Commands Cheatsheet</p></figcaption></figure>
 

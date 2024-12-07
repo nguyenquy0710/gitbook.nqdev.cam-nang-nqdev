@@ -15,5 +15,5 @@ layout:
     visible: true
 ---
 
-# Git Cheat sheet
+# GIT
 
