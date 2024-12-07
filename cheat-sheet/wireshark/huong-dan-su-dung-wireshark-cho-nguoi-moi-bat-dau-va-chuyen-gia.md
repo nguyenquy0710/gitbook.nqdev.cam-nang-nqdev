@@ -108,6 +108,18 @@ Wireshark đi kèm công cụ dòng lệnh là **tshark**.
 
 ***
 
+## **7. Tài liệu tham khảo**
+
+{% code overflow="wrap" lineNumbers="true" %}
+```markdown
+- [Wireshark Cheat Sheet](https://assets.ctfassets.net/kvf8rpi09wgk/a2PBJT7Qq9XL7Bbf81Ajh/e28b9c889edc13ddb1e81ed5ce678809/Wireshark_Cheat_Sheet__6_.pdf)
+- [The Ultimate Wireshark Cheat Sheet](https://cyberforge.academy/the-ultimate-wireshark-cheat-sheet-for-cybersecurity-professionals/)
+- [GH: Wireshark Cheatsheet](https://github.com/lyudaio/cheatsheets/blob/main/security/tools/wireshark.md)
+```
+{% endcode %}
+
+***
+
 ## **Kết Luận**
 
 Wireshark là một công cụ không thể thiếu cho các nhà quản trị mạng, chuyên gia bảo mật và những ai muốn tìm hiểu về mạng. Với cheat sheet này, bạn sẽ có thể làm chủ các tính năng quan trọng và tối ưu hóa việc sử dụng Wireshark trong công việc. Hãy thực hành và khám phá thêm các tính năng mới để tận dụng tối đa công cụ mạnh mẽ này!
