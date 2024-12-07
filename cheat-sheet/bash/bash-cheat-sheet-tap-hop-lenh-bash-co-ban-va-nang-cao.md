@@ -8,6 +8,12 @@ description: >-
 
 Dưới đây là cheat sheet tổng hợp các lệnh Bash từ cơ bản đến nâng cao, giúp bạn làm việc hiệu quả hơn.
 
+{% hint style="success" %}
+* [Bash Docs](https://devdocs.io/bash/)
+{% endhint %}
+
+
+
 ***
 
 ## **1. Các lệnh cơ bản trong Bash**
