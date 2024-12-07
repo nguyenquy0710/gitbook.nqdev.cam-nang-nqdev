@@ -66,7 +66,7 @@ _please answer the questions in Vietnamese_
 {% tabs %}
 {% tab title=".NET Core & MongoDB" %}
 {% code title="nqdev - .NET Core MongoDB Multi-Tenant" overflow="wrap" %}
-```
+```markdown
 Topic: .NET Core và MongoDB
 - [.NET Core Docs](https://devblogs.microsoft.com/dotnet/)
 - [MongoDB CSharp Docs](https://www.mongodb.com/docs/drivers/csharp/current/quick-start/)
@@ -90,9 +90,10 @@ _please answer the questions in Vietnamese_
 
 {% tab title="NextJS" %}
 {% code title="nqdev - NextJS Docs Overview" overflow="wrap" %}
-```
+```markdown
 Topic: NextJS Docs Overview
 - [Next.js Docs](https://nextjs.org/docs)
+- [Getting Started - App Router](https://nextjs.org/docs/app/getting-started)
 - [Next.js Templates](https://nextjstemplates.com/docs)
 - [Next.js Templates](https://nextjstemplates.com/templates)
 - [Next.js starter templates and themes](https://vercel.com/templates/next.js)
@@ -105,6 +106,20 @@ _hãy trả lời các câu hỏi bằng tiếng việt_
 _please answer the questions in Vietnamese_
 ```
 {% endcode %}
+
+\#### Cấu trúc Dự án trong Next.js
+
+<figure><img src="https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Ftop-level-folders.png&#x26;w=3840&#x26;q=75" alt=""><figcaption><p>Folder and file conventions</p></figcaption></figure>
+
+```markdown
+/app
+   /page.js        # Trang mặc định
+   /about/page.js  # Trang About
+   /blog/page.js   # Trang Blog
+   /blog/[id].js   # Trang blog động với id
+```
+
+
 {% endtab %}
 {% endtabs %}
 
