@@ -6,7 +6,8 @@
 
 ## **1. Tổng Quan về Wireshark**
 
-Wireshark là gì?\
+### Wireshark là gì?
+
 Wireshark là một trình phân tích giao thức mạng, cho phép bạn chụp và kiểm tra lưu lượng mạng theo thời gian thực. Nó hỗ trợ nhiều giao thức, từ HTTP, TCP, UDP đến DNS, SSL/TLS.
 
 ### **Ứng dụng của Wireshark**:
