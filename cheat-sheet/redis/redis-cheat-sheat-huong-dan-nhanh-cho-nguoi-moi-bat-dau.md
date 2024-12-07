@@ -1,8 +1,24 @@
-# Hướng dẫn nhanh cho người mới bắt đầu
+---
+description: >-
+  Redis là một cơ sở dữ liệu NoSQL hiệu năng cao, thường được sử dụng để lưu trữ
+  dữ liệu trong bộ nhớ (in-memory) nhằm tăng tốc độ truy xuất và xử lý.
+---
 
-Redis là một cơ sở dữ liệu NoSQL hiệu năng cao, thường được sử dụng để lưu trữ dữ liệu trong bộ nhớ (in-memory) nhằm tăng tốc độ truy xuất và xử lý. Bài viết này sẽ cung cấp cho bạn một **Redis Cheat Sheet** tổng hợp các lệnh cơ bản, hữu ích để làm việc với Redis hiệu quả hơn.
+# Redis Cheat Sheat: Hướng dẫn nhanh cho người mới bắt đầu
+
+Bài viết này sẽ cung cấp cho bạn một **Redis Cheat Sheet** tổng hợp các lệnh cơ bản, hữu ích để làm việc với Redis hiệu quả hơn.
 
 ***
+
+## **Redis là gì?**
+
+Redis (REmote DIctionary Server) là cơ sở dữ liệu NoSQL in-memory, mã nguồn mở, thường được sử dụng để:
+
+* Lưu trữ bộ nhớ đệm (cache).
+* Xử lý hàng đợi công việc.
+* Phân tích dữ liệu thời gian thực.
+
+Redis hỗ trợ nhiều kiểu dữ liệu như **String**, **List**, **Set**, **Hash**, và **Sorted Set**, giúp nó linh hoạt và mạnh mẽ trong nhiều ứng dụng.
 
 ## **1. Khởi Đầu Với Redis**
 

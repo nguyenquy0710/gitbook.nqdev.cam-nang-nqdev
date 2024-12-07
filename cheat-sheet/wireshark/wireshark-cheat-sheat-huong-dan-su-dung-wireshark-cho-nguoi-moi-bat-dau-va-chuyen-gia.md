@@ -1,6 +1,12 @@
-# Hướng dẫn sử dụng Wireshark cho người mới bắt đầu và chuyên gia
+---
+description: >-
+  Wireshark là công cụ phân tích mạng phổ biến nhất hiện nay, được sử dụng để
+  giám sát, phân tích và khắc phục các vấn đề liên quan đến mạng.
+---
 
-**Wireshark** là công cụ phân tích mạng phổ biến nhất hiện nay, được sử dụng để giám sát, phân tích và khắc phục các vấn đề liên quan đến mạng. Với giao diện mạnh mẽ và nhiều tính năng, Wireshark có thể phức tạp nếu bạn mới bắt đầu. Dưới đây là cheat sheet tổng hợp các lệnh, phím tắt và mẹo để bạn làm chủ Wireshark hiệu quả.
+# Wireshark Cheat Sheat: Hướng dẫn sử dụng Wireshark cho người mới bắt đầu và chuyên gia
+
+Với giao diện mạnh mẽ và nhiều tính năng, **Wireshark** có thể phức tạp nếu bạn mới bắt đầu. Dưới đây là cheat sheet tổng hợp các lệnh, phím tắt và mẹo để bạn làm chủ Wireshark hiệu quả.
 
 ***
 
