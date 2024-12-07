@@ -70,6 +70,8 @@ _please answer the questions in Vietnamese_
 Topic: .NET Core và MongoDB
 - [.NET Core Docs](https://devblogs.microsoft.com/dotnet/)
 - [MongoDB CSharp Docs](https://www.mongodb.com/docs/drivers/csharp/current/quick-start/)
+- [MongoDB .NET Driver API Documentation](https://mongodb.github.io/mongo-csharp-driver/2.16/)
+- [GH: mongo-csharp-driver](https://github.com/mongodb/mongo-csharp-driver/tree/main)
 
 .NET Core làm framework phát triển các ứng dụng
 MongoDB làm cơ sở dữ liệu NoSQL mạnh mẽ, linh hoạt
