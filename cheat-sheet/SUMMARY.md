@@ -3,6 +3,7 @@
 * [Overview](https://blogs.nhquydev.net/?utm_source=gitbook\&utm_medium=blogs)
 * [IPTables Commands](README.md)
 * [HAProxy](<README (1).md>)
+  * [HAProxy Cheat Sheet: Hướng dẫn nhanh và đầy đủ cho quản trị viên](haproxy/haproxy-cheat-sheet-huong-dan-nhanh-va-day-du-cho-quan-tri-vien.md)
   * [Cấu Hình và Tính Năng Nổi Bật](haproxy-cheat-sheet/cau-hinh-va-tinh-nang-noi-bat.md)
   * [Hướng Dẫn Cấu Hình Log Format Trong HAProxy](haproxy-cheat-sheet/huong-dan-cau-hinh-log-format-trong-haproxy.md)
   * [Hướng dẫn chi tiết về cấu hình HAProxy cho Load Balancing và giới hạn tốc độ](haproxy-cheat-sheet/huong-dan-chi-tiet-ve-cau-hinh-haproxy-cho-load-balancing-va-gioi-han-toc-do.md)
