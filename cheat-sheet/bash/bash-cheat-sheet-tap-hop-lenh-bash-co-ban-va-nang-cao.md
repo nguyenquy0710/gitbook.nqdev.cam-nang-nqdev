@@ -180,3 +180,12 @@ Khi gõ `mycommand`, Bash sẽ hiển thị gợi ý `start`, `stop`, hoặc `re
 ## **Kết luận**
 
 Bash là một công cụ mạnh mẽ giúp tự động hóa và quản lý hệ thống hiệu quả. Cheat sheet này sẽ giúp bạn nắm bắt nhanh các lệnh và kỹ thuật quan trọng trong Bash. Hãy lưu lại và thực hành để làm chủ Bash! 🚀
+
+
+
+{% code title="Tài liệu tham khảo:" overflow="wrap" lineNumbers="true" %}
+```http
+https://devdocs.io/bash/a-programmable-completion-example
+```
+{% endcode %}
+
