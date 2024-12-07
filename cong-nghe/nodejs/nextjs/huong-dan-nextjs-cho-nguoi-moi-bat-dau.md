@@ -17,6 +17,17 @@ Bài viết này sẽ hướng dẫn bạn các bước cơ bản để bắt đ
 * **Node.js**: Tải về và cài đặt từ [Node.js](https://nodejs.org/).
 * **npm** hoặc **yarn**: Được cài đặt sẵn khi bạn cài Node.js.
 
+{% hint style="success" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```markdown
+- [Node.js®](https://nodejs.org/en)
+- [How to set up a Next.js project](https://nextjs.org/docs/app/getting-started/installation)
+```
+{% endcode %}
+{% endhint %}
+
+
+
 ### **Khởi tạo dự án Next.js:**
 
 Sử dụng lệnh sau để tạo một dự án Next.js mới:
