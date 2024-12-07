@@ -48,7 +48,7 @@ layout:
 
 ### **2. DevOps và Bảo mật**
 
-* [**HAProxy**](https://app.gitbook.com/s/uksRknmEVZ3bhjhQiFbL/cong-nghe/haproxy-cheat-sheet): Cấu hình rate limiting, tối ưu hóa load balancer để bảo vệ hệ thống khỏi các cuộc tấn công DDoS.
+* [**HAProxy**](https://app.gitbook.com/s/uksRknmEVZ3bhjhQiFbL/haproxy): Cấu hình rate limiting, tối ưu hóa load balancer để bảo vệ hệ thống khỏi các cuộc tấn công DDoS.
 * [**Docker**](docker/) **& Docker Compose**: Xây dựng môi trường phát triển đa dịch vụ.
 * **CI/CD**: Hướng dẫn tích hợp liên tục và triển khai liên tục.
 
