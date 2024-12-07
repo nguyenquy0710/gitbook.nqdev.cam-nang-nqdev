@@ -47,6 +47,7 @@
     * [SQL Server Error : 14151, Severity: 18. Replication agent](sql-server/sql-server-error-code/sql-server-error-14151-severity-18.-replication-agent.md)
 * [NodeJS](nodejs/README.md)
   * [NextJS](nodejs/nextjs/README.md)
+    * [Hướng dẫn NextJS cho người mới bắt đầu](nodejs/nextjs/huong-dan-nextjs-cho-nguoi-moi-bat-dau.md)
     * [Parallel Routes trong Next.js](nodejs/nextjs/parallel-routes-trong-next.js.md)
   * [ReactJS](nodejs/reactjs/README.md)
     * [Hiểu về hook useRef của React như thế nào cho đúng](nodejs/reactjs/hieu-ve-hook-useref-cua-react-nhu-the-nao-cho-dung.md)
