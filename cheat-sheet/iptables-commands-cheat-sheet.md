@@ -5,9 +5,9 @@ description: >-
   https://bashsenpai.com/resources/cheatsheets/iptables
 ---
 
-# IPTables Commands Cheat sheet
+# IPTables Commands Cheat Sheet
 
-<figure><img src="../.gitbook/assets/IP-Tables-Commands-Cheatsheet.png" alt=""><figcaption><p>IPtables Commands Cheatsheet</p></figcaption></figure>
+<figure><img src=".gitbook/assets/IP-Tables-Commands-Cheatsheet.png" alt=""><figcaption><p>IPtables Commands Cheatsheet</p></figcaption></figure>
 
 IPtables là một chương trình tiện ích không gian người dùng cho phép quản trị viên hệ thống định cấu hình các bảng do tường lửa nhân Linux cung cấp (được triển khai dưới dạng các mô-đun Netfilter khác nhau) cũng như các chuỗi và quy tắc mà nó lưu trữ. Vì iptables yêu cầu các đặc quyền nâng cao để hoạt động nên nó phải được thực thi bởi người dùng root, nếu không nó sẽ không hoạt động.
 
