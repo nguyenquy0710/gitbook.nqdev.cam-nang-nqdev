@@ -1,12 +1,16 @@
+---
+description: CMD - Command Cheat Sheat ✅
+---
+
 # Tổng hợp các lệnh CMD hữu ích trên Windows
 
-Command Prompt (CMD) là một công cụ mạnh mẽ cho phép bạn thực hiện nhiều tác vụ trên hệ điều hành Windows thông qua giao diện dòng lệnh. Dưới đây là danh sách các lệnh CMD thông dụng và hữu ích dành cho người dùng ở nhiều cấp độ, từ cơ bản đến nâng cao.
+**Command Prompt (CMD)** là một công cụ mạnh mẽ cho phép bạn thực hiện nhiều tác vụ trên hệ điều hành Windows thông qua giao diện dòng lệnh. Dưới đây là danh sách các lệnh CMD thông dụng và hữu ích dành cho người dùng ở nhiều cấp độ, từ cơ bản đến nâng cao.
 
 ***
 
 ## **1. Lệnh Hệ Thống**
 
-| **Lệnh**                        | **Chức năng**                                                             |
+| Lệnh                            | Chức năng                                                                 |
 | ------------------------------- | ------------------------------------------------------------------------- |
 | `systeminfo`                    | Hiển thị thông tin chi tiết về hệ thống, như phiên bản Windows, RAM, CPU. |
 | `hostname`                      | Hiển thị tên máy tính.                                                    |
@@ -21,7 +25,7 @@ Command Prompt (CMD) là một công cụ mạnh mẽ cho phép bạn thực hi�
 
 ## **2. Lệnh Quản Lý File và Thư Mục**
 
-| **Lệnh**              | **Chức năng**                                                      |
+| Lệnh                  | Chức năng                                                          |
 | --------------------- | ------------------------------------------------------------------ |
 | `dir`                 | Liệt kê tất cả các file và thư mục trong thư mục hiện tại.         |
 | `cd <đường-dẫn>`      | Chuyển đến thư mục khác.                                           |
@@ -36,7 +40,7 @@ Command Prompt (CMD) là một công cụ mạnh mẽ cho phép bạn thực hi�
 
 ## **3. Lệnh Mạng**
 
-| **Lệnh**                     | **Chức năng**                                           |
+| Lệnh                         | Chức năng                                               |
 | ---------------------------- | ------------------------------------------------------- |
 | `ipconfig`                   | Hiển thị cấu hình mạng (IP, gateway, DNS).              |
 | `ping <địa-chỉ-ip/tên-miền>` | Kiểm tra kết nối mạng đến một địa chỉ IP hoặc tên miền. |
@@ -49,7 +53,7 @@ Command Prompt (CMD) là một công cụ mạnh mẽ cho phép bạn thực hi�
 
 ## **4. Lệnh Quản Lý Người Dùng**
 
-| **Lệnh**                              | **Chức năng**                                  |
+| Lệnh                                  | Chức năng                                      |
 | ------------------------------------- | ---------------------------------------------- |
 | `net user`                            | Hiển thị danh sách tất cả người dùng trên máy. |
 | `net user <tên-user> <mật-khẩu> /add` | Thêm một người dùng mới với mật khẩu chỉ định. |
@@ -60,7 +64,7 @@ Command Prompt (CMD) là một công cụ mạnh mẽ cho phép bạn thực hi�
 
 ## **5. Lệnh Nâng Cao**
 
-| **Lệnh**                | **Chức năng**                                     |
+| Lệnh                    | Chức năng                                         |
 | ----------------------- | ------------------------------------------------- |
 | `diskpart`              | Truy cập công cụ quản lý ổ đĩa.                   |
 | `format <ký-tự-ổ-đĩa>:` | Định dạng ổ đĩa.                                  |
