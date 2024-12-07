@@ -28,3 +28,6 @@
   * [Redis Cheat Sheat: Hướng dẫn nhanh cho người mới bắt đầu](redis/redis-cheat-sheat-huong-dan-nhanh-cho-nguoi-moi-bat-dau.md)
 * [Wireshark](wireshark/README.md)
   * [Wireshark Cheat Sheat: Hướng dẫn sử dụng Wireshark cho người mới bắt đầu và chuyên gia](wireshark/wireshark-cheat-sheat-huong-dan-su-dung-wireshark-cho-nguoi-moi-bat-dau-va-chuyen-gia.md)
+* [Windows](windows/README.md)
+  * [Hướng dẫn sử dụng Registry Editor](windows/huong-dan-su-dung-registry-editor.md)
+  * [Chi tiết giao diện trong Registry Editor](windows/chi-tiet-giao-dien-trong-registry-editor.md)
