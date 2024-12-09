@@ -5,7 +5,7 @@
 {% tabs %}
 {% tab title="Cloudflare Docs" %}
 {% code title="nqdev - Cloudflare Docs Overview" overflow="wrap" %}
-```
+```markdown
 Topic: Cloudflare Docs Overview
 - [Cloudflare Docs](https://developers.cloudflare.com/)
 - [Cloudflare Workers](https://developers.cloudflare.com/workers/)
@@ -22,7 +22,7 @@ _please answer the questions in Vietnamese_
 
 {% tab title="NGINX Docs" %}
 {% code title="nqdev - NGINX trên Alpine Linux" overflow="wrap" %}
-```
+```markdown
 Topic: Nginx Research, Nginx Docker for Alpine
 - [NGINX Product Documentation](https://docs.nginx.com/)
 - [NGINX Open Source](https://nginx.org/en/docs/)
@@ -41,7 +41,7 @@ _please answer the questions in Vietnamese_
 
 {% tab title="HAProxy Docs" %}
 {% code title="nqdev - HAProxy trên Alpine Linux" overflow="wrap" %}
-```
+```markdown
 Topic: HAProxy Research, HAProxy Docker for Alpine
 - [HAProxy Documentation](https://docs.haproxy.org/)
 - [HAProxy version 2.6.20-2](https://docs.haproxy.org/2.6/configuration.html)
@@ -121,6 +121,27 @@ _please answer the questions in Vietnamese_
 
 
 {% endtab %}
+
+{% tab title="Playwright" %}
+{% code title="nqdev - Playwright for .NET" overflow="wrap" %}
+```markdown
+Topic: Playwright for .NET
+- [Playwright](https://console.cloud.google.com/)
+- [Playwright for .NET](https://playwright.dev/dotnet/docs/intro)
+- [Playwright API reference](https://playwright.dev/dotnet/docs/api/class-playwright)
+- [microsoft/playwright-dotnet](https://github.com/microsoft/playwright-dotnet)
+
+.NET version of the Playwright testing and automation library. 
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+
+
+
+{% endtab %}
 {% endtabs %}
 
 ***
@@ -130,7 +151,7 @@ _please answer the questions in Vietnamese_
 {% tabs %}
 {% tab title="Terraform" %}
 {% code title="nqdev - Kết hợp Terraform" overflow="wrap" %}
-```
+```markdown
 Topic: Terraform
 - [Terraform](https://developer.hashicorp.com/terraform)
 - [Terraform Docs](https://developer.hashicorp.com/terraform/docs)
@@ -168,12 +189,14 @@ _please answer the questions in Vietnamese_
 
 ***
 
+
+
 ## Other provider
 
 {% tabs %}
 {% tab title="Google" %}
 {% code title="nqdev - Tự động hóa Google Sheets" overflow="wrap" %}
-```
+```markdown
 Topic: Google, Google Sheets
 - [Google GCP](https://console.cloud.google.com/)
 - [Google Sheets](https://developers.google.com/sheets/api/guides/concepts?hl=vi)
