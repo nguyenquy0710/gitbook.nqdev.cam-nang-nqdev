@@ -209,6 +209,28 @@ _please answer the questions in Vietnamese_
 ```
 {% endcode %}
 {% endtab %}
+
+{% tab title="DocFX" %}
+{% code title="nqdev - Tóm tắt DocFX" overflow="wrap" %}
+```markdown
+Topic: DocFX
+- [docfx](https://github.com/dotnet/docfx)
+- [Quick Start | docfx](https://dotnet.github.io/docfx/)
+- [API | docfx](https://dotnet.github.io/docfx/api/Docfx.html)
+- [Extensions | docfx](https://dotnet.github.io/docfx/extensions/templates.html)
+
+Build your docs with docfx.
+Static site generator for .NET API documentation. 
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese
+```
+{% endcode %}
+
+
+
+
+{% endtab %}
 {% endtabs %}
 
 ***
