@@ -88,6 +88,8 @@
       * [Tìm hiểu sâu về API \_reindex trong Elasticsearch](ung-dung/elasticsearch/_reindex/tim-hieu-sau-ve-api-_reindex-trong-elasticsearch.md)
       * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](ung-dung/elasticsearch/_reindex/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-_reindex.md)
     * [\_transform](ung-dung/elasticsearch/_transform.md)
+  * [Playwright](ung-dung/playwright/README.md)
+    * [Playwright: Tự Động Hóa Trình Duyệt Hiệu Quả](ung-dung/playwright/playwright-tu-dong-hoa-trinh-duyet-hieu-qua.md)
   * [NGINX Plus](ung-dung/nginx-plus/README.md)
     * [NGINX: Hiệu suất vượt trội và giải pháp tối ưu cho hệ thống web](ung-dung/nginx-plus/nginx-hieu-suat-vuot-troi-va-giai-phap-toi-uu-cho-he-thong-web.md)
     * [NGINX: Hướng dẫn chi tiết sử dụng GeoIP2 trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-su-dung-geoip2-tren-alpine.md)
