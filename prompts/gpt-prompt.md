@@ -211,9 +211,9 @@ _please answer the questions in Vietnamese_
 {% endtab %}
 
 {% tab title="DocFX" %}
-{% code title="nqdev - Tóm tắt DocFX" overflow="wrap" %}
+{% code title="nqdev - Tổng quan về DocFX" overflow="wrap" %}
 ```markdown
-Topic: DocFX
+Topic: DocFX Overview
 - [docfx](https://github.com/dotnet/docfx)
 - [Quick Start | docfx](https://dotnet.github.io/docfx/)
 - [API | docfx](https://dotnet.github.io/docfx/api/Docfx.html)
