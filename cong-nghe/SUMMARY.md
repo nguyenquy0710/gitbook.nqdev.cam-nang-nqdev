@@ -79,6 +79,7 @@
       * [Redis mất dữ liệu khi restart](ung-dung/caching/redis/redis-mat-du-lieu-khi-restart.md)
     * [Varnish Cache](ung-dung/caching/varnish-cache/README.md)
       * [Hướng Dẫn Cài Đặt Varnish Cache với HAProxy Sử Dụng Docker Compose](ung-dung/caching/varnish-cache/huong-dan-cai-dat-varnish-cache-voi-haproxy-su-dung-docker-compose.md)
+  * [DocFX](ung-dung/docfx.md)
   * [ETL Tools](ung-dung/etl-tools/README.md)
     * [Công cụ ETL Tools List & Software](ung-dung/etl-tools/cong-cu-etl-tools-list-and-software.md)
     * [Airbyte](ung-dung/etl-tools/airbyte/README.md)
