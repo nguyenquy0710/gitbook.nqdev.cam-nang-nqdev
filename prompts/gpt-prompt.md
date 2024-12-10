@@ -122,6 +122,26 @@ _please answer the questions in Vietnamese_
 
 {% endtab %}
 
+{% tab title="Untitled" %}
+{% code title="nqdev - LoopBack Overview" overflow="wrap" %}
+```markdown
+Topic: LoopBack Docs Overview
+- [Node.js Docs](https://nodejs.org/docs/latest/api/)
+- [LoopBack 4 Docs](https://loopback.io/doc/en/lb4/)
+- [LoopBack 4 API Docs](https://loopback.io/doc/en/lb4/apidocs.index.html)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+<figure><img src="https://loopback.io/pages/en/lb4/imgs/lb4-high-level.png" alt=""><figcaption><p>LoopBack</p></figcaption></figure>
+
+
+
+
+{% endtab %}
+
 {% tab title="Playwright" %}
 {% code title="nqdev - Playwright for .NET" overflow="wrap" %}
 ```markdown
