@@ -226,6 +226,27 @@ _please answer the questions in Vietnamese_
 2. **Sử dụng Ansible để cấu hình hệ thống**: Sau khi hạ tầng được cung cấp, sử dụng Ansible để cài đặt phần mềm, cấu hình dịch vụ và thực hiện các tác vụ quản lý khác trên các máy chủ.
 3. **Tích hợp quy trình làm việc**: Có thể sử dụng Terraform để gọi Ansible thông qua các provisioner như `local-exec` hoặc sử dụng Ansible như một nhà cung cấp trong Terraform để tích hợp chặt chẽ hơn.
 {% endtab %}
+
+{% tab title="Graylog" %}
+{% code title="nqdev - Graylog Overview" overflow="wrap" %}
+```markdown
+Topic: Graylog Overview
+- [Graylog's Free](https://graylog.org/free/)
+- [Graylog Open](https://graylog.org/products/source-available/)
+- [Download Graylog](https://graylog.org/downloads/)
+- [GH: Graylog2/docker-compose](https://github.com/Graylog2/docker-compose)
+- [Graylog Documentation](https://go2docs.graylog.org/current/home.htm)
+- [Graylog Docker Install](https://go2docs.graylog.org/6-0/downloading_and_installing_graylog/docker_installation.htm)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+
+
+
+{% endtab %}
 {% endtabs %}
 
 ***
