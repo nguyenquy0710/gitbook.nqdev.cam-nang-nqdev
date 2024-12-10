@@ -63,7 +63,24 @@ _please answer the questions in Vietnamese_
 
 ## Programming languages
 
+CSharp & Dotnet
+
 {% tabs %}
+{% tab title=".NET Core" %}
+{% code title="nqdev - .NET Core Overview" overflow="wrap" %}
+```markdown
+Topic: .NET Core Overview
+- [.NET Core Docs](https://devblogs.microsoft.com/dotnet/)
+- [GH: dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples)
+- [GH: dotnet-templating](https://github.com/dotnet/templating)
+- [Template Engine Wiki](https://github.com/dotnet/templating/wiki)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+{% endtab %}
+
 {% tab title=".NET Core & MongoDB" %}
 {% code title="nqdev - .NET Core MongoDB Multi-Tenant" overflow="wrap" %}
 ```markdown
@@ -84,10 +101,12 @@ _hãy trả lời các câu hỏi bằng tiếng việt_
 _please answer the questions in Vietnamese_
 ```
 {% endcode %}
-
-
 {% endtab %}
+{% endtabs %}
 
+NodeJS
+
+{% tabs %}
 {% tab title="NextJS" %}
 {% code title="nqdev - NextJS Docs Overview" overflow="wrap" %}
 ```markdown
@@ -122,7 +141,7 @@ _please answer the questions in Vietnamese_
 
 {% endtab %}
 
-{% tab title="Untitled" %}
+{% tab title="LoopBack " %}
 {% code title="nqdev - LoopBack Overview" overflow="wrap" %}
 ```markdown
 Topic: LoopBack Docs Overview
@@ -163,6 +182,8 @@ _please answer the questions in Vietnamese_
 
 {% endtab %}
 {% endtabs %}
+
+
 
 ***
 
