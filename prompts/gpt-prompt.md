@@ -67,9 +67,18 @@ CSharp & Dotnet
 
 {% tabs %}
 {% tab title=".NET Core" %}
-{% code title="nqdev - .NET Core Overview" overflow="wrap" %}
+{% code title="nqdev - Tổng quan về .NET Core" overflow="wrap" %}
 ```markdown
 Topic: .NET Core Overview
+- [Microsoft Learn.](https://learn.microsoft.com/vi-vn/)
+- [Tài liệu kỹ thuật | Microsoft Learn](https://learn.microsoft.com/vi-vn/docs/)
+- [.NET documentation](https://learn.microsoft.com/vi-vn/dotnet/)
+- [Introduction to .NET](https://learn.microsoft.com/vi-vn/dotnet/core/introduction)
+- [.NET Microservices: Architecture for Containerized .NET Applications](https://learn.microsoft.com/vi-vn/dotnet/architecture/microservices/)
+- [Testing in .NET](https://learn.microsoft.com/vi-vn/dotnet/core/testing/)
+- [.NET application publishing overview](https://learn.microsoft.com/vi-vn/dotnet/core/deploying/)
+- [Tutorial: Get started with ASP.NET Core](https://learn.microsoft.com/vi-vn/aspnet/core/getting-started/)
+
 - [.NET Core Docs](https://devblogs.microsoft.com/dotnet/)
 - [GH: dotnet-template-samples](https://github.com/dotnet/dotnet-template-samples)
 - [GH: dotnet-templating](https://github.com/dotnet/templating)
