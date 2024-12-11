@@ -17,6 +17,34 @@ Template là một tập hợp các tệp HTML, CSS, JavaScript, và các tài n
 
 ***
 
+## **2.** Template Metadata <a href="#template-metadata" id="template-metadata"></a>
+
+Các mẫu bổ sung có sẵn tại [Thư viện Mẫu](https://dotnet.github.io/docfx/extensions/templates.html).
+
+Cách dễ nhất để tùy chỉnh giao diện của trang là sử dụng [metadata](https://dotnet.github.io/docfx/docs/config.html#metadata). Dưới đây là danh sách siêu dữ liệu được xác định trước:
+
+{% tabs %}
+{% tab title="Modern Template" %}
+
+
+<table><thead><tr><th>Name</th><th width="115">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>_appTitle</code></td><td>string</td><td>A string append to every page title.</td></tr><tr><td><code>_appName</code></td><td>string</td><td>The name of the site displayed after logo.</td></tr><tr><td><code>_appFooter</code></td><td>string</td><td>The footer HTML.</td></tr><tr><td><code>_appLogoPath</code></td><td>string</td><td>Path to the app logo.</td></tr><tr><td><code>_appLogoUrl</code></td><td>string</td><td>URL for the app logo.</td></tr><tr><td><code>_appFaviconPath</code></td><td>string</td><td>Favicon URL path.</td></tr><tr><td><code>_enableSearch</code></td><td>bool</td><td>Whether to show the search box.</td></tr><tr><td><code>_noindex</code></td><td>bool</td><td>Whether to include in search results</td></tr><tr><td><code>_disableContribution</code></td><td>bool</td><td>Whether to show the <em>"Edit this page"</em> button.</td></tr><tr><td><code>_gitContribute</code></td><td>object</td><td>Defines the <code>repo</code> and <code>branch</code> property of git links.</td></tr><tr><td><code>_gitUrlPattern</code></td><td>string</td><td>URL pattern of git links.</td></tr><tr><td><code>_disableNewTab</code></td><td>bool</td><td>Whether to render external link indicator icons and open external links in a new tab.</td></tr><tr><td><code>_disableNavbar</code></td><td>bool</td><td>Whether to show the navigation bar.</td></tr><tr><td><code>_disableBreadcrumb</code></td><td>bool</td><td>Whether to show the breadcrumb.</td></tr><tr><td><code>_disableToc</code></td><td>bool</td><td>Whether to show the TOC.</td></tr><tr><td><code>_disableAffix</code></td><td>bool</td><td>Whether to show the right rail.</td></tr><tr><td><code>_disableNextArticle</code></td><td>bool</td><td>Whether to show the previous and next article link.</td></tr><tr><td><code>_disableTocFilter</code></td><td>bool</td><td>Whether to show the table of content filter box.</td></tr><tr><td><code>_googleAnalyticsTagId</code></td><td>string</td><td>Enables Google Analytics web traffic analysis.</td></tr><tr><td><code>_lang</code></td><td>string</td><td>Primary language of the page. If unset, the <code>&#x3C;html></code> tag will not have <code>lang</code> property.</td></tr><tr><td><code>_layout</code></td><td>string</td><td>Determines the layout of the page. Supported values are <code>landing</code> and <code>chromeless</code>.</td></tr></tbody></table>
+
+
+{% endtab %}
+
+{% tab title="Default Template" %}
+
+
+<table><thead><tr><th>Name</th><th width="99">Type</th><th>Description</th></tr></thead><tbody><tr><td><code>_appTitle</code></td><td>string</td><td>A string append to every page title.</td></tr><tr><td><code>_appName</code></td><td>string</td><td>The name of the site displayed after logo.</td></tr><tr><td><code>_appFooter</code></td><td>string</td><td>The footer HTML.</td></tr><tr><td><code>_appLogoPath</code></td><td>string</td><td>Path to the app logo.</td></tr><tr><td><code>_appLogoUrl</code></td><td>string</td><td>URL for the app logo.</td></tr><tr><td><code>_appFaviconPath</code></td><td>string</td><td>Favicon URL path.</td></tr><tr><td><code>_enableSearch</code></td><td>bool</td><td>Whether to show the search box.</td></tr><tr><td><code>_enableNewTab</code></td><td>bool</td><td>Whether to open external links in a new tab.</td></tr><tr><td><code>_noindex</code></td><td>bool</td><td>Whether to include in search results</td></tr><tr><td><code>_disableContribution</code></td><td>bool</td><td>Whether to show the <em>"Improve this Doc"</em> and <em>"View Source"</em> buttons.</td></tr><tr><td><code>_gitContribute</code></td><td>object</td><td>Defines the <code>repo</code> and <code>branch</code> property of git links.</td></tr><tr><td><code>_gitUrlPattern</code></td><td>string</td><td>URL pattern of git links.</td></tr><tr><td><code>_disableNavbar</code></td><td>bool</td><td>Whether to show the navigation bar.</td></tr><tr><td><code>_disableBreadcrumb</code></td><td>bool</td><td>Whether to show the breadcrumb.</td></tr><tr><td><code>_disableToc</code></td><td>bool</td><td>Whether to show the TOC.</td></tr><tr><td><code>_disableAffix</code></td><td>bool</td><td>Whether to show the right rail.</td></tr><tr><td><code>_googleAnalyticsTagId</code></td><td>string</td><td>Enables Google Analytics web traffic analysis.</td></tr><tr><td><code>_lang</code></td><td>string</td><td>Primary language of the page. If unset, the <code>&#x3C;html></code> tag will not have <code>lang</code> property.</td></tr></tbody></table>
+
+
+{% endtab %}
+{% endtabs %}
+
+
+
+***
+
 ## **2. Cách sử dụng template**
 
 ### **2.1. Áp dụng template mặc định**
