@@ -1,8 +1,15 @@
+---
+description: >-
+  DocFX là công cụ mạnh mẽ để tạo tài liệu API và tài liệu website tĩnh từ
+  Markdown. Để tăng hiệu quả, việc sử dụng script batch giúp tự động hóa quá
+  trình build và quản lý tài liệu trở nên dễ dàng hơn.
+---
+
 # DocFX - Hướng dẫn cài đặt, cấu hình sử dụng
 
 ## **Giới thiệu**
 
-**DocFX** là công cụ mạnh mẽ để tạo tài liệu API và tài liệu website tĩnh từ Markdown. Để tăng hiệu quả, việc sử dụng script batch giúp tự động hóa quá trình build và quản lý tài liệu trở nên dễ dàng hơn. Trong bài viết này, bạn sẽ học cách cài đặt, cấu hình, khởi tạo DocFX và sử dụng script batch để build nhanh chóng.
+Trong bài viết này, bạn sẽ học cách cài đặt, cấu hình, khởi tạo **DocFX** và sử dụng script batch để build nhanh chóng.
 
 ***
 
@@ -14,11 +21,27 @@
 2. Tải phiên bản mới nhất từ [release](https://github.com/dotnet/docfx/releases).
 3. Giải nén file `.zip` và thêm thư mục chứa DocFX vào biến môi trường `PATH`.
 
+#### Hoặc, cài đặt bằng dotnet tool:
+
+**Điều kiện tiên quyết**:
+
+* Làm quen với dòng lệnh
+* Cài đặt **.NET SDK 8.0** trở lên
+* Cài đặt **Node.js v20** trở lên (Tùy chọn: Bắt buộc khi sử dụng Tạo tệp PDF)
+
+```batch
+dotnet tool install -g docfx
+
+dotnet tool update -g docfx
+```
+
+
+
 ### **Bước 2: Kiểm tra cài đặt**
 
 Mở terminal/cmd và chạy lệnh:
 
-```bash
+```batch
 docfx --version
 ```
 
@@ -32,9 +55,25 @@ Nếu hiển thị phiên bản, DocFX đã được cài đặt thành công.
 
 1.  Trong thư mục dự án, chạy lệnh:
 
-    ```bash
+    ```batch
     docfx init
     ```
+
+    \
+
+
+    {% code title="cmd.exe" %}
+    ```batch
+    PS D:\nqdev-wps\quyit\quyit-platform> docfx init --help
+    USAGE:
+        docfx init [OPTIONS]
+
+    OPTIONS:
+        -h, --help      Prints help information
+        -y, --yes       Yes to all questions
+        -o, --output    Specify the output directory of the generated files
+    ```
+    {% endcode %}
 
 
 2. Lệnh này tạo ra file `docfx.json` và các thư mục cần thiết:
@@ -77,8 +116,9 @@ File batch tự động hóa quá trình build DocFX, serve tài liệu, và tí
 
 ### Ví dụ sử dụng:
 
-<pre class="language-batch" data-title="cmd.exe" data-overflow="wrap"><code class="lang-batch">:: use --help
-PS D:\vihat\quynh\template\template_dotnet8> <a data-footnote-ref href="#user-content-fn-1">.\docfx-build.bat --help</a>
+{% code title="cmd.exe" overflow="wrap" %}
+```batch
+PS D:\nqdev-wps\quyit\quyit-platform> .\docfx-build.bat --help
 Chuyen den nhan thu 1: --help
 -----------------------------------------------------------
 File script: docfx-build.bat
@@ -88,18 +128,24 @@ Tac gia: [Nguyen Quy](quynh@vihatgroup.com)
 Huong dan su dung script batch:
 1. Build tai lieu DocFX:
    docfx-build.bat --build
-2. Build tai lieu va commit push (Git nhanh main/ develop):
+2. Build va xuat tai lieu ra file pdf:
+   docfx-build.bat --build --pdf
+3. Build tai lieu va commit push (Git nhanh main/ develop):
    docfx-build.bat --build --git
-3. Build va serve tai lieu (mo trinh duyet):
+4. Build va serve tai lieu (mo trinh duyet):
    docfx-build.bat --build --serve
-4. Serve tai lieu (mo trinh duyet):
+5. Build va zip tai lieu:
+   docfx-build.bat --build --deploy
+6. Zip tai lieu de trien khai:
+   docfx-build.bat --deploy
+7. Serve tai lieu (mo trinh duyet):
    docfx-build.bat --serve
-5. Hien thi huong dan su dung:
+8. Hien thi huong dan su dung:
    docfx-build.bat --help
 -----------------------------------------------------------
-
-
-</code></pre>
+Press any key to continue . . .
+```
+{% endcode %}
 
 
 
@@ -109,28 +155,28 @@ Huong dan su dung script batch:
 
 1.  **Build tài liệu**: Chạy lệnh:
 
-    ```bash
+    ```batch
     docfx-build.bat --build
     ```
 
     Tài liệu sẽ được xuất ra thư mục `artifacts/docfx`.
 2.  **Serve tài liệu trên trình duyệt**: Chạy lệnh:
 
-    ```bash
+    ```batch
     docfx-build.bat --serve
     ```
 
 
 3.  **Hỗ trợ Git**: Nếu file batch có tích hợp Git, bạn có thể sử dụng:
 
-    ```bash
+    ```batch
     docfx-build.bat --build --git
     ```
 
 
 4.  **Xem hướng dẫn**:
 
-    ```bash
+    ```batch
     docfx-build.bat --help
     ```
 
@@ -156,6 +202,3 @@ Sử dụng DocFX cùng script batch là cách tuyệt vời để quản lý t�
 
 Nếu bạn có thắc mắc hoặc cần thêm hỗ trợ, đừng ngần ngại để lại bình luận. 😊 ​
 
-
-
-[^1]: 
