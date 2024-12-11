@@ -46,12 +46,15 @@ Nếu hiển thị phiên bản, DocFX đã được cài đặt thành công.
 
 Cập nhật file `docfx.json` để chỉ định nguồn tài liệu và output:
 
+{% code title="docfx.json" %}
 ```json
 {
+    "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
     "metadata": [
         {
             "src": [
                 {
+                    "src": "../.",
                     "files": ["**/*.csproj"]
                 }
             ],
@@ -61,13 +64,38 @@ Cập nhật file `docfx.json` để chỉ định nguồn tài liệu và outpu
     "build": {
         "content": [
             {
-                "files": ["articles/**.md", "toc.yml"]
+                "files": [
+                    "articles/**.md",
+                    "**/*.{md,yml}",
+                    "toc.yml"
+                ],
+                "exclude": [
+                    "_site/**"
+                ]
             }
         ],
-        "dest": "_site"
+        "resource": [
+            {
+                "files": [
+                    "images/**"
+                ]
+            }
+        ],
+        "output": "_site",
+        "template": [
+            "default",
+            "modern"
+        ],
+        "globalMetadata": {
+            "_appName": "Cẩm nang NQDEV",
+            "_appTitle": "Cẩm nang NQDEV",
+            "_enableSearch": true,
+            "pdf": true
+        }
     }
 }
 ```
+{% endcode %}
 
 ***
 
