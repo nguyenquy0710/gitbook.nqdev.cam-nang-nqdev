@@ -46,56 +46,11 @@ Nếu hiển thị phiên bản, DocFX đã được cài đặt thành công.
 
 Cập nhật file `docfx.json` để chỉ định nguồn tài liệu và output:
 
-{% code title="docfx.json" %}
-```json
-{
-    "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
-    "metadata": [
-        {
-            "src": [
-                {
-                    "src": "../.",
-                    "files": ["**/*.csproj"]
-                }
-            ],
-            "dest": "api"
-        }
-    ],
-    "build": {
-        "content": [
-            {
-                "files": [
-                    "articles/**.md",
-                    "**/*.{md,yml}",
-                    "toc.yml"
-                ],
-                "exclude": [
-                    "_site/**"
-                ]
-            }
-        ],
-        "resource": [
-            {
-                "files": [
-                    "images/**"
-                ]
-            }
-        ],
-        "output": "_site",
-        "template": [
-            "default",
-            "modern"
-        ],
-        "globalMetadata": {
-            "_appName": "Cẩm nang NQDEV",
-            "_appTitle": "Cẩm nang NQDEV",
-            "_enableSearch": true,
-            "pdf": true
-        }
-    }
-}
-```
-{% endcode %}
+{% embed url="https://gist.github.com/nguyenquy0710/d2cc3c428cde37c09be5e1ea3c58d8b4" %}
+[**docfx.json**](https://gist.github.com/nguyenquy0710/d2cc3c428cde37c09be5e1ea3c58d8b4#file-docfx-json)
+{% endembed %}
+
+
 
 ***
 
@@ -116,7 +71,35 @@ File batch tự động hóa quá trình build DocFX, serve tài liệu, và tí
 
 ### **Nội dung tệp mẫu:**
 
-{% embed url="https://gist.github.com/nguyenquy0710/5555dc3a36d47fcb80e3f14d45e10046" %}
+{% embed url="https://gist.github.com/nguyenquy0710/7b4598ea2e22cea6f8c4d4005df7e1ee" %}
+[**docfx-build.bat**](https://gist.github.com/nguyenquy0710/7b4598ea2e22cea6f8c4d4005df7e1ee#file-docfx-build-bat)
+{% endembed %}
+
+### Ví dụ sử dụng:
+
+<pre class="language-batch" data-title="cmd.exe" data-overflow="wrap"><code class="lang-batch">:: use --help
+PS D:\vihat\quynh\template\template_dotnet8> <a data-footnote-ref href="#user-content-fn-1">.\docfx-build.bat --help</a>
+Chuyen den nhan thu 1: --help
+-----------------------------------------------------------
+File script: docfx-build.bat
+Ngay tao: 11/12/2024
+Tac gia: [Nguyen Quy](quynh@vihatgroup.com)
+-----------------------------------------------------------
+Huong dan su dung script batch:
+1. Build tai lieu DocFX:
+   docfx-build.bat --build
+2. Build tai lieu va commit push (Git nhanh main/ develop):
+   docfx-build.bat --build --git
+3. Build va serve tai lieu (mo trinh duyet):
+   docfx-build.bat --build --serve
+4. Serve tai lieu (mo trinh duyet):
+   docfx-build.bat --serve
+5. Hien thi huong dan su dung:
+   docfx-build.bat --help
+-----------------------------------------------------------
+
+
+</code></pre>
 
 
 
@@ -173,3 +156,6 @@ Sử dụng DocFX cùng script batch là cách tuyệt vời để quản lý t�
 
 Nếu bạn có thắc mắc hoặc cần thêm hỗ trợ, đừng ngần ngại để lại bình luận. 😊 ​
 
+
+
+[^1]: 
