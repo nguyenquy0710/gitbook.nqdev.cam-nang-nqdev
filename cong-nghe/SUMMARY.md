@@ -76,6 +76,7 @@
     * [Những khái niệm cơ bản trong DocFX](ung-dung/docfx/nhung-khai-niem-co-ban-trong-docfx.md)
     * [DocFX - Hướng dẫn cài đặt, cấu hình sử dụng](ung-dung/docfx/docfx-huong-dan-cai-dat-cau-hinh-su-dung.md)
     * [DocFX - Hướng dẫn Markdown](ung-dung/docfx/docfx-huong-dan-markdown.md)
+    * [DocFX - Hướng dẫn cấu hình file docfx.json](ung-dung/docfx/docfx-huong-dan-cau-hinh-file-docfx.json.md)
   * [ETL Tools](ung-dung/etl-tools/README.md)
     * [Công cụ ETL Tools List & Software](ung-dung/etl-tools/cong-cu-etl-tools-list-and-software.md)
     * [Airbyte](ung-dung/etl-tools/airbyte/README.md)
