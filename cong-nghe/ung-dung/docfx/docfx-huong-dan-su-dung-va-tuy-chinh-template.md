@@ -45,9 +45,9 @@ Cách dễ nhất để tùy chỉnh giao diện của trang là sử dụng [me
 
 ***
 
-## **2. Cách sử dụng template**
+## **3. Cách sử dụng template**
 
-### **2.1. Áp dụng template mặc định**
+### **3.1. Áp dụng template mặc định**
 
 Trong file `docfx.json`, bạn có thể chỉ định template cần sử dụng bằng cách thêm cấu hình:
 
@@ -59,7 +59,7 @@ Trong file `docfx.json`, bạn có thể chỉ định template cần sử dụn
 }
 ```
 
-### **2.2. Áp dụng nhiều template**
+### **3.2. Áp dụng nhiều template**
 
 DocFX hỗ trợ áp dụng nhiều template theo thứ tự ưu tiên:
 
@@ -75,11 +75,11 @@ DocFX hỗ trợ áp dụng nhiều template theo thứ tự ưu tiên:
 
 ***
 
-## **3. Tùy chỉnh template**
+## **4. Tùy chỉnh template**
 
 DocFX cho phép bạn tùy chỉnh template để phù hợp với thương hiệu hoặc yêu cầu dự án.
 
-### **3.1. Xuất template mặc định**
+### **4.1. Xuất template mặc định**
 
 Để tùy chỉnh, bạn cần xuất template mặc định và chỉnh sửa:
 
@@ -89,7 +89,7 @@ docfx template export default
 
 * Template sẽ được xuất vào thư mục `templates/default`.
 
-### **3.2. Chỉnh sửa template**
+### **4.2. Chỉnh sửa template**
 
 Trong thư mục template, bạn có thể chỉnh sửa:
 
@@ -97,7 +97,7 @@ Trong thư mục template, bạn có thể chỉnh sửa:
 * **CSS**: Tùy chỉnh màu sắc, font chữ, và phong cách.
 * **JavaScript**: Thêm tính năng hoặc tương tác mới.
 
-### **3.3. Áp dụng template tùy chỉnh**
+### **4.3. Áp dụng template tùy chỉnh**
 
 Sau khi chỉnh sửa, áp dụng template bằng cách cấu hình:
 
