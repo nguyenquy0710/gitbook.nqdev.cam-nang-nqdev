@@ -81,7 +81,7 @@
       * [Hướng Dẫn Cài Đặt Varnish Cache với HAProxy Sử Dụng Docker Compose](ung-dung/caching/varnish-cache/huong-dan-cai-dat-varnish-cache-voi-haproxy-su-dung-docker-compose.md)
   * [DocFX](ung-dung/docfx/README.md)
     * [Những khái niệm cơ bản trong DocFX](ung-dung/docfx/nhung-khai-niem-co-ban-trong-docfx.md)
-    * [DocFX - Công cụ tạo tài liệu tĩnh cho dự án .NET](ung-dung/docfx/docfx-cong-cu-tao-tai-lieu-tinh-cho-du-an-.net.md)
+    * [DocFX - Hướng dẫn cài đặt, cấu hình sử dụng](ung-dung/docfx/docfx-huong-dan-cai-dat-cau-hinh-su-dung.md)
   * [ETL Tools](ung-dung/etl-tools/README.md)
     * [Công cụ ETL Tools List & Software](ung-dung/etl-tools/cong-cu-etl-tools-list-and-software.md)
     * [Airbyte](ung-dung/etl-tools/airbyte/README.md)
