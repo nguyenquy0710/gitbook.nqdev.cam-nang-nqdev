@@ -9,7 +9,7 @@ description: >-
 
 Bảng tạm (temporary table) là một công cụ quan trọng trong SQL Server để tạm thời lưu trữ dữ liệu trong quá trình thực hiện các truy vấn phức tạp. Tuy nhiên, nhiều người dùng vẫn chưa biết đầy đủ về các tính năng và cách sử dụng của bảng tạm. Trong bài viết này, chúng ta sẽ tìm hiểu thêm về bảng tạm và những điều bạn chưa biết về chúng.
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/sql-server/db-tempdb.png" alt=""><figcaption><p><em>temporary table</em></p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/sql-server/db-tempdb.png" alt="" width="563"><figcaption><p>db-tempdb.png</p></figcaption></figure>
 
 ## 1. Bảng tạm là gì?
 

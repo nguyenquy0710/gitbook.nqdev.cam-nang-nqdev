@@ -4,7 +4,7 @@ description: >-
   thức chuyên sâu và hướng dẫn thực hành về các chủ đề công nghệ, lập trình và
   phát triển phần mềm.
 cover: >-
-  https://github.com/nguyenquy0710/repo-datafiles/raw/refs/heads/main/nqdev/consistent-character-gpt/nqdev-introduction-1990x480.webp
+  https://github.com/nqdev-storage/s3-001/raw/refs/heads/main/ai-gpt/nqdev-introduction-1990x480.webp
 coverY: 0
 layout:
   cover:

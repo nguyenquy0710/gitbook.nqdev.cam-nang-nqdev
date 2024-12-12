@@ -7,7 +7,9 @@ description: >-
 
 # SQL Server Basics
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/sql-server/sql-server.png" alt=""><figcaption><p>SQL Server Management Studio (SSMS)</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/sql-server/sql-server.png" alt="" width="563"><figcaption><p>SQL Server Management Studio (SSMS)</p></figcaption></figure>
+
+
 
 SQL Server cung cấp nhiều công cụ và tài nguyên hỗ trợ để giúp người dùng quản lý và tối ưu hóa cơ sở dữ liệu của mình. Sau đây là một số công cụ và tài nguyên quan trọng trong SQL Server:
 
