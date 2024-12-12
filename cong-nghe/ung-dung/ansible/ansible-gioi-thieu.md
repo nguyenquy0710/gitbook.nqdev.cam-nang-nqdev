@@ -11,7 +11,9 @@ Với triết lý "**không cần agent**" (agentless) và cấu hình đơn gi�
 
 ***
 
-<figure><img src="https://raw.githubusercontent.com/nguyenquy0710/repo-datafiles/refs/heads/main/gitbook/blogs/cong-nghe/ansible-gioi-thieu.webp" alt="" width="563"><figcaption><p>Ansible: Giới thiệu</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/ansible-gioi-thieu.webp" alt=""><figcaption><p>Ansible: Giới thiệu</p></figcaption></figure>
+
+
 
 ## 1. **Ansible là gì?**
 
