@@ -21,13 +21,13 @@ Hiện tại, ChatGPT đang gặp phải vấn đề về việc bị chặn t�
 
 Bạn có thể tải và cài đặt tiện ích từ [Cửa hành Chrome trực tuyến](https://chrome.google.com/webstore/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh?hl=vi) hoặc từ [trang chủ Browsec VPN](https://browsec.com/en/).
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/cheat-sheet/chatgpt-3.png" alt=""><figcaption><p>Tiện ích Browsec VPN trên Cửa thàng chrome trực tuyến</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/prompts/chatgpt-3.png" alt=""><figcaption><p>Tiện ích Browsec VPN trên Cửa thàng chrome trực tuyến</p></figcaption></figure>
 
 ### Bước 2: Thay đổi cấu hình sang quốc gia United States
 
 Bạn chọn vào Change và chọn quốc gia là United States nhé.
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/cheat-sheet/chatgpt-4.png" alt=""><figcaption><p>Thay đổi quốc gia sang United States</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/prompts/chatgpt-4.png" alt=""><figcaption><p>Thay đổi quốc gia sang United States</p></figcaption></figure>
 
 ### Bước 3: Kích hoạt VPN và tận hưởng thành quả
 
@@ -38,18 +38,18 @@ Nhấp vào biểu tượng kịch hoạt và tận hưởng thành quả thôi.
 ### Bước 1: Chuẩn bị số điện thoại Hoa Kỳ và xác thực tin nhắn mà ChatGPT gửi về.
 
 {% hint style="info" %}
-[https://sms-man.com/?ref=REY4KC0rb8\_R](https://sms-man.com/?ref=REY4KC0rb8\_R)
+[https://sms-man.com/?ref=REY4KC0rb8\_R](https://sms-man.com/?ref=REY4KC0rb8_R)
 {% endhint %}
 
 Có 2 cách để chuẩn bị một số điện thoại Hoa Kỳ để nhận tin. Tuy nhiên, nếu bạn là người dùng cá nhân, chỉ có  nhu cầu tạo 1 tài khoản ChatGPT thì mình khuyến nghị bạn nên chọn cách 2.
 
-#### Cách 1: Truy cập vào trang [SMS-MAN](https://sms-man.com/?ref=REY4KC0rb8\_R)&#x20;
+#### Cách 1: Truy cập vào trang [SMS-MAN](https://sms-man.com/?ref=REY4KC0rb8_R)&#x20;
 
 Để kích hoạt tài khoản SMS-MAN và thuê số điện thoại, **người dùng cần nạp tiền vào tài khoản của mình**. Một trong những cách phổ biến nhất để nạp tiền vào tài khoản SMS-MAN là sử dụng thẻ Visa.
 
 Để nạp tiền vào tài khoản SMS-MAN bằng thẻ Visa, người dùng cần truy cập vào trang web của SMS-Man và đăng nhập vào tài khoản của mình. Sau đó, người dùng chọn phương thức thanh toán là thẻ Visa và nhập các thông tin thẻ của mình như số thẻ, ngày hết hạn và mã CVV.
 
-Sau khi nhập thông tin thẻ thành công, người dùng cần chọn số tiền cần nạp vào tài khoản. Thông thường, để [kích hoạt SMS-MAN và thuê số điện thoại](https://sms-man.com/?ref=REY4KC0rb8\_R), người dùng cần **nạp ít nhất 10 USD** vào tài khoản.
+Sau khi nhập thông tin thẻ thành công, người dùng cần chọn số tiền cần nạp vào tài khoản. Thông thường, để [kích hoạt SMS-MAN và thuê số điện thoại](https://sms-man.com/?ref=REY4KC0rb8_R), người dùng cần **nạp ít nhất 10 USD** vào tài khoản.
 
 Sau khi nạp tiền thành công, người dùng có thể sử dụng SMS-MAN để thuê số điện thoại và nhận các mã xác nhận từ các dịch vụ trực tuyến một cách dễ dàng và tiện lợi.
 
@@ -73,13 +73,13 @@ Sau khi truy cập trang web ChatGPT, bạn sẽ thấy nút "Sign up" ở góc 
 
 Bạn cần cung cấp các thông tin cần thiết để đăng ký tài khoản, bao gồm tên của bạn, địa chỉ email và mật khẩu. Sau khi điền đầy đủ thông tin, nhấp vào nút "Sign up" để hoàn thành quá trình đăng ký.
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/cheat-sheet/chatgpt-2.png" alt=""><figcaption><p>Đăng ký tài khoản ChatGPT</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/prompts/chatgpt-2.png" alt=""><figcaption><p>Đăng ký tài khoản ChatGPT</p></figcaption></figure>
 
 ### Bước 4: Mở email xác thực tài khoản
 
-Khi bạn nhận được email từ ChatGPT, hãy bấm vào "Verify email address" để xác thực email.&#x20;
+Khi bạn nhận được email từ ChatGPT, hãy bấm vào "**Verify email address**" để xác thực email.&#x20;
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/cheat-sheet/chatgpt-1.png" alt=""><figcaption><p>email xác thực của chatgpt</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/prompts/chatgpt-1.png" alt=""><figcaption><p>Email xác thực của ChatGPT</p></figcaption></figure>
 
 ### Bước 5: Điền số điện thoại và kích hoạt tài khoản
 
