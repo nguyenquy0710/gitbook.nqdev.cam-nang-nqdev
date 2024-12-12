@@ -9,7 +9,9 @@ description: 'Nguồn: viblo.asia'
 * stats refresh: tần suất trang stats tự động làm mới
 * stats admin : hạn chế truy cập trang stats: chỉ tài khoản admin có thể truy cập. có thể thêm `stats auth <username:password>` để thực thi authentication basic
 
-<figure><img src="https://datas.quyit.id.vn/gitbook/blogs/cheat-sheet/haproxy.png" alt=""><figcaption><p>HAProxy Statistics Report</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cheat-sheet/haproxy.png" alt=""><figcaption><p>HAProxy Statistics Report</p></figcaption></figure>
+
+
 
 ### Frontend Statistics <a href="#frontend-statistics-2" id="frontend-statistics-2"></a>
 
