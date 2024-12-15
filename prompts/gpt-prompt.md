@@ -302,7 +302,35 @@ _please answer the questions in Vietnamese
 
 
 {% endtab %}
+
+{% tab title="Changie" %}
+
+
+{% code title="nqdev - Tổng quan về Changie" overflow="wrap" %}
+```markdown
+Topic: Changie Overview
+- [Changie](https://changie.dev/)
+- [CLI](https://changie.dev/cli/changie/)
+- [Installation](https://changie.dev/guide/installation/)
+- [Integrations](https://changie.dev/integrations/)
+- [Configuration](https://changie.dev/config/)
+- [GH: miniscruff/changie](https://github.com/miniscruff/changie)
+- [docker pull ghcr.io/miniscruff/changie](https://github.com/miniscruff/changie/pkgs/container/changie)
+
+Automated changelog tool for preparing releases with lots of customization options
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+{% endcode %}
+
+
+{% endtab %}
 {% endtabs %}
+
+
+
+
 
 ***
 
