@@ -294,11 +294,66 @@ Build your docs with docfx.
 Static site generator for .NET API documentation. 
 
 _hãy trả lời các câu hỏi bằng tiếng việt_
-_please answer the questions in Vietnamese
+_please answer the questions in Vietnamese_
 ```
 {% endcode %}
 
+### `contributing.md`&#x20;
 
+{% code title="contributing.md" overflow="wrap" %}
+````markdown
+# Hướng Dẫn Đóng Góp Cho Dự Án
+Cảm ơn bạn đã quan tâm đến việc đóng góp vào dự án của chúng tôi! Dưới đây là hướng dẫn giúp bạn dễ dàng tham gia và đóng góp.
+
+---
+
+## **1. Cách Góp Ý Hoặc Báo Cáo Lỗi**
+
+Nếu bạn phát hiện lỗi hoặc có ý tưởng cải thiện dự án, hãy thực hiện các bước sau:
+
+1. Truy cập [Trang Vấn Đề (Issues)](https://github.com/<tên-dự-án>/issues).
+2. Kiểm tra xem vấn đề của bạn đã được báo cáo trước đó chưa.
+3. Nếu chưa có, nhấn **New Issue** để tạo vấn đề mới.
+4. Cung cấp thông tin chi tiết, bao gồm:
+   - Mô tả ngắn gọn về vấn đề.
+   - Các bước để tái tạo lỗi.
+   - Môi trường (hệ điều hành, phiên bản, v.v.).
+
+---
+
+## **2. Quy Tắc Đóng Góp**
+
+### **2.1. Quy Ước Về Code**
+- Tuân thủ phong cách mã hóa của dự án. Xem file [STYLEGUIDE.md](./STYLEGUIDE.md) nếu có.
+- Sử dụng các công cụ kiểm tra mã (lint) trước khi nộp Pull Request.
+- Đảm bảo mã đã được kiểm tra kỹ trước khi gửi.
+
+### **2.2. Quy Ước Về Commit**
+- Sử dụng thông điệp commit rõ ràng và nhất quán. Ví dụ:
+  - `fix: Sửa lỗi không hiển thị menu`
+  - `feat: Thêm tính năng tìm kiếm`
+- Cấu trúc commit:
+
+### **2.3. Thử Nghiệm**
+- Thực hiện kiểm thử các thay đổi của bạn trước khi nộp.
+- Nếu có thêm tính năng, hãy cập nhật hoặc bổ sung các bài kiểm tra (test cases).
+
+---
+
+## **3. Thiết Lập Môi Trường Phát Triển**
+
+Để đóng góp vào dự án, bạn cần thiết lập môi trường phát triển. Thực hiện các bước sau:
+
+1. **Clone dự án**:
+ ```bash
+ git clone https://github.com/<tên-dự-án>.git
+ cd <thư-mục-dự-án>
+ 
+ ---
+
+[Link đến README](~/src/Components/README.md)
+````
+{% endcode %}
 
 
 {% endtab %}
