@@ -157,6 +157,7 @@ Topic: LoopBack Docs Overview
 - [Node.js Docs](https://nodejs.org/docs/latest/api/)
 - [LoopBack 4 Docs](https://loopback.io/doc/en/lb4/)
 - [LoopBack 4 API Docs](https://loopback.io/doc/en/lb4/apidocs.index.html)
+- [GH: loopbackio/loopback-next](https://github.com/loopbackio/loopback-next/tree/master)
 
 _hãy trả lời các câu hỏi bằng tiếng việt_
 _please answer the questions in Vietnamese_
