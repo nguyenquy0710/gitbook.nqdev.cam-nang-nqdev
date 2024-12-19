@@ -95,6 +95,7 @@ Hãy theo dõi blog của [**Cẩm nang NQDEV** ](../../)để cập nhật thê
 {% code title="Tài liệu tham khảo:" lineNumbers="true" %}
 ```http
 https://learn.microsoft.com/en-us/sql/relational-databases/replication/sql-server-replication?view=sql-server-ver16
+https://www.sql.edu.vn/microsoft-sql-server/replication/
 ```
 {% endcode %}
 
