@@ -127,6 +127,18 @@ Dưới đây là các tham số quan trọng bạn cần biết khi cấu hình
 
 Bài viết trên cung cấp hướng dẫn từ cơ bản đến nâng cao giúp bạn quản lý và tối ưu hóa SQL Server Replication với **Snapshot Agent** và **Distribution Agent**. Nếu bạn gặp vấn đề hoặc muốn tối ưu hiệu suất hệ thống, hãy thử áp dụng các cấu hình này để cải thiện.
 
+{% code title="Tài liệu tham khảo:" lineNumbers="true" %}
+```http
+https://learn.microsoft.com/en-us/sql/relational-databases/replication/sql-server-replication?view=sql-server-ver16
+https://www.sql.edu.vn/microsoft-sql-server/replication/
+https://bartoszlewandowski.blog/tag/sql-server-repl/
+https://www.mssqltips.com/sqlservertip/3287/sql-server-transactional-replication-error-could-not-find-stored-procedure-error-and-how-to-recover-it-by-using-spscriptpublicationcustomprocs/
+https://learn.microsoft.com/en-us/sql/relational-databases/replication/transactional/transactional-articles-specify-how-changes-are-propagated?view=sql-server-ver15
+https://sqlserver-dba.co.uk/sql-server/sql-server-error-14151-severity-18-replication-s-agen.html
+
+```
+{% endcode %}
+
 ***
 
 Hy vọng bài viết này sẽ hữu ích cho bạn đọc của [**Cẩm nang NQDEV**](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/s/riO9WU3lEu4DXKD3d9zp/)! Nếu có thắc mắc hoặc cần thêm thông tin, hãy để lại bình luận nhé. 😊
