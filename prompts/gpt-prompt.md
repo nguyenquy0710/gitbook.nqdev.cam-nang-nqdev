@@ -150,6 +150,39 @@ _please answer the questions in Vietnamese_
 
 {% endtab %}
 
+{% tab title="NestJS" %}
+
+
+nqdev - NestJS Docs OverviewCopy
+
+```
+Topic: NestJS Docs Overview
+- [NestJS Docs](https://docs.nestjs.com/)
+- [github: NestJS](https://github.com/nestjs/nest)
+- [Node.js Docs](https://nodejs.org/docs/latest/api/)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [TypeScript Playground](https://www.typescriptlang.org/play/)
+- [TypeScript Tools](https://www.typescriptlang.org/tools/)
+
+_hãy trả lời các câu hỏi bằng tiếng việt_
+_please answer the questions in Vietnamese_
+```
+
+\#### Cấu trúc Dự án trong NestJS
+
+![](https://blogs.nhquydev.net/~gitbook/image?url=https%3A%2F%2Fnextjs.org%2F_next%2Fimage%3Furl%3D%252Fdocs%252Fdark%252Ftop-level-folders.png%26w%3D3840%26q%3D75\&width=768\&dpr=4\&quality=100\&sign=f1f38b94\&sv=2)Folder and file conventions
+
+Copy
+
+```
+/app
+   /page.js        # Trang mặc định
+   /about/page.js  # Trang About
+   /blog/page.js   # Trang Blog
+   /blog/[id].js   # Trang blog động với id
+```
+{% endtab %}
+
 {% tab title="LoopBack " %}
 {% code title="nqdev - Tổng quan về LoopBack 4" overflow="wrap" %}
 ```markdown
