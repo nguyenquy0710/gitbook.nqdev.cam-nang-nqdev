@@ -170,10 +170,6 @@ _please answer the questions in Vietnamese_
 
 \#### Cấu trúc Dự án trong NestJS
 
-![](https://blogs.nhquydev.net/~gitbook/image?url=https%3A%2F%2Fnextjs.org%2F_next%2Fimage%3Furl%3D%252Fdocs%252Fdark%252Ftop-level-folders.png%26w%3D3840%26q%3D75\&width=768\&dpr=4\&quality=100\&sign=f1f38b94\&sv=2)Folder and file conventions
-
-Copy
-
 ```
 /app
    /page.js        # Trang mặc định
