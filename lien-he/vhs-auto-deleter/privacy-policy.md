@@ -1,8 +1,8 @@
-# Privacy Policy for VHS Auto Deleter
+# Privacy Policy
 
 ### 1. Introduction
 
-This Privacy Policy explains how VHS Auto Deleter ("we," "our," or "us") collects, uses, and protects your information when you use our application.
+This Privacy Policy explains how [**VHS Auto Deleter**](./) ("we," "our," or "us") collects, uses, and protects your information when you use our application.
 
 ### 2. Information We Collect
 
@@ -21,7 +21,7 @@ This Privacy Policy explains how VHS Auto Deleter ("we," "our," or "us") collect
 We do not sell, trade, or rent user information. However, we may share data:
 
 * With trusted third-party service providers for hosting and analytics.
-* To comply with legal requirements or enforce our Terms of Service.
+* To comply with legal requirements or enforce our [Terms of Service](terms-of-service.md).
 
 ### 5. Data Security
 
