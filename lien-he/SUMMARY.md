@@ -5,8 +5,8 @@
 * [Giới thiệu fanpage "Cẩm nang NQDEV"](gioi-thieu-fanpage-cam-nang-nqdev.md)
 * [Chính sách bảo mật](chinh-sach-bao-mat.md)
 * [VHS Auto Deleter](vhs-auto-deleter/README.md)
-  * [Terms of Service for VHS Auto Deleter](vhs-auto-deleter/terms-of-service-for-vhs-auto-deleter.md)
-  * [Privacy Policy for VHS Auto Deleter](vhs-auto-deleter/privacy-policy-for-vhs-auto-deleter.md)
+  * [Terms of Service](vhs-auto-deleter/terms-of-service.md)
+  * [Privacy Policy](vhs-auto-deleter/privacy-policy.md)
 
 ## Sitemap
 

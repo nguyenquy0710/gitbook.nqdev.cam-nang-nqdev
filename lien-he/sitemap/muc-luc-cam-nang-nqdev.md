@@ -12,12 +12,12 @@ description: >-
 
 * Cài đặt công cụ (Core CLI)
 * [Hướng dẫn sử dụng tệp .http trong Visual Studio 2022 để thực hiện HTTP Requests](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/dotnet/asp.net-core/huong-dan-su-dung-tep-.http-trong-visual-studio-2022-de-thuc-hien-http-requests)
-* [MSTest 3.4: Hỗ trợ WinUI và các bộ phân tích mới](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/dotnet/mstest/mstest-3.4-da-co-mat-voi-su-ho-tro-cua-winui-va-cac-bo-phan-tich-moi)
+* [MSTest 3.4: Hỗ trợ WinUI và các bộ phân tích mới](broken-reference)
 * Một số cách tối ưu mã và hiệu suất CSharp
-* [MassTransit là gì?](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/dotnet/message-broker/masstransit/masstransit-la-gi)
+* [MassTransit là gì?](broken-reference)
 * Lộ trình trở thành nhà phát triển ASP.NET Core
 * [So sánh ASP.NET Core Web API và ASP.NET Core Web API (Native AOT): Bạn nên chọn loại nào?](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/dotnet/dev-blogs/asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao)
-* [Microsoft.Extensions.AI – Khối xây dựng AI thống nhất cho .NET](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/dotnet/dev-blogs/microsoft.extensions.ai-unified-ai-building-blocks-for-.net)
+* [Microsoft.Extensions.AI – Khối xây dựng AI thống nhất cho .NET](broken-reference)
 
 ### **Design Patterns**
 
@@ -53,8 +53,8 @@ description: >-
 
 ### **ReactJS**
 
-* [Hiểu đúng về hook useRef trong React](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/reactjs/hieu-ve-hook-useref-cua-react-nhu-the-nao-cho-dung)
-* [Tìm hiểu sâu về useEffect từ A-Z](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/reactjs/tim-hieu-sau-hon-ve-useeffect-tu-a-z)
+* [Hiểu đúng về hook useRef trong React](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/nodejs/reactjs/hieu-ve-hook-useref-cua-react-nhu-the-nao-cho-dung)
+* [Tìm hiểu sâu về useEffect từ A-Z](https://app.gitbook.com/s/riO9WU3lEu4DXKD3d9zp/nodejs/reactjs/tim-hieu-sau-hon-ve-useeffect-tu-a-z)
 
 ***
 
