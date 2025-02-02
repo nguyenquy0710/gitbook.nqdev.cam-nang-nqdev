@@ -43,6 +43,7 @@
   * [NextJS](nodejs/nextjs/README.md)
     * [Hướng dẫn NextJS cho người mới bắt đầu](nodejs/nextjs/huong-dan-nextjs-cho-nguoi-moi-bat-dau.md)
     * [Parallel Routes trong Next.js](nodejs/nextjs/parallel-routes-trong-next.js.md)
+    * [Hướng dẫn cấu hình Swagger trong NextJS](nodejs/nextjs/huong-dan-cau-hinh-swagger-trong-nextjs.md)
   * [ReactJS](nodejs/reactjs/README.md)
     * [Hiểu về hook useRef của React như thế nào cho đúng](nodejs/reactjs/hieu-ve-hook-useref-cua-react-nhu-the-nao-cho-dung.md)
     * [Tìm hiểu sâu hơn về useEffect từ A-Z](nodejs/reactjs/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md)
