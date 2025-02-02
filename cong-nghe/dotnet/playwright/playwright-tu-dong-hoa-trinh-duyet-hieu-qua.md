@@ -94,3 +94,11 @@ jobs:
 ## Kết luận
 
 Playwright là một công cụ tự động hóa trình duyệt mạnh mẽ và linh hoạt, phù hợp cho cả kiểm thử chức năng và UI. Với khả năng hỗ trợ đa trình duyệt, tích hợp CI/CD dễ dàng và API thân thiện, Playwright là một lựa chọn hàng đầu cho kiểm thử end-to-end.
+
+{% code title="Tài liệu tham khảo" %}
+```markdown
+- Trang tài liệu Playwright for .NET (https://playwright.dev/dotnet/docs/intro)
+- Kho lưu trữ GitHub của Playwright (https://github.com/microsoft/playwright-dotnet)
+```
+{% endcode %}
+
