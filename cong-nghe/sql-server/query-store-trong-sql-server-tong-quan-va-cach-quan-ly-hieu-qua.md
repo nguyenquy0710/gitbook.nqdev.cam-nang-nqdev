@@ -114,9 +114,13 @@ Query Store sử dụng chung dung lượng với file dữ liệu chính (.mdf)
 
 ## **6. Khi nào nên sử dụng Query Store?**
 
-✅ **Bật Read Write** khi cần giám sát hiệu suất liên tục. ✅ **Bật Read Only** khi muốn phân tích dữ liệu cũ nhưng không muốn ghi mới. ✅ **Tắt Query Store** nếu hệ thống gặp vấn đề về tài nguyên hoặc không cần theo dõi truy vấn.
+✅ [**Bật Read Write**](query-store-trong-sql-server-tong-quan-va-cach-quan-ly-hieu-qua.md#id-1.-read-write-mac-dinh) khi cần giám sát hiệu suất liên tục.
 
-## **sql7. Kết luận**
+✅ [**Bật Read Only**](query-store-trong-sql-server-tong-quan-va-cach-quan-ly-hieu-qua.md#id-2.-read-only) khi muốn phân tích dữ liệu cũ nhưng không muốn ghi mới.
+
+✅ [**Tắt Query Store**](query-store-trong-sql-server-tong-quan-va-cach-quan-ly-hieu-qua.md#id-3.-off) nếu hệ thống gặp vấn đề về tài nguyên hoặc không cần theo dõi truy vấn.
+
+## **7. Kết luận**
 
 Query Store là một công cụ mạnh mẽ giúp theo dõi và tối ưu hóa hiệu suất truy vấn trong SQL Server. Tuy nhiên, bạn cần kiểm soát dung lượng lưu trữ, cấu hình hợp lý để tránh ảnh hưởng đến hiệu suất hệ thống. Nếu được sử dụng đúng cách, Query Store sẽ giúp bạn tiết kiệm thời gian và công sức trong việc quản lý cơ sở dữ liệu.
 
