@@ -39,6 +39,7 @@
   * [Bảng tạm và sự linh hoạt trong xử lý dữ liệu lớn](sql-server/bang-tam-va-su-linh-hoat-trong-xu-ly-du-lieu-lon.md)
   * [Các bước để thay đổi nơi lưu trữ tệp log trong SQL Server](sql-server/cac-buoc-de-thay-doi-noi-luu-tru-tep-log-trong-sql-server.md)
   * [Các bước di chuyển tệp log trong SQL Server](sql-server/cac-buoc-di-chuyen-tep-log-trong-sql-server.md)
+  * [Query Store trong SQL Server - Tổng Quan và Cách Quản Lý Hiệu Quả](sql-server/query-store-trong-sql-server-tong-quan-va-cach-quan-ly-hieu-qua.md)
   * [SQL Server: Error Code](sql-server/sql-server-error-code/README.md)
     * [SQL Server Error : 14151, Severity: 18. Replication agent](sql-server/sql-server-error-code/sql-server-error-14151-severity-18.-replication-agent.md)
 * [NodeJS](nodejs/README.md)
