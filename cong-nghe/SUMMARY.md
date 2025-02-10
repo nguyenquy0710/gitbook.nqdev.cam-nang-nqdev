@@ -9,6 +9,7 @@
 * [DotNET](dotnet/README.md)
   * [ASP.NET Core](dotnet/asp.net-core/README.md)
     * [Hướng dẫn sử dụng tệp .http trong Visual Studio 2022 để thực hiện HTTP Requests](dotnet/asp.net-core/huong-dan-su-dung-tep-.http-trong-visual-studio-2022-de-thuc-hien-http-requests.md)
+  * [Message queue](dotnet/message-queue.md)
   * [Playwright](dotnet/playwright/README.md)
     * [Playwright: Tự Động Hóa Trình Duyệt Hiệu Quả](dotnet/playwright/playwright-tu-dong-hoa-trinh-duyet-hieu-qua.md)
   * [Optimize](dotnet/optimize/README.md)
