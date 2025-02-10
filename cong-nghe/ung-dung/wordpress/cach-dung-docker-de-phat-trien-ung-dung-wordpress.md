@@ -1,245 +1,231 @@
----
-description: 'Nguồn: viblo.asia'
----
-
 # Cách dùng Docker để phát triển ứng dụng Wordpress
 
-Trong bài này, mình sẽ hướng dẫn cách dựng môi trường phát triển cho ứng dụng Wordpress một cách nhanh chóng bằng Docker thông qua một boilerplate có sẵn đó là [sun-asterisk-research/docker-php-development](https://github.com/sun-asterisk-research/docker-php-development).
+## **Giới thiệu**
 
-Lần trước mình cũng đã làm một bài giới thiệu chung [Dựng môi trường phát triển nhanh chóng với docker-php-development](broken-reference), hôm nay chúng ta sẽ focus vào việc dựng môi trường cho Wordpress nhé.
+Việc thiết lập môi trường phát triển WordPress thường yêu cầu cài đặt nhiều công cụ như PHP, MySQL, và Nginx. Tuy nhiên, với **Docker**, bạn có thể nhanh chóng xây dựng một môi trường phát triển đồng nhất, dễ bảo trì và triển khai.
 
-### Bạn sẽ học được gì? <a href="#ban-se-hoc-duoc-gi-0" id="ban-se-hoc-duoc-gi-0"></a>
+Trong bài viết này, [**Cẩm nang NQDEV**](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/s/riO9WU3lEu4DXKD3d9zp/) sẽ hướng dẫn bạn cách sử dụng Docker để tạo môi trường WordPress hoàn chỉnh, đồng thời tìm hiểu cách:\
+✅ Cấu hình lại Nginx.\
+✅ Thay đổi config PHP.\
+✅ Thiết lập **boilerplate** cho các dự án PHP/WordPress.
 
-Qua bài viết này, bạn có thể nhanh chóng áp dựng boilerplate để dựng môi trường cho wordpress hay bất kỳ ứng dụng PHP nào. Bài này sẽ:
+***
 
-* Cách cấu hình lại Nginx
-* Cách thay đổi config của PHP
-* Hiểu thêm các bước để config boilerplate cho dự án PHP/Wordpress của bạn
+## **1. Cài Đặt Docker và Docker Compose**
 
-### Cấu trúc thư mục <a href="#cau-truc-thu-muc-1" id="cau-truc-thu-muc-1"></a>
+Trước khi bắt đầu, bạn cần cài đặt **Docker** và **Docker Compose** trên máy của mình.
 
-Tương tự với bài trước, cấu trúc thư mục sẽ là:
-
-```none
-|__ wordpress  => Source code wordpress
-|__ docker-php-development
-```
-
-### Chuẩn bị source code <a href="#chuan-bi-source-code-2" id="chuan-bi-source-code-2"></a>
-
-1. Download source wordpress và giải nén thành thư mục wordpress
-2. Clone repo [sun-asterisk-research/docker-php-development](https://github.com/sun-asterisk-research/docker-php-development) về thư mục `docker-php-development`
-
-### Bật các service / biến môi trường <a href="#bat-cac-service--bien-moi-truong-3" id="bat-cac-service--bien-moi-truong-3"></a>
-
-#### 1. Tạo file `services` để chọn các file `compose/*.yml` nào được chạy, chạy lệnh <a href="#id-1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4" id="id-1-tao-file-services-de-chon-cac-file-composeyml-nao-duoc-chay-chay-lenh-4"></a>
+### **Cài Docker trên Linux (Ubuntu/Debian)**
 
 ```bash
-cp services.example services
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
 ```
 
-Đối với wordpress, mình chỉ cần chạy 2 file docker-compose là `compose/php.yml` để chạy PHP, `compose/mariadb.yml` để chạy MariaDB là database. Khi đó mình điền tên 2 file này vào trong file `services` vừa tạo ra. (Nhớ để thừa một dòng trống ở cuối file `services` nhé).
+### **Cài Docker Compose**
 
 ```bash
-php
-mariadb
-
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-#### 2. Tạo file `.env` <a href="#id-2-tao-file-env-5" id="id-2-tao-file-env-5"></a>
+### Kiểm tra phiên bản:
 
 ```bash
-cp .env.example .env
+docker --version
+docker-compose --version
 ```
+
+***
+
+## **2. Tạo Cấu Trúc Dự Án WordPress Với Docker**
+
+Chúng ta sẽ thiết lập môi trường **WordPress + Nginx + MySQL** bằng Docker Compose.
+
+### **Bước 1: Tạo thư mục dự án**
 
 ```bash
-#-------------------------------------------------------------------------------
-# Code paths
-#-------------------------------------------------------------------------------
-
-PATH_PHP=../php
-PATH_WEB=../web
-
-#-------------------------------------------------------------------------------
-# Data paths
-#-------------------------------------------------------------------------------
-
-PATH_DATA=./data
-PATH_LOGS=./logs
-
-#-------------------------------------------------------------------------------
-# Traefik domain and ports
-# DOMAIN, PORT defines public domain for your PHP application
-# DOMAIN_WEB defines public domain for your Node.js application
-# DOMAIN_SECONDARY is the domain used for other services e.g traefik, mailhog, phpmyadmin .etc
-#-------------------------------------------------------------------------------
-
-DOMAIN=example.localhost
-DOMAIN_WEB=web.example.localhost
-PORT=8000
-
-DOMAIN_SECONDARY=backend.localhost
-
-#-------------------------------------------------------------------------------
-# Databases
-# DB_DATABASE, DB_USERNAME and DB_PASSWORD are mandatory
-# You can leave the others empty for default values
-#-------------------------------------------------------------------------------
-
-DB_DATABASE=my_database
-DB_USERNAME=my_user
-DB_PASSWORD=secret
-
-#-------------------------------------------------------------------------------
-# Other things
-#-------------------------------------------------------------------------------
-
-ELASTICSEARCH_VERSION=7.3.2
-
-PGADMIN_DEFAULT_EMAIL=admin@domain.com
-PGADMIN_DEFAULT_PASSWORD=secret
-
-MEMORY_LIMIT_PHP_FPM=1G
-MEMORY_LIMIT_BEANSTALKD=200m
-MEMORY_LIMIT_ELASTICSEARCH=512m
-MEMORY_LIMIT_MAILHOG=200m
-MEMORY_LIMIT_MYSQL=1G
-MEMORY_LIMIT_POSTGRES=1G
-MEMORY_LIMIT_REDIS=200m
-
-NGINX_DOCUMENT_ROOT=/php/public
-NGINX_CONFIG_TEMPLATE=./config/nginx/default.conf
-
-# LARAVEL_ECHO_SERVER_REDIS_KEY_PREFIX=
-
-COMPOSE_PROJECT_NAME=php-dev
-HOSTS_FILE=/etc/hosts
-
+mkdir wordpress-docker
+cd wordpress-docker
 ```
 
-#### 3. Thay đổi các biến cho phù hợp <a href="#id-3-thay-doi-cac-bien-cho-phu-hop-6" id="id-3-thay-doi-cac-bien-cho-phu-hop-6"></a>
+### **Bước 2: Tạo `docker-compose.yml`**
 
-Các biến chính cần sửa lại đó là:
+Tạo file `docker-compose.yml` để định nghĩa các container:
 
-```bash
-# Đường dẫn tới thư mục code PHP
-PATH_PHP=../wordpress
-
-# Đổi domain của ứng dụng PHP khi chạy dưới local
-DOMAIN=my-app.lc
-
-# Mình muốn sau khi chạy, web sẽ chạy ở cổng 80 luôn
-PORT=80
-
-# Đổi domain của các backend dashboard, dùng cho: traefik, mailhog, phpmyadmin...
-# Tương ứng, khi truy cập sẽ là: traefik.backend.lc, mailhog.backend.lc, phpmyadmin.backend.lc...
-DOMAIN_SECONDARY=backend.lc
-
-# Đổi lại tên database trước khi chạy lệnh, nếu service db đã được chạy trước đó mà bạn mới đổi thì sẽ cần xóa bỏ data của service db cũ rồi mới chạy lại để nó nhận thông tin account mới.
-# EX: rm -rf ./data/mariadb
-DB_DATABASE=viblo
-DB_USERNAME=viblo
-DB_PASSWORD=secret
-
-# Đổi Prefix cho tên các container được chạy.
-# VD: viblo_php_1, viblo_mariadb_1....
-COMPOSE_PROJECT_NAME=viblo
-
-# Các biến MEMORY_LIMIT_*, nếu máy bạn ít RAM thì có thể giới hạn memory được phép sử dụng thấp xuống, VD:
-# MYSQL được cấp tối đa là 512 MB memory.
-MEMORY_LIMIT_MYSQL=512m
-
-# Vì trong container chạy php, source code được mount vào thưc mục /php
-# Trỏ nginx về đúng thư mục PHP, mặc định nó được cấu hình sẵn với Laravel nên có /public, với wordpress thì không có thư mục public nữa:
-# NGINX_DOCUMENT_ROOT=/php/public
-NGINX_DOCUMENT_ROOT=/php
-
-# Đây là file cấu hình mặc định của nginx, mình thấy nó không phù hợp với Wordpress nên sẽ cần edit lại, mình sẽ tạo file cấu hình mới tại:
-NGINX_CONFIG_TEMPLATE=./config/nginx/wordpress.conf
-```
-
-#### 4. Customize Nginx + PHP cho wordpress <a href="#id-4-customize-nginx--php-cho-wordpress-7" id="id-4-customize-nginx--php-cho-wordpress-7"></a>
-
-1. Sửa lại config Nginx một xíu, do mình khai báo biến `NGINX_CONFIG_TEMPLATE=./config/nginx/wordpress.conf` rồi nên không phải sửa thêm gì nữa:
-
-```bash
-server {
-  listen 80;
-
-  root  ${DOCUMENT_ROOT};
-  index index.html index.htm index.php;
-
-  location / {
-    try_files $uri $uri/ /index.php?$query_string;
-  }
-
-  location = /favicon.ico { access_log off; log_not_found off; }
-  location = /robots.txt  { access_log off; log_not_found off; }
-
-  location ~ \.php$ {
-    fastcgi_pass    php:9000;
-    fastcgi_param   SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
-    include         fastcgi_params;
-  }
-
-  location ~* \.(js|css|png|jpg|jpeg|gif|ico)$ {
-    expires max;
-    log_not_found off;
-  }
-}
-
-```
-
-2. Do wordpress thường có thể bạn sẽ cần import các file backup với dung lượng cao, mặc định thì là 2MB uploads nên mình sẽ sửa thêm file config PHP.ini. Có một file mẫu ở `./config/php/zzz-docker-php.ini`, mình sẽ làm theo hướng dẫn ở bên trong file để cho phép upload được file dung lượng lớn hơn.
-
-```bash
-; How to use this file?
-; You just mount this file onto "/usr/local/etc/php/conf.d/zzz-docker-php.ini"
-; in "php" service via "docker-compose.override.yml" file.
-
-; Example: docker-compose.override.yml
-; version: "2.2"
-; services:
-;   php:
-;     volumes:
-;     - ./config/php/zzz-docker-php.ini:/usr/local/etc/php/conf.d/zzz-docker-php.ini:ro
-
-post_max_size = 300M
-upload_max_filesize = 300M
-
-max_execution_time = 300
-max_input_time = 300
-
-```
-
-Trong đó, mình tăng kích thước tối đã là 300MB, tăng thời gian xử lý lên 300 giây.
-
-3. Tạo file `docker-compose.override.yml` để override lại cấu hình có sẵn trong các file `compose/*.yml`. File này vẫn là file docker-compose như bình thường, chỉ có điều là bạn cần ghi đề config nào thì khai báo mục đó chứ không cần khai báo lại đủ. Nếu bạn muốn chạy thêm service mới thì cũng có thể ghi vào đây, file này nó được ignore bởi Git.
-
+{% code title="docker-compose.yml" %}
 ```yaml
-version: '2.2'
+version: '3.8'
 
 services:
-    mariadb:
-        image: mariadb:10 # Mình đổi lại image của service mariadb tại đây, chứ ko sửa trực tiếp file compose/mariadb.yml, chạy git status nó không báo mình sửa đổi file :D
-    php:
-        user: 1000:1000 # đổi lại user chạy php-fpm là 1000:1000 -> đây là uid/gid của user mình đang đăng nhập.
-        volumes:
-            - ./config/php/zzz-php-uploads.ini:/usr/local/etc/php/conf.d/zzz-docker-php.ini:ro
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress_app
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: user
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wordpress:/var/www/html
+
+  mysql:
+    image: mysql:5.7
+    container_name: wordpress_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+  nginx:
+    image: nginx:latest
+    container_name: wordpress_nginx
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./wordpress:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - wordpress
 ```
+{% endcode %}
 
-Chú ý, mình cần đổi user chạy php-fpm là 1000:1000, chính là uid/gid của user mình đang đăng nhập. Vì như bạn biết trong wordpress sẽ cần cài thêm plugin, mình để uid giống với tài khoản thực ngoài máy thật để không dính các vấn đề về permission khi đọc ghi file, xóa file. Các bạn dùng windows chắc là sẽ không lo, nhưng với linux thì các bạn biết, nó sẽ có phân quyền đọc/ghi/thực thi theo user và group.
+***
 
-4. Tới đây, chúng ta chỉ cần chạy lệnh sau để run các container lên:
+## **3. Cấu Hình Nginx Cho WordPress**
+
+### Tạo thư mục cấu hình **nginx**:
 
 ```bash
-./project up
+mkdir nginx
 ```
 
-5. Nhớ thêm các domain ảo của bạn vào trong file /etc/hosts nhé!
+### Tạo file `nginx/default.conf` để cấu hình Nginx:
+
+{% code title="default.conf" %}
+```nginx
+server {
+    listen 80;
+    server_name localhost;
+
+    root /var/www/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass wordpress:9000;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+```
+{% endcode %}
+
+***
+
+## **4. Cấu Hình PHP (PHP.ini)**
+
+Để thay đổi config PHP, bạn có thể tạo một file `php.ini` và mount nó vào container.
+
+### Tạo thư mục cấu hình PHP:
 
 ```bash
-0.0.0.0 my-app.lc backend.lc traefik.backend.lc
+mkdir php
 ```
+
+### Tạo file `php/php.ini`:
+
+{% code title="php.ini" %}
+```ini
+upload_max_filesize = 64M
+post_max_size = 64M
+memory_limit = 512M
+max_execution_time = 300
+```
+{% endcode %}
+
+Sau đó, sửa `docker-compose.yml` để mount file này vào container:
+
+```yaml
+volumes:
+  - ./php/php.ini:/usr/local/etc/php/conf.d/custom.ini
+```
+
+***
+
+## **5. Chạy Docker Compose Và Truy Cập WordPress**
+
+Sau khi đã thiết lập xong, chạy lệnh sau để khởi động các container:
+
+```bash
+docker-compose up -d
+```
+
+Kiểm tra container đang chạy:
+
+```bash
+docker ps
+```
+
+Truy cập **http://localhost:8080** để cài đặt WordPress.
+
+***
+
+## **6. Một Số Lệnh Hữu Ích Khi Làm Việc Với Docker**
+
+*   **Dừng toàn bộ container**:
+
+    ```bash
+    docker-compose down
+    ```
+*   **Xem logs của container**:
+
+    ```bash
+    docker-compose logs -f
+    ```
+*   **Truy cập vào container WordPress**:
+
+    ```bash
+    docker exec -it wordpress_app bash
+    ```
+*   **Khởi động lại container**:
+
+    ```bash
+    docker-compose restart
+    ```
+
+***
+
+## **7. Kết Luận**
+
+Sử dụng **Docker** giúp bạn thiết lập môi trường phát triển **WordPress** nhanh chóng và dễ dàng hơn. Bạn không cần cài đặt từng thành phần riêng lẻ mà có thể sử dụng **boilerplate** để triển khai ngay lập tức.
+
+✅ **Cấu hình lại Nginx** để phục vụ WordPress.\
+✅ **Thay đổi config PHP** để tối ưu hiệu suất.\
+✅ **Xây dựng boilerplate** cho dự án PHP/WordPress của bạn.
+
+Hy vọng bài viết từ **Cẩm nang NQDEV** sẽ giúp bạn triển khai WordPress bằng Docker một cách chuyên nghiệp! 🚀
+
+***
+
+Nếu bạn có bất kỳ câu hỏi nào, hãy để lại bình luận nhé! 🚀
 
 <img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"><img src="https://twemoji.maxcdn.com/v/14.0.2/72x72/2615.png" alt="☕️" data-size="line"> _Nếu thấy nội dung này bổ ích, hãy mời tôi một tách cà phê nha!_ [_**https://me.momo.vn/nhquydev**_](https://me.momo.vn/nhquydev)
