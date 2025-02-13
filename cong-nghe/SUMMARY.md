@@ -81,7 +81,7 @@
     * [Hướng dẫn chi tiết cài đặt Ansible](ung-dung/ansible/huong-dan-chi-tiet-cai-dat-ansible.md)
   * [Apache JMeter](ung-dung/apache-jmeter/README.md)
     * [Features](ung-dung/apache-jmeter/features/README.md)
-      * [Test Plan](ung-dung/apache-jmeter/features/test-plan.md)
+      * [Hướng dẫn chi tiết về Test Plan trong JMeter](ung-dung/apache-jmeter/features/huong-dan-chi-tiet-ve-test-plan-trong-jmeter.md)
       * [Hướng dẫn chi tiết về Thread Group trong JMeter](ung-dung/apache-jmeter/features/huong-dan-chi-tiet-ve-thread-group-trong-jmeter.md)
   * [Caching](ung-dung/caching/README.md)
     * [Redis](ung-dung/caching/redis/README.md)
