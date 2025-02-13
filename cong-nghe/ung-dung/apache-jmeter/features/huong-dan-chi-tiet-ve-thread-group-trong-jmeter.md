@@ -12,6 +12,10 @@ Trong [JMeter](../), **Thread Group** là thành phần quan trọng nhất, đ�
 
 Thread Group cung cấp nhiều thông số cấu hình giúp điều chỉnh số lượng người dùng, thời gian chạy, và cách tải được phân phối trong quá trình kiểm thử.
 
+<div align="center"><figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/threadgroup-1739415439.png" alt="Performance Test | Thread Group"><figcaption><p>Performance Test</p></figcaption></figure></div>
+
+
+
 ***
 
 ## 2. Các thông số cấu hình quan trọng của Thread Group
