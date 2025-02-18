@@ -18,20 +18,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (Use v14 for compatibility)
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '14'
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
+        run: npm install -g gitbook-cli --legacy-peer-deps
 
       - name: Install GitBook plugins and build
         run: |
           gitbook install
           gitbook build
 
-      - name: Upload artifact (new version)
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: gitbook-site
