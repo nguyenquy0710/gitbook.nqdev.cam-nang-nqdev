@@ -138,5 +138,7 @@
   * [So Sánh Apache Parquet và CSV: Bảng So Sánh Chi Tiết, Ưu và Nhược Điểm](so-sanh/so-sanh-apache-parquet-va-csv-bang-so-sanh-chi-tiet-uu-va-nhuoc-diem.md)
   * [So Sánh Varnish Cache, Memcached và Redis: Ba Công Cụ Caching Phổ Biến trong Tối Ưu Hóa Hiệu Suất](so-sanh/so-sanh-varnish-cache-memcached-va-redis-ba-cong-cu-caching-pho-bien-trong-toi-uu-hoa-hieu-suat.md)
 * [Affiliate](ung-dung/README.md)
+  * [Tuyển dụng](affiliate/tuyen-dung/README.md)
+    * [Bộ câu hỏi phỏng vấn T-SQL – Đánh giá ứng viên hiệu quả](affiliate/tuyen-dung/bo-cau-hoi-phong-van-t-sql-danh-gia-ung-vien-hieu-qua.md)
   * [eSMSvn: Chăm sóc khách hàng hiệu quả với SMS và ZNS](ung-dung/esmsvn-cham-soc-khach-hang-hieu-qua-voi-sms-va-zns.md)
   * [eSMS.vn: Giải pháp SMS Marketing hiệu quả cùng các chương trình ưu đãi hấp dẫn](affiliate/esms.vn-giai-phap-sms-marketing-hieu-qua-cung-cac-chuong-trinh-uu-dai-hap-dan.md)
