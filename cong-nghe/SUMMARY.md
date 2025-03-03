@@ -17,6 +17,8 @@
   * [Optimize](dotnet/optimize/README.md)
     * [Optimize - Một số cách tối ưu code và performance CSharp](dotnet/optimize/optimize-mot-so-cach-toi-uu-code-va-performance-csharp.md)
   * [Dev Blogs](dotnet/dev-blogs/README.md)
+    * [Versions of .NET](dotnet/dev-blogs/versions-of-.net/README.md)
+      * [Cập nhật từ .NET 9 lên .NET 10: Những thay đổi quan trọng](dotnet/dev-blogs/versions-of-.net/cap-nhat-tu-.net-9-len-.net-10-nhung-thay-doi-quan-trong.md)
     * [ASP.NET Core Web API với ASP.NET Core Web API (Native AOT): Bạn nên chọn loại nào?](dotnet/dev-blogs/asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao.md)
     * [Hướng dẫn xây dựng ứng dụng multi-tenant với .NET Core và MongoDB](dotnet/dev-blogs/huong-dan-xay-dung-ung-dung-multi-tenant-voi-.net-core-va-mongodb.md)
     * [Kiến Trúc Monolithic và Microservices: Lựa Chọn Phù Hợp Cho Dự Án Của Bạn](dotnet/dev-blogs/kien-truc-monolithic-va-microservices-lua-chon-phu-hop-cho-du-an-cua-ban.md)
