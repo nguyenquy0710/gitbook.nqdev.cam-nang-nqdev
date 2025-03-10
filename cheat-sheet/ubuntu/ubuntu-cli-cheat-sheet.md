@@ -1,12 +1,4 @@
----
-description: Ubuntu Server CLI cheat sheet 2024 v6.pdf
----
-
 # Ubuntu CLI cheat sheet
-
-{% embed url="https://assets.ubuntu.com/v1/3bd0daaf-Ubuntu%20Server%20CLI%20cheat%20sheet%202024%20v6.pdf" %}
-Ubuntu Server CLI cheat sheet 2024 v6.pdf
-{% endembed %}
 
 
 
@@ -40,3 +32,7 @@ Dưới đây là tóm tắt một số lệnh quan trọng trong môi trường
 * **Kiểm tra bộ nhớ**: `free -h` cho thông tin về việc sử dụng bộ nhớ.
 
 Ngoài ra, tài liệu cũng cung cấp ví dụ chi tiết và các mẹo thực hành tốt cho việc quản lý máy chủ bằng dòng lệnh. Để biết thêm chi tiết và các trường hợp sử dụng cụ thể, vui lòng truy cập tài liệu PDF qua liên kết trên.
+
+{% embed url="https://assets.ubuntu.com/v1/3bd0daaf-Ubuntu%20Server%20CLI%20cheat%20sheet%202024%20v6.pdf" %}
+Ubuntu Server CLI cheat sheet 2024 v6.pdf
+{% endembed %}
