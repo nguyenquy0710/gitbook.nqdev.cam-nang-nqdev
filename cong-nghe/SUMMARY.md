@@ -106,6 +106,8 @@
       * [Tìm hiểu sâu về API \_reindex trong Elasticsearch](ung-dung/elasticsearch/_reindex/tim-hieu-sau-ve-api-_reindex-trong-elasticsearch.md)
       * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](ung-dung/elasticsearch/_reindex/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-_reindex.md)
     * [\_transform](ung-dung/elasticsearch/_transform.md)
+  * [HAProxy](ung-dung/haproxy/README.md)
+    * [HAProxy - Lập trình Lua và tích hợp Redis](ung-dung/haproxy/haproxy-lap-trinh-lua-va-tich-hop-redis.md)
   * [LoopBack](ung-dung/loopback/README.md)
     * [Hướng dẫn cài đặt LoopBack 4 và khởi tạo dự án đầu tiên](ung-dung/loopback/huong-dan-cai-dat-loopback-4-va-khoi-tao-du-an-dau-tien.md)
   * [NGINX Plus](ung-dung/nginx-plus/README.md)
