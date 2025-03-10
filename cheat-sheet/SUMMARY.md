@@ -31,3 +31,5 @@
     * [Command Cheat Sheat: Tổng hợp các lệnh CMD hữu ích trên Windows](windows/cmd/command-cheat-sheat-tong-hop-cac-lenh-cmd-huu-ich-tren-windows.md)
   * [Hướng dẫn sử dụng Registry Editor](windows/huong-dan-su-dung-registry-editor.md)
   * [Chi tiết giao diện trong Registry Editor](windows/chi-tiet-giao-dien-trong-registry-editor.md)
+* [Ubuntu](ubuntu/README.md)
+  * [Ubuntu CLI cheat sheet](ubuntu/ubuntu-cli-cheat-sheet.md)
