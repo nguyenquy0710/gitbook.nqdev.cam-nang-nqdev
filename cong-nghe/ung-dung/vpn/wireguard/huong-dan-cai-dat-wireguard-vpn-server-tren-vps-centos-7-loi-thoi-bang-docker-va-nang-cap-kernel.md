@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-WireGuard là một giao thức VPN hiện đại, nhanh, nhẹ và bảo mật cao đang được nhiều người dùng lựa chọn thay thế cho OpenVPN. Tuy nhiên, để chạy WireGuard server trên các VPS CentOS 7 cũ, ta thường gặp một số khó khăn do kernel hệ thống không hỗ trợ module WireGuard. Bài viết này sẽ hướng dẫn bạn cách nâng cấp kernel CentOS 7 lên phiên bản mới để hỗ trợ WireGuard, đồng thời cài đặt WireGuard server bằng Docker rất đơn giản.
+[WireGuard](./) là một giao thức VPN hiện đại, nhanh, nhẹ và bảo mật cao đang được nhiều người dùng lựa chọn thay thế cho OpenVPN. Tuy nhiên, để chạy WireGuard server trên các VPS CentOS 7 cũ, ta thường gặp một số khó khăn do kernel hệ thống không hỗ trợ module WireGuard. Bài viết này sẽ hướng dẫn bạn cách nâng cấp kernel CentOS 7 lên phiên bản mới để hỗ trợ WireGuard, đồng thời cài đặt WireGuard server bằng Docker rất đơn giản.
 
 ***
 

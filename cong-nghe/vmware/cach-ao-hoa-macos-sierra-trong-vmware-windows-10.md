@@ -1,7 +1,3 @@
----
-description: 'Nguồn: admininfo.info'
----
-
 # Cách ảo hóa macOS Sierra trong VMWare Windows 10
 
 Ảo hóa hệ điều hành là một thứ ngày càng phổ biến trong giới hâm mộ công nghệ, vì nó cho phép chúng ta có hai hệ điều hành trên cùng một máy tính. Một ví dụ về điều này là ảo hóa Mac OS X El Capitan bằng VirtualBox hoặc trường hợp ngược lại, đó là ảo hóa Windows 10 trên Mac
