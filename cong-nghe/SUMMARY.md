@@ -129,6 +129,7 @@
   * [VPN](ung-dung/vpn/README.md)
     * [WireGuard](ung-dung/vpn/wireguard/README.md)
       * [Hướng dẫn cài đặt WireGuard VPN Server trên VPS CentOS 7 lỗi thời bằng Docker và nâng cấp kernel](ung-dung/vpn/wireguard/huong-dan-cai-dat-wireguard-vpn-server-tren-vps-centos-7-loi-thoi-bang-docker-va-nang-cap-kernel.md)
+      * [Kết nối dây chuyền 2 mạng Wireguard để chuyển hướng mạng sử dụng Docker](ung-dung/vpn/wireguard/ket-noi-day-chuyen-2-mang-wireguard-de-chuyen-huong-mang-su-dung-docker.md)
     * [OpenVPN](ung-dung/vpn/openvpn.md)
     * [Tailscale](ung-dung/vpn/tailscale/README.md)
       * [Tailscale tạo Peer to Peer VPN như thế nào?](ung-dung/vpn/tailscale/tailscale-tao-peer-to-peer-vpn-nhu-the-nao.md)
