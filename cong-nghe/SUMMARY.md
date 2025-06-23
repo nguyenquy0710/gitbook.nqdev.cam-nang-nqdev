@@ -146,6 +146,8 @@
   * [Giải mã Hệ thống tạo mã OTP của Google Authenticator](tin-tuc/giai-ma-he-thong-tao-ma-otp-cua-google-authenticator.md)
   * [Quishing là gì? Hiểu và phòng tránh lừa đảo qua mã QR](tin-tuc/quishing-la-gi-hieu-va-phong-tranh-lua-dao-qua-ma-qr.md)
 * [Hướng dẫn](huong-dan/README.md)
+  * [SEO](huong-dan/seo/README.md)
+    * [🚀 Hướng dẫn chi tiết thực chiến LLM SEO](huong-dan/seo/huong-dan-chi-tiet-thuc-chien-llm-seo.md)
   * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](huong-dan/top-10-asp-.net-open-source-projects-github-2024.md)
   * [Free Themes and Templates from Creative Tim](huong-dan/free-themes-and-templates-from-creative-tim.md)
