@@ -145,6 +145,7 @@
   * [Giải thích về Tiền Tố Path Nổi Tiếng – /.well-known](tin-tuc/giai-thich-ve-tien-to-path-noi-tieng-.well-known.md)
   * [Giải mã Hệ thống tạo mã OTP của Google Authenticator](tin-tuc/giai-ma-he-thong-tao-ma-otp-cua-google-authenticator.md)
   * [Quishing là gì? Hiểu và phòng tránh lừa đảo qua mã QR](tin-tuc/quishing-la-gi-hieu-va-phong-tranh-lua-dao-qua-ma-qr.md)
+  * [📝 Top các ứng dụng todo list miễn phí & mã nguồn mở đáng dùng hiện nay](tin-tuc/top-cac-ung-dung-todo-list-mien-phi-and-ma-nguon-mo-dang-dung-hien-nay.md)
 * [Hướng dẫn](huong-dan/README.md)
   * [SEO](huong-dan/seo/README.md)
     * [🚀 Hướng dẫn chi tiết thực chiến LLM SEO](huong-dan/seo/huong-dan-chi-tiet-thuc-chien-llm-seo.md)
