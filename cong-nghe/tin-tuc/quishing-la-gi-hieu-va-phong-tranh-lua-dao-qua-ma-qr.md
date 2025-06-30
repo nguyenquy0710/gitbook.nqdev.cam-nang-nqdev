@@ -2,7 +2,7 @@
 
 Trong thời đại số, mã QR đã trở thành công cụ quen thuộc trong cuộc sống hàng ngày – từ thanh toán điện tử đến tra cứu thông tin. Tuy nhiên, chính sự phổ biến đó cũng biến QR code thành công cụ lý tưởng cho các cuộc tấn công mạng mới – gọi là **Quishing**. Hãy cùng Cẩm Nang NQDEV tìm hiểu về quishing là gì, nó nguy hiểm như thế nào và cách bảo vệ bạn khỏi hình thức lừa đảo này.
 
-<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/quishing-la-gi-1.jpg" alt="Quishing là gì?"><figcaption><p>Quishing là gì?</p></figcaption></figure>
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/quishing-001.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
