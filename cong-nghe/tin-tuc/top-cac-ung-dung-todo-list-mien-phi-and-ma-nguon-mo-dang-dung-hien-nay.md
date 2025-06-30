@@ -9,6 +9,8 @@ description: >-
 
 Việc quản lý công việc hàng ngày thông qua các công cụ Todo List ngày càng trở nên phổ biến. Tuy nhiên, nếu bạn là người yêu thích sự **đơn giản, riêng tư**, hoặc muốn **toàn quyền kiểm soát dữ liệu**, thì các công cụ **mã nguồn mở (open-source)** có thể là lựa chọn lý tưởng.
 
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/localtunnel-001.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## 🔹 Những Công Cụ Todo List Miễn Phí Phổ Biến (Nhưng Không Open-Source)
