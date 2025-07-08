@@ -65,10 +65,12 @@ sudo yum install net-tools
 
 Kết quả sẽ hiển thị danh sách các dịch vụ đang nghe trên các cổng mạng, ví dụ:
 
-```plaintext
-COMMAND     PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
-sshd       1001 root    3u  IPv4  12983      0t0  TCP *:22 (LISTEN)
-httpd      1150 apache  4u  IPv4  13930      0t0  TCP *:80 (LISTEN)
+```sql
+$ netstat -nutpl
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp6       0      0 :::9100                 :::*                    LISTEN      1419/node_exporter
+udp6       0      0 ::1:323                 :::*                                997/chronyd
 ```
 
 ### **4. Sử Dụng `firewalld` (Tường Lửa Mặc Định Trên CentOS)**
