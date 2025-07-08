@@ -36,13 +36,13 @@ LISTEN   0        128      *:22                   *:*
 
 * **Lệnh**:
 * ```bash
-  netstat -tuln
+  netstat -nutpl
   ```
 
 Lệnh này cho ra kết quả tương tự như `ss`, hiển thị danh sách các cổng đang lắng nghe. Nếu chưa cài `netstat`, bạn có thể cài đặt qua lệnh:
 
 * ```bash
-  netstat -tuln
+  netstat -nutpl
   ```
 
 Lệnh này cho ra kết quả tương tự như `ss`, hiển thị danh sách các cổng đang lắng nghe. Nếu chưa cài `netstat`, bạn có thể cài đặt qua lệnh:
