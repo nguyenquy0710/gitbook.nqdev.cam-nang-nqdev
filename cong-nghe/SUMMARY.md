@@ -112,8 +112,7 @@
     * [Hướng dẫn sử dụng Localtunnel để đưa ứng dụng Local lên Internet](ung-dung/localtunnel/huong-dan-su-dung-localtunnel-de-dua-ung-dung-local-len-internet.md)
   * [LoopBack](ung-dung/loopback/README.md)
     * [Hướng dẫn cài đặt LoopBack 4 và khởi tạo dự án đầu tiên](ung-dung/loopback/huong-dan-cai-dat-loopback-4-va-khoi-tao-du-an-dau-tien.md)
-  * [N8N](ung-dung/n8n/README.md)
-    * [Hướng dẫn cài đặt n8n bằng docker compose](ung-dung/n8n/huong-dan-cai-dat-n8n-bang-docker-compose.md)
+  *
   * [NGINX Plus](ung-dung/nginx-plus/README.md)
     * [NGINX: Hiệu suất vượt trội và giải pháp tối ưu cho hệ thống web](ung-dung/nginx-plus/nginx-hieu-suat-vuot-troi-va-giai-phap-toi-uu-cho-he-thong-web.md)
     * [NGINX: Hướng dẫn chi tiết sử dụng GeoIP2 trên Alpine](ung-dung/nginx-plus/nginx-huong-dan-chi-tiet-su-dung-geoip2-tren-alpine.md)

@@ -129,11 +129,9 @@ DocFX hỗ trợ **Liquid template**, cho phép bạn sử dụng các biến v�
 
 ```liquid
 {{ page.title }}  <!-- Hiển thị tiêu đề trang -->
-{% raw %}
 {% for item in model.items %}
     <a href="{{ item.href }}">{{ item.name }}</a>
 {% endfor %}
-{% endraw %}
 ```
 
 ### **5.2. Tích hợp Metadata**
@@ -141,13 +139,11 @@ DocFX hỗ trợ **Liquid template**, cho phép bạn sử dụng các biến v�
 Bạn có thể sử dụng metadata để tùy chỉnh nội dung hiển thị:
 
 ```liquid
-{% raw %}
 {% if model.metadata.language == "en" %}
     <p>This is an English page</p>
 {% else %}
     <p>This is a localized page</p>
 {% endif %}
-{% endraw %}
 ```
 
 ### **5.3. Chạy Post Processor**
