@@ -8,6 +8,7 @@
   * [ClearPath cho Team .NET Core](developer-roadmaps/clearpath-cho-team-.net-core.md)
 * [DotNET](dotnet/README.md)
   * [ASP.NET Core](dotnet/asp.net-core/README.md)
+    * [Hướng dẫn xây dựng ứng dụng web bằng ASP.NET Core và Blazor trên nền .NET 8 LTS](dotnet/asp.net-core/huong-dan-xay-dung-ung-dung-web-bang-asp.net-core-va-blazor-tren-nen-.net-8-lts.md)
     * [Hướng dẫn sử dụng tệp .http trong Visual Studio 2022 để thực hiện HTTP Requests](dotnet/asp.net-core/huong-dan-su-dung-tep-.http-trong-visual-studio-2022-de-thuc-hien-http-requests.md)
   * [Message Queue](dotnet/message-queue/README.md)
     * [ZeroMQ](dotnet/message-queue/zeromq/README.md)
