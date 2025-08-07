@@ -146,6 +146,7 @@
   * [Giải mã Hệ thống tạo mã OTP của Google Authenticator](tin-tuc/giai-ma-he-thong-tao-ma-otp-cua-google-authenticator.md)
   * [Quishing là gì? Hiểu và phòng tránh lừa đảo qua mã QR](tin-tuc/quishing-la-gi-hieu-va-phong-tranh-lua-dao-qua-ma-qr.md)
   * [📝 Top các ứng dụng todo list miễn phí & mã nguồn mở đáng dùng hiện nay](tin-tuc/top-cac-ung-dung-todo-list-mien-phi-and-ma-nguon-mo-dang-dung-hien-nay.md)
+  * [AI SEO 2025: Cuộc cách mạng trong chiến lược Nội dung & Tìm kiếm](tin-tuc/ai-seo-2025-cuoc-cach-mang-trong-chien-luoc-noi-dung-and-tim-kiem.md)
 * [Hướng dẫn](huong-dan/README.md)
   * [SEO](huong-dan/seo/README.md)
     * [🚀 Hướng dẫn chi tiết thực chiến LLM SEO](huong-dan/seo/huong-dan-chi-tiet-thuc-chien-llm-seo.md)
