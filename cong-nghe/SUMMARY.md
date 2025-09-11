@@ -43,6 +43,7 @@
   * [SQL Server: Tập lệnh](sql-server/sql-server-tap-lenh/README.md)
     * [SQL Server: Tập lệnh để tìm tất cả các giá trị Mặc định với Cột](sql-server/sql-server-tap-lenh/sql-server-tap-lenh-de-tim-tat-ca-cac-gia-tri-mac-dinh-voi-cot.md)
     * [SQL Server: Tập lệnh theo dõi bảng mới được Insert, Update trong SQL Server](sql-server/sql-server-tap-lenh/sql-server-tap-lenh-theo-doi-bang-moi-duoc-insert-update-trong-sql-server.md)
+    * [SQL Server: Cách khởi động SQLServer bỏ qua Database bị lỗi](sql-server/sql-server-tap-lenh/sql-server-cach-khoi-dong-sqlserver-bo-qua-database-bi-loi.md)
   * [Bảng tạm và sự linh hoạt trong xử lý dữ liệu lớn](sql-server/bang-tam-va-su-linh-hoat-trong-xu-ly-du-lieu-lon.md)
   * [Các bước để thay đổi nơi lưu trữ tệp log trong SQL Server](sql-server/cac-buoc-de-thay-doi-noi-luu-tru-tep-log-trong-sql-server.md)
   * [Các bước di chuyển tệp log trong SQL Server](sql-server/cac-buoc-di-chuyen-tep-log-trong-sql-server.md)
