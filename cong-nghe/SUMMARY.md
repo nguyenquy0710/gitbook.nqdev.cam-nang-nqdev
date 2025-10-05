@@ -128,6 +128,8 @@
     * [Hướng dẫn cài đặt NTP an toàn với Docker Compose](ung-dung/ntp-secure-timeserver/huong-dan-cai-dat-ntp-an-toan-voi-docker-compose.md)
   * [Playwright](ung-dung/playwright/README.md)
     * [Playwright: Tự Động Hóa Trình Duyệt Hiệu Quả](ung-dung/playwright/playwright-tu-dong-hoa-trinh-duyet-hieu-qua.md)
+  * [Podman](ung-dung/podman/README.md)
+    * [Visual Studio 2026 Insiders chính thức hỗ trợ Podman – Phát triển container an toàn hơn, linh hoạt](ung-dung/podman/visual-studio-2026-insiders-chinh-thuc-ho-tro-podman-phat-trien-container-an-toan-hon-linh-hoat.md)
   * [VPN](ung-dung/vpn/README.md)
     * [WireGuard](ung-dung/vpn/wireguard/README.md)
       * [Hướng dẫn cài đặt WireGuard VPN Server trên VPS CentOS 7 lỗi thời bằng Docker và nâng cấp kernel](ung-dung/vpn/wireguard/huong-dan-cai-dat-wireguard-vpn-server-tren-vps-centos-7-loi-thoi-bang-docker-va-nang-cap-kernel.md)
