@@ -2,6 +2,8 @@
 
 Trong nhiều năm qua, **Docker** gần như là “chuẩn mặc định” trong thế giới container. Hầu hết các quy trình CI/CD, môi trường phát triển, và công cụ IDE đều xây dựng quanh Docker. Tuy nhiên, thế giới phần mềm không ngừng thay đổi — và giờ đây, **Visual Studio 2026 Insiders** đã đánh dấu một bước ngoặt quan trọng: **hỗ trợ chính thức Podman**, cho phép các nhà phát triển **xây dựng, chạy và gỡ lỗi ứng dụng container trực tiếp trong Visual Studio mà không cần Docker daemon**.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/refs/heads/main/gitbook/blogs/cong-nghe/visual-studio-2026-insiders-podman.jpg" alt="Visual Studio 2026 Insiders - Podman"><figcaption><p>Visual Studio 2026 Insiders - Podman</p></figcaption></figure>
+
 Đây không chỉ là một cập nhật kỹ thuật, mà còn là **một thay đổi lớn trong cách chúng ta phát triển và triển khai phần mềm containerized**.
 
 ***
