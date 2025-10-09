@@ -10,7 +10,7 @@ description: >-
 
 Khi bạn khởi động máy tính Windows, một số ứng dụng sẽ tự động chạy ngầm. Điều này có thể làm chậm thời gian khởi động và ảnh hưởng đến hiệu suất hệ thống. Việc kiểm tra và quản lý các ứng dụng khởi động là cần thiết để tối ưu hóa tốc độ và đảm bảo máy tính hoạt động mượt mà.
 
-Trong bài viết này, [Cẩm nang NQDEV](../../) sẽ hướng dẫn bạn cách sử dụng **Registry Editor** để xem và kiểm soát danh sách các ứng dụng khởi động tự động trên Windows.
+Trong bài viết này, [Cẩm nang NQDEV](../) sẽ hướng dẫn bạn cách sử dụng **Registry Editor** để xem và kiểm soát danh sách các ứng dụng khởi động tự động trên Windows.
 
 ***
 
