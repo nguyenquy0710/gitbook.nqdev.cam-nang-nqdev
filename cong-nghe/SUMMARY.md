@@ -71,6 +71,8 @@
     * [Hướng Dẫn Kiểm Tra Các Cổng Đang Mở Trên Hệ Thống CentOS](os-linux/centos-7/huong-dan-kiem-tra-cac-cong-dang-mo-tren-he-thong-centos.md)
     * [Hướng Dẫn Sử Dụng zip Trên CentOS](os-linux/centos-7/huong-dan-su-dung-zip-tren-centos.md)
     * [Hướng dẫn cấu hình iptables để mở tất cả các cổng cho IP private](os-linux/centos-7/huong-dan-cau-hinh-iptables-de-mo-tat-ca-cac-cong-cho-ip-private.md)
+  * [Tools](os-linux/tools/README.md)
+    * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](os-linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
 * [Windows](windows/README.md)
   * [Hướng dẫn quản lý ứng dụng khởi động Windows bằng Registry Editor](windows/huong-dan-quan-ly-ung-dung-khoi-dong-windows-bang-registry-editor.md)
   * [Cẩm nang quản lý dịch vụ Windows bằng lệnh net start và sc](windows/cam-nang-quan-ly-dich-vu-windows-bang-lenh-net-start-va-sc.md)
