@@ -23,6 +23,7 @@
     * [ASP.NET Core Web API với ASP.NET Core Web API (Native AOT): Bạn nên chọn loại nào?](dotnet/dev-blogs/asp.net-core-web-api-voi-asp.net-core-web-api-native-aot-ban-nen-chon-loai-nao.md)
     * [Hướng dẫn xây dựng ứng dụng multi-tenant với .NET Core và MongoDB](dotnet/dev-blogs/huong-dan-xay-dung-ung-dung-multi-tenant-voi-.net-core-va-mongodb.md)
     * [Kiến Trúc Monolithic và Microservices: Lựa Chọn Phù Hợp Cho Dự Án Của Bạn](dotnet/dev-blogs/kien-truc-monolithic-va-microservices-lua-chon-phu-hop-cho-du-an-cua-ban.md)
+    * [Visual Studio 2022 v17.14 (Cập nhật tháng 10/2025) – Kích hoạt Copilot Memories để AI “ghi nhớ” phon](dotnet/dev-blogs/visual-studio-2022-v17.14-cap-nhat-thang-10-2025-kich-hoat-copilot-memories-de-ai-ghi-nho-phon.md)
 * [Design Patterns](design-patterns/README.md)
   * [CQRS Pattern](design-patterns/cqrs-pattern/README.md)
     * [CQRS and MediatR trong .NET Core](design-patterns/cqrs-pattern/cqrs-and-mediatr-trong-.net-core.md)
