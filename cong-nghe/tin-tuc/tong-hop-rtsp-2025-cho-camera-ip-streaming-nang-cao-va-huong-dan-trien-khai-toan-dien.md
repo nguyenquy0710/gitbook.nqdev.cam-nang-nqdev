@@ -2,6 +2,8 @@
 
 Trong thế giới camera IP, việc truy xuất luồng trực tiếp không chỉ để xem hình ảnh mà còn phục vụ cho nhiều bài toán chuyên sâu như ghi hình NVR, phân tích AI, xử lý video server-side, hay tích hợp vào các hệ thống IoT. Ở trung tâm của những nhu cầu đó chính là **RTSP**, giao thức streaming phổ biến nhất hiện nay.
 
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/RTSP-camera-ai.png" alt="RTSP Camera"><figcaption><p>RTSP Camera</p></figcaption></figure>
+
 Trong bài viết này, _Cẩm nang NQDEV_ sẽ giúp bạn:
 
 * Nắm được **danh sách RTSP cập nhật 2025 theo từng dòng camera phổ biến**.
