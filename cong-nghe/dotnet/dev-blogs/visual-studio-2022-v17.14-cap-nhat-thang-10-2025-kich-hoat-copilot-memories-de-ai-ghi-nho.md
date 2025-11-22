@@ -1,4 +1,6 @@
-# Visual Studio 2022 v17.14 (Cập nhật tháng 10/2025) – Kích hoạt Copilot Memories để AI “ghi nhớ” phon
+# Visual Studio 2022 v17.14 (Cập nhật tháng 10/2025) – Kích hoạt Copilot Memories để AI “ghi nhớ”
+
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/refs/heads/main/gitbook/blogs/cong-nghe/visual-studio-2022-v17.14-copilot-memories.png" alt=""><figcaption><p>Copilot Memories</p></figcaption></figure>
 
 ### 🌟 Giới thiệu
 
