@@ -155,6 +155,7 @@
   * [Quishing là gì? Hiểu và phòng tránh lừa đảo qua mã QR](tin-tuc/quishing-la-gi-hieu-va-phong-tranh-lua-dao-qua-ma-qr.md)
   * [📝 Top các ứng dụng todo list miễn phí & mã nguồn mở đáng dùng hiện nay](tin-tuc/top-cac-ung-dung-todo-list-mien-phi-and-ma-nguon-mo-dang-dung-hien-nay.md)
   * [AI SEO 2025: Cuộc cách mạng trong chiến lược Nội dung & Tìm kiếm](tin-tuc/ai-seo-2025-cuoc-cach-mang-trong-chien-luoc-noi-dung-and-tim-kiem.md)
+  * [Tổng hợp RTSP 2025 cho camera IP – Streaming nâng cao và hướng dẫn triển khai toàn diện](tin-tuc/tong-hop-rtsp-2025-cho-camera-ip-streaming-nang-cao-va-huong-dan-trien-khai-toan-dien.md)
 * [Hướng dẫn](huong-dan/README.md)
   * [SEO](huong-dan/seo/README.md)
     * [🚀 Hướng dẫn chi tiết thực chiến LLM SEO](huong-dan/seo/huong-dan-chi-tiet-thuc-chien-llm-seo.md)
