@@ -113,6 +113,7 @@
       * [Tìm hiểu sâu về API \_reindex trong Elasticsearch](ung-dung/elasticsearch/_reindex/tim-hieu-sau-ve-api-_reindex-trong-elasticsearch.md)
       * [Hướng dẫn di chuyển dữ liệu trong Elasticsearch sử dụng API \_reindex](ung-dung/elasticsearch/_reindex/huong-dan-di-chuyen-du-lieu-trong-elasticsearch-su-dung-api-_reindex.md)
     * [\_transform](ung-dung/elasticsearch/_transform.md)
+    * [Cẩm nang Elasticsearch: Bộ câu lệnh giám sát – chẩn đoán – tối ưu mà kỹ sư nào cũng cần](ung-dung/elasticsearch/cam-nang-elasticsearch-bo-cau-lenh-giam-sat-chan-doan-toi-uu-ma-ky-su-nao-cung-can.md)
   * [HAProxy](ung-dung/haproxy/README.md)
     * [HAProxy - Lập trình Lua và tích hợp Redis](ung-dung/haproxy/haproxy-lap-trinh-lua-va-tich-hop-redis.md)
   * [Localtunnel](ung-dung/localtunnel/README.md)
