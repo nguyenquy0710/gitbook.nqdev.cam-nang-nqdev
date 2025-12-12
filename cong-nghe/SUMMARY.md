@@ -159,6 +159,7 @@
   * [Tổng hợp RTSP 2025 cho camera IP – Streaming nâng cao và hướng dẫn triển khai toàn diện](tin-tuc/tong-hop-rtsp-2025-cho-camera-ip-streaming-nang-cao-va-huong-dan-trien-khai-toan-dien.md)
 * [Hướng dẫn](huong-dan/README.md)
   * [SEO](huong-dan/seo/README.md)
+    * [Google Search Operators](huong-dan/seo/google-search-operators.md)
     * [🚀 Hướng dẫn chi tiết thực chiến LLM SEO](huong-dan/seo/huong-dan-chi-tiet-thuc-chien-llm-seo.md)
   * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](huong-dan/top-10-asp-.net-open-source-projects-github-2024.md)
