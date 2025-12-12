@@ -323,6 +323,6 @@ DELETE _search/scroll/_all
 
 ***
 
-## **Kết luận: Làm chủ Elasticsearch bắt đầu từ việc hiểu đúng các công cụ quan sát**
+## **Kết luận**
 
-Danh sách trên không chỉ là tập hợp các lệnh, mà là “bộ đồ nghề” của bất kỳ kỹ sư vận hành Elasticsearch nào. Khi bạn hiểu rõ mục đích và thời điểm sử dụng, việc giám sát – tối ưu – khắc phục sự cố trở nên nhẹ nhàng và chủ động hơn rất nhiều.
+Tài liệu này không chỉ liệt kê câu lệnh mà còn cung cấp ý nghĩa và ngữ cảnh sử dụng. Khi bạn nắm vững bộ lệnh này, việc giám sát – tối ưu – xử lý sự cố Elasticsearch trở nên chủ động và tiết kiệm thời gian hơn rất nhiều.
