@@ -10,6 +10,8 @@ Elasticsearch là nền tảng tìm kiếm mạnh mẽ, nhưng để vận hành
 
 Khi hệ thống Elasticsearch bắt đầu lớn dần, chúng ta không chỉ quan tâm đến dữ liệu, mà còn phải theo dõi “sức khỏe” của cluster, hiệu năng tìm kiếm, chỉ số lưu trữ, cấu hình node và rất nhiều yếu tố khác. Bộ câu lệnh dưới đây là những lệnh thực tế, thường xuyên được dùng để giám sát – phân tích – khắc phục sự cố.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/elasticsearch-monitoring-infographic.png" alt="" width="375"><figcaption></figcaption></figure>
+
 Bài viết sẽ giúp bạn hiểu **ý nghĩa – mục đích – khi nào nên sử dụng** từng câu lệnh, để biến việc vận hành Elasticsearch trở nên chủ động và hiệu quả hơn.
 
 ***
