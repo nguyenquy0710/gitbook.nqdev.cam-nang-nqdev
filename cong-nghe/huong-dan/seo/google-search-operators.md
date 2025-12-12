@@ -6,6 +6,8 @@ description: >-
 
 # Google Search Operators
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/google-search-operators.png" alt="Google Search Operators"><figcaption><p>Google Search Operators</p></figcaption></figure>
+
 ### 🚀 Google Search Operators là gì?
 
 **Google Search Operators** (toán tử tìm kiếm của Google) là các ký tự, lệnh đặc biệt mà bạn có thể thêm trực tiếp vào ô tìm kiếm Google để kiểm soát và tinh chỉnh kết quả trả về. Những toán tử này giúp:
