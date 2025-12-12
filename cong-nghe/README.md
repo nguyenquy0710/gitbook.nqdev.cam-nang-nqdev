@@ -1,8 +1,8 @@
 ---
 description: >-
-  Cẩm nang NQDEV là một bộ tài liệu trực tuyến được thiết kế nhằm cung cấp kiến
-  thức chuyên sâu và hướng dẫn thực hành về các chủ đề công nghệ, lập trình và
-  phát triển phần mềm.
+  Cẩm nang NQDEV là nền tảng chia sẻ tri thức chất lượng cao thuộc hệ sinh thái
+  NQDEV Platform, được xây dựng bởi Nguyễn Quý DevNet, hướng đến lập trình viên
+  và kỹ sư công nghệ.
 cover: >-
   https://github.com/nqdev-storage/s3-001/raw/refs/heads/main/ai-gpt/nqdev-introduction-1990x480.webp
 coverY: 0
@@ -10,72 +10,96 @@ coverY: 0
 
 # Introduction
 
-Được viết bởi đội ngũ chuyên gia giàu kinh nghiệm, Cẩm nang không chỉ tập trung vào việc truyền đạt kiến thức mà còn nhấn mạnh đến các kinh nghiệm thực tế, giúp người đọc dễ dàng áp dụng trong các dự án của mình.
+### Giới thiệu về Cẩm nang NQDEV
+
+Trong thời đại chuyển đổi số bùng nổ, việc sở hữu một nguồn tri thức đáng tin cậy trở thành lợi thế quan trọng giúp lập trình viên phát triển nhanh và bền vững. **Cẩm nang NQDEV** được xây dựng như một nền tảng hướng dẫn chuyên sâu, mang tính ứng dụng cao, đồng thời là một phần của hệ sinh thái **NQDEV Platform** – dự án tri thức do **Nguyễn Quý DevNet** phát triển và vận hành.
+
+Tại đây, mỗi bài viết không chỉ truyền đạt kiến thức kỹ thuật, mà còn mở ra góc nhìn dài hạn giúp bạn định hình tư duy, nâng cao năng lực và tự tin bước vào những dự án phức tạp hơn.
 
 ***
 
-## **Mục tiêu của Cẩm nang NQDEV**
+### Tầm nhìn và sứ mệnh của Cẩm nang NQDEV
 
-1. **Hỗ trợ học tập và nâng cao kỹ năng**: Cẩm nang cung cấp các bài viết từ cơ bản đến nâng cao về lập trình, DevOps, dữ liệu lớn, bảo mật và nhiều lĩnh vực công nghệ khác.
-2. **Chia sẻ kinh nghiệm thực tế**: Các bài hướng dẫn thường đi kèm với ví dụ minh họa cụ thể, những lời khuyên hữu ích và các bài học từ thực tế dự án.
-3. **Cộng đồng học tập và chia sẻ**: Không chỉ là một nguồn tài liệu, NQDEV còn là nơi khuyến khích các cá nhân chia sẻ kiến thức và đóng góp nội dung.
+**Cẩm nang NQDEV** hướng đến mục tiêu trở thành nền tảng học tập toàn diện cho cộng đồng lập trình viên:
 
-***
+* Cung cấp nội dung chuyên sâu nhưng gần gũi, giúp người đọc hiểu bản chất và vận dụng dễ dàng.
+* Tổng hợp kinh nghiệm thực chiến từ nhiều năm làm việc và phát triển hệ thống của **Nguyễn Quý DevNet**.
+* Xây dựng tài nguyên lâu dài cho **NQDEV Platform**, tạo hệ sinh thái hỗ trợ phát triển kiến thức xuyên suốt.
+* Định hướng tư duy giải quyết vấn đề theo phương pháp chuẩn doanh nghiệp, chuẩn DevOps, chuẩn sản phẩm.
 
-## **Các chủ đề chính trong Cẩm nang**
-
-[Cẩm nang NQDEV](./) bao gồm nhiều lĩnh vực công nghệ quan trọng, trong đó có:
-
-### **1. Lập trình**
-
-* **.NET Framework và** [**.NET Core**](dotnet/asp.net-core/): Hướng dẫn phát triển ứng dụng với ASP.NET, xây dựng API, quản lý session, xác thực người dùng bằng Identity Framework.
-* **Node.js và Next.js**: Các bài viết từ việc xây dựng ứng dụng cơ bản đến tối ưu hóa hiệu năng.
-* **Android Studio**: Phát triển ứng dụng di động từ đầu với Android Studio và Java/Kotlin.
-
-### **2. DevOps và Bảo mật**
-
-* [**HAProxy**](https://app.gitbook.com/s/uksRknmEVZ3bhjhQiFbL/haproxy): Cấu hình rate limiting, tối ưu hóa load balancer để bảo vệ hệ thống khỏi các cuộc tấn công DDoS.
-* [**Docker**](docker/) **& Docker Compose**: Xây dựng môi trường phát triển đa dịch vụ.
-* **CI/CD**: Hướng dẫn tích hợp liên tục và triển khai liên tục.
-
-### **3. Dữ liệu và Hệ quản trị**
-
-* **MongoDB**: Cách triển khai mô hình cơ sở dữ liệu đa tenant.
-* [**SQL Server**](sql-server/) **và MySQL**: Tối ưu hóa truy vấn và quản lý dữ liệu lớn.
-
-### **4. Phát triển ứng dụng thực tế**
-
-* Hướng dẫn xây dựng Mini App cho Zalo, ứng dụng quản lý doanh nghiệp, và các giải pháp thương mại điện tử với kiến trúc microservice.
-
-### **5. Nội dung sáng tạo và Blog kỹ thuật**
-
-* Các bài viết hướng dẫn viết blog kỹ thuật chuyên nghiệp, tối ưu hóa nội dung để chia sẻ trên mạng xã hội.
+Với định hướng đó, **Cẩm nang NQDEV** trở thành nơi chia sẻ tri thức thiết thực, cập nhật, và đáng tin cậy.
 
 ***
 
-## **Điểm nổi bật của Cẩm nang NQDEV**
+### Các chủ đề chính trong Cẩm nang NQDEV
 
-1. **Hướng dẫn chi tiết, dễ hiểu**: Mỗi bài viết đều được trình bày rõ ràng, với các bước thực hiện cụ thể và hình minh họa trực quan.
-2. **Ứng dụng thực tế cao**: Nội dung được xây dựng dựa trên các dự án thực tế, phù hợp với nhu cầu của cả lập trình viên mới và những chuyên gia đã có kinh nghiệm.
-3. **Cập nhật liên tục**: Đội ngũ tác giả liên tục bổ sung những nội dung mới nhất, bắt kịp xu hướng công nghệ hiện đại.
-4. **Hỗ trợ người dùng**: Người đọc có thể đặt câu hỏi, thảo luận và nhận phản hồi từ cộng đồng hoặc tác giả bài viết.
+Hệ sinh thái **NQDEV Platform** bao gồm nhiều mảng kiến thức được phân bổ hợp lý, giúp người đọc dễ tiếp cận theo từng lĩnh vực:
+
+#### **1. Lập trình & Backend**
+
+* .NET, Node.js, Next.js, API Design
+* Kiến trúc dịch vụ, lập trình tối ưu hiệu năng
+* Best practices trong xây dựng hệ thống thực tế
+
+#### **2. DevOps & Vận hành hệ thống**
+
+* Docker, HAProxy, CI/CD Pipelines
+* Quản lý hạ tầng, tối ưu hệ thống hoạt động liên tục
+* Bảo mật hệ thống và phương pháp phòng vệ nhiều lớp
+
+#### **3. Dữ liệu & cơ sở dữ liệu**
+
+* MongoDB, SQL Server, MySQL
+* Thiết kế Database chuẩn hóa
+* Kỹ thuật tối ưu truy vấn và xử lý dữ liệu lớn
+
+#### **4. Sản phẩm công nghệ & mini apps**
+
+* Các case study xây dựng ứng dụng thực chiến
+* Công cụ hỗ trợ từ **Nguyễn Quý DevNet**
+* Chiến lược tạo sản phẩm bền vững, tối ưu chi phí
+
+Mỗi nội dung không chỉ dừng lại ở hướng dẫn từng bước, mà còn phân tích lý do lựa chọn, sai lầm thường gặp và cách vận dụng khi xây dựng hệ thống quy mô lớn.
 
 ***
 
-## **Lợi ích khi sử dụng Cẩm nang NQDEV**
+### Điểm khác biệt tạo nên giá trị của Cẩm nang NQDEV
 
-* Nâng cao kỹ năng lập trình và phát triển phần mềm.
-* Tìm kiếm giải pháp cho các vấn đề thực tế trong dự án.
-* Cập nhật các xu hướng công nghệ mới nhất.
-* Kết nối với cộng đồng lập trình viên đam mê học hỏi và chia sẻ.
+#### **1. Gắn với thực tế, không lan man lý thuyết**
+
+Kiến thức được rút ra từ quá trình triển khai dự án thực tế của **Nguyễn Quý DevNet**, mang tính ứng dụng cao và phù hợp môi trường doanh nghiệp.
+
+#### **2. Tư duy dài hạn – góc nhìn chiến lược**
+
+Bài viết không chỉ trả lời “làm thế nào?”, mà còn đề cập “vì sao nên làm như thế?”, “nếu mở rộng hệ thống thì sao?”, đúng định hướng của **NQDEV Platform**.
+
+#### **3. Hệ sinh thái tri thức thống nhất**
+
+Toàn bộ nội dung được liên kết chặt chẽ, giúp bạn phát triển theo lộ trình rõ ràng, phù hợp cho cả người mới lẫn lập trình viên lâu năm.
+
+#### **4. Luôn cập nhật theo xu hướng**
+
+Các bài viết trong **Cẩm nang NQDEV** được rà soát và cập nhật theo những công nghệ mới để đảm bảo không bị lạc hậu.
 
 ***
 
-## **Kết luận**
+### Lợi ích thiết thực dành cho người đọc
 
-**Cẩm nang NQDEV** không chỉ là một tài liệu tham khảo mà còn là một người bạn đồng hành đáng tin cậy cho các lập trình viên và chuyên gia công nghệ. Với sự đa dạng về nội dung và chất lượng chuyên sâu, đây là nguồn tài nguyên hữu ích để bạn học hỏi, phát triển kỹ năng và giải quyết các thách thức trong công việc.
+Khi theo dõi **Cẩm nang NQDEV**, bạn sẽ:
 
-☕ **Ủng hộ dự án tại**: [Mua cà phê cho NQDEV](https://me.momo.vn/nhquydev).
+* Nâng cao kỹ năng lập trình, DevOps, quản trị dữ liệu theo chuẩn doanh nghiệp.
+* Giải quyết vấn đề nhanh hơn nhờ các ví dụ thực chiến và hướng dẫn rõ ràng.
+* Có tư duy hệ thống vững vàng – điều quan trọng để phát triển sự nghiệp lâu dài.
+* Sở hữu tài nguyên học tập chuyên sâu trong hệ sinh thái **NQDEV Platform**.
+* Kết nối với cộng đồng của **Nguyễn Quý DevNet**, nơi chia sẻ kinh nghiệm và ý tưởng thực tế.
+
+***
+
+### Kết luận – Khởi đầu hành trình tri thức bền vững
+
+**Cẩm nang NQDEV** không chỉ là nơi học tập mà còn là nguồn cảm hứng giúp bạn phát triển năng lực một cách có định hướng. Với nền tảng tri thức đồng bộ từ **NQDEV Platform** và sự dẫn dắt của **Nguyễn Quý DevNet**, đây sẽ là người bạn đồng hành đáng tin cậy trên con đường trở thành một chuyên gia công nghệ thực thụ.
+
+<p align="center">☕ <strong>Ủng hộ dự án tại</strong>: <a href="https://me.momo.vn/nhquydev">Mua cà phê cho NQDEV</a>.</p>
 
 <figure><img src="https://img.vietqr.io/image/MB-VQRQAAXGO9340-gjSyj8L.png?amount=10000&#x26;accountName=NGUYEN%20HUU%20QUY&#x26;addInfo=Mua%20ca%20phe%20cho%20NQDEV" alt=""><figcaption></figcaption></figure>
 
