@@ -10,7 +10,7 @@ Tải xuống VMware
 
 Có thể tải xuống các công cụ để tạo **bản vá VMware và hỗ trợ Mac OS tương ứng** từ liên kết sau:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EcNY8XOY3CUJ8AsuOO8v" alt=""><figcaption></figcaption></figure>
 
 **mở khóa208.zip 9.61MB** 10345 Tải xuống
 
@@ -26,7 +26,7 @@ Bước đầu tiên chúng ta phải thực hiện là sử dụng công cụ v
 
 Ở đó chúng ta phải nhấp chuột phải vào tệp **win-install** và chọn tùy chọn **Chạy với tư cách quản trị viên**
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EcNY8XOY3CUJ8AsuOO8v" alt=""><figcaption></figcaption></figure>
 
 Khi chúng tôi chọn tùy chọn này, chúng tôi sẽ thấy rằng dấu nhắc lệnh mở ra và chúng tôi hy vọng rằng quy trình được thực hiện tự động.
 

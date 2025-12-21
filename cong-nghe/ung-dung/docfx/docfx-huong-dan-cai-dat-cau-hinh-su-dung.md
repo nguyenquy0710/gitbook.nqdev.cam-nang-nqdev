@@ -59,12 +59,9 @@ Nếu hiển thị phiên bản, DocFX đã được cài đặt thành công.
     docfx init
     ```
 
-    \
+    <br>
 
-
-    {% code title="cmd.exe" %}
-    ```batch
-    PS D:\nqdev-wps\quyit\quyit-platform> docfx init --help
+    <pre class="language-batch" data-title="cmd.exe"><code class="lang-batch">PS D:\nqdev-wps\quyit\quyit-platform> docfx init --help
     USAGE:
         docfx init [OPTIONS]
 
@@ -72,8 +69,7 @@ Nếu hiển thị phiên bản, DocFX đã được cài đặt thành công.
         -h, --help      Prints help information
         -y, --yes       Yes to all questions
         -o, --output    Specify the output directory of the generated files
-    ```
-    {% endcode %}
+    </code></pre>
 
 
 2. Lệnh này tạo ra file `docfx.json` và các thư mục cần thiết:

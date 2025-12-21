@@ -70,8 +70,7 @@ Chi tiết write up kỹ thuật rất hay này viết ở blog của Tailscale 
 **Nguyên liệu nấu cơm**
 
 * Làm việc với UDP Protocol (TCP thì tăng độ khó lên nhiều lần)
-*   Direct access UDP Socket, vì mình sẽ cần gửi ké thêm phần `bypass NAT` để có thông tin tìm đường đi cho nhau\
-
+*   Direct access UDP Socket, vì mình sẽ cần gửi ké thêm phần `bypass NAT` để có thông tin tìm đường đi cho nhau<br>
 
     <figure><img src="https://images.viblo.asia/52320010-83ee-4ced-96f6-763fe395fa5f.png" alt=""><figcaption></figcaption></figure>
 * Một side channel để kết nối các nodes.
@@ -80,8 +79,7 @@ Chi tiết write up kỹ thuật rất hay này viết ở blog của Tailscale 
 **Công thức chế biến** Vì kết nối là port sang port nên bản chất chúng ta cần tìm đường Port
 
 * Dò tất cả `ip:port` của socket trên interface đang connect trực tiếp
-*   Query STUN server để tìm WAN `ip:port` và độ khó của NAT (kiểu có phải CGNAT hay không)\
-
+*   Query STUN server để tìm WAN `ip:port` và độ khó của NAT (kiểu có phải CGNAT hay không)<br>
 
     <figure><img src="https://images.viblo.asia/1e0e816a-c454-4af6-b563-70a49228130b.png" alt=""><figcaption></figcaption></figure>
 * Sử dụng Port Mapping Protocol để tìm thêm WAN `ip:port`

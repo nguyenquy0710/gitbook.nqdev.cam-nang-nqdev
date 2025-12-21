@@ -14,7 +14,7 @@ Một trong những phương pháp tối ưu hóa phổ biến nhất là sử d
 
 ### 1. **Varnish Cache**: Caching Tối Ưu Cho HTTP
 
-[**Varnish Cache**](broken-reference) là một công cụ reverse proxy caching mạnh mẽ, chuyên dụng để tối ưu hóa các trang web và dịch vụ web. Varnish được thiết kế đặc biệt để xử lý các yêu cầu HTTP/HTTPS, giúp giảm tải cho các máy chủ ứng dụng và nâng cao tốc độ truy cập của người dùng.
+[**Varnish Cache**](/broken/spaces/IpMS89tIthA28J59k5Qy/pages/spkUy0hfN0OvDUHxp1ga) là một công cụ reverse proxy caching mạnh mẽ, chuyên dụng để tối ưu hóa các trang web và dịch vụ web. Varnish được thiết kế đặc biệt để xử lý các yêu cầu HTTP/HTTPS, giúp giảm tải cho các máy chủ ứng dụng và nâng cao tốc độ truy cập của người dùng.
 
 #### **Đặc điểm nổi bật của Varnish:**
 
