@@ -140,6 +140,7 @@
     * [Visual Studio 2026 Insiders chính thức hỗ trợ Podman – Phát triển container an toàn hơn, linh hoạt](ung-dung/podman/visual-studio-2026-insiders-chinh-thuc-ho-tro-podman-phat-trien-container-an-toan-hon-linh-hoat.md)
   * [Skyvern](ung-dung/skyvern/README.md)
     * [Skyvern và tương lai của Browser Automation](ung-dung/skyvern/skyvern-va-tuong-lai-cua-browser-automation.md)
+    * [Skyvern vs Tự build Playwright + AI](ung-dung/skyvern/skyvern-vs-tu-build-playwright-+-ai.md)
   * [VPN](ung-dung/vpn/README.md)
     * [WireGuard](ung-dung/vpn/wireguard/README.md)
       * [Hướng dẫn cài đặt WireGuard VPN Server trên VPS CentOS 7 lỗi thời bằng Docker và nâng cấp kernel](ung-dung/vpn/wireguard/huong-dan-cai-dat-wireguard-vpn-server-tren-vps-centos-7-loi-thoi-bang-docker-va-nang-cap-kernel.md)
