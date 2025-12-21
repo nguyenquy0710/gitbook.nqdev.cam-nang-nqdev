@@ -119,6 +119,6 @@ Ngoài ra, xem thêm các ví dụ khác tại [https://platform.openai.com/exam
 
 ## Kết luận
 
-Vậy là chúng ta đã [hướng dẫn cách tạo tài khoản và sử dụng ChatGPT](broken-reference) một cách đơn giản và dễ dàng. ChatGPT là một công cụ hữu ích và tiện lợi trong việc xử lý ngôn ngữ tự nhiên và phát triển các ứng dụng trí tuệ nhân tạo. Bằng cách [sử dụng ChatGPT](huong-dan-tao-tai-khoan-va-su-dung-chatgpt-tai-viet-nam.md#huong-dan-su-dung-tai-khoan-chatgpt), bạn có thể dễ dàng tạo ra các ứng dụng chatbot, dịch văn bản và phân tích ngôn ngữ tự nhiên.
+Vậy là chúng ta đã [hướng dẫn cách tạo tài khoản và sử dụng ChatGPT](/broken/pages/13qz6ykfpoQsmeQVNXd9) một cách đơn giản và dễ dàng. ChatGPT là một công cụ hữu ích và tiện lợi trong việc xử lý ngôn ngữ tự nhiên và phát triển các ứng dụng trí tuệ nhân tạo. Bằng cách [sử dụng ChatGPT](huong-dan-tao-tai-khoan-va-su-dung-chatgpt-tai-viet-nam.md#huong-dan-su-dung-tai-khoan-chatgpt), bạn có thể dễ dàng tạo ra các ứng dụng chatbot, dịch văn bản và phân tích ngôn ngữ tự nhiên.
 
 Nếu bạn là một nhà phát triển, ChatGPT cũng có các tính năng API để tích hợp vào các ứng dụng của bạn. Chúng tôi hy vọng rằng bài viết này sẽ giúp bạn có thể tạo tài khoản và sử dụng ChatGPT một cách hiệu quả. Nếu bạn còn bất kỳ câu hỏi nào, hãy tham khảo trang trợ giúp của ChatGPT hoặc liên hệ với đội ngũ hỗ trợ của họ để được giúp đỡ.
