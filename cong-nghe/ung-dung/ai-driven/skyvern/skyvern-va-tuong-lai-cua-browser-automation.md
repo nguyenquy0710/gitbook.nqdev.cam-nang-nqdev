@@ -2,6 +2,8 @@
 
 ## Skyvern và tương lai của Browser Automation
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/skyvern-va-tuong-lai-cua-browser-automation-001.png" alt="skyvern-va-tuong-lai-cua-browser-automation" width="563"><figcaption></figcaption></figure>
+
 ### Khi tự động hóa không còn là viết script, mà là giao việc cho AI
 
 Trong suốt nhiều năm, browser automation vẫn bị xem là một mảng “cực chẳng đã”: chỉ dùng khi không có API, khó bảo trì, dễ gãy, và luôn tạo ra technical debt. Selenium, Playwright hay Puppeteer giúp chúng ta kiểm soát trình duyệt rất tốt, nhưng càng làm nhiều thì một thực tế càng rõ ràng:

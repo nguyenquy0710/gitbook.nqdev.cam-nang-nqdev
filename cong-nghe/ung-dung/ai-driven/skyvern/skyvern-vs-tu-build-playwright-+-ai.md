@@ -1,5 +1,7 @@
 # Skyvern vs Tự build Playwright + AI
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/skyvern-vs-tu-build-playwright-ai-001.png" alt="skyvern-vs-tu-build-playwright-ai"><figcaption><p>Skyvern vs Tự build Playwright + AI</p></figcaption></figure>
+
 ### Phân tích chi phí dài hạn: Cái giá thật sự của Browser Automation
 
 Khi bàn về automation, câu hỏi phổ biến nhất thường là:
