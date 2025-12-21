@@ -2,6 +2,8 @@
 
 Sau khi nhìn Prompts.chat như một nền tảng cộng đồng, câu hỏi quan trọng hơn là: **công cụ này mang lại giá trị gì khi đặt vào môi trường phát triển phần mềm và vận hành doanh nghiệp?** Ở góc nhìn này, Prompts.chat bộc lộ rõ bản chất của mình không chỉ là “kho prompt”, mà là **hạ tầng quản lý tri thức AI**.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/prompts/danh-gia-prompts.chat-duoi-goc-nhin-lap-trinh-vien-and-doanh-nghiep-001.png" alt="danh-gia-prompts.chat-duoi-goc-nhin-lap-trinh-vien-and-doanh-nghiep"><figcaption><p>Đánh giá Prompts.chat dưới góc nhìn lập trình viên &#x26; doanh nghiệp</p></figcaption></figure>
+
 ***
 
 ### 1. Góc nhìn lập trình viên: Prompt cũng cần “kỹ nghệ phần mềm”
