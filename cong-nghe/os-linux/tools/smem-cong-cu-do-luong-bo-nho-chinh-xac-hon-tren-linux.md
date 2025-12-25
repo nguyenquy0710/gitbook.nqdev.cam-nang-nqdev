@@ -50,7 +50,7 @@ sudo yum install smem
 Lệnh cơ bản:
 
 ```bash
-smem -r -k -c "pid user name uss pss rss swap"
+smem -r -k -c "pid user name uss pss rss swap command"
 ```
 
 **Giải thích:**
@@ -67,7 +67,7 @@ Muốn biết tiến trình nào “ngốn” RAM nhất?\
 Hãy sắp xếp theo cột `USS` (RAM dùng riêng):
 
 ```bash
-smem -r -k -c "pid user name uss pss rss swap" | sort -nk4 -r | head -20
+smem -r -k -c "pid user name uss pss rss swap command" | sort -nk4 -r | head -20
 ```
 
 * `sort -nk4 -r`: sắp xếp giảm dần theo cột thứ 4 (USS)
@@ -78,7 +78,7 @@ smem -r -k -c "pid user name uss pss rss swap" | sort -nk4 -r | head -20
 #### 📤 5. Xuất dữ liệu ra CSV để phân tích hoặc vẽ biểu đồ
 
 ```bash
-smem -r -k -c "pid user name uss pss rss swap" > smem_output.csv
+smem -r -k -c "pid user name uss pss rss swap command" > smem_output.csv
 ```
 
 Sau đó, bạn có thể mở file bằng Excel hoặc gửi dữ liệu đó để trực quan hóa (ví dụ: vẽ biểu đồ RAM/SWAP theo tiến trình).
