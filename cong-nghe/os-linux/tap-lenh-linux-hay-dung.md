@@ -1,51 +1,104 @@
+---
+description: 'Tập lệnh Linux hay dùng: Nền tảng bắt buộc cho lập trình viên hiện đại'
+---
+
 # Tập lệnh Linux hay dùng
 
-* `apt-get install` để cài đặt gói
-* `apt-get remove` để xóa gói
-* `apt-get update` để cập nhật cơ sở dữ liệu gói và nâng cấp các gói đã cài đặt.
+Trong thế giới phát triển phần mềm ngày nay, Linux không còn là lựa chọn phụ mà đã trở thành **hệ điều hành cốt lõi** của server, cloud, container và hệ thống CI/CD. Việc nắm vững các tập lệnh Linux thông dụng giúp lập trình viên **chủ động kiểm soát hệ thống**, xử lý sự cố nhanh và tối ưu hiệu suất một cách bài bản.
 
-Các bản phân phối Linux khác nhau sử dụng các trình quản lý gói khác nhau, vì vậy bạn sẽ cần sử dụng lệnh thích hợp cho hệ thống của mình
+Bài viết này trong **Cẩm nang NQDEV** sẽ hệ thống lại các nhóm lệnh Linux quan trọng nhất, không chỉ dừng ở “biết lệnh”, mà hướng tới **hiểu đúng – dùng đúng – dùng hiệu quả** trong thực tế.
 
-## Truy vấn thông tin máy tính
+***
 
-1. `uptime`: Hiển thị thời gian hệ thống đã chạy và tải trung bình hiện tại
-2. `free`: Hiển thị dung lượng bộ nhớ trống và đã sử dụng trong hệ thống
-3. `df`: Hiển thị dung lượng trống trên mỗi hệ thống tệp được gắn kết
-4. `du`: Hiển thị không gian được sử dụng bởi một thư mục và các thư mục con của nó
-5. `top`: Hiển thị chế độ xem động của các tiến trình hàng đầu theo mức sử dụng CPU hoặc bộ nhớ
-6. `htop`: Hiển thị chế độ xem động của các tiến trình hàng đầu với giao diện tương tác hơn
-7. `lsof`: Hiển thị danh sách các tệp đang mở và tiến trình mở chúng
-8. `ps`: Hiển thị danh sách các tiến trình đang chạy
-9. `netstat`: Hiển thị kết nối mạng, bảng định tuyến, v.v.
-10. `vmstat`: Hiển thị thống kê bộ nhớ ảo
+### 1. Quản lý gói cài đặt – Nền móng của hệ thống Linux
 
-## Làm việc với thiết bị
+Trên các bản phân phối dựa trên Debian/Ubuntu, `apt-get` là công cụ quản lý gói quen thuộc:
 
-1. `lsblk`: Liệt kê các thiết bị lưu trữ (ví dụ: ổ cứng, ổ USB)
-2. `lspci`: Liệt kê các thiết bị PCI (ví dụ: card mạng, card đồ họa)
-3. `lsusb`: Liệt kê các thiết bị USB
-4. `lshw`: Liệt kê các thiết bị phần cứng và thuộc tính của chúng
-5. `lsscsi`: Liệt kê các thiết bị SCSI (ví dụ: ổ cứng, ổ băng từ)
-6. `dmesg`: Hiển thị nhật ký thông báo nhân của hệ điều hành OS kennel
+* `apt-get install <package>`\
+  → Cài đặt gói phần mềm
+* `apt-get remove <package>`\
+  → Gỡ bỏ gói đã cài
+* `apt-get update`\
+  → Cập nhật cơ sở dữ liệu gói (rất quan trọng trước khi cài mới)
 
-## Làm việc với ổ lưu trữ
+> 💡 Lưu ý chiến lược:\
+> Mỗi bản phân phối Linux có **trình quản lý gói riêng** (`yum`, `dnf`, `pacman`, `zypper`…). Lập trình viên chuyên nghiệp cần **hiểu tư duy chung**, không chỉ học thuộc một câu lệnh.
 
-1. `df`: Hiển thị dung lượng trống trên mỗi hệ thống tệp được gắn kết
-2. `du`: Hiển thị không gian được sử dụng bởi một thư mục và các thư mục con của nó
-3. `lsblk`: Liệt kê các ổ lưu trữ (ví dụ: ổ cứng, ổ USB)
-4. `fdisk`: Phân vùng và định dạng ổ cứng
-5. `mkfs`: Tạo hệ thống file trên ổ cứng
-6. `mount`: Gắn ổ lưu trữ thành một thư mục
-7. `umount`: Gỡ bỏ ổ lưu trữ
-8. `parted`: Thay đổi kích thước, tạo và xóa phân vùng ổ cứng
-9. `gparted`: Thay đổi kích thước, tạo và xóa phân vùng bằng giao diện đồ họa
-10. `fsck`: Kiểm tra và sửa chữa một hệ thống tập tin
+***
 
-## Kết nối tới máy chủ khác
+### 2. Truy vấn thông tin hệ thống – Đọc “sức khỏe” máy chủ
 
-1. `ssh`: tạo kết nối Secure Shell Protocol để điều khiển hệ điều hành Linux, Unix từ xa
-2. `wget`: tải file trên internet
-3. `curl`: tạo yêu cầu HTTP
+Đây là nhóm lệnh giúp bạn **hiểu hệ thống đang sống hay đang… hấp hối**.
+
+* `uptime` – Thời gian chạy và tải trung bình (load average)
+* `free` – Tình trạng bộ nhớ RAM
+* `df` – Dung lượng trống của các filesystem
+* `du` – Dung lượng thực tế thư mục đang chiếm
+* `top` – Danh sách tiến trình tiêu thụ CPU/RAM
+* `htop` – Phiên bản nâng cao, trực quan và tương tác hơn
+* `ps` – Liệt kê tiến trình đang chạy
+* `lsof` – File nào đang bị process nào “giữ”
+* `netstat` – Kết nối mạng, port, routing
+* `vmstat` – Thống kê bộ nhớ ảo, swap, I/O
+
+> 🎯 Góc nhìn NQDEV Platform:\
+> Khi debug hiệu năng, **đừng nhìn một lệnh đơn lẻ**. Hãy kết hợp `top + free + vmstat` để có cái nhìn toàn cảnh.
+
+***
+
+### 3. Làm việc với thiết bị phần cứng
+
+Nhóm lệnh này cực kỳ quan trọng khi làm việc với server vật lý, VM hoặc troubleshooting phần cứng:
+
+* `lsblk` – Danh sách thiết bị lưu trữ
+* `lspci` – Thiết bị PCI (card mạng, GPU…)
+* `lsusb` – Thiết bị USB
+* `lshw` – Thông tin chi tiết phần cứng
+* `lsscsi` – Thiết bị SCSI
+* `dmesg` – Nhật ký kernel (vũ khí tối thượng khi lỗi driver)
+
+> 🔍 Tư duy dài hạn:\
+> `dmesg` không chỉ là log – nó là **dòng thời gian sự cố của kernel**.
+
+***
+
+### 4. Quản lý ổ lưu trữ và hệ thống tập tin
+
+Đây là khu vực “nguy hiểm nhưng bắt buộc phải biết”:
+
+* `df`, `du`, `lsblk` – Quan sát dung lượng
+* `fdisk`, `parted` – Phân vùng ổ đĩa
+* `mkfs` – Tạo filesystem
+* `mount`, `umount` – Gắn / gỡ ổ lưu trữ
+* `fsck` – Kiểm tra và sửa lỗi filesystem
+* `gparted` – Công cụ đồ họa (GUI)
+
+> ⚠️ Khuyến nghị:\
+> **Luôn backup trước khi dùng `fdisk`, `mkfs`, `parted`**. Một lệnh sai có thể xóa toàn bộ dữ liệu.
+
+***
+
+### 5. Kết nối và làm việc với máy chủ từ xa
+
+Không có Linux hiện đại nếu thiếu kết nối mạng:
+
+* `ssh` – Điều khiển máy chủ từ xa an toàn
+* `wget` – Tải file nhanh, gọn
+* `curl` – Gửi HTTP request, kiểm thử API
+
+> 🚀 Với DevOps:\
+> `ssh + curl` là cặp đôi quyền lực để kiểm tra dịch vụ production mà không cần trình duyệt.
+
+***
+
+### Kết luận: Biết lệnh là một chuyện – làm chủ Linux là chuyện khác
+
+Danh sách lệnh trên không nhằm để học thuộc, mà để xây dựng **tư duy làm việc với hệ điều hành Linux một cách chủ động**. Khi bạn hiểu vì sao dùng lệnh đó, trong ngữ cảnh nào, bạn đã vượt qua mức “người dùng Linux” để tiến gần hơn tới **kỹ sư hệ thống thực thụ**.
+
+👉 Nếu bạn muốn tiếp tục đào sâu Linux theo hướng **lập trình – DevOps – hệ thống**, hãy theo dõi thêm các bài viết tại\
+🔗 **Cẩm nang NQDEV**: [https://blogs.nhquydev.net/](https://blogs.nhquydev.net/)
+
+**NQDEV Platform** không chỉ chia sẻ kiến thức, mà hướng bạn đến **cách tư duy dài hạn và bền vững trong nghề công nghệ**.
 
 ***
 
