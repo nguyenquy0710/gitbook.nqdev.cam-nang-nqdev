@@ -97,6 +97,7 @@
 * [Ứng dụng](<ung-dung/README (1).md>)
   * [ACME.sh](ung-dung/acme.sh/README.md)
     * [SSL miễn phí Let’s Encrypt: Triển khai chuẩn Production với tư duy dài hạn](ung-dung/acme.sh/ssl-mien-phi-lets-encrypt-trien-khai-chuan-production-voi-tu-duy-dai-han.md)
+    * [Chuẩn hoá quy trình tạo SSL Let’s Encrypt bằng script cho Production](ung-dung/acme.sh/chuan-hoa-quy-trinh-tao-ssl-lets-encrypt-bang-script-cho-production.md)
   * [AI Driven](ung-dung/ai-driven/README.md)
     * [SERIES: AI Driven Automation](ung-dung/ai-driven/series-ai-driven-automation.md)
     * [N8N](https://app.gitbook.com/o/ZnO3U2gDjowIXUi3yNwm/s/wRgsH8wC380GwDCPj7gi/)
