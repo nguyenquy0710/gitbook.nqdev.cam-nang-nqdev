@@ -44,13 +44,14 @@ Toàn bộ giải pháp được chia thành **4 thành phần rõ ràng**:
 
 ***
 
-### 3. domains.conf – Quản lý domain theo tư duy hạ tầng
+### 3. \`domains.conf\` – Quản lý domain theo tư duy hạ tầng
 
+{% code title="domains.conf" %}
 ```conf
 # Each line contains a domain for which wildcard SSL will be issued
 quyit.id.vn
-#n8n.quyit.id.vn
 ```
+{% endcode %}
 
 #### Vì sao không hard-code domain trong script?
 
@@ -63,10 +64,11 @@ Wildcard `*.quyit.id.vn` sẽ tự động được cấp kèm domain gốc.
 
 ***
 
-### 4. config.env – Trái tim cấu hình của hệ thống SSL
+### 4. \`config.env\` – Trái tim cấu hình của hệ thống SSL
 
 Đây là nơi **tách biệt bí mật và môi trường**:
 
+{% code title="config.env" %}
 ```env
 ACME_HOME=/root/.acme.sh
 DNS_PROVIDER=dns_cf
@@ -78,6 +80,7 @@ CERT_DIR=/opt/ssl
 HAPROXY_DIR_SSL=/opt/haproxy/ssl
 HAPROXY_CONTAINER=haproxy
 ```
+{% endcode %}
 
 #### Điểm đáng chú ý
 
@@ -92,7 +95,7 @@ HAPROXY_CONTAINER=haproxy
 
 ***
 
-### 5. issue-all.sh – Engine cấp phát SSL
+### 5. \`issue-all.sh\` – Engine cấp phát SSL
 
 Script này đảm nhiệm **3 vai trò chính**:
 
@@ -144,9 +147,144 @@ install_acme
 
 👉 Giữ **single responsibility principle**.
 
+{% code title="issue-all.sh" %}
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+source "${BASE_DIR}/config.env"
+
+DOMAINS_FILE="${BASE_DIR}/domains.conf"
+FORCE="false"
+
+log() {
+  echo "[`date '+%Y-%m-%d %H:%M:%S'`] $1"
+}
+
+require_root() {
+  if [[ "$EUID" -ne 0 ]]; then
+    log "ERROR: You must run this script as root."
+    exit 1
+  fi
+}
+
+install_acme() {
+  if [[ ! -x "${ACME_HOME}/acme.sh" ]]; then
+    log "acme.sh not found. Installing..."
+    curl -s https://get.acme.sh | sh
+    "${ACME_HOME}/acme.sh" --set-default-ca --server letsencrypt
+  fi
+}
+
+# Function to issue single domain certificates
+issue_cert() {
+  local domain="$1"
+  log "Issuing SSL certificate for domain: ${domain}"
+  
+  # Debugging: Print CF_Key and CF_Email to verify they are loaded
+  echo "Loaded CF_Key=${CF_Key}, CF_Email=${CF_Email}"
+  
+  # Ensure the credentials are exported explicitly
+  export CF_Key="${CF_Key}"
+  export CF_Email="${CF_Email}"
+
+  # Run acme.sh to issue a single domain certificate using Cloudflare DNS
+  if [[ "$FORCE" == "true" ]]; then
+    "${ACME_HOME}/acme.sh" \
+      --issue \
+      -d "${domain}" \
+      --dns "${DNS_PROVIDER}" \
+      --force \
+      --server letsencrypt
+  else
+    "${ACME_HOME}/acme.sh" \
+      --issue \
+      -d "${domain}" \
+      --dns "${DNS_PROVIDER}" \
+      --server letsencrypt
+  fi
+
+  "${ACME_HOME}/acme.sh" \
+    --install-cert -d "${domain}" \
+    --key-file       "${CERT_DIR}/${domain}.key" \
+    --fullchain-file "${CERT_DIR}/${domain}.cer" \
+    --reloadcmd      "${BASE_DIR}/renew-hook.sh"
+}
+
+# Function to issue wildcard certificates
+issue_wildcard_cert() {
+  local domain="$1"
+  log "Issuing SSL certificate for domain: ${domain}"
+  
+  # Check if the domain is wildcard
+  local wildcard_domain="*.${domain}"
+
+  # Debugging: Print CF_Key and CF_Email to verify they are loaded
+  echo "Loaded CF_Key=${CF_Key}, CF_Email=${CF_Email}"
+  
+  # Ensure the credentials are exported explicitly
+  export CF_Key="${CF_Key}"
+  export CF_Email="${CF_Email}"
+
+  # Run acme.sh with wildcard flag using Cloudflare DNS
+  if [[ "$FORCE" == "true" ]]; then
+    "${ACME_HOME}/acme.sh" \
+      --issue \
+      --dns "${DNS_PROVIDER}" \
+      -d "${wildcard_domain}" \
+      -d "${domain}" \
+      --force \
+      --server letsencrypt
+  else
+    "${ACME_HOME}/acme.sh" \
+      --issue \
+      --dns "${DNS_PROVIDER}" \
+      -d "${wildcard_domain}" \
+      -d "${domain}" \
+      --server letsencrypt
+  fi
+
+  # Install the wildcard certificate
+  "${ACME_HOME}/acme.sh" \
+    --install-cert -d "${domain}" \
+    --key-file       "${CERT_DIR}/${domain}.key" \
+    --fullchain-file "${CERT_DIR}/${domain}.cer" \
+    --reloadcmd      "${BASE_DIR}/renew-hook.sh"
+}
+
+# Main script execution
+main() {
+  # Check for the --force argument
+  if [[ $# -gt 0 && "$1" == "--force" ]]; then
+    FORCE="true"
+    log "Force mode enabled: All certificates will be renewed even if not expired."
+  fi
+
+  require_root
+  install_acme
+
+  mkdir -p "${CERT_DIR}"
+  chmod 700 "${CERT_DIR}"
+  chmod 700 "${HAPROXY_DIR_SSL}"
+
+  while read -r domain; do
+    [[ -z "$domain" || "$domain" =~ ^# ]] && continue
+    # issue_cert "$domain"
+    issue_wildcard_cert "$domain"
+  done < "${DOMAINS_FILE}"
+
+  log "SSL certificates issued for all specified domains."
+}
+
+# Invoke main with all script arguments
+main "$@"
+```
+{% endcode %}
+
 ***
 
-### 6. renew-hook.sh – Chuẩn hoá SSL cho HAProxy & Nginx
+### 6. \`renew-hook.sh\` – Chuẩn hoá SSL cho HAProxy & Nginx
 
 Hook này thực hiện **3 nhiệm vụ quan trọng**:
 
@@ -188,6 +326,12 @@ docker kill -s HUP haproxy
 * Không restart container
 
 👉 Đây là điểm khác biệt giữa **demo** và **production**.
+
+{% code title="renew-hook.sh" %}
+```bash
+// Some code
+```
+{% endcode %}
 
 ***
 
