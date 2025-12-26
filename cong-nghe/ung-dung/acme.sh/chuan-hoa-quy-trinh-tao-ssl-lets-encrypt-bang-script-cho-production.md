@@ -423,6 +423,8 @@ SSL là **kỷ luật hạ tầng**.
 
 Và đó chính là triết lý mà **Cẩm nang NQDEV** và **NQDEV Platform** luôn theo đuổi.
 
+***
 
+#### Gist hosted with ❤ by [GitHub](https://github.com/)
 
 {% embed url="https://gist.github.com/nguyenquy0710/8ad0a11c29959a624186f81bd6d67118" %}
