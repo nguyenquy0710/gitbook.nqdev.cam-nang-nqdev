@@ -64,7 +64,7 @@ Wildcard `*.quyit.id.vn` sẽ tự động được cấp kèm domain gốc.
 
 ***
 
-### 4. \`config.env\` – Trái tim cấu hình của hệ thống SSL
+### 4. `config.env` – Trái tim cấu hình của hệ thống SSL
 
 Đây là nơi **tách biệt bí mật và môi trường**:
 
@@ -95,7 +95,7 @@ HAPROXY_CONTAINER=haproxy
 
 ***
 
-### 5. \`issue-all.sh\` – Engine cấp phát SSL
+### 5. `issue-all.sh` – Engine cấp phát SSL
 
 Script này đảm nhiệm **3 vai trò chính**:
 
@@ -284,7 +284,7 @@ main "$@"
 
 ***
 
-### 6. \`renew-hook.sh\` – Chuẩn hoá SSL cho HAProxy & Nginx
+### 6. `renew-hook.sh` – Chuẩn hoá SSL cho HAProxy & Nginx
 
 Hook này thực hiện **3 nhiệm vụ quan trọng**:
 
@@ -329,7 +329,53 @@ docker kill -s HUP haproxy
 
 {% code title="renew-hook.sh" %}
 ```bash
-// Some code
+#!/usr/bin/env bash
+set -euo pipefail
+
+BASE_DIR="$(cd "$(dirname "$0")" && pwd)"
+source "${BASE_DIR}/config.env"
+
+log() {
+  echo "[`date '+%Y-%m-%d %H:%M:%S'`] $1"
+}
+
+log "Rebuilding certificate files for Nginx and HAProxy..."
+
+for cer in ${CERT_DIR}/*.cer; do
+  domain=$(basename "$cer" .cer)
+  
+  # Paths for Nginx
+  cert_path="${CERT_DIR}/${domain}.certificate.crt"
+  key_path="${CERT_DIR}/${domain}.private.key"
+  ca_bundle_path="${CERT_DIR}/${domain}.ca_bundle.crt"
+
+  # Paths for HAProxy
+  haproxy_cert_path="${HAPROXY_DIR_SSL}/${domain}.crt"
+
+  # Extract and create files for Nginx
+  sed -n '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/p' "${CERT_DIR}/${domain}.cer" > "${cert_path}"
+  cp "${CERT_DIR}/${domain}.key" "${key_path}"
+  sed -n '/-----BEGIN CERTIFICATE-----/,/-----END CERTIFICATE-----/p' "${CERT_DIR}/${domain}.cer" | tail -n +2 > "${ca_bundle_path}"
+
+  cat \
+    "${cert_path}" \
+    "${ca_bundle_path}" \
+    "${key_path}" \
+    > "${haproxy_cert_path}"
+
+  # Permissions
+  chmod 600 "${cert_path}" "${key_path}" "${ca_bundle_path}" "${haproxy_cert_path}"
+
+  log "Created HAProxy certificate files for ${domain}:"
+  log "- ${cert_path} (Certificate)"
+  log "- ${key_path} (Private Key)"
+  log "- ${ca_bundle_path} (CA Bundle)"
+done
+
+log "Reloading HAProxy container..."
+docker kill -s HUP "${HAPROXY_CONTAINER}"
+
+log "HAProxy reloaded successfully."
 ```
 {% endcode %}
 
@@ -376,3 +422,7 @@ SSL không chỉ là bảo mật.\
 SSL là **kỷ luật hạ tầng**.
 
 Và đó chính là triết lý mà **Cẩm nang NQDEV** và **NQDEV Platform** luôn theo đuổi.
+
+
+
+{% embed url="https://gist.github.com/nguyenquy0710/8ad0a11c29959a624186f81bd6d67118" %}
