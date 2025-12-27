@@ -5,6 +5,8 @@
 👉 Bài này sẽ đi tiếp một bước quan trọng hơn:\
 **biến tư duy đúng thành một quy trình chạy được – an toàn – lặp lại – mở rộng**.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/acme-serial2-001.png" alt=""><figcaption></figcaption></figure>
+
 Chúng ta không chỉ “cấp SSL thành công”, mà xây dựng **một pipeline SSL có thể vận hành lâu dài**.
 
 ***

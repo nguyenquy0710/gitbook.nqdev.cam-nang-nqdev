@@ -7,6 +7,8 @@ Bài viết này của **Cẩm nang NQDEV** sẽ giúp bạn nhìn SSL như **m�
 👉 Tham khảo thêm các bài viết nền tảng tại:\
 🔗 [**https://blogs.nhquydev.net/**](https://blogs.nhquydev.net/)
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/acme-001.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Bối cảnh: SSL không còn là tuỳ chọn
