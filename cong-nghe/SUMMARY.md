@@ -67,6 +67,7 @@
     * [Tìm hiểu sâu hơn về useEffect từ A-Z](nodejs/reactjs/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md)
 * [OS Linux](os-linux/README.md)
   * [Tập lệnh Linux hay dùng](os-linux/tap-lenh-linux-hay-dung.md)
+  * [Sơ đồ Linux Filesystem là gì và vì sao Dev cần hiểu?](os-linux/so-do-linux-filesystem-la-gi-va-vi-sao-dev-can-hieu.md)
   * [Centos 7](os-linux/centos-7/README.md)
     * [Hướng dẫn cài đặt và cấu hình Centos 7 dành cho người mới bắt đầu](os-linux/centos-7/huong-dan-cai-dat-va-cau-hinh-centos-7-danh-cho-nguoi-moi-bat-dau.md)
     * [Hướng Dẫn Kiểm Tra Các Cổng Đang Mở Trên Hệ Thống CentOS](os-linux/centos-7/huong-dan-kiem-tra-cac-cong-dang-mo-tren-he-thong-centos.md)
