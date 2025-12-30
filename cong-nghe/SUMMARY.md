@@ -77,7 +77,7 @@
   * [Tools](os-linux/tools/README.md)
     * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](os-linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
 * [Windows](windows/README.md)
-  * [Hướng dẫn quản lý ứng dụng khởi động Windows bằng Registry Editor](windows/huong-dan-quan-ly-ung-dung-khoi-dong-windows-bang-registry-editor.md)
+  * [Sử dụng Registry Editor để quản lý ứng dụng khởi động cùng Windows](windows/su-dung-registry-editor-de-quan-ly-ung-dung-khoi-dong-cung-windows.md)
   * [Sử dụng lệnh net start và sc để quản lý dịch vụ Windows](windows/su-dung-lenh-net-start-va-sc-de-quan-ly-dich-vu-windows.md)
   * [Tools](windows/tools/README.md)
     * [WinDbg - Công cụ khám phá hệ thống Windows](windows/tools/windbg-cong-cu-kham-pha-he-thong-windows/README.md)
