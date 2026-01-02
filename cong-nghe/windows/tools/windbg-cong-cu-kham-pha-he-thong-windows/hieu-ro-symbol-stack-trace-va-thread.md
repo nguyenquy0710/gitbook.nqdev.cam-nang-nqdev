@@ -6,6 +6,8 @@ Nghe có vẻ quen thuộc, nhưng thực tế, rất nhiều phiên debug produ
 > Debug không phải là chạy lệnh cho ra output.\
 > Debug là đọc đúng ý nghĩa của trạng thái hệ thống.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/windbg-page1-001.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Symbol – “ngôn ngữ chung” giữa binary và con người
