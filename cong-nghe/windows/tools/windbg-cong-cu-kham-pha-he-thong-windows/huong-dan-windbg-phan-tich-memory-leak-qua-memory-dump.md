@@ -5,6 +5,8 @@ Memory leak là một trong những dạng sự cố **âm thầm nhưng tàn ph
 
 Khi đến giai đoạn này, memory dump thường là **bằng chứng cuối cùng** còn sót lại. Và WinDbg chính là công cụ giúp bạn đọc hiểu bằng chứng đó.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/windbg-page4-001.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Hiểu đúng bản chất memory leak trong dump

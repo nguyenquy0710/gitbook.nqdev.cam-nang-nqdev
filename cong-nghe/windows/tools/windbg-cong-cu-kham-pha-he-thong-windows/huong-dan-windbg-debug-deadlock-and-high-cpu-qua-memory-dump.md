@@ -7,6 +7,8 @@ Không phải sự cố production nào cũng kết thúc bằng một crash rõ
 
 Trong cả hai trường hợp, memory dump là **ảnh chụp hiện trường** tại thời điểm hệ thống đang “bất thường”. WinDbg giúp bạn đọc bức ảnh đó – nếu bạn biết cách đặt câu hỏi đúng.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/windbg-page3-001.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Phân biệt Deadlock và High CPU – bước tư duy đầu tiên
