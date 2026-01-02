@@ -8,6 +8,8 @@ WinDbg không dẫn bạn đi theo quy trình cố định. Nó cung cấp **b�
 
 Phần này của **Cẩm nang NQDEV** sẽ giúp bạn xây dựng **khung tư duy phân tích dump**, thông qua các cú pháp WinDbg quan trọng nhất.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/windbg-page2-001.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### 1. Thiết lập nền tảng: Symbol – nếu sai, mọi thứ đều sai
