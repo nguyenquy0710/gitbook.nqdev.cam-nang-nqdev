@@ -29,6 +29,8 @@ Song song đó, Microsoft cũng đầu tư mạnh vào tài liệu chính thốn
 
 Đây là nền tảng kiến thức cốt lõi để tiếp cận WinDbg một cách bài bản, từ căn bản đến chuyên sâu.
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/windbg-001.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ***
 
 ### Vì sao WinDbg quan trọng với Developer hiện đại?
