@@ -36,6 +36,7 @@ Trên các bản phân phối dựa trên Debian/Ubuntu, `apt-get` là công c�
 * `du` – Dung lượng thực tế thư mục đang chiếm
 * `top` – Danh sách tiến trình tiêu thụ CPU/RAM
 * `htop` – Phiên bản nâng cao, trực quan và tương tác hơn
+* `iotop` - Disk stats
 * `ps` – Liệt kê tiến trình đang chạy
 * `lsof` – File nào đang bị process nào “giữ”
 * `netstat` – Kết nối mạng, port, routing
