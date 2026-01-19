@@ -2,9 +2,9 @@
 
 ## Tại sao chọn .NET 8 LTS?
 
-.NET 8 được công bố vào tháng 11 năm 2023 và là phiên bản Long‑Term Support (LTS) mới nhất của nền tảng .NET[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/). Theo chính sách hỗ trợ của Microsoft, các bản phát hành LTS được bảo đảm cập nhật và sửa lỗi miễn phí trong ba năm, trong khi các bản Standard Term Support (STS) chỉ được hỗ trợ 18 tháng[dotnet.microsoft.com](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core). Microsoft cũng duy trì chu kỳ phát hành hàng năm; các phiên bản có số chẵn (như .NET 8) là LTS nên phù hợp cho các dự án cần độ ổn định lâu dài[dotnet.microsoft.com](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core).
+.NET 8 được công bố vào tháng 11 năm 2023 và là phiên bản Long‑Term Support (LTS) mới nhất của nền tảng .NET. Theo chính sách hỗ trợ của Microsoft, các bản phát hành LTS được bảo đảm cập nhật và sửa lỗi miễn phí trong ba năm, trong khi các bản Standard Term Support (STS) chỉ được hỗ trợ 18 tháng. Microsoft cũng duy trì chu kỳ phát hành hàng năm; các phiên bản có số chẵn (như .NET 8) là LTS nên phù hợp cho các dự án cần độ ổn định lâu dài.
 
-Ngoài bảo đảm hỗ trợ lâu dài, .NET 8 còn mang lại nhiều cải tiến về hiệu năng và công cụ. Bản phát hành này giới thiệu trình biên dịch **Dynamic Profile‑Guided Optimisation (PGO)** giúp tối ưu mã dựa trên dữ liệu chạy thực tế, giúp các API JSON tăng tới 18 % hiệu suất và kịch bản phức tạp như Fortunes tăng tới 24 %[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/). Bản phát hành cũng bổ sung chế độ biên dịch Ahead‑of‑Time (AOT), hỗ trợ container gọn nhẹ và các công cụ phát triển mới[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/). Đặc biệt, Blazor trong .NET 8 trở thành framework giao diện người dùng **full stack** – có thể kết hợp cả Blazor Server và Blazor WebAssembly trong cùng một ứng dụng[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/).
+Ngoài bảo đảm hỗ trợ lâu dài, .NET 8 còn mang lại nhiều cải tiến về hiệu năng và công cụ. Bản phát hành này giới thiệu trình biên dịch **Dynamic Profile‑Guided Optimisation (PGO)** giúp tối ưu mã dựa trên dữ liệu chạy thực tế, giúp các API JSON tăng tới 18 % hiệu suất và kịch bản phức tạp như Fortunes tăng tới 24 %. Bản phát hành cũng bổ sung chế độ biên dịch Ahead‑of‑Time (AOT), hỗ trợ container gọn nhẹ và các công cụ phát triển mới. Đặc biệt, Blazor trong .NET 8 trở thành framework giao diện người dùng **full stack** – có thể kết hợp cả Blazor Server và Blazor WebAssembly trong cùng một ứng dụng.
 
 ## Chuẩn bị môi trường
 
@@ -15,7 +15,7 @@ Ngoài bảo đảm hỗ trợ lâu dài, .NET 8 còn mang lại nhiều cải t
 
 ### 1. Mô hình dự án mới – **Blazor Web App**
 
-Trong .NET 8, Microsoft thống nhất các mẫu dự án Blazor thành một **Blazor Web App** duy nhất[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0). Mẫu này kết hợp ưu điểm của Blazor Server và Blazor WebAssembly, đồng thời hỗ trợ **server‑side rendering tĩnh**, **rendering tương tác trên server**, **rendering tương tác bằng WebAssembly** và **chế độ Auto**[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0). Các mẫu cũ như _Blazor Server_ và tuỳ chọn _ASP.NET Core Hosted_ trong Blazor WebAssembly đã bị loại bỏ[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0), tuy nhiên các ứng dụng cũ vẫn được hỗ trợ trong .NET 8[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0).
+Trong .NET 8, Microsoft thống nhất các mẫu dự án Blazor thành một **Blazor Web App** duy nhất. Mẫu này kết hợp ưu điểm của Blazor Server và Blazor WebAssembly, đồng thời hỗ trợ **server‑side rendering tĩnh**, **rendering tương tác trên server**, **rendering tương tác bằng WebAssembly** và **chế độ Auto**. Các mẫu cũ như _Blazor Server_ và tuỳ chọn _ASP.NET Core Hosted_ trong Blazor WebAssembly đã bị loại bỏ, tuy nhiên các ứng dụng cũ vẫn được hỗ trợ trong .NET 8.
 
 Để tạo dự án:
 
@@ -30,12 +30,12 @@ Trong .NET 8, Microsoft thống nhất các mẫu dự án Blazor thành một *
 
 ### 2. Các chế độ rendering trong Blazor Web App
 
-| Chế độ                                              | Mô tả & đặc điểm chính                                                                                                                                                                                                                                                                     |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Static server‑side rendering (Static SSR)**       | Tạo HTML tĩnh trên server, phù hợp cho SEO và tốc độ tải lần đầu. Không có tương tác phía client cho tới khi bật chế độ tương tác.                                                                                                                                                         |
-| **Interactive Server (interactive SSR)**            | Thành phần được render trên server và duy trì kết nối thời gian thực bằng SignalR[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes). Mọi sự kiện trên giao diện được gửi qua kết nối này và phản hồi lập tức.                             |
-| **Interactive WebAssembly (Client‑side rendering)** | Toàn bộ .NET runtime và gói ứng dụng được tải xuống trình duyệt[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes). Ứng dụng chạy trên client nên giảm tải cho server và hỗ trợ làm việc ngoại tuyến, nhưng thời gian tải ban đầu dài hơn. |
-| **Interactive Auto**                                | Lần đầu dùng rendering server, sau đó tải gói WebAssembly và chuyển sang chạy client trong các lần truy cập tiếp theo[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/blazor/components/render-modes). Giúp khởi động nhanh và tận dụng ưu điểm cả hai mô hình.         |
+| Chế độ                                              | Mô tả & đặc điểm chính                                                                                                                                                                  |
+| --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Static server‑side rendering (Static SSR)**       | Tạo HTML tĩnh trên server, phù hợp cho SEO và tốc độ tải lần đầu. Không có tương tác phía client cho tới khi bật chế độ tương tác.                                                      |
+| **Interactive Server (interactive SSR)**            | Thành phần được render trên server và duy trì kết nối thời gian thực bằng SignalR. Mọi sự kiện trên giao diện được gửi qua kết nối này và phản hồi lập tức.                             |
+| **Interactive WebAssembly (Client‑side rendering)** | Toàn bộ .NET runtime và gói ứng dụng được tải xuống trình duyệt. Ứng dụng chạy trên client nên giảm tải cho server và hỗ trợ làm việc ngoại tuyến, nhưng thời gian tải ban đầu dài hơn. |
+| **Interactive Auto**                                | Lần đầu dùng rendering server, sau đó tải gói WebAssembly và chuyển sang chạy client trong các lần truy cập tiếp theo. Giúp khởi động nhanh và tận dụng ưu điểm cả hai mô hình.         |
 
 Chọn chế độ thích hợp phụ thuộc vào nhu cầu: SSR tĩnh cho nội dung SEO cao, Interactive Server cho ứng dụng phụ thuộc server và cập nhật thời gian thực, Interactive WebAssembly cho khả năng chạy offline hoặc tải trọng server thấp, và Auto khi muốn trải nghiệm cân bằng.
 
@@ -88,7 +88,7 @@ Thuộc tính `@page "/counter"` xác định route, trong khi `@onclick="Increm
 
 ### Điều hướng và cải tiến trong .NET 8
 
-Blazor sử dụng thành phần `Router` để điều hướng. .NET 8 bổ sung cơ chế **enhanced navigation and form handling**: khi người dùng chuyển trang hoặc gửi form, Blazor có thể chặn yêu cầu, thực hiện yêu cầu qua `fetch` và cập nhật DOM mà không tải lại toàn bộ trang[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0). Tính năng này giúp trải nghiệm mượt mà hơn, đồng thời hỗ trợ `NavigationManager.Refresh()` để làm mới trang hiện tại[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0).
+Blazor sử dụng thành phần `Router` để điều hướng. .NET 8 bổ sung cơ chế **enhanced navigation and form handling**: khi người dùng chuyển trang hoặc gửi form, Blazor có thể chặn yêu cầu, thực hiện yêu cầu qua `fetch` và cập nhật DOM mà không tải lại toàn bộ trang. Tính năng này giúp trải nghiệm mượt mà hơn, đồng thời hỗ trợ `NavigationManager.Refresh()` để làm mới trang hiện tại.
 
 ## Kết nối cơ sở dữ liệu với Entity Framework Core
 
@@ -104,9 +104,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 ```
 
-Đoạn mã trên đọc chuỗi kết nối từ cấu hình và đăng ký `ApplicationDbContext` như dịch vụ có phạm vi (scoped); ngữ cảnh này sử dụng provider SQL Server[learn.microsoft.com](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/). Lớp `ApplicationDbContext` cần có constructor nhận `DbContextOptions<ApplicationDbContext>` và kế thừa `DbContext`[learn.microsoft.com](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/).
+Đoạn mã trên đọc chuỗi kết nối từ cấu hình và đăng ký `ApplicationDbContext` như dịch vụ có phạm vi (scoped); ngữ cảnh này sử dụng provider SQL Server. Lớp `ApplicationDbContext` cần có constructor nhận `DbContextOptions<ApplicationDbContext>` và kế thừa `DbContext`.
 
-> **Lưu ý:** Blazor WebAssembly chạy trong sandbox của trình duyệt và không thể kết nối trực tiếp tới cơ sở dữ liệu; bạn cần gọi API hoặc sử dụng phần server của mô hình Blazor Web App để truy cập dữ liệu. Microsoft khuyến cáo chỉ sử dụng EF Core trong Blazor Server hoặc trong phần `Server` của dự án được host[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/blazor/blazor-ef-core).
+> **Lưu ý:** Blazor WebAssembly chạy trong sandbox của trình duyệt và không thể kết nối trực tiếp tới cơ sở dữ liệu; bạn cần gọi API hoặc sử dụng phần server của mô hình Blazor Web App để truy cập dữ liệu. Microsoft khuyến cáo chỉ sử dụng EF Core trong Blazor Server hoặc trong phần `Server` của dự án được host.
 
 ### Tạo migration và cập nhật DB
 
@@ -153,18 +153,18 @@ bashSao chépChỉnh sửadocker build -t myblazorapp .
 docker run -d -p 80:80 myblazorapp
 ```
 
-để xây image và chạy container. .NET 8 hỗ trợ xuất bản image không cần Dockerfile và thêm người dùng không root để tăng bảo mật[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/).
+để xây image và chạy container. .NET 8 hỗ trợ xuất bản image không cần Dockerfile và thêm người dùng không root để tăng bảo mật.
 
 ## Tính năng nâng cao và thực hành tốt
 
-* **Xác thực & phân quyền** – ASP.NET Core 8 cung cấp UI Identity dựa trên Blazor và cookie authentication sẵn sàng dùng[devblogs.microsoft.com](https://devblogs.microsoft.com/dotnet/announcing-dotnet-8/). Bạn có thể tích hợp Identity hoặc xác thực bên ngoài (Google, Facebook).
+* **Xác thực & phân quyền** – ASP.NET Core 8 cung cấp UI Identity dựa trên Blazor và cookie authentication sẵn sàng dùng. Bạn có thể tích hợp Identity hoặc xác thực bên ngoài (Google, Facebook).
 * **SignalR** – Sử dụng để xây dựng các tính năng thời gian thực như chat, thông báo. Blazor Server sử dụng SignalR để duy trì kết nối, giúp việc tích hợp dễ dàng.
 * **JavaScript Interop** – Khi cần sử dụng thư viện JavaScript, Blazor cho phép gọi JS từ C# và ngược lại.
-* **Antiforgery** – .NET 8 bổ sung thẻ `AntiforgeryToken` và thuộc tính `[RequireAntiforgeryToken]` để bảo vệ form khỏi tấn công CSRF[learn.microsoft.com](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-8.0).
+* **Antiforgery** – .NET 8 bổ sung thẻ `AntiforgeryToken` và thuộc tính `[RequireAntiforgeryToken]` để bảo vệ form khỏi tấn công CSRF.
 * **Hiệu năng** – Sử dụng Static SSR cho các trang ít tương tác để tận dụng khả năng cache, chuyển sang Interactive khi cần. Tận dụng `InteractiveAuto` để tối ưu trải nghiệm người dùng.
 
 ## Kết luận
 
-Blazor và ASP.NET Core trong .NET 8 LTS mang lại bước tiến lớn: **giao diện full stack thống nhất**, lựa chọn linh hoạt giữa server và WebAssembly, kèm theo hiệu năng và bảo mật được cải thiện mạnh mẽ. Việc Microsoft đưa ra chính sách hỗ trợ ba năm cho LTS[dotnet.microsoft.com](https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core) giúp các nhà phát triển như bạn yên tâm xây dựng những sản phẩm dài hạn. Trong khi đó, những cải tiến về rendering, form handling, EF Core và công cụ triển khai mở ra nhiều cơ hội sáng tạo.
+Blazor và ASP.NET Core trong .NET 8 LTS mang lại bước tiến lớn: **giao diện full stack thống nhất**, lựa chọn linh hoạt giữa server và WebAssembly, kèm theo hiệu năng và bảo mật được cải thiện mạnh mẽ. Việc Microsoft đưa ra chính sách hỗ trợ ba năm cho LTS giúp các nhà phát triển như bạn yên tâm xây dựng những sản phẩm dài hạn. Trong khi đó, những cải tiến về rendering, form handling, EF Core và công cụ triển khai mở ra nhiều cơ hội sáng tạo.
 
 Hãy bắt đầu với dự án đầu tiên của bạn bằng .NET 8, tận dụng Blazor Web App để khai thác sức mạnh full stack, và chia sẻ trải nghiệm của bạn cùng cộng đồng. Tin chắc rằng nền tảng này sẽ giúp các ứng dụng web của bạn không chỉ **ổn định và bền vững** mà còn **đột phá và khác biệt** trong tương lai.
