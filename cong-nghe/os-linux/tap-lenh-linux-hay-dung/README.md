@@ -28,7 +28,7 @@ Trên các bản phân phối dựa trên Debian/Ubuntu, `apt-get` là công c�
 
 ### 2. Truy vấn thông tin hệ thống – Đọc “sức khỏe” máy chủ
 
-Đây là nhóm lệnh giúp bạn **hiểu hệ thống đang sống hay đang… hấp hối**.
+_Static Statistical_ - Đây là nhóm lệnh giúp bạn **hiểu hệ thống đang sống hay đang… hấp hối**.
 
 * `uptime` – Thời gian chạy và tải trung bình (load average)
 * `free` – Tình trạng bộ nhớ RAM
