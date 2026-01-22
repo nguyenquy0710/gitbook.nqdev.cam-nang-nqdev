@@ -77,6 +77,7 @@
   * [Debian](os-linux/debian.md)
   * [Tools](os-linux/tools/README.md)
     * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](os-linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
+    * [ss - Socket Statistics](os-linux/tools/ss-socket-statistics.md)
 * [Windows](windows/README.md)
   * [Quản lý khởi động cùng Windows bằng: Registry Editor](windows/quan-ly-khoi-dong-cung-windows-bang-registry-editor.md)
   * [Quản lý dịch vụ Windows bằng: net start và sc](windows/quan-ly-dich-vu-windows-bang-net-start-va-sc.md)
