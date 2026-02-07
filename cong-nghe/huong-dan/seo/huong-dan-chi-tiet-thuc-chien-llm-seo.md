@@ -102,7 +102,7 @@ LLM (Large Language Model) là các hệ thống AI được huấn luyện trê
 * Nội dung đa phương tiện (ảnh/video + alt text).
 * Tích hợp schema đặc thù của Google.
 
-#### 🔹 Microsoft Copilot
+#### 🔹 [Microsoft Copilot](https://app.gitbook.com/s/wRgsH8wC380GwDCPj7gi/copilot/instructions)
 
 * Chia nhỏ tiêu đề, thêm metadata rõ ràng.
 * Tối ưu bảng biểu, spreadsheet dễ hiểu cho AI.
