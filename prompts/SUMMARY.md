@@ -13,6 +13,7 @@
 * [✍️ Writing](writing/README.md)
   * [Blog Writing](writing/blog-writing.md)
   * [Technical Writing](writing/technical-writing.md)
+  * [Prompts: Sáng Tác Truyện Ngắn](writing/prompts-sang-tac-truyen-ngan.md)
 * [💼 Business](business/README.md)
   * [Marketing](business/marketing.md)
   * [Sales](business/sales.md)
