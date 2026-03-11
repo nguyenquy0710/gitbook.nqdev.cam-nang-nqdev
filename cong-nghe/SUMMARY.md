@@ -75,6 +75,7 @@
     * [Hướng Dẫn Sử Dụng zip Trên CentOS](os-linux/centos-7/huong-dan-su-dung-zip-tren-centos.md)
     * [Hướng dẫn cấu hình iptables để mở tất cả các cổng cho IP private](os-linux/centos-7/huong-dan-cau-hinh-iptables-de-mo-tat-ca-cac-cong-cho-ip-private.md)
   * [Debian](os-linux/debian.md)
+  * [Ubuntu](os-linux/ubuntu.md)
   * [Tools](os-linux/tools/README.md)
     * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](os-linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
     * [ss - Socket Statistics](os-linux/tools/ss-socket-statistics.md)
