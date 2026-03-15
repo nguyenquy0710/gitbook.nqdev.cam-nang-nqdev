@@ -1,4 +1,10 @@
-# ffmpeg
+---
+description: >-
+  FFmpeg là tập hợp các thư viện và công cụ để xử lý nội dung đa phương tiện như
+  âm thanh, video, phụ đề và siêu dữ liệu liên quan.
+---
+
+# FFmpeg
 
 #### 🛠️ Cách 1: Lấy trực tiếp URL luồng từ TikTok Live (dùng `yt-dlp` + `ffmpeg`)
 
