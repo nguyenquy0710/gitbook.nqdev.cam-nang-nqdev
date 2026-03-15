@@ -343,6 +343,18 @@ Dùng để thử nghiệm phần mềm hoặc streaming server:
 
 > Lưu ý: Đây chỉ dùng **mục đích thử nghiệm**, không dùng cho triển khai thương mại.
 
+### Bảng tham khảo nhanh các dạng đường dẫn RTSP phổ biến
+
+Khi bạn đã có địa chỉ IP camera từ ODM hoặc các công cụ khác, việc hiểu cấu trúc đường dẫn RTSP sẽ giúp ích rất nhiều. Dưới đây là một số mẫu cho các hãng thông dụng :
+
+| Hãng Camera                 | Đường dẫn RTSP ví dụ (thay `user`, `pass`, `192.168.1.X` bằng thông tin của bạn)                              |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Hikvision**               | `rtsp://user:pass@192.168.1.X:554/Streaming/Channels/101` (101: kênh 1, luồng chính)                          |
+| **Dahua / KBVision / IMOU** | `rtsp://user:pass@192.168.1.X:554/cam/realmonitor?channel=1&subtype=0` (subtype=0: luồng chính, 1: luồng phụ) |
+| **Ezviz**                   | `rtsp://user:pass@192.168.1.X:554/ch01/0` (0: luồng chính, 1: luồng phụ)                                      |
+
+
+
 ***
 
 ## **7. Kết luận**
