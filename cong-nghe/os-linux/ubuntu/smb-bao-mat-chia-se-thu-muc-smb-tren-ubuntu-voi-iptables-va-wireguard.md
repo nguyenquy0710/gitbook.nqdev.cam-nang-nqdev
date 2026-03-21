@@ -24,7 +24,7 @@ Bài viết này hướng dẫn bạn xây dựng một hệ thống **an toàn*
 
 bash
 
-```
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -32,7 +32,7 @@ sudo apt update && sudo apt upgrade -y
 
 bash
 
-```
+```bash
 sudo apt install samba -y
 ```
 
@@ -42,7 +42,7 @@ Giả sử người dùng là `nqdev`:
 
 bash
 
-```
+```bash
 mkdir -p /home/nqdev/share
 sudo chmod 0755 /home/nqdev/share
 sudo chown -R nqdev:nqdev /home/nqdev/share
@@ -54,7 +54,7 @@ Sao lưu file cấu hình gốc:
 
 bash
 
-```
+```bash
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak
 ```
 
@@ -62,7 +62,7 @@ Mở file cấu hình:
 
 bash
 
-```
+```bash
 sudo nano /etc/samba/smb.conf
 ```
 
@@ -70,7 +70,7 @@ Thêm vào cuối file:
 
 ini
 
-```
+```ini
 [MyShare]
    comment = Thư mục chia sẻ qua VPN
    path = /home/nqdev/share
@@ -88,7 +88,7 @@ Lưu và thoát.
 
 bash
 
-```
+```bash
 sudo smbpasswd -a nqdev   # nhập mật khẩu Samba
 sudo smbpasswd -e nqdev   # kích hoạt
 ```
@@ -97,7 +97,7 @@ sudo smbpasswd -e nqdev   # kích hoạt
 
 bash
 
-```
+```bash
 sudo systemctl restart smbd nmbd
 sudo systemctl enable smbd nmbd
 ```
@@ -116,7 +116,7 @@ iptables là tường lửa mặc định của Ubuntu. Chúng ta sẽ xây dự
 
 bash
 
-```
+```bash
 sudo iptables -F
 sudo iptables -X
 sudo iptables -t nat -F
@@ -128,7 +128,7 @@ Giả sử giao diện mạng chính là `eth0` (nếu dùng cloud có thể là
 
 bash
 
-```
+```bash
 # Chính sách mặc định: DROP tất cả INPUT, FORWARD, ACCEPT OUTPUT
 sudo iptables -P INPUT DROP
 sudo iptables -P FORWARD DROP
@@ -166,7 +166,7 @@ Cài gói lưu trữ rule:
 
 bash
 
-```
+```bash
 sudo apt install iptables-persistent -y
 sudo netfilter-persistent save
 ```
@@ -181,7 +181,7 @@ Khi khởi động lại, các rule sẽ tự động được phục hồi.
 
 bash
 
-```
+```bash
 sudo apt install wireguard -y
 ```
 
@@ -189,7 +189,7 @@ sudo apt install wireguard -y
 
 bash
 
-```
+```bash
 wg genkey | sudo tee /etc/wireguard/private.key
 sudo chmod 600 /etc/wireguard/private.key
 sudo cat /etc/wireguard/private.key | wg pubkey | sudo tee /etc/wireguard/public.key
@@ -199,7 +199,7 @@ sudo cat /etc/wireguard/private.key | wg pubkey | sudo tee /etc/wireguard/public
 
 bash
 
-```
+```bash
 sudo nano /etc/wireguard/wg0.conf
 ```
 
@@ -207,7 +207,7 @@ Nội dung:
 
 ini
 
-```
+```ini
 [Interface]
 Address = 10.0.0.1/24
 ListenPort = 51820
@@ -226,7 +226,7 @@ AllowedIPs = 10.0.0.2/32
 
 bash
 
-```
+```bash
 echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 ```
@@ -235,7 +235,7 @@ sudo sysctl -p
 
 bash
 
-```
+```bash
 sudo systemctl enable wg-quick@wg0
 sudo systemctl start wg-quick@wg0
 ```
@@ -250,7 +250,7 @@ Trên máy client (Windows, macOS, Linux), cài đặt WireGuard và tạo cặp
 
 bash
 
-```
+```bash
 wg genkey | tee client_private.key
 cat client_private.key | wg pubkey > client_public.key
 ```
@@ -259,7 +259,7 @@ Tạo file cấu hình (ví dụ `wg0.conf`):
 
 ini
 
-```
+```ini
 [Interface]
 PrivateKey = <private-key-client>
 Address = 10.0.0.2/24
@@ -285,7 +285,7 @@ Từ client, ping địa chỉ VPN của server:
 
 bash
 
-```
+```bash
 ping 10.0.0.1
 ```
 
@@ -304,7 +304,7 @@ Nếu ping thành công, WireGuard đã hoạt động.
 
 bash
 
-```
+```bash
 smbclient //10.0.0.1/MyShare -U nqdev
 ```
 
@@ -312,7 +312,7 @@ smbclient //10.0.0.1/MyShare -U nqdev
 
 bash
 
-```
+```bash
 sudo mount -t cifs //10.0.0.1/MyShare /mnt/share -o username=nqdev,password=yourpass
 ```
 
@@ -322,7 +322,7 @@ Từ một máy không nằm trong VPN (hoặc từ chính server nhưng không 
 
 bash
 
-```
+```bash
 telnet 10.0.0.1 445   # từ client đã kết nối VPN sẽ thành công
 telnet <ip-public> 445 # từ internet sẽ bị chặn
 ```
