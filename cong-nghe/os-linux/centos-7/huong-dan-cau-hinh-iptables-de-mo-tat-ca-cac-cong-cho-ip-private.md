@@ -86,6 +86,32 @@ sudo iptables -L
 
 Lệnh này sẽ liệt kê tất cả các quy tắc hiện tại của `iptables`, giúp bạn xác nhận rằng các kết nối từ mạng nội bộ đã được mở và các kết nối từ bên ngoài đã bị chặn.
 
+
+
+### 5.1 Kiểm tra iptables hiện tại
+
+Chạy lệnh:
+
+```bash
+sudo iptables -L INPUT -n -v --line-numbers
+```
+
+Xem:
+
+* **Chain INPUT** có policy là **ACCEPT** hay **DROP**.
+* Có quy tắc nào cho phép cổng **445** (tcp) không.
+* Nếu policy DROP mà không có quy tắc cho phép thì kết nối bị chặn.
+
+Ví dụ output mong muốn có dòng:
+
+```bash
+ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:445
+```
+
+
+
+***
+
 ## **6. Kết luận**
 
 Bằng cách sử dụng các quy tắc `iptables`, bạn có thể dễ dàng mở tất cả các cổng cho một mạng IP private (ví dụ: `192.168.1.0/24`) và kiểm soát các kết nối đến hệ thống của mình. Điều này rất hữu ích trong các môi trường mạng nội bộ, nơi bạn muốn cho phép các thiết bị hoặc máy chủ trong mạng truy cập vào tất cả các dịch vụ của hệ thống mà không bị gián đoạn bởi tường lửa.
