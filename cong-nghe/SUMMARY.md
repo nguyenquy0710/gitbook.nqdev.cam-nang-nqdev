@@ -85,6 +85,8 @@
 * [Windows](windows/README.md)
   * [Quản lý khởi động cùng Windows bằng: Registry Editor](windows/quan-ly-khoi-dong-cung-windows-bang-registry-editor.md)
   * [Quản lý dịch vụ Windows bằng: net start và sc](windows/quan-ly-dich-vu-windows-bang-net-start-va-sc.md)
+  * [PowerShell ISE](windows/powershell-ise/README.md)
+    * [Hướng dẫn kiểm tra, bật và tắt logging tường lửa Windows](windows/powershell-ise/huong-dan-kiem-tra-bat-va-tat-logging-tuong-lua-windows.md)
   * [Tools](windows/tools/README.md)
     * [WinDbg - Công cụ khám phá hệ thống Windows](windows/tools/windbg-cong-cu-kham-pha-he-thong-windows/README.md)
       * [Hiểu rõ Symbol, Stack Trace và Thread](windows/tools/windbg-cong-cu-kham-pha-he-thong-windows/hieu-ro-symbol-stack-trace-va-thread.md)
