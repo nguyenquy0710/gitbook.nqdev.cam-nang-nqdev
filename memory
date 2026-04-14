@@ -1,0 +1,28 @@
+# Repository Memory
+
+## Git Log Summary
+- Recent commits show activity with commit messages like "GITBOOK-260: No subject", "GITBOOK-259: No subject", etc.
+- Latest commit: b58191e "add agent" - adds agent skill files
+- Branch: obsidian (active branch)
+
+## Directory Structure
+- `.agent/` - Contains AI agent skill definitions
+- `.github/` - GitHub workflows (includes deploy_gitbook.yml)
+- `cheat-sheet/` - Various cheat sheets (wireshark, windows, ubuntu, redis)
+- `cong-nghe/` - Technology guides
+- `cuoc-song/` - Life-related content (health, books, reviews)
+- `devsecops/` - DevSecOps guides (VMware, Docker, Ansible)
+- `hoi-dap/` - Q&A section
+- `lien-he/` - Contact/About section
+- `prompts/` - Various prompts (writing, workflows, GPT, Gemini, coding, business)
+- `LICENSE` - License file
+- `README.md` - Basic project info
+
+## Key Files
+- `.github/workflows/deploy_gitbook.yml` - GitHub Actions workflow for deployment
+- All content appears to be in Vietnamese language
+- GitBook-based documentation structure with SUMMARY.md files in each section
+- Assets are stored in `.gitbook/assets/` directories within each section
+
+## Repository Type
+This is a GitBook-based documentation repository focusing on technical guides, cheat sheets, and various tutorials in Vietnamese. The content covers DevSecOps, technology, life advice, and prompt engineering topics.
