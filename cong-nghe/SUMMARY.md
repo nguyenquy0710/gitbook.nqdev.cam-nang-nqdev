@@ -65,6 +65,7 @@
   * [ReactJS](nodejs/reactjs/README.md)
     * [Hiểu về hook useRef của React như thế nào cho đúng](nodejs/reactjs/hieu-ve-hook-useref-cua-react-nhu-the-nao-cho-dung.md)
     * [Tìm hiểu sâu hơn về useEffect từ A-Z](nodejs/reactjs/tim-hieu-sau-hon-ve-useeffect-tu-a-z.md)
+* [AI CLI tools](ai-cli-tools.md)
 * [OS Linux](os-linux/README.md)
   * [Tập lệnh Linux hay dùng](os-linux/tap-lenh-linux-hay-dung/README.md)
     * [Nền tảng tư duy hệ thống mà Dev không thể bỏ qua](os-linux/tap-lenh-linux-hay-dung/nen-tang-tu-duy-he-thong-ma-dev-khong-the-bo-qua.md)
