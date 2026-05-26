@@ -4,7 +4,7 @@
 
 ### 🌟 Giới thiệu
 
-[GitHub Copilot](https://app.gitbook.com/s/wRgsH8wC380GwDCPj7gi/copilot/instructions) đã trở thành “người bạn đồng hành” quen thuộc với lập trình viên – giúp viết code nhanh hơn, ít lỗi hơn.\
+[GitHub Copilot](/broken/spaces/wRgsH8wC380GwDCPj7gi/pages/fUK0s5t9IQkASJfoNuDZ) đã trở thành “người bạn đồng hành” quen thuộc với lập trình viên – giúp viết code nhanh hơn, ít lỗi hơn.\
 Nhưng trong bản **Visual Studio 2022 v17.14 (tháng 10/2025)**, Copilot đã tiến thêm một bước rất lớn: **nó bắt đầu có trí nhớ.**
 
 Tính năng mới có tên **Copilot Memories**, cho phép AI hiểu và ghi nhớ **cách bạn – hoặc cả nhóm của bạn – làm việc**.\
