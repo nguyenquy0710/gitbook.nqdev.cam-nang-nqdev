@@ -211,6 +211,8 @@ Quản lý MCP servers.
 https://code.claude.com/docs/en/mcp for help
 ```
 
+`claude mcp list --scope project`
+
 ***
 
 ### `/diff`
