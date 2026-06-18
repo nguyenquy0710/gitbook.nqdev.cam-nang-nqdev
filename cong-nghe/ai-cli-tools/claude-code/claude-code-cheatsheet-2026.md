@@ -456,32 +456,44 @@ Claude sẽ load file này khi vào repo.
 
 #### Project structure
 
-```
-# Architecture- apps/web- packages/core- packages/ui
+```markdown
+# Architecture
+- apps/web
+- packages/core
+- packages/ui
 ```
 
 ***
 
 #### Coding conventions
 
-```
-# Rules- Use pnpm- Prefer functional components- Use zod for validation
+```markdown
+# Rules
+- Use pnpm
+- Prefer functional components
+- Use zod for validation
 ```
 
 ***
 
 #### Useful commands
 
-```
-# Commandspnpm testpnpm lintpnpm build
+```markdown
+# Commands
+pnpm test
+pnpm lint
+pnpm build
 ```
 
 ***
 
 #### Workflow
 
-```
-# PR checklist- run tests- update docs- no console.log
+```markdown
+# PR checklist
+- run tests
+- update docs
+- no console.log
 ```
 
 ***
@@ -525,7 +537,10 @@ Rồi restate task ngắn gọn.
 Chia phase:
 
 ```
-Phase 1: analyzePhase 2: planPhase 3: implementPhase 4: test
+Phase 1: analyze
+Phase 2: plan
+Phase 3: implement
+Phase 4: test
 ```
 
 ***
@@ -662,7 +677,7 @@ Dùng:
 ### Small fix
 
 ```
-Explain bug→ ask plan→ implement→ run tests
+Explain bug → ask plan → implement → run tests
 ```
 
 ***
@@ -670,7 +685,7 @@ Explain bug→ ask plan→ implement→ run tests
 ### Feature lớn
 
 ```
-analyze→ architecture proposal→ incremental implementation→ verification→ cleanup
+analyze → architecture proposal → incremental implementation → verification → cleanup
 ```
 
 ***
@@ -678,7 +693,7 @@ analyze→ architecture proposal→ incremental implementation→ verification�
 ### Safe refactor
 
 ```
-write tests first→ refactor→ run tests→ review diff
+write tests first → refactor → run tests → review diff
 ```
 
 ***
