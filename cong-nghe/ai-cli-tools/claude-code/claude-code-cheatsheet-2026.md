@@ -26,6 +26,11 @@ claude update
 claude doctor
 ```
 
+### Chỉnh cấu hình `settings.json`
+
+* pre-tool hook
+* status line live
+
 ***
 
 ## 2. Chạy Claude Code
@@ -207,29 +212,107 @@ Quản lý subagents / agent configs.
 
 Quản lý MCP servers.
 
-```
-https://code.claude.com/docs/en/mcp for help
+#### Thêm MCP server
+
+**Add server vào workspace hiện tại:**
+
+```bash
+claude mcp add <server_name> <server_url>
 ```
 
-`claude mcp list --scope project`
+*   \*\*Ví dụ:
+
+    * Thêm `slim-tools` server:
+
+    ```bash
+    claude mcp add slim-tools https://slim.tools/mcp
+    ```
+
+    * Thêm Atlassian MCP server với HTTP transport và API token:
+
+    ```bash
+    claude mcp add atlassian https://mcp.atlassian.com/v1/mcp \
+      --transport http \
+      --header "Authorization: Basic $(echo -n 'your-*****@gmail.com:your-api-token' | base64)" \
+      --scope user
+    ```
+
+    * Thêm với username/password:
+
+    ```bash
+    claude mcp add my-server https://my-mcp.com \
+      --transport http \
+      --username YOUR_USER \
+      --password YOUR_PASS
+    ```
+
+#### Xoá MCP server
+
+**Remove server khỏi workspace hiện tại:**
+
+```bash
+claude mcp remove <server_name>
+```
+
+*   **Ví dụ:**
+
+    ```bash
+    claude mcp remove slim-tools
+    ```
+
+#### Kiểm tra MCP server
+
+Xem danh sách MCP server đã add:
+
+```bash
+claude mcp list              # scope user (mặc định)
+claude mcp list --scope project  # scope project
+```
+
+> **Lưu ý:** Nếu hiện `Needs authentication` khi add Atlassian MCP server, server chính thức (mcp.atlassian.com) **chỉ hỗ trợ OAuth**, không nhận API token trực tiếp. Cần dùng MCP server thay thế hỗ trợ API token.
 
 ***
 
 ### `/diff`
 
-Mở interactive diff viewer.
+Mở interactive diff viewer trong terminal.
 
 Cho phép:
 
-* xem file changes
-* xem per-turn diffs
-* inspect generated edits
+* **xem file changes** — toàn bộ file đã sửa trong session
+* **per-turn diffs** — xem thay đổi theo từng turn
+* **inspect generated edits** — kiểm tra diff trước khi apply
+* **staged diffs** — xem changes đã stage cho commit
+
+Phím tắt trong diff viewer:
+
+* `j/k` — điều hướng lên/xuống
+* `q` — đóng viewer
+* `/` — search trong diff
+
+Hữu ích để review trước khi commit hoặc kiểm tra Claude đã sửa đúng chưa.
 
 ***
 
 ### `/doctor`
 
-Diagnose installation và environment.
+Diagnose installation và environment. Tương tự `claude doctor` CLI.
+
+Kiểm tra:
+
+* **Node.js version** — có đúng runtime không
+* **CLI installation** — claude-code binary có hoạt động không
+* **Git config** — user.name, user.email đã set chưa
+* **MCP servers** — kiểm tra kết nối các MCP server đã add
+* **Permissions** — sandbox mode, file permissions
+* **Disk space** — đủ cho context cache
+* **Proxy/Network** — nếu dùng qua corporate network
+
+Dùng khi:
+
+* Claude không khởi động được
+* MCP server báo lỗi kết nối
+* Cần debug environment trước khi report issue
 
 ***
 
@@ -243,7 +326,21 @@ Toggle sandbox mode.
 
 Review security vulnerabilities trong diff hiện tại.
 
-Useful trước khi merge PR.
+Công cụ này **chỉ hoạt động với các diff mới được tạo ra** (ví dụ: sau `git diff` hoặc ngay trước khi commit).
+
+Nó sẽ scan code diff để tìm các lỗ hổng tiềm ẩn như:
+
+* **Injection vulnerabilities**: SQL injection, Command injection, XSS.
+* **Sensitive data exposure**: Credentials, API keys bị lộ.
+* **Insecure Deserialization**.
+* **Use of insecure or outdated libraries**.
+* **Hardcoded secrets**.
+
+Dùng trước khi:
+
+* Commit code mới
+* Tạo Pull Request
+* Push code lên production
 
 ***
 
@@ -307,6 +404,41 @@ claude mcp add slim-tools \
 --password YOUR_PASS \  
 'https://slim.tools/mcp'  
 ```
+
+### Atlassian MCP — API Token (HTTP transport)
+
+Cài Atlassian MCP server dùng HTTP transport thay vì SSE:
+
+```bash
+claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp \
+  --header "Authorization: Basic $(echo -n 'your-*****@gmail.com:your-api-token' | base64)" \
+  --scope user
+```
+
+Thay `your-*****@gmail.com` và `your-api-token` bằng thông tin thực. Ví dụ:
+
+```bash
+claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp \
+  --header "Authorization: Basic $(echo -n 'nhq****@gmail.com:ATATT3x...' | base64)" \
+  --scope user
+```
+
+#### Windows PowerShell — base64
+
+Trên PowerShell, lệnh base64 khác:
+
+```powershell
+$cred = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("your-*****@gmail.com:your-api-token"))
+claude mcp add --transport http atlassian https://mcp.atlassian.com/v1/mcp --header "Authorization: Basic $cred" --scope user
+```
+
+#### Kiểm tra
+
+```bash
+claude mcp list
+```
+
+> **Lưu ý:** Nếu hiện `Needs authentication`, Atlassian MCP server chính thức (mcp.atlassian.com) **chỉ hỗ trợ OAuth**, không nhận API token trực tiếp. Trong trường hợp đó cần dùng MCP server thay thế hỗ trợ API token.
 
 ***
 
@@ -557,3 +689,5 @@ write tests first→ refactor→ run tests→ review diff
 * [Claude CLI Reference](https://docs.claude.com/en/docs/claude-code/cli-reference?utm_source=chatgpt.com)
 * [Claude Code Cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet?utm_source=chatgpt.com)
 * [Model Context Protocol](https://modelcontextprotocol.io/?utm_source=chatgpt.com)
+
+***
