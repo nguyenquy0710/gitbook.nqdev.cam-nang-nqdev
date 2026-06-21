@@ -10,6 +10,10 @@
 * [Làm chủ các mẫu thiết kế kinh điển trong lập trình](review-sach/lam-chu-cac-mau-thiet-ke-kinh-dien-trong-lap-trinh/README.md)
   * [Đánh giá chi tiết về cuốn sách](review-sach/lam-chu-cac-mau-thiet-ke-kinh-dien-trong-lap-trinh/danh-gia-chi-tiet-ve-cuon-sach.md)
 
+## 🧘 Triết lý sống
+
+* [Sơn trung vô giáp tý, tu hành vô tuế nguyệt](opcode/cuoc-song/triet-ly-song/son-trung-vo-giap-ty-tu-hanh-vo-tue-nguyet.md)
+
 ## 👨‍⚕️ Sức khỏe
 
 * [Căng thẳng và stress do thiếu vitamin B](suc-khoe/cang-thang-va-stress-do-thieu-vitamin-b.md)
