@@ -27,6 +27,10 @@ layout:
     visible: true
   actions:
     visible: true
+metaLinks:
+  canonical: ./
+  alternates:
+    - ./
 ---
 
 # Introduction
