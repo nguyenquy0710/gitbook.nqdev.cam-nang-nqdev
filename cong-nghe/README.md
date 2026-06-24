@@ -6,6 +6,27 @@ description: >-
 cover: >-
   https://github.com/nqdev-storage/s3-001/raw/refs/heads/main/ai-gpt/nqdev-introduction-1990x480.webp
 coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Introduction
