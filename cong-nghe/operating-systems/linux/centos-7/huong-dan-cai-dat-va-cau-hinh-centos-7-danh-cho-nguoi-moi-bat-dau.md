@@ -160,6 +160,6 @@ Hãy thường xuyên sao lưu dữ liệu bằng cách sử dụng các công c
 
 ## Kết Luận
 
-Bài viết trên đã hướng dẫn bạn cài đặt và cấu hình VPS CentOS 7 từ cơ bản đến nâng cao. Việc bảo mật và duy trì hệ thống là yếu tố then chốt để VPS của bạn hoạt động ổn định. Nếu bạn gặp khó khăn, hãy để lại bình luận trên blog [Cẩm nang NQDEV](../../), chúng tôi sẽ hỗ trợ bạn kịp thời!
+Bài viết trên đã hướng dẫn bạn cài đặt và cấu hình VPS CentOS 7 từ cơ bản đến nâng cao. Việc bảo mật và duy trì hệ thống là yếu tố then chốt để VPS của bạn hoạt động ổn định. Nếu bạn gặp khó khăn, hãy để lại bình luận trên blog [Cẩm nang NQDEV](../../../), chúng tôi sẽ hỗ trợ bạn kịp thời!
 
 Chúc bạn thành công! 🚀

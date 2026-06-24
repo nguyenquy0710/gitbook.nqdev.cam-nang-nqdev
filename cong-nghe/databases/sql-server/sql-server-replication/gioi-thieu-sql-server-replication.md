@@ -88,7 +88,7 @@ Nếu bạn muốn tìm hiểu thêm về cách triển khai SQL Server Replicat
 
 SQL Server Replication là một giải pháp mạnh mẽ giúp doanh nghiệp quản lý dữ liệu hiệu quả, nâng cao tính sẵn sàng và hiệu suất của hệ thống. Với bài viết này, NQDEV hy vọng bạn đã nắm được những kiến thức cơ bản về công cụ này và hiểu cách ứng dụng nó vào hệ thống của mình.
 
-Hãy theo dõi blog của [**Cẩm nang NQDEV** ](../../)để cập nhật thêm nhiều bài viết hữu ích nhé! 🌟
+Hãy theo dõi blog của [**Cẩm nang NQDEV** ](../../../)để cập nhật thêm nhiều bài viết hữu ích nhé! 🌟
 
 ***
 

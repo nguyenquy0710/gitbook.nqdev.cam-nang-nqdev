@@ -8,7 +8,7 @@ description: >-
 
 Một trong những phương pháp tối ưu hóa phổ biến nhất là sử dụng cache để lưu trữ tạm thời các dữ liệu, giúp giảm tải cho máy chủ và tăng tốc độ xử lý. Trong bài viết này, chúng ta sẽ so sánh ba công cụ caching phổ biến: **Varnish Cache**, **Memcached** và **Redis**. Mỗi công cụ có những đặc điểm riêng, được thiết kế để phục vụ các nhu cầu khác nhau trong việc tối ưu hóa hệ thống.
 
-<figure><img src="../.gitbook/assets/redis-vs-memcached.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/redis-vs-memcached.png" alt=""><figcaption></figcaption></figure>
 
 
 
