@@ -8,7 +8,9 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 **New articles always go in `opcode/<book>/`**, mirroring the source book's directory structure. Existing files in root books are never modified. `opcode/` does not yet exist — create it when adding the first article.
 
-**Build artifact:** `_book/` (not committed; no root `.gitignore` exists).
+**Build artifact:** `_book/` (not committed; no root `.gitignore` exists; `.opencode/.gitignore` ignores its own `node_modules` only).
+
+**CI gotcha:** Workflow runs `gitbook install && gitbook build` from repository root with no root `SUMMARY.md` or `book.json`. This likely produces an empty/broken site. Per-book build (`cd <book> && gitbook install && gitbook build`) is the reliable approach.
 
 ## Writing
 
@@ -22,11 +24,11 @@ Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book 
 
 ## Deploy
 
-Only manual trigger — no auto-deploy on push.
+Only manual trigger — no auto-deploy on push. **Requires Node.js v14** (gitbook-cli incompatible with newer versions).
 
 ```bash
-npm install -g gitbook-cli --legacy-peer-deps   # Node.js v14 required
-gitbook install && gitbook build                 # output: _book/
+npm install -g gitbook-cli --legacy-peer-deps
+gitbook install && gitbook build   # output: _book/
 ```
 
 Or trigger `deploy_gitbook.yml` workflow in `.github/workflows/`.

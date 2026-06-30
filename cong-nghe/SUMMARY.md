@@ -196,6 +196,8 @@
     * [Skyvern](general-knowledge/ai/skyvern/README.md)
       * [Skyvern và tương lai của Browser Automation](general-knowledge/ai/skyvern/skyvern-va-tuong-lai-cua-browser-automation.md)
       * [Skyvern vs Tự build Playwright + AI](general-knowledge/ai/skyvern/skyvern-vs-tu-build-playwright-+-ai.md)
+     * [Giới thiệu LLM7: API chat tương thích OpenAI, tích hợp trong 5 phút](opcode/cong-nghe/llm7-gioi-thieu-api-tinh-nang-va-huong-dan.md)
+     * [OpenSpec – Chấm dứt "Vibe Coding", đưa AI Coding vào quy trình chuyên nghiệp](opcode/cong-nghe/openspec-cham-dut-vibe-coding-dua-ai-coding-vao-quy-trinh-chuyen-nghiep.md)
   * [Tin tức](general-knowledge/tin-tuc/README.md)
     * [DevSecOps là gì?](general-knowledge/tin-tuc/devsecops-la-gi.md)
     * [Giới thiệu bộ công cụ hỗ trợ lập trình từ SmallDev.tools và Code Beautify](general-knowledge/tin-tuc/gioi-thieu-bo-cong-cu-ho-tro-lap-trinh-tu-smalldev.tools-va-code-beautify.md)
