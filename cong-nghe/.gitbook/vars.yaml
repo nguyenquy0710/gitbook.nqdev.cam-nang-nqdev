@@ -1,5 +1,5 @@
-BLOG_NAME : "Cẩm nang NQDEV"
-COMPANY_NAME: "NQDEV Platform"
-CURRENT_VERSION: "2.1.0"
-API_ENDPOINT: "https://api.example.com/v2"
-SUPPORT_EMAIL: "info@quyit.id.vn"
+BLOG_NAME: Cẩm nang NQDEV
+COMPANY_NAME: NQDEV Platform
+CURRENT_VERSION: 2.1.0
+API_ENDPOINT: https://api.example.com/v2
+SUPPORT_EMAIL: info@quyit.id.vn
