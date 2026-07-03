@@ -38,9 +38,8 @@ Ngoài chat, Kira AI còn hỗ trợ tạo ảnh, video, text-to-speech và có 
 
 Endpoint: `POST /chat/completions` (OpenAI-compatible)
 
-\{% code title="Node.js — OpenAI SDK" overflow="wrap" lineNumbers="true" %\}
-
-```
+{% code title="Node.js — OpenAI SDK" overflow="wrap" lineNumbers="true" %}
+```js
 import OpenAI from "openai";
 
 const openai = new OpenAI({
@@ -58,8 +57,7 @@ const completion = await openai.chat.completions.create({
 
 console.log(completion.choices[0].message.content);
 ```
-
-\{% endcode %\}
+{% endcode %}
 
 ### **API: Image Generation** <a href="#user-content-api-image" id="user-content-api-image"></a>
 
@@ -74,9 +72,8 @@ Endpoint: `POST /images/generations`
 
 **Aspect ratios:** `1:1`, `16:9`, `9:16`, `4:3`, `3:4`
 
-\{% code title="curl" overflow="wrap" lineNumbers="true" %\}
-
-```
+{% code title="curl" overflow="wrap" lineNumbers="true" %}
+```bash
 curl -X POST https://kiraai.vn/api/v1/images/generations \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_KIRA_API_KEY" \
@@ -86,8 +83,7 @@ curl -X POST https://kiraai.vn/api/v1/images/generations \
     "aspect_ratio": "16:9"
   }'
 ```
-
-\{% endcode %\}
+{% endcode %}
 
 ### **API: Text-to-Speech (TTS)** <a href="#user-content-api-tts" id="user-content-api-tts"></a>
 
@@ -107,9 +103,10 @@ Endpoint: `POST /audio/speech` (OpenAI-compatible)
 | `onyx`       | Charon     |
 | `nova`       | Aoede      |
 
-\{% tabs %\} \{% tab title="cURL" %\} \{% code title="terminal" overflow="wrap" %\}
-
-```
+{% tabs %}
+{% tab title="cURL" %}
+{% code title="terminal" overflow="wrap" %}
+```bash
 curl -X POST https://kiraai.vn/api/v1/audio/speech \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_KIRA_API_KEY" \
@@ -119,12 +116,11 @@ curl -X POST https://kiraai.vn/api/v1/audio/speech \
     "voice": "alloy"
   }' --output output.mp3
 ```
-
-\{% endcode %\} \{% endtab %\}
-
-\{% tab title="Node.js" %\} \{% code title="Node.js — OpenAI SDK" overflow="wrap" lineNumbers="true" %\}
-
-```
+{% endcode %}
+{% endtab %}
+{% tab title="Node.js" %}
+{% code title="Node.js — OpenAI SDK" overflow="wrap" lineNumbers="true" %}
+```js
 import fs from "fs";
 import OpenAI from "openai";
 
@@ -142,8 +138,9 @@ const mp3 = await openai.audio.speech.create({
 const buffer = Buffer.from(await mp3.arrayBuffer());
 await fs.promises.writeFile("output.mp3", buffer);
 ```
-
-\{% endcode %\} \{% endtab %\} \{% endtabs %\}
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 ### **API: Video Generation** <a href="#user-content-api-video" id="user-content-api-video"></a>
 
