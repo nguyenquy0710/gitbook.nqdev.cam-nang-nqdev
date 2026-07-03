@@ -2,7 +2,7 @@
 
 Trong một dự án .NET, caching là một kỹ thuật quan trọng giúp cải thiện hiệu suất và giảm tải cho hệ thống bằng cách lưu trữ tạm thời dữ liệu để tránh truy vấn lặp lại từ nguồn gốc (database, API bên ngoài, hoặc file system).
 
-Bài viết này sẽ phân tích các phương pháp caching phổ biến trong [**.NET Core**](../../languages-and-frameworks/dotnet/asp.net-core/) và **.NET Framework**, đồng thời so sánh điểm mạnh và hạn chế của từng phương pháp.
+Bài viết này sẽ phân tích các phương pháp caching phổ biến trong [**.NET Core**](https://github.com/nguyenquy0710/gitbook.nqdev.cam-nang-nqdev/blob/main/cong-nghe/languages-and-frameworks/dotnet/asp.net-core) và **.NET Framework**, đồng thời so sánh điểm mạnh và hạn chế của từng phương pháp.
 
 ***
 
