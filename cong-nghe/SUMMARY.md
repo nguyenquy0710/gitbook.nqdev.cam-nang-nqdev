@@ -175,6 +175,8 @@
   * [AI CLI tools](development-tools/ai-cli-tools/README.md)
     * [Claude Code](development-tools/ai-cli-tools/claude-code/README.md)
       * [Claude Code Cheatsheet (2026)](development-tools/ai-cli-tools/claude-code/claude-code-cheatsheet-2026.md)
+    * [So sánh OpenCode và Claude Code: Nên chọn AI Coding Agent nào?](development-tools/ai-cli-tools/so-sanh-opencode-va-claude-code-nen-chon-ai-coding-agent-nao.md)
+    * [Cấu trúc Agents, Skills, Commands: OpenCode vs Claude Code — và cách chuyển đổi](development-tools/ai-cli-tools/cau-truc-agents-skills-commands-opencode-vs-claude-code-va-cach-chuyen-doi.md)
 * [Open Source & Templates](open-source-and-templates/README.md)
   * [Top 10 ASP .NET Open Source Projects GitHub 2024](open-source-and-templates/top-10-asp-.net-open-source-projects-github-2024.md)
   * [Open Source](open-source-and-templates/open-source/README.md)
