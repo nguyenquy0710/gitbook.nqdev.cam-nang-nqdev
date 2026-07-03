@@ -8,7 +8,7 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 **New articles always go in `opcode/<book>/`**, mirroring the source book's directory structure. Existing files in root books are never modified. `opcode/` does not yet exist — create it when adding the first article.
 
-**Build artifact:** `_book/` (not committed; no root `.gitignore` exists; `.opencode/.gitignore` ignores its own `node_modules` only).
+**Build artifact:** `_book/` (not committed; no root `.gitignore`; `.opencode/.gitignore` ignores `node_modules`, `package-lock.json`, `bun.lock`). `.gitbook/` dirs may appear after local `gitbook install` runs.
 
 **CI gotcha:** Workflow runs `gitbook install && gitbook build` from repository root with no root `SUMMARY.md` or `book.json`. This likely produces an empty/broken site. Per-book build (`cd <book> && gitbook install && gitbook build`) is the reliable approach.
 
