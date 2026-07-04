@@ -49,12 +49,12 @@ Gói token Kira AI chỉ dùng cho model Kira (tiền tố `kira-`). Model đố
 
 ## 2. Bảng giá dịch vụ API <a href="#bang-gia" id="bang-gia"></a>
 
-| Gói dịch vụ | Giá/tháng | Tokens | Tính năng chính |
-|---|---|---|---|
-| **Dùng Thử** | 0đ | 50.000 | Chat, Ảnh, Giọng nói |
-| **Kira Standard** | 50.000đ | 5.000.000 | Tốc độ cao, không tạo Video |
-| **Kira Pro** | 100.000đ | 12.000.000 | Đầy đủ tính năng + Video |
-| **Kira Enterprise** | 300.000đ | Không giới hạn | Toàn bộ dịch vụ, API ưu tiên |
+| Gói dịch vụ | Giá/tháng | Tokens | Số ảnh ước tính | Số video 5 phút | Tính năng chính |
+|---|---|---|---|---|---|---|
+| **Dùng Thử** | 0đ | 50.000 | 0 ảnh | 0 video | Chat, Ảnh, Giọng nói |
+| **Kira Standard** | 50.000đ | 5.000.000 | ≈ 5.000 ảnh | ≈ 66 video | Tốc độ cao, không tạo Video |
+| **Kira Pro** | 100.000đ | 12.000.000 | ≈ 12.000 ảnh | ≈ 160 video | Đầy đủ tính năng + Video |
+| **Kira Enterprise** | 300.000đ | Không giới hạn | Không giới hạn | ≈ 66 video/ngày | Toàn bộ dịch vụ, API ưu tiên |
 
 > 💡 **Lưu ý:** Tiết kiệm đến 20% khi chọn chu kỳ thanh toán năm. Token reset về 0 khi hết hạn tháng.
 
