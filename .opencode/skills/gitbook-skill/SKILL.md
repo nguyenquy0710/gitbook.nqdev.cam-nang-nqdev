@@ -72,7 +72,7 @@ Rules:
 
 ### Lưu ý cho dự án này
 
-Xem `viet-bai-gitbook` skill để biết quy tắc cụ thể: 7 books gốc, mapping `opcode/`, SUMMARY.md path trỏ đến `opcode/<book>/`.
+Xem `viet-bai-gitbook` skill để biết quy tắc cụ thể: 7 books gốc, bài viết lưu trực tiếp vào thư mục book, SUMMARY.md path relative từ book.
 
 ## Frontmatter
 
