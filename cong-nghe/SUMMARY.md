@@ -139,6 +139,7 @@
       * [Ocelot](architecture-and-design/design-patterns/microservices/ocelot.md)
   * [Kiến Trúc Monolithic và Microservices: Lựa Chọn Phù Hợp Cho Dự Án Của Bạn](architecture-and-design/kien-truc-monolithic-va-microservices-lua-chon-phu-hop-cho-du-an-cua-ban.md)
   * [So Sánh Apache Parquet và CSV: Bảng So Sánh Chi Tiết, Ưu và Nhược Điểm](architecture-and-design/so-sanh-apache-parquet-va-csv-bang-so-sanh-chi-tiet-uu-va-nhuoc-diem.md)
+  * [Stream dữ liệu ngân hàng thời gian thực với PostgreSQL, Kafka và GoldenGate](databases/stream-du-lieu-ngan-hang-thoi-gian-thuc-postgresql-kafka-goldengate.md)
 * [DevSecOps & Automation](devsecops-and-automation/README.md)
   * [Ansible](devsecops-and-automation/ansible/README.md)
     * [Ansible: Giới thiệu](devsecops-and-automation/ansible/ansible-gioi-thieu.md)
