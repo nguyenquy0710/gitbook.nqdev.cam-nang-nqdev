@@ -1,3 +1,8 @@
+---
+name: gitbook-skill
+description: 
+---
+
 # Skill: gitbook-skill
 
 Hướng dẫn toàn diện về chỉnh sửa tài liệu GitBook trong môi trường external (CLI, IDE, Git-sync). Cung cấp syntax format, cấu hình và best practices để tạo và duy trì nội dung GitBook bên ngoài web UI.
