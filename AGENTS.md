@@ -14,7 +14,9 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 ## Writing
 
-Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables. Minimum per-article requirements:
+Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables. Use the `gitbook-writer` skill (within `.opencode/skills/gitbook-writer/`) for generating structured model/service comparison tables with `{% tabs %}` syntax — includes a reusable JSON-to-tabs script at `scripts/generate-model-tables.sh`.
+
+Minimum per-article requirements:
 
 - YAML `description:` front matter (<160 chars for SEO)
 - GitBook syntax (`{% code %}`, `{% tabs %}`, `{% endcode %}`)
