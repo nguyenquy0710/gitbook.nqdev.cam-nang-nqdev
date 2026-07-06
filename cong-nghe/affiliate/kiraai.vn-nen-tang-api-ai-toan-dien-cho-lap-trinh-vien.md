@@ -9,48 +9,55 @@ description: >-
 
 ## 1. Tổng quan dịch vụ <a href="#tong-quan" id="tong-quan"></a>
 
-Kira AI cung cấp 4 nhóm dịch vụ chính thông qua API tương thích SDK OpenAI. Danh sách model được tải trực tiếp từ API:
+Kira AI cung cấp 4 nhóm dịch vụ chính thông qua API tương thích SDK OpenAI. Dưới đây là danh sách các model hiện có:
 
-<div id="kira-models-widget"><p>Đang tải danh sách model...</p></div>
-
-<script>
-(function() {
-  var w = document.getElementById('kira-models-widget');
-  if (!w) return;
-  fetch('https://kiraai.vn/api/v1/models').then(function(r) { return r.json(); }).then(function(data) {
-    var models = data.data;
-    var pageSize = 10, page = 1;
-
-    function fmt(n) { return n ? n.toLocaleString('vi-VN') + 'đ / 1M tkn' : 'Miễn phí'; }
-
-    function render() {
-      var start = (page - 1) * pageSize, end = start + pageSize, list = models.slice(start, end), total = Math.ceil(models.length / pageSize);
-      var html = '<table><thead><tr><th>Model</th><th>Loại</th><th>Giá đầu vào</th><th>Giá đầu ra</th><th>Trạng thái</th></tr></thead><tbody>';
-      for (var i = 0; i < list.length; i++) {
-        var m = list[i];
-        html += '<tr><td><strong>' + m.name + '</strong>' + (m.description ? '<br><small>' + m.description + '</small>' : '') + '</td><td>' + m.type + '</td><td>' + fmt(m.price_input_vnd) + '</td><td>' + fmt(m.price_output_vnd) + '</td><td>' + (m.is_free ? '🆓 Free' : m.status === 'active' ? '✅ Hoạt động' : '🔧 Bảo trì') + '</td></tr>';
-      }
-      html += '</tbody></table>';
-      html += '<div style="display:flex;justify-content:center;align-items:center;gap:12px;margin-top:10px">';
-      html += '<button onclick="window.kiraModelsPage--;window.kiraModelsRender()"' + (page <= 1 ? ' disabled' : '') + '>⬅ Trước</button>';
-      html += '<span>Trang ' + page + '/' + total + '</span>';
-      html += '<button onclick="window.kiraModelsPage++;window.kiraModelsRender()"' + (page >= total ? ' disabled' : '') + '>Sau ➡</button>';
-      html += '</div>';
-      w.innerHTML = html;
-    }
-    window.kiraModelsPage = page;
-    window.kiraModelsRender = render;
-    render();
-  })['catch'](function() { w.innerHTML = '<p>Không thể tải danh sách model. <a href="https://kiraai.vn/documents">Xem tại đây</a>.</p>'; });
-})();
-</script>
+{% tabs %}
+{% tab title="Kira Models 🇻🇳" %}
+| Model | Loại | Giá đầu vào | Giá đầu ra | Trạng thái |
+|---|---|---|---|---|
+| **Kira 3.5 Pro** | chat | 20.000đ / 1M tkn | 150.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 3.5 Flash** | chat | 5.000đ / 1M tkn | 20.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 2.5 Pro** | chat | 6.500đ / 1M tkn | 45.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 2.5 Flash** | chat | 2.600đ / 1M tkn | 6.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 3.0 Image** | image | 11.000đ / 1M tkn | 60.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 2.0 Image** | image | 10.000đ / 1M tkn | 45.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 3.0 Video** | video | 3.000đ / giây | — | 🔧 Bảo trì |
+| **Kira 3.0 TTS** | audio | 20.000đ / 1M tkn | 400.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira 2.0 TTS** | audio | 10.000đ / 1M tkn | 200.000đ / 1M tkn | ✅ Hoạt động |
+| **Kira Mini 1.0** | chat | 🆓 Miễn phí | 🆓 Miễn phí | ✅ Hoạt động |
+{% endtab %}
+{% tab title="Partner Models 🌍" %}
+| Model | Loại | Giá đầu vào | Giá đầu ra | Trạng thái |
+|---|---|---|---|---|
+| **Claude Opus 4.8** | chat | 120.000đ / 1M tkn | 620.000đ / 1M tkn | ✅ Hoạt động |
+| **Claude Sonnet 5** | chat | 50.000đ / 1M tkn | 260.000đ / 1M tkn | ✅ Hoạt động |
+| **GPT 5.5** | chat | 120.000đ / 1M tkn | 760.000đ / 1M tkn | ✅ Hoạt động |
+| **GPT 5.4** | chat | 65.000đ / 1M tkn | 390.000đ / 1M tkn | ✅ Hoạt động |
+| **Gemini 3.5 Flash** | chat | 35.000đ / 1M tkn | 200.000đ / 1M tkn | ✅ Hoạt động |
+| **GLM 5.2** | chat | 29.999đ / 1M tkn | 100.000đ / 1M tkn | ✅ Hoạt động |
+| **GPT OSS 120B** | chat | 1.052đ / 1M tkn | 4.732đ / 1M tkn | ✅ Hoạt động |
+| **DeepSeek V4 Pro** | chat | 11.000đ / 1M tkn | 22.000đ / 1M tkn | ✅ Hoạt động |
+| **DeepSeek V4 Flash** | chat | 3.681đ / 1M tkn | 7.361đ / 1M tkn | ✅ Hoạt động |
+| **MiniMax M3** | chat | 7.000đ / 1M tkn | 27.000đ / 1M tkn | ✅ Hoạt động |
+| **Qwen 3.6 Flash** | chat | 3.900đ / 1M tkn | 22.000đ / 1M tkn | ✅ Hoạt động |
+| **Qwen 3.5 Flash** | chat | 2.600đ / 1M tkn | 10.000đ / 1M tkn | ✅ Hoạt động |
+| **Qwen 3.5 Omni Plus** | chat | 22.000đ / 1M tkn | 140.000đ / 1M tkn | ✅ Hoạt động |
+| **Qwen 3.7 Plus** | chat | 9.000đ / 1M tkn | 40.000đ / 1M tkn | ✅ Hoạt động |
+| **Qwen 3.7 Max** | chat | 31.000đ / 1M tkn | 90.000đ / 1M tkn | ✅ Hoạt động |
+| **Mimo V2.5** | chat | 9.000đ / 1M tkn | 45.000đ / 1M tkn | ✅ Hoạt động |
+| **Mimo V2.5 Pro** | chat | 22.000đ / 1M tkn | 69.000đ / 1M tkn | ✅ Hoạt động |
+| **Gemini 3 Pro Image Preview** | image | 22.000đ / 1M tkn | 300.000đ / 1M tkn | ✅ Hoạt động |
+| **Gemini 2.5 Flash Image** | image | 70.000đ / 1M tkn | 60.000đ / 1M tkn | ✅ Hoạt động |
+| **Gemini 3.1 Flash Image Preview** | image | 12.000đ / 1M tkn | 70.000đ / 1M tkn | ✅ Hoạt động |
+{% endtab %}
+{% endtabs %}
 
 Gói token Kira AI chỉ dùng cho model Kira (tiền tố `kira-`). Model đối tác (GPT, Claude, DeepSeek, Gemini...) thanh toán qua ví VND.
 
 ## 2. Bảng giá dịch vụ API <a href="#bang-gia" id="bang-gia"></a>
 
 | Gói dịch vụ | Giá/tháng | Tokens | Số ảnh ước tính | Số video 5 phút | Tính năng chính |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | **Dùng Thử** | 0đ | 50.000 | 0 ảnh | 0 video | Chat, Ảnh, Giọng nói |
 | **Kira Standard** | 50.000đ | 5.000.000 | ≈ 5.000 ảnh | ≈ 66 video | Tốc độ cao, không tạo Video |
 | **Kira Pro** | 100.000đ | 12.000.000 | ≈ 12.000 ảnh | ≈ 160 video | Đầy đủ tính năng + Video |
@@ -104,4 +111,3 @@ Kira AI là lựa chọn lý tưởng cho lập trình viên và doanh nghiệp 
 
 *Bài viết liên kết tiếp thị (Affiliate). Khi bạn đăng ký qua link trên, tác giả có thể nhận được hoa hồng từ nhà cung cấp.*
 
-<img src="https://img.vietqr.io/image/MB-VQRQAAXGO9340-gjSyj8L.png?amount=10000&accountName=NGUYEN%20HUU%20QUY&addInfo=Mua%20ca%20phe%20cho%20NQDEV" alt="☕️" data-size="line"> _Nếu thấy nội dung này bổ ích..._ [_**https://me.momo.vn/nhquydev**_](https://me.momo.vn/nhquydev)
