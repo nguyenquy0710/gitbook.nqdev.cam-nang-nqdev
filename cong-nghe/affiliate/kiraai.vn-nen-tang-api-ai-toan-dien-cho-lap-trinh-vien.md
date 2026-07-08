@@ -1,6 +1,34 @@
 ---
 description: >-
   Hướng dẫn đăng ký và sử dụng Kira AI - Nền tảng API AI toàn diện với Chat, Image, Video, TTS. Nhận 50k tokens miễn phí qua link affiliate.
+cover: >-
+  https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/kiraai-vn/kira-gallery-6a4e5c6c9bb86ccfe0ea9403.png
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+metaLinks:
+  canonical: ./
+  alternates:
+    - ./
 ---
 
 # Kira AI: Nền tảng API AI toàn diện cho lập trình viên và doanh nghiệp

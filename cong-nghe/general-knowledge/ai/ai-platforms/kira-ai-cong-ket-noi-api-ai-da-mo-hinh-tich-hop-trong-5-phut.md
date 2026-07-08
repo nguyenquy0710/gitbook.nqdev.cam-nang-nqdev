@@ -3,6 +3,9 @@ description: >-
   Kira AI — cổng kết nối API AI đa mô hình, tương thích OpenAI SDK. Hỗ trợ chat,
   tạo ảnh, video, TTS và WordPress Plugin. White-Label, không lock-in nhà cung
   cấp.
+cover: >-
+  https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/kiraai-vn/kira-gallery-6a4bdb73ff5a49c391c1102f.png
+coverY: 0
 ---
 
 # Kira AI — Cổng kết nối API AI đa mô hình, tích hợp trong 5 phút

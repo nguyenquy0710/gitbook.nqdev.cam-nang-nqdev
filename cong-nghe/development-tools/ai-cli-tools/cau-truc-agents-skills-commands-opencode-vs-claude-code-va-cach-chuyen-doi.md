@@ -31,7 +31,7 @@ OpenCode và Claude Code đều cho phép tùy chỉnh agent, skill và command 
 
 **JSON config:**
 
-\{% code title="opencode.json" overflow="wrap" lineNumbers="true" %\}
+{% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
 
 ```
 {
@@ -49,11 +49,11 @@ OpenCode và Claude Code đều cho phép tùy chỉnh agent, skill và command 
 }
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Markdown file:**
 
-\{% code title=".opencode/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %\}
+{% code title=".opencode/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -72,7 +72,7 @@ You are in code review mode. Focus on:
 - Security considerations
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Built-in agents:**
 
@@ -93,7 +93,7 @@ You are in code review mode. Focus on:
 
 
 
-\{% code title=".claude/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %\}
+{% code title=".claude/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -106,7 +106,7 @@ You are a code reviewer. When invoked, analyze the code and provide
 specific, actionable feedback on quality, security, and best practices.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Built-in subagents:**
 
@@ -147,7 +147,7 @@ specific, actionable feedback on quality, security, and best practices.
 
 Chuyển định dạng field:
 
-\{% code title="Claude Code → OpenCode" overflow="wrap" lineNumbers="true" %\}
+{% code title="Claude Code → OpenCode" overflow="wrap" lineNumbers="true" %}
 
 ```
 # Claude Code format
@@ -173,7 +173,7 @@ permission:
 ---
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Mapping model alias:**
 
@@ -201,7 +201,7 @@ Cả OpenCode và Claude Code đều tuân theo [Agent Skills](https://agentskil
 
 SKILL.md cơ bản hoạt động trên cả hai:
 
-\{% code title="SKILL.md (cross-compatible)" overflow="wrap" lineNumbers="true" %\}
+{% code title="SKILL.md (cross-compatible)" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -211,7 +211,7 @@ description: Create consistent releases and changelogs
 Draft release notes from merged PRs. Propose a version bump.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 #### Cách OpenCode xử lý Skills
 
@@ -222,7 +222,7 @@ Draft release notes from merged PRs. Propose a version bump.
 * **Cơ chế:** Dùng `skill` tool để discover skills.
 * **Permission:** Kiểm soát bằng `permission.skill` với glob patterns:
 
-\{% code title="opencode.json" overflow="wrap" lineNumbers="true" %\}
+{% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
 
 ```
 {
@@ -236,11 +236,11 @@ Draft release notes from merged PRs. Propose a version bump.
 }
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 * **Override per-agent:**
 
-\{% code title="opencode.json" overflow="wrap" lineNumbers="true" %\}
+{% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
 
 ```
 {
@@ -256,7 +256,7 @@ Draft release notes from merged PRs. Propose a version bump.
 }
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 * **Frontmatter fields hỗ trợ:** `name`, `description`, `license`, `compatibility`, `metadata`
 
@@ -269,7 +269,7 @@ Draft release notes from merged PRs. Propose a version bump.
 * **Commands merged vào skills:** File `.claude/commands/deploy.md` và skill `.claude/skills/deploy/SKILL.md` đều tạo `/deploy`
 * **Frontmatter fields phong phú hơn:**
 
-\{% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %\}
+{% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -284,7 +284,7 @@ arguments: [environment, version]
 Deploy $environment to version $version.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 | Field                                | Mô tả                                          |
 | ------------------------------------ | ---------------------------------------------- |
@@ -313,7 +313,7 @@ Deploy $environment to version $version.
 | `allowed-tools`            | ✗ (dùng permission)               | ✓                                         |
 | `arguments`                | ✗                                 | ✓                                         |
 | `paths`                    | ✗                                 | ✓                                         |
-| Shell injection            | ✗                                 | ✓ (`!`command\`\`)                        |
+| Shell injection            | ✗                                 | ✓ (`` `!`command` ``)                        |
 | Permission control         | Glob patterns, `permission.skill` | `Skill(name)` syntax, `skillOverrides`    |
 | Live reload                | ✓                                 | ✓                                         |
 
@@ -345,7 +345,7 @@ Deploy $environment to version $version.
 
 OpenCode có hệ thống commands riêng biệt với skills:
 
-\{% code title="JSON config" overflow="wrap" lineNumbers="true" %\}
+{% code title="JSON config" overflow="wrap" lineNumbers="true" %}
 
 ```
 {
@@ -360,9 +360,9 @@ OpenCode có hệ thống commands riêng biệt với skills:
 }
 ```
 
-\{% endcode %\}
+{% endcode %}
 
-\{% code title="Markdown format" overflow="wrap" lineNumbers="true" %\}
+{% code title="Markdown format" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -374,12 +374,12 @@ Run the full test suite with coverage report and show any failures.
 Focus on the failing tests and suggest fixes.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Tính năng đặc biệt:**
 
 * `$ARGUMENTS` / `$1`, `$2` — positional arguments
-* `!`command\`\` — inject shell output trực tiếp vào prompt
+* `` `!`command` `` — inject shell output trực tiếp vào prompt
 * `@filename` — file reference, nội dung được include tự động
 * `agent` field — chọn agent thực thi command
 * `subtask: true` — force chạy trong subagent context
@@ -397,8 +397,8 @@ Tính năng commands đặc biệt của Claude Code:
 * `${CLAUDE_SESSION_ID}` — session ID variable
 * `${CLAUDE_SKILL_DIR}` — skill directory path
 * `${CLAUDE_PROJECT_DIR}` — project root path
-* `!`command\`\` — shell injection (giống OpenCode)
-* ` ```! ` — multi-line command block
+* `` `!`command` `` — shell injection (giống OpenCode)
+* <code>```! </code> — multi-line command block
 * User-invocable check via `user-invocable: false`
 * Skill stacking: `/code-review /fix-issue 123`
 
@@ -410,7 +410,7 @@ Tính năng commands đặc biệt của Claude Code:
 | ----------------- | ------------------------- | -------------------------------------------- |
 | File format       | JSON + Markdown           | Markdown (skills supersede)                  |
 | Arguments         | `$ARGUMENTS`, `$1`-`$9`   | `$ARGUMENTS`, `$1`, `$ARGUMENTS[N]`, `$name` |
-| Shell inject      | `!`command\`\`            | `!`command\`\` + ` ```! `                    |
+| Shell inject      | `` `!`command` ``            | `` `!`command` `` + <code>```! </code>                    |
 | File reference    | `@filename`               | ✗ (dùng `$ARGUMENTS`)                        |
 | Agent binding     | `agent` field + `subtask` | `context: fork` + `agent`                    |
 | Override built-in | ✓                         | ✓                                            |
@@ -424,7 +424,7 @@ Tính năng commands đặc biệt của Claude Code:
 
 **OpenCode → Claude Code:**
 
-\{% code title="OpenCode command" overflow="wrap" lineNumbers="true" %\}
+{% code title="OpenCode command" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -434,9 +434,9 @@ agent: build
 Create a new React component named $ARGUMENTS with TypeScript support.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
-\{% code title="Chuyển sang Claude Code skill" overflow="wrap" lineNumbers="true" %\}
+{% code title="Chuyển sang Claude Code skill" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -449,11 +449,11 @@ Create a new React component named $ARGUMENTS with TypeScript support.
 Include proper typing and basic structure.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 **Claude Code → OpenCode:**
 
-\{% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %\}
+{% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -464,9 +464,9 @@ allowed-tools: Bash(gh *)
 Deploy $ARGUMENTS to production. Run tests first.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
-\{% code title="Chuyển sang OpenCode command" overflow="wrap" lineNumbers="true" %\}
+{% code title="Chuyển sang OpenCode command" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -475,7 +475,7 @@ description: Deploy to production
 Deploy $ARGUMENTS to production. Run tests first.
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 > Lưu ý: OpenCode không hỗ trợ `disable-model-invocation`. Agent luôn có thể tự động gọi skill/command. Để giới hạn, dùng `permission` trong config.
 
@@ -574,7 +574,7 @@ cat .opencode/skills/my-skill/SKILL.md
 
 **Fix:** Chuyển skill thành command của agent:
 
-\{% code title="OpenCode command thay thế" overflow="wrap" lineNumbers="true" %\}
+{% code title="OpenCode command thay thế" overflow="wrap" lineNumbers="true" %}
 
 ```
 ---
@@ -588,7 +588,7 @@ Research $ARGUMENTS thoroughly:
 3. Summarize findings
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 #### Vấn đề 3: `allowed-tools` trong Claude Code skill không có hiệu lực trên OpenCode
 
@@ -598,7 +598,7 @@ Research $ARGUMENTS thoroughly:
 
 **Fix:**
 
-\{% code title="opencode.json" overflow="wrap" lineNumbers="true" %\}
+{% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
 
 ```
 {
@@ -614,7 +614,7 @@ Research $ARGUMENTS thoroughly:
 }
 ```
 
-\{% endcode %\}
+{% endcode %}
 
 #### Vấn đề 4: Claude Code dùng model alias (`sonnet`), OpenCode yêu cầu full ID
 
