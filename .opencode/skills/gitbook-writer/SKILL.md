@@ -32,7 +32,7 @@ Tạo bảng dữ liệu dạng tab (`{% tabs %}`) cho GitBook. Tối ưu cho da
 
 ## Script sinh bảng tự động
 
-Script `scripts/generate-model-tables.sh` nhận JSON đầu vào, xuất ra định dạng GitBook tabs.
+Script `scripts/generate-model-tables.sh` (Bash script) nhận JSON đầu vào, xuất ra định dạng GitBook tabs. Python 3 chỉ dùng để parse JSON.
 
 ### Cách dùng
 
@@ -80,7 +80,10 @@ cat models.json | .opencode/skills/gitbook-writer/scripts/generate-model-tables.
 
 Xem file `references/model-table-template.md` cho full template và ví dụ.
 
-## Quy ước trình bày
+## Quy ước trình bày:
+- Nếu bảng quá lớn: dùng `<details>` ẩn bớt hoặc tách tab.
+- Quản lý icon tùy chỉnh tại `.gitbook/assets/`.
+- Tích hợp `viet-bai-gitbook`: skill này tạo tab/bảng, sau đó chèn vào bài viết theo quy tắc của `viet-bai-gitbook`.
 
 | Thành phần | Format |
 |---|---|

@@ -46,6 +46,14 @@ structure:
   summary: ./SUMMARY.md
 
 redirects:
+
+### Additional configuration
+- `plugins:` (e.g., `search`, `gitbook-plugin-...`)
+- `output:` directory for build (default `/_book`)
+- Khi thêm book mới, cập nhật root `SUMMARY.md` và `book.json` để tích hợp navigation toàn site.
+- Tên file kebab-case có dấu, tránh ký tự đặc biệt.
+- Giải quyết xung đột: `git pull --rebase` hoặc `git merge`.
+- Độ sâu SUMMARY.md tối đa 3 cấp, tránh `* * * *`.
   old-page: new-page.md
   help: support.md
 ```
@@ -93,7 +101,7 @@ layout:
   width: default  # or 'wide'
   title:
     visible: true
-  description:
+description: Quản lý và chỉnh sửa nội dung GitBook qua Git
     visible: true
   tableOfContents:
     visible: true
