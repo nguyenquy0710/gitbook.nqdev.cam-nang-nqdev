@@ -207,6 +207,7 @@
   * [AI](general-knowledge/ai/README.md)
     * [AI Platforms](general-knowledge/ai/ai-platforms/README.md)
       * [Kira AI — Cổng kết nối API AI đa mô hình, tích hợp trong 5 phút](general-knowledge/ai/ai-platforms/kira-ai-cong-ket-noi-api-ai-da-mo-hinh-tich-hop-trong-5-phut.md)
+      * [Tích hợp Kira AI vào VS Code để Vibe Coding](general-knowledge/ai/ai-platforms/tich-hop-kira-ai-vao-vs-code-de-vibe-coding.md)
       * [Giới thiệu LLM7: API chat tương thích OpenAI, tích hợp trong 5 phút](general-knowledge/ai/ai-platforms/gioi-thieu-llm7-api-chat-tuong-thich-openai-tich-hop-trong-5-phut.md)
     * [API Services](general-knowledge/ai/api-services/README.md)
       * [OpenSpec – Chấm dứt "Vibe Coding", đưa AI Coding vào quy trình chuyên nghiệp](general-knowledge/ai/api-services/openspec-cham-dut-vibe-coding-dua-ai-coding-vao-quy-trinh-chuyen-nghiep.md)

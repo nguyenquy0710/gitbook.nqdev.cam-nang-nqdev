@@ -12,7 +12,7 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 ## Writing
 
-Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables.
+Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables. Use `gitbook-writer` for structured multi-tab comparison tables (`{% tabs %}`).
 
 Minimum per-article requirements:
 
@@ -35,5 +35,5 @@ Or trigger `deploy_gitbook.yml` workflow in `.github/workflows/`.
 
 ## Config
 
-- `.opencode/` — OpenCode plugin (`@opencode-ai/plugin`) + `viet-bai-gitbook` skill
+- `.opencode/` — OpenCode plugin (`@opencode-ai/plugin`) + `viet-bai-gitbook` and `gitbook-writer` skills
 - `.github/workflows/deploy_gitbook.yml` — manual GH Pages deploy with Node 14
