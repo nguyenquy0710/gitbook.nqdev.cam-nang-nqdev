@@ -11,3 +11,7 @@ Tổng hợp kiến thức, hướng dẫn và tài liệu tham khảo về côn
 - **prompts** — Prompt engineering
 
 Xây dựng bằng GitBook, deploy lên GitHub Pages.
+
+**Phiên bản:** v1.1.1
+
+**Release:** [Releases](https://github.com/nguyenquy0710/gitbook.nqdev.cam-nang-nqdev/releases)
