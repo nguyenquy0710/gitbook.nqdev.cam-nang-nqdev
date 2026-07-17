@@ -4,17 +4,15 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 ## Content
 
-7 root "books" (`cheat-sheet/`, `cong-nghe/`, `cuoc-song/`, `devsecops/`, `hoi-dap/`, `lien-he/`, `prompts/`). Each has `SUMMARY.md` (nav TOC) and `README.md` (intro). No `book.json` — GitBook uses defaults.
+7 root "books" (`cheat-sheet/`, `cong-nghe/`, `cuoc-song/`, `devsecops/`, `hoi-dap/`, `lien-he/`, `prompts/`). Each has `SUMMARY.md` (nav TOC) and `README.md` (intro). Root `SUMMARY.md` and `book.json` tie them together for a combined build.
 
 **New articles go directly into the source book's directory** (e.g. `cong-nghe/<sub-dir>/bai-viet.md`), following the existing tree structure. Never create `opcode/`.
 
 **Build artifact:** `_book/` (not committed; no root `.gitignore`; `.opencode/.gitignore` ignores `node_modules`, `package-lock.json`, `bun.lock`). `.gitbook/` dirs may appear after local `gitbook install` runs.
 
-**CI gotcha:** Workflow runs `gitbook install && gitbook build` from repository root with no root `SUMMARY.md` or `book.json`. This likely produces an empty/broken site. Per-book build (`cd <book> && gitbook install && gitbook build`) is the reliable approach.
-
 ## Writing
 
-Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables. Use the `gitbook-writer` skill (within `.opencode/skills/gitbook-writer/`) for generating structured model/service comparison tables with `{% tabs %}` syntax — includes a reusable JSON-to-tabs script at `scripts/generate-model-tables.sh`.
+Load the `viet-bai-gitbook` skill for full style guide, templates, and per-book content tables.
 
 Minimum per-article requirements:
 

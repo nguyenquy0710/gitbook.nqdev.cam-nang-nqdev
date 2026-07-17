@@ -210,6 +210,7 @@
       * [Giới thiệu LLM7: API chat tương thích OpenAI, tích hợp trong 5 phút](general-knowledge/ai/ai-platforms/gioi-thieu-llm7-api-chat-tuong-thich-openai-tich-hop-trong-5-phut.md)
     * [API Services](general-knowledge/ai/api-services/README.md)
       * [OpenSpec – Chấm dứt "Vibe Coding", đưa AI Coding vào quy trình chuyên nghiệp](general-knowledge/ai/api-services/openspec-cham-dut-vibe-coding-dua-ai-coding-vao-quy-trinh-chuyen-nghiep.md)
+      * [GitHub Spec Kit — Khung cảnh hỗ trợ Spec-Driven Development với AI Coding Agent](general-knowledge/ai/api-services/github-spec-kit-khung-canh-ho-tro-spec-driven-development.md)
       * [Danh sách Chat AI miễn phí](general-knowledge/ai/api-services/danh-sach-chat-ai-mien-phi.md)
     * [SERIES: AI Driven Automation](general-knowledge/ai/series-ai-driven-automation.md)
     * [Skyvern](general-knowledge/ai/skyvern/README.md)
