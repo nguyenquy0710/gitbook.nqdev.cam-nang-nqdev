@@ -186,6 +186,8 @@
 * [AI CLI tools](development-tools/ai-cli-tools/README.md)
   * [Claude Code](development-tools/ai-cli-tools/claude-code/README.md)
     * [Claude Code Cheatsheet (2026)](development-tools/ai-cli-tools/claude-code/claude-code-cheatsheet-2026.md)
+    * [Các lệnh Claude Code hữu ích nhất cho lập trình viên](development-tools/ai-cli-tools/claude-code/lenh-claude-code-huu-ich-nhat-cho-lap-trinh-vien.md)
+    * [Hướng dẫn cấu hình settings.json của Claude Code](development-tools/ai-cli-tools/claude-code/cau-hinh-settings-json-claude-code.md)
   * [So sánh OpenCode và Claude Code: Nên chọn AI Coding Agent nào?](development-tools/ai-cli-tools/so-sanh-opencode-va-claude-code-nen-chon-ai-coding-agent-nao.md)
   * [Cấu trúc Agents, Skills, Commands: OpenCode vs Claude Code — và cách chuyển đổi](development-tools/ai-cli-tools/cau-truc-agents-skills-commands-opencode-vs-claude-code-va-cach-chuyen-doi.md)
 * [Open Source & Templates](open-source-and-templates/README.md)
