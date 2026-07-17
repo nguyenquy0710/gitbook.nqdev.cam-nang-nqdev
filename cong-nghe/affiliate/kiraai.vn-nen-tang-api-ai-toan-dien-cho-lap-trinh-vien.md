@@ -37,6 +37,8 @@ metaLinks:
 
 ## 1. Tổng quan dịch vụ <a href="#tong-quan" id="tong-quan"></a>
 
+<figure><img src="https://kiraai.vn/files/2026/07/kira-ai-tao-anh-bia-1784194806813.webp" alt="Kira AI - Nền tảng API AI toàn diện"><figcaption><p>Tích hợp Kira AI vào VS Code để vibe coding chữa cháy</p></figcaption></figure>
+
 Kira AI cung cấp 4 nhóm dịch vụ chính thông qua API tương thích SDK OpenAI. Dưới đây là danh sách các model hiện có:
 
 {% tabs %}
