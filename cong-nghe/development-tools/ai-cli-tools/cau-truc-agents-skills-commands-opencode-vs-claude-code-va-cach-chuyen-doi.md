@@ -10,8 +10,6 @@ OpenCode và Claude Code đều cho phép tùy chỉnh agent, skill và command 
 
 ### Bảng so sánh tổng quan
 
-
-
 | Thành phần              | OpenCode                                                        | Claude Code                                               |
 | ----------------------- | --------------------------------------------------------------- | --------------------------------------------------------- |
 | **Agents**              | `opencode.json` hoặc `.opencode/agents/*.md`                    | `.claude/agents/*.md`                                     |
@@ -23,16 +21,11 @@ OpenCode và Claude Code đều cho phép tùy chỉnh agent, skill và command 
 
 ### 1. Agents
 
-
-
 #### Cách OpenCode định nghĩa Agent
-
-
 
 **JSON config:**
 
 {% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
-
 ```
 {
   "agent": {
@@ -48,13 +41,11 @@ OpenCode và Claude Code đều cho phép tùy chỉnh agent, skill và command 
   }
 }
 ```
-
 {% endcode %}
 
 **Markdown file:**
 
 {% code title=".opencode/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Reviews code for quality and best practices
@@ -71,7 +62,6 @@ You are in code review mode. Focus on:
 - Performance implications
 - Security considerations
 ```
-
 {% endcode %}
 
 **Built-in agents:**
@@ -91,10 +81,7 @@ You are in code review mode. Focus on:
 
 #### Cách Claude Code định nghĩa Agent
 
-
-
 {% code title=".claude/agents/code-reviewer.md" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 name: code-reviewer
@@ -105,7 +92,6 @@ model: sonnet
 You are a code reviewer. When invoked, analyze the code and provide
 specific, actionable feedback on quality, security, and best practices.
 ```
-
 {% endcode %}
 
 **Built-in subagents:**
@@ -126,8 +112,6 @@ specific, actionable feedback on quality, security, and best practices.
 
 #### So sánh chi tiết Agent
 
-
-
 | Field         | OpenCode                                                         | Claude Code                                                                              |
 | ------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Mode          | `primary` / `subagent` / `all`                                   | Không có mode tường minh — dùng frontmatter + CLI flag                                   |
@@ -143,12 +127,9 @@ specific, actionable feedback on quality, security, and best practices.
 
 #### Cách chuyển đổi Agent từ Claude Code sang OpenCode
 
-
-
 Chuyển định dạng field:
 
 {% code title="Claude Code → OpenCode" overflow="wrap" lineNumbers="true" %}
-
 ```
 # Claude Code format
 ---
@@ -172,7 +153,6 @@ permission:
   read: allow
 ---
 ```
-
 {% endcode %}
 
 **Mapping model alias:**
@@ -191,18 +171,13 @@ permission:
 
 ### 2. Skills
 
-
-
 #### Agent Skills Standard
-
-
 
 Cả OpenCode và Claude Code đều tuân theo [Agent Skills](https://agentskills.io) open standard. Điều này có nghĩa: **SKILL.md format cơ bản tương thích giữa hai công cụ**.
 
 SKILL.md cơ bản hoạt động trên cả hai:
 
 {% code title="SKILL.md (cross-compatible)" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 name: git-release
@@ -210,12 +185,9 @@ description: Create consistent releases and changelogs
 ---
 Draft release notes from merged PRs. Propose a version bump.
 ```
-
 {% endcode %}
 
 #### Cách OpenCode xử lý Skills
-
-
 
 * **Path:** `.opencode/skills/<name>/SKILL.md` hoặc `~/.config/opencode/skills/<name>/SKILL.md`
 * **Compatibility layer:** OpenCode cũng đọc `.claude/skills/<name>/SKILL.md` và `.agents/skills/<name>/SKILL.md`
@@ -223,7 +195,6 @@ Draft release notes from merged PRs. Propose a version bump.
 * **Permission:** Kiểm soát bằng `permission.skill` với glob patterns:
 
 {% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
-
 ```
 {
   "permission": {
@@ -235,13 +206,11 @@ Draft release notes from merged PRs. Propose a version bump.
   }
 }
 ```
-
 {% endcode %}
 
 * **Override per-agent:**
 
 {% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
-
 ```
 {
   "agent": {
@@ -255,14 +224,11 @@ Draft release notes from merged PRs. Propose a version bump.
   }
 }
 ```
-
 {% endcode %}
 
 * **Frontmatter fields hỗ trợ:** `name`, `description`, `license`, `compatibility`, `metadata`
 
 #### Cách Claude Code xử lý Skills
-
-
 
 * **Path:** `.claude/skills/<name>/SKILL.md`, `~/.claude/skills/<name>/SKILL.md`, `~/.claude/commands/<name>.md` (legacy)
 * **Bundled skills:** `/code-review`, `/batch`, `/debug`, `/loop`, `/run`, `/verify`
@@ -270,7 +236,6 @@ Draft release notes from merged PRs. Propose a version bump.
 * **Frontmatter fields phong phú hơn:**
 
 {% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 name: deploy
@@ -283,7 +248,6 @@ arguments: [environment, version]
 ---
 Deploy $environment to version $version.
 ```
-
 {% endcode %}
 
 | Field                                | Mô tả                                          |
@@ -300,8 +264,6 @@ Deploy $environment to version $version.
 
 #### So sánh chi tiết Skills
 
-
-
 | Field                      | OpenCode                          | Claude Code                               |
 | -------------------------- | --------------------------------- | ----------------------------------------- |
 | Path                       | `.opencode/skills/`               | `.claude/skills/`                         |
@@ -313,13 +275,11 @@ Deploy $environment to version $version.
 | `allowed-tools`            | ✗ (dùng permission)               | ✓                                         |
 | `arguments`                | ✗                                 | ✓                                         |
 | `paths`                    | ✗                                 | ✓                                         |
-| Shell injection            | ✗                                 | ✓ (`` `!`command` ``)                        |
+| Shell injection            | ✗                                 | ✓ (`` `!`command` ``)                     |
 | Permission control         | Glob patterns, `permission.skill` | `Skill(name)` syntax, `skillOverrides`    |
 | Live reload                | ✓                                 | ✓                                         |
 
 #### Cách chuyển đổi Skills giữa hai công cụ
-
-
 
 **Từ Claude Code sang OpenCode:**
 
@@ -337,16 +297,11 @@ Deploy $environment to version $version.
 
 ### 3. Commands
 
-
-
 #### OpenCode Commands
-
-
 
 OpenCode có hệ thống commands riêng biệt với skills:
 
 {% code title="JSON config" overflow="wrap" lineNumbers="true" %}
-
 ```
 {
   "command": {
@@ -359,11 +314,9 @@ OpenCode có hệ thống commands riêng biệt với skills:
   }
 }
 ```
-
 {% endcode %}
 
 {% code title="Markdown format" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Run tests with coverage
@@ -373,7 +326,6 @@ model: anthropic/claude-3-5-sonnet-20241022
 Run the full test suite with coverage report and show any failures.
 Focus on the failing tests and suggest fixes.
 ```
-
 {% endcode %}
 
 **Tính năng đặc biệt:**
@@ -386,8 +338,6 @@ Focus on the failing tests and suggest fixes.
 
 #### Claude Code Commands
 
-
-
 Claude Code **đã merge commands vào skills**. File `.claude/commands/deploy.md` vẫn hoạt động, nhưng khuyến nghị dùng `.claude/skills/deploy/SKILL.md` thay thế.
 
 Tính năng commands đặc biệt của Claude Code:
@@ -398,19 +348,17 @@ Tính năng commands đặc biệt của Claude Code:
 * `${CLAUDE_SKILL_DIR}` — skill directory path
 * `${CLAUDE_PROJECT_DIR}` — project root path
 * `` `!`command` `` — shell injection (giống OpenCode)
-* <code>```! </code> — multi-line command block
+* ` ```! ` — multi-line command block
 * User-invocable check via `user-invocable: false`
 * Skill stacking: `/code-review /fix-issue 123`
 
 #### So sánh Commands
 
-
-
 | Field             | OpenCode                  | Claude Code                                  |
 | ----------------- | ------------------------- | -------------------------------------------- |
 | File format       | JSON + Markdown           | Markdown (skills supersede)                  |
 | Arguments         | `$ARGUMENTS`, `$1`-`$9`   | `$ARGUMENTS`, `$1`, `$ARGUMENTS[N]`, `$name` |
-| Shell inject      | `` `!`command` ``            | `` `!`command` `` + <code>```! </code>                    |
+| Shell inject      | `` `!`command` ``         | `` `!`command` `` + ` ```! `                 |
 | File reference    | `@filename`               | ✗ (dùng `$ARGUMENTS`)                        |
 | Agent binding     | `agent` field + `subtask` | `context: fork` + `agent`                    |
 | Override built-in | ✓                         | ✓                                            |
@@ -420,12 +368,9 @@ Tính năng commands đặc biệt của Claude Code:
 
 #### Cách chuyển đổi Commands
 
-
-
 **OpenCode → Claude Code:**
 
 {% code title="OpenCode command" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Create a new component
@@ -433,11 +378,9 @@ agent: build
 ---
 Create a new React component named $ARGUMENTS with TypeScript support.
 ```
-
 {% endcode %}
 
 {% code title="Chuyển sang Claude Code skill" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Create a new React component
@@ -448,13 +391,11 @@ disable-model-invocation: true
 Create a new React component named $ARGUMENTS with TypeScript support.
 Include proper typing and basic structure.
 ```
-
 {% endcode %}
 
 **Claude Code → OpenCode:**
 
 {% code title="Claude Code skill" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Deploy to production
@@ -463,25 +404,20 @@ allowed-tools: Bash(gh *)
 ---
 Deploy $ARGUMENTS to production. Run tests first.
 ```
-
 {% endcode %}
 
 {% code title="Chuyển sang OpenCode command" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Deploy to production
 ---
 Deploy $ARGUMENTS to production. Run tests first.
 ```
-
 {% endcode %}
 
 > Lưu ý: OpenCode không hỗ trợ `disable-model-invocation`. Agent luôn có thể tự động gọi skill/command. Để giới hạn, dùng `permission` trong config.
 
 ### 4. Compatibility Layer — OpenCode đọc cấu hình Claude Code
-
-
 
 Đây là điểm mạnh nhất khi migrate từ Claude Code sang OpenCode: **OpenCode có compatibility layer đọc cấu hình Claude Code**.
 
@@ -499,11 +435,7 @@ Tuy nhiên, chiều ngược lại **không đúng**: Claude Code **không đọ
 
 ### 5. Migration Strategy Tổng Thể
 
-
-
 #### Strategy A: Dùng cả hai (khuyến nghị)
-
-
 
 Đặt tất cả cấu hình ở `.claude/` — OpenCode đọc được, Claude Code đọc được.
 
@@ -521,21 +453,15 @@ project-root/
 
 #### Strategy B: Chỉ dùng OpenCode
 
-
-
 Đặt skill ở `.opencode/skills/` và `.claude/skills/` mirror, hoặc tận dụng compatibility layer.
 
 **Không khuyến nghị** vì gây duplicate.
 
 #### Strategy C: Chỉ dùng Claude Code
 
-
-
 Đặt mọi thứ ở `.claude/`. Bỏ qua `.opencode/`.
 
 #### Checklist migrate
-
-
 
 | Item          | Claude Code → OpenCode                                                                             | OpenCode → Claude Code                                                            |
 | ------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -548,11 +474,7 @@ project-root/
 
 ### 6. Các vấn đề thường gặp và cách khắc phục
 
-
-
 #### Vấn đề 1: Skill không hiển thị trong OpenCode dù đã đặt đúng path
-
-
 
 **Nguyên nhân:** Skill đặt trong `.opencode/skills/` nhưng thiếu `name` hoặc `description` trong frontmatter, hoặc tên skill trùng với skill khác.
 
@@ -568,14 +490,11 @@ cat .opencode/skills/my-skill/SKILL.md
 
 #### Vấn đề 2: Claude Code skill dùng `context: fork` không hoạt động trên OpenCode
 
-
-
 **Nguyên nhân:** OpenCode không hỗ trợ `context: fork` và `agent` field trong skill frontmatter.
 
 **Fix:** Chuyển skill thành command của agent:
 
 {% code title="OpenCode command thay thế" overflow="wrap" lineNumbers="true" %}
-
 ```
 ---
 description: Run research in explore mode
@@ -587,19 +506,15 @@ Research $ARGUMENTS thoroughly:
 2. Read and analyze the code
 3. Summarize findings
 ```
-
 {% endcode %}
 
 #### Vấn đề 3: `allowed-tools` trong Claude Code skill không có hiệu lực trên OpenCode
-
-
 
 **Nguyên nhân:** OpenCode không có field này — dùng `permission` system thay thế.
 
 **Fix:**
 
 {% code title="opencode.json" overflow="wrap" lineNumbers="true" %}
-
 ```
 {
   "agent": {
@@ -613,12 +528,9 @@ Research $ARGUMENTS thoroughly:
   }
 }
 ```
-
 {% endcode %}
 
 #### Vấn đề 4: Claude Code dùng model alias (`sonnet`), OpenCode yêu cầu full ID
-
-
 
 **Fix:** Map alias sang full ID:
 
@@ -627,8 +539,6 @@ Research $ARGUMENTS thoroughly:
 * `haiku` → `anthropic/claude-haiku-4-20250514`
 
 #### Vấn đề 5: Command arguments không hoạt động giống nhau
-
-
 
 **OpenCode:**
 
@@ -646,11 +556,7 @@ Research $ARGUMENTS thoroughly:
 
 ### 7. Tóm tắt nhanh
 
-
-
 #### Agent config mapping
-
-
 
 ```
 # Claude Code
@@ -673,8 +579,6 @@ permission:
 
 #### File path mapping
 
-
-
 | Component    | OpenCode                           | Claude Code             | Cross-compat                     |
 | ------------ | ---------------------------------- | ----------------------- | -------------------------------- |
 | Agent        | `.opencode/agents/`                | `.claude/agents/`       | OpenCode đọc `.claude/agents/`   |
@@ -684,8 +588,6 @@ permission:
 | Config       | `opencode.json` / `opencode.jsonc` | `.claude/settings.json` | Không                            |
 
 #### Golden rule
-
-
 
 > Muốn dùng cả hai → đặt cấu hình ở `.claude/`. OpenCode đọc được, Claude Code đọc được. Chỉ OpenCode-specific config (model, provider) mới để trong `opencode.json`.
 
