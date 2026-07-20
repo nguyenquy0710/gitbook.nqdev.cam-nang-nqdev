@@ -248,6 +248,7 @@
     * [Hướng dẫn chi tiết tạo tài khoản Google bằng email công ty](general-knowledge/huong-dan/huong-dan-chi-tiet-tao-tai-khoan-google-bang-email-cong-ty.md)
   * [So Sánh](general-knowledge/so-sanh/README.md)
     * [So Sánh Varnish Cache, Memcached và Redis: Ba Công Cụ Caching Phổ Biến trong Tối Ưu Hóa Hiệu Suất](general-knowledge/so-sanh/so-sanh-varnish-cache-memcached-va-redis-ba-cong-cu-caching-pho-bien-trong-toi-uu-hoa-hieu-suat.md)
+    * [So sánh RabbitMQ, Kafka và Hangfire trong vai trò Message Queue](general-knowledge/so-sanh/so-sanh-rabbitmq-kafka-va-hangfire-lam-message-queue.md)
 * [Affiliate](affiliate/README.md)
   * [eSMS.vn: Giải pháp SMS Marketing hiệu quả cùng các chương trình ưu đãi hấp dẫn](affiliate/esms.vn-giai-phap-sms-marketing-hieu-qua-cung-cac-chuong-trinh-uu-dai-hap-dan.md)
   * [Kira AI: Nền tảng API AI toàn diện cho lập trình viên và doanh nghiệp](affiliate/kiraai.vn-nen-tang-api-ai-toan-dien-cho-lap-trinh-vien.md)

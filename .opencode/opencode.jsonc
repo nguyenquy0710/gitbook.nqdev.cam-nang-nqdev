@@ -4,22 +4,22 @@
     "cong-nghe-writer": {
       "description": "Viết bài mới vào book cong-nghe",
       "mode": "subagent",
-      "prompt": "{file:.opencode/agents/cong-nghe-writer.md}"
+      "prompt": "{file:agents/cong-nghe-writer.md}"
     },
     "hoi-dap-writer": {
       "description": "Viết bài mới vào book hoi-dap",
       "mode": "subagent",
-      "prompt": "{file:.opencode/agents/hoi-dap-writer.md}"
+      "prompt": "{file:agents/hoi-dap-writer.md}"
     },
     "cheat-sheet-writer": {
       "description": "Viết bài mới vào book cheat-sheet",
       "mode": "subagent",
-      "prompt": "{file:.opencode/agents/cheat-sheet-writer.md}"
+      "prompt": "{file:agents/cheat-sheet-writer.md}"
     },
     "lien-he-writer": {
       "description": "Viết bài mới vào book lien-he",
       "mode": "subagent",
-      "prompt": "{file:.opencode/agents/lien-he-writer.md}"
+      "prompt": "{file:agents/lien-he-writer.md}"
     }
   }
 }
