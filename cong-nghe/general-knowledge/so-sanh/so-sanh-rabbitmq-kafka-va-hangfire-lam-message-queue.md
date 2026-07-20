@@ -6,6 +6,8 @@ description: >-
 
 # So sánh RabbitMQ, Kafka và Hangfire trong vai trò Message Queue
 
+<figure><img src="https://cdn-s3-001.quyit.id.vn/gitbook/blogs/cong-nghe/general-knowledge/so-sanh/rabbitmq-kafka-hangfire-so-sanh-2026.png" alt="So sánh RabbitMQ, Kafka và Hangfire"><figcaption><p>So sánh RabbitMQ, Kafka và Hangfire trong vai trò Message Queue</p></figcaption></figure>
+
 Trong kiến trúc microservices và ứng dụng phân tán, **Message Queue** đóng vai trò trung gian giúp các service giao tiếp bất đồng bộ, giảm coupling và tăng độ ổn định. Ba công cụ thường được nhắc đến trong hệ sinh thái .NET là **RabbitMQ**, **Apache Kafka** và **Hangfire** — tuy nhiên chúng thuộc ba đẳng cấp hoàn toàn khác nhau. Bài viết này phân tích chi tiết để bạn chọn đúng công cụ cho đúng bài toán.
 
 ## Bảng so sánh nhanh
