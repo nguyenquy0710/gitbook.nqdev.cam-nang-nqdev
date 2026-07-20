@@ -232,37 +232,22 @@ Trong kiến trúc microservices và ứng dụng phân tán, **Message Queue** 
 
 ## Tiêu chí 1: Kiến trúc tổng quan
 
-### RabbitMQ — Broker-based messaging
-
-RabbitMQ hoạt động theo mô hình **broker-based** truyền thống. Producer không gửi message trực tiếp đến consumer mà thông qua RabbitMQ broker. Broker sử dụng cơ chế **Exchange → Binding → Queue** để route message đến đúng đích. Mô hình này giúp tách biệt hoàn toàn producer và consumer, đồng thời cho phép routing linh hoạt (fanout, topic, direct, headers).
-
-### Apache Kafka — Distributed commit log
-
-Kafka sử dụng mô hình **distributed commit log** — mỗi message được append vào một partition thuộc một topic. Các partition được phân phối trên nhiều broker trong cluster. Consumer đọc từ offset cụ thể trong log, và log tồn tại independent với consumer lifecycle. Đây là mô hình thiết kế cho **event streaming** và **data pipeline**.
-
-### Hangfire — Storage-based background jobs
-
-Hangfire không phải message broker truyền thống. Nó sử dụng **database as queue** — mỗi job được serialize và lưu vào bảng trong SQL Server (hoặc Redis). Worker process polling từ database để lấy job tiếp theo. Mô hình này rất đơn giản nhưng bị giới hạn bởi performance của database backend.
+| Khía cạnh | RabbitMQ | Apache Kafka | Hangfire |
+| --- | --- | --- | --- |
+| **Mô hình** | Broker-based messaging (AMQP) | Distributed commit log | Storage-based background jobs |
+| **Cách hoạt động** | Producer → Exchange → Binding → Queue → Consumer | Message append vào partition, consumer đọc theo offset | Job serialize vào DB, worker polling lấy job |
+| **Tách biệt producer/consumer** | Hoàn toàn — broker đóng vai trò trung gian | Hoàn toàn — log tồn tại independent với consumer | Không tách biệt — worker chạy trong cùng process |
+| **Routing** | Linh hoạt: fanout, topic, direct, headers | Theo topic + partition | Không có routing — enqueue trực tiếp vào queue |
+| **Thiết kế cho** | Messaging giữa các microservices | Event streaming, data pipeline | Background tasks, scheduled jobs trong .NET |
 
 ## Tiêu chí 2: Performance & Throughput
 
-### RabbitMQ
-
-* **~50,000–100,000 msg/giây** trên một node đơn.
-* **Latency:** Thường dưới 1ms trong cùng data center.
-* Phù hợp cho majority of applications, nhưng sẽ bottleneck khi throughput vượt quá 100K msg/s liên tục.
-
-### Apache Kafka
-
-* **>100,000 msg/giây per partition**, scale linear với số partition.
-* **Throughput:** Đạt hàng GB/giây thanks sequential disk I/O và zero-copy.
-* **Latency:** 2–10ms end-to-end — cao hơn RabbitMQ nhưng throughput gấp 5-10 lần.
-
-### Hangfire
-
-* **~500–2,000 job/giây** (SQL Server), **10,000+ job/giây** (Redis).
-* **Latency:** 100ms–1s cho job scheduling.
-* **Không phù hợp** cho high-throughput messaging — phù hợp background tasks.
+| Khía cạnh | RabbitMQ | Apache Kafka | Hangfire |
+| --- | --- | --- | --- |
+| **Throughput** | ~50K–100K msg/s (1 node) | >100K msg/s per partition, scale linear | ~500–2K job/s (SQL Server), ~10K+ job/s (Redis) |
+| **Latency** | <1ms (cùng data center) | 2–10ms end-to-end | 100ms–1s |
+| **Throughput tối đa** | ~100K msg/s liên tục | Hàng GB/giây (sequential I/O + zero-copy) | ~10K job/s (Redis backend) |
+| **Bottleneck** | Queue depth khi load cao | Network bandwidth, disk I/O | Database polling interval |
 
 {% hint style="info" %}
 Nếu hệ thống của bạn cần xử lý **>50,000 msg/giây**, RabbitMQ hoặc Kafka là lựa chọn phù hợp. Hangfire chỉ phù hợp cho <5,000 jobs/giây.
@@ -270,23 +255,12 @@ Nếu hệ thống của bạn cần xử lý **>50,000 msg/giây**, RabbitMQ ho
 
 ## Tiêu chí 3: Guaranteed Delivery
 
-### RabbitMQ
-
-* **At-least-once** với manual ack — consumer gửi `basic.ack` sau khi xử lý.
-* **At-most-once** khi dùng auto-ack (mất message nếu consumer crash).
-* **Exactly-once:** Không guarantee native — cần idempotent consumer + message dedup ở tầng ứng dụng.
-
-### Apache Kafka
-
-* **At-least-once** mặc định (consumer commit offset sau khi xử lý).
-* **Exactly-once semantics** từ Kafka 0.11+ với idempotent producer + transactional API.
-* Đây là lợi thế lớn của Kafka so với RabbitMQ trong các scenario yêu cầu chính xác tuyệt đối.
-
-### Hangfire
-
-* **At-least-once** — Hangfire server tự động retry job khi worker crash (dùng database state).
-* **Automatic retry** với configurable retry count (`RetryCount` property).
-* **Không có exactly-once** — cần idempotent job handler.
+| Chính sách | RabbitMQ | Apache Kafka | Hangfire |
+| --- | --- | --- | --- |
+| **At-least-once** | ✅ Mặc định với manual ack (`basic.ack`) | ✅ Mặc định (consumer commit offset sau xử lý) | ✅ Tự động retry khi worker crash (dùng DB state) |
+| **At-most-once** | ✅ Khi tắt auto-ack (chấp nhận mất message) | ✅ Khi commit offset trước khi xử lý | ❌ Không hỗ trợ |
+| **Exactly-once** | ❌ Không native — cần idempotent consumer + dedup | ✅ Native từ Kafka 0.11+ (idempotent producer + transactional API) | ❌ Không có — cần idempotent job handler |
+| **Retry mechanism** | Tự cấu hình qua consumer | Tự cấu hình qua consumer | Tự động với `RetryCount` property |
 
 ## Tiêu chí 4: Message Persistence & Replay
 
