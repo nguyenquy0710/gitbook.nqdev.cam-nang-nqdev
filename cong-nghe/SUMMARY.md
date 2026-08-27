@@ -90,6 +90,7 @@
 * [Container & Infra](container-and-infra/README.md)
   * [Docker](container-and-infra/docker/README.md)
     * [Getting Started with Docker](container-and-infra/docker/getting-started-with-docker.md)
+    * [Hướng dẫn di chuyển Containerd sang partition khác để giải phóng dung lượng root filesystem Ubuntu](container-and-infra/docker/di-chuyen-containerd-giai-phong-root-filesystem.md)
     * [Docker HUB](container-and-infra/docker/docker-hub/README.md)
       * [nqdev/nginx](container-and-infra/docker/docker-hub/nqdev-nginx.md)
       * [nqdev/postgres-pgagent](container-and-infra/docker/docker-hub/nqdev-postgres-pgagent.md)
