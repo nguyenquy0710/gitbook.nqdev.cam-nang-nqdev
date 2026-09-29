@@ -20,6 +20,11 @@
       "description": "Viết bài mới vào book lien-he",
       "mode": "subagent",
       "prompt": "{file:agents/lien-he-writer.md}"
+    },
+    "cuoc-song-writer": {
+      "description": "Viết bài mới vào book cuoc-song",
+      "mode": "subagent",
+      "prompt": "{file:agents/cuoc-song-writer.md}"
     }
   }
 }
