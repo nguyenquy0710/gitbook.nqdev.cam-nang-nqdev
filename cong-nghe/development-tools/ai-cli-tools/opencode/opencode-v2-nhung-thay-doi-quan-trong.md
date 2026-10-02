@@ -18,21 +18,31 @@ Bài này là phần **chuyên sâu về V2**. Nếu bạn mới bắt đầu, h
 
 ***
 
+{% hint style="warning" %}
+**Không cài song song mặc định.** Docs V2 ghi rõ: OpenCode 1 và OpenCode 2 **cùng dùng lệnh `opencode`** và không còn được cài song song theo mặc định. Phải gỡ bản V1 do package manager quản lý trước khi cài V2 — curl installer của V2 sẽ thay thế binary V1. Chi tiết trong bài [Migrate từ OpenCode V1 sang OpenCode V2](migrate-opencode-v1-sang-v2.md).
+{% endhint %}
+
 ## Bối cảnh: V2 đang ở đâu?
 
-* **Trạng thái:** V2 hiện ở **phiên bản Beta**.
-* **Binary riêng biệt:** V2 được duy trì dưới dạng binary `opencode2` tách khỏi V1.
-* **Chạy song song:** cho phép cài đặt và dùng cả hai phiên bản cùng lúc, **không bắt buộc** phải nâng cấp hay xoá bản cũ ngay lập tức.
+* **Trạng thái:** V2 hiện ở **phiên bản Beta** (bản phát hành docs: `2.0.6`).
+* **Cùng lệnh, cùng config:** V2 dùng chung lệnh `opencode` và đọc **cùng các vị trí cấu hình** với V1, nên cấu hình V1 hợp lệ vẫn chạy được.
+* **Đường nâng cấp:** V2 nâng cấp `share`, `permission` → `permissions`, `mcp` → `mcp.servers`, `compaction` → `keep`/`buffer`, `agent` → `agents`… nhưng tất cả đều **tùy chọn**.
 
 | | OpenCode V1 | OpenCode V2 |
 |:---|:---|:---|
-| Bản cài | `opencode` | `opencode2` |
+| Lệnh | `opencode` | `opencode` |
 | npm package | `opencode-ai` | `@opencode/cli` |
 | Homebrew tap | `anomalyco/tap/opencode` | `anomalyco/tap/opencode-v2` |
+| Cài từ curl | `https://opencode.ai/install` | `https://opencode.ai/v2/install` |
+| Docker tag | tag chung | `ghcr.io/anomalyco/opencode:2.0.0` |
 | Tài liệu | [opencode.ai/docs](https://opencode.ai/docs) | [opencode.ai/v2/docs](https://opencode.ai/v2/docs) |
 | Mô hình agent | Agent đơn lẻ ôm hết việc | Primary agent + subagents tách context |
 | Phân quyền | Theo từng tool đơn lẻ | `action` + `resource` + `effect` |
 | Plugin | API hiện hành | Server/Client API và Plugin API được tái thiết kế |
+
+{% hint style="info" %}
+Windows package manager **không được hỗ trợ** khi cài bằng npm/pnpm/yarn. Xem bài migration cho đầy đủ các lệnh cài theo từng công cụ.
+{% endhint %}
 
 ***
 
@@ -976,23 +986,27 @@ V2 từ chối trực tiếp các provider ID đã bị loại bỏ, kèm hướ
 ## Khuyến nghị chuyển đổi
 
 {% hint style="success" %}
-Nếu OpenCode V1 hiện tại đang **phục vụ công việc ổn định** và bạn **phụ thuộc nhiều vào custom plugin**, bạn **chưa cần vội chuyển đổi hoàn toàn**.
+Nếu OpenCode V1 hiện tại đang **phục vụ công việc ổn định** và bạn **phụ thuộc nhiều vào custom plugin**, bạn **chưa cần vội chuyển đổi**.
 
-V2 vẫn đang trong giai đoạn Beta. Giải pháp hợp lý nhất là **cài đặt và chạy song song hai phiên bản** để trải nghiệm những cải tiến về quản lý agent và phân quyền trước khi áp dụng chính thức.
+V2 vẫn đang trong giai đoạn Beta, nhưng bạn **không cần viết lại cấu hình**: V2 đọc cấu hình V1 từ **cùng vị trí** và tự normalize trong memory mà không ghi lại file gốc. Hãy backup cấu hình, thử V2 trên một project không critical, rồi mới chuyển dần.
 {% endhint %}
 
 ### Lộ trình đề xuất
 
-1. **Cài V2 song song** dưới binary `opencode2` — V1 giữ nguyên, không ảnh hưởng dự án đang chạy.
-2. **Chỉ thử trên một project không critical** để so sánh hành vi compaction, phân quyền và skills.
-3. **Audit plugin trước** — đây là rủi ro migration lớn nhất, vì Plugin API đã tái thiết kế.
-4. **Chuyển đổi cấu hình theo từng bước:** `permission` → `permissions`, `bash` → `shell`, `task` → `subagent`, MCP sang `mcp.servers`.
+1. **Backup `~/.config/opencode/`** — V1 và V2 dùng chung config locations, nên không tồn tại "bản sao song song" tự nhiên.
+2. **Gỡ V1 rồi cài V2** (cùng lệnh `opencode`), chỉ thử trên **một project không critical** để so sánh hành vi compaction, phân quyền và skills.
+3. **Audit plugin trước** — đây là rủi ro migration lớn nhất, vì Plugin API đã tái thiết kế và code V1 **không chạy** trong V2.
+4. **Chuyển đổi cấu hình là tùy chọn**, có thể làm dần: `permission` → `permissions`, `bash` → `shell`, `task` → `subagent`, MCP sang `mcp.servers`, `compaction` sang `keep`/`buffer`.
 5. **Thử nghiệm phân vai agent** trên project thật — đây là lợi ích lớn nhất của V2.
-6. **Áp dụng chính thức** khi V2 thoát Beta và plugin ecosystem đã ổn định.
+6. **Chỉ bỏ V1** sau khi đã xác nhận model, credentials, agents, permissions, MCP servers và plugins đều hoạt động đúng trên V2.
 
 {% hint style="danger" %}
 Trước khi chuyển đổi, hãy **backup `~/.config/opencode/`** và chắc chắn project của bạn đã **commit sạch** trên Git. Cả `/undo` và `/redo` đều phụ thuộc Git history.
 {% endhint %}
+
+{% content-ref url="migrate-opencode-v1-sang-v2.md" %}
+[Migrate từ OpenCode V1 sang OpenCode V2](migrate-opencode-v1-sang-v2.md)
+{% endcontent-ref %}
 
 ***
 
