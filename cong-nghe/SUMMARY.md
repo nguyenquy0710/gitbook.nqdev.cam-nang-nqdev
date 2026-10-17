@@ -80,6 +80,7 @@
     * [Tools](operating-systems/linux/tools/README.md)
       * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](operating-systems/linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
       * [ss - Socket Statistics](operating-systems/linux/tools/ss-socket-statistics.md)
+      * [tcpdump – Công cụ bắt và phân tích gói tin mạng trên Linux](operating-systems/linux/tools/tcpdump-cong-cu-bat-va-phan-tich-goi-tin-mang-tren-linux.md)
       * [FFmpeg](operating-systems/linux/tools/ffmpeg.md)
   * [Windows](operating-systems/windows/README.md)
     * [Quản lý khởi động cùng Windows bằng: Registry Editor](operating-systems/windows/quan-ly-khoi-dong-cung-windows-bang-registry-editor.md)
