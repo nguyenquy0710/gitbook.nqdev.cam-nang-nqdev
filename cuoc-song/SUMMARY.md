@@ -9,6 +9,7 @@
 * [Người thành công làm gì buổi sáng ?](sach/review-sach-nguoi-thanh-cong-lam-gi-buoi-sang.md)
 * [Làm chủ các mẫu thiết kế kinh điển trong lập trình](review-sach/lam-chu-cac-mau-thiet-ke-kinh-dien-trong-lap-trinh/README.md)
   * [Đánh giá chi tiết về cuốn sách](review-sach/lam-chu-cac-mau-thiet-ke-kinh-dien-trong-lap-trinh/danh-gia-chi-tiet-ve-cuon-sach.md)
+* [Tam Tự Kinh — Cuốn kinh 3 chữ dạy làm người](sach/tam-tu-kinh-giao-duc-hieu-hoc-va-lam-nguoi.md)
 
 ## 👨‍⚕️ Sức khỏe
 
