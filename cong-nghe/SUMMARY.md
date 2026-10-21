@@ -82,6 +82,7 @@
       * [ss - Socket Statistics](operating-systems/linux/tools/ss-socket-statistics.md)
       * [tcpdump – Công cụ bắt và phân tích gói tin mạng trên Linux](operating-systems/linux/tools/tcpdump-cong-cu-bat-va-phan-tich-goi-tin-mang-tren-linux.md)
       * [FFmpeg](operating-systems/linux/tools/ffmpeg.md)
+      * [ncdu – Công cụ phân tích dung lượng ổ đĩa tương tác trên Linux](operating-systems/linux/tools/ncdu-cong-cu-phan-tich-dung-luong-o-dia-tren-linux.md)
   * [Windows](operating-systems/windows/README.md)
     * [Quản lý khởi động cùng Windows bằng: Registry Editor](operating-systems/windows/quan-ly-khoi-dong-cung-windows-bang-registry-editor.md)
     * [Quản lý dịch vụ Windows bằng: net start và sc](operating-systems/windows/quan-ly-dich-vu-windows-bang-net-start-va-sc.md)
