@@ -79,7 +79,7 @@
       * [SMB - Bảo mật chia sẻ thư mục SMB trên Ubuntu với iptables và WireGuard](operating-systems/linux/ubuntu/smb-bao-mat-chia-se-thu-muc-smb-tren-ubuntu-voi-iptables-va-wireguard.md)
     * [Tools](operating-systems/linux/tools/README.md)
       * [smem – Công cụ đo lường bộ nhớ chính xác hơn trên Linux](operating-systems/linux/tools/smem-cong-cu-do-luong-bo-nho-chinh-xac-hon-tren-linux.md)
-      * [ss - Socket Statistics](operating-systems/linux/tools/ss-socket-statistics.md)
+      * [ss – Socket Statistics](operating-systems/linux/tools/ss-socket-statistics.md)
       * [tcpdump – Công cụ bắt và phân tích gói tin mạng trên Linux](operating-systems/linux/tools/tcpdump-cong-cu-bat-va-phan-tich-goi-tin-mang-tren-linux.md)
       * [FFmpeg](operating-systems/linux/tools/ffmpeg.md)
       * [ncdu – Công cụ phân tích dung lượng ổ đĩa tương tác trên Linux](operating-systems/linux/tools/ncdu-cong-cu-phan-tich-dung-luong-o-dia-tren-linux.md)
