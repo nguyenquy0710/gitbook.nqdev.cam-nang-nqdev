@@ -245,6 +245,36 @@ Cột `Recv-Q` tăng dần nghĩa là ứng dụng **không đọc dữ liệu �
 watch -n 1 'ss -tan state established | wc -l'
 ```
 
+### 8.4. Thống kê số lượng kết nối theo IP
+
+Khi cần biết IP nào đang tạo nhiều kết nối nhất (phát hiện abuse, DDoS, crawl, hoặc connection leak):
+
+**Đếm tổng số kết nối established trên một port:**
+
+```bash
+ss -tn state established '( sport = :443 )' | wc -l
+```
+
+**Thống kê và sắp xếp số lượng kết nối theo IP đối phương (peer/client):**
+
+```bash
+ss -tn state established '( sport = :443 )' | awk 'NR>1 {print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head
+```
+
+Kết quả dạng `437  110.35.77.1` — nghĩa là IP `110.35.77.1` đang có 437 kết nối.
+
+**Lọc kết hợp theo cổng và địa chỉ IP cụ thể:**
+
+```bash
+# IP đích (remote) là 110.35.77.1
+ss -tn state established '( sport = :443 and dst 110.35.77.1 )'
+
+# IP nguồn (local) là 110.35.77.1
+ss -tn state established '( sport = :443 and src 110.35.77.1 )'
+```
+
+> 💡 Cột `$4` = Local Address:Port, cột `$5` = Peer Address:Port. Chọn đúng cột tuỳ bạn muốn đếm theo IP local hay IP remote. Thêm `| head` để chỉ xem top N.
+
 ***
 
 ## 9. UDP
