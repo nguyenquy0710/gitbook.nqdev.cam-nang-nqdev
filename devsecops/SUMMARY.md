@@ -13,3 +13,5 @@
     * [Lab #3: Tạo ảnh với lệnh COPY](docker/dockerfile/lab-3-tao-anh-voi-lenh-copy.md)
   * [Services](docker/services/README.md)
     * [Harbor](docker/services/harbor.md)
+* [Pentest](pentest/README.md)
+  * [OWASP ZAP — Tìm hiểu và hướng dẫn nhập môn Pentest an toàn](pentest/owasp-zap-tim-hieu-va-huong-dan-su-dung-cho-nguoi-moi.md)

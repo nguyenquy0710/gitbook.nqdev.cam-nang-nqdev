@@ -210,6 +210,7 @@
     * [OpenCode - Personal AI Assistant](development-tools/ai-cli-tools/opencode/opencode-personal-ai-assistant.md)
     * [OpenCode V2: Những thay đổi quan trọng](development-tools/ai-cli-tools/opencode/opencode-v2-nhung-thay-doi-quan-trong.md)
     * [Migrate từ OpenCode V1 sang OpenCode V2](development-tools/ai-cli-tools/opencode/migrate-opencode-v1-sang-v2.md)
+    * [Hướng dẫn tạo plugin cho OpenCode V2](development-tools/ai-cli-tools/opencode/huong-dan-tao-plugin-cho-opencode.md)
   * [So sánh OpenCode và Claude Code: Nên chọn AI Coding Agent nào?](development-tools/ai-cli-tools/so-sanh-opencode-va-claude-code-nen-chon-ai-coding-agent-nao.md)
   * [Cấu trúc Agents, Skills, Commands: OpenCode vs Claude Code — và cách chuyển đổi](development-tools/ai-cli-tools/cau-truc-agents-skills-commands-opencode-vs-claude-code-va-cach-chuyen-doi.md)
   * [codebase-memory-mcp: giúp coding agent hiểu codebase nhanh hơn ⚡](development-tools/ai-cli-tools/codebase-memory-mcp-giup-coding-agent-hieu-codebase-nhanh-hon.md)
