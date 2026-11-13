@@ -85,7 +85,7 @@ Rules:
 
 ### Lưu ý cho dự án này
 
-Xem `viet-bai-gitbook` skill để biết quy tắc cụ thể: 7 books gốc, bài viết lưu trực tiếp vào thư mục book, SUMMARY.md path relative từ book.
+Xem `viet-bai-gitbook` skill để biết quy tắc cụ thể: 6 books gốc, bài viết lưu trực tiếp vào thư mục book, SUMMARY.md path relative từ book.
 
 ## Frontmatter
 
@@ -368,4 +368,4 @@ Best practices:
 
 ## Xem thêm
 
-Skill `viet-bai-gitbook` trong cùng project — chứa quy tắc viết tiếng Việt, cấu trúc 7 books, và quy trình đăng bài cụ thể cho dự án này.
+Skill `viet-bai-gitbook` trong cùng project — chứa quy tắc viết tiếng Việt, cấu trúc 6 books, và quy trình đăng bài cụ thể cho dự án này.
