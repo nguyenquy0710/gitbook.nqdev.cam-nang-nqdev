@@ -139,7 +139,31 @@ Git là một công cụ để:
 
 ***
 
-## **10. Tài nguyên tham khảo**
+## **10. Git Flow (Quy trình nhánh)**
+
+Git Flow là mô hình phân nhánh phổ biến, yêu cầu cài đặt thêm `git-flow` (AVH Edition).
+
+* Cài đặt (Ubuntu):
+* ```bash
+  sudo apt install git-flow
+  ```
+
+| **Lệnh**                               | **Chức năng**                                                          |
+| -------------------------------------- | ---------------------------------------------------------------------- |
+| `git flow init`                        | Khởi tạo Git Flow, hỏi tương tác tên các nhánh (master/develop/...).  |
+| `git flow init -d`                     | Khởi tạo Git Flow với các giá trị mặc định, không hỏi tương tác.      |
+| `git flow feature start <tên>`          | Tạo nhánh feature mới từ develop.                                      |
+| `git flow feature finish <tên>`        | Gộp feature vào develop và xóa nhánh feature.                          |
+| `git flow release start <version>`      | Tạo nhánh release từ develop.                                          |
+| `git flow release finish <version>`    | Gộp release vào master và develop, tạo tag.                            |
+| `git flow hotfix start <version>`      | Tạo nhánh hotfix từ master.                                            |
+| `git flow hotfix finish <version>`     | Gộp hotfix vào master và develop, tạo tag.                            |
+
+> **Mẹo:** Dùng `git flow init -d` khi muốn thiết lập nhanh với tên nhánh mặc định (`master`, `develop`, `feature/`, `release/`, `hotfix/`, `support/`, `versiontag`), tránh phải trả lời từng câu hỏi.
+
+***
+
+## **11. Tài nguyên tham khảo**
 
 * [Git Cheat Sheet của GitHub](https://education.github.com/git-cheat-sheet-education.pdf)
 * [Git Cheat Sheet của GitLab](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
