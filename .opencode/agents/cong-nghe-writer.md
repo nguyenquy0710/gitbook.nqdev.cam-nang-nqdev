@@ -30,7 +30,8 @@ The `cong-nghe/` tree (do NOT create a new top-level section unless nothing fits
 - SQL Server / Elasticsearch / MongoDB → `databases/`
 - .NET / C# / ASP.NET / Node.js / React / NextJS → `languages-and-frameworks/`
 - NGINX / HAProxy / VPN / Localtunnel → `infrastructure-and-networking/`
-- Ansible / JMeter / ETL → `devsecops-and-automation/`
+- Ansible / JMeter / ETL → `automation/`
+- Docker / VMware / Pentest → `devsecops/`
 - Obsidian / Playwright / AI CLI / WinDbg / DocFX / Turborepo → `development-tools/`
 - AI / tin tức / so sánh / hướng dẫn chung → `general-knowledge/`
 - Design patterns / microservices / CQRS → `architecture-and-design/`

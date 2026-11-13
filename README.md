@@ -23,14 +23,13 @@
 
 ## 📚 Nội dung
 
-Dự án được tổ chức thành 7 "book" (sách) con, mỗi book có `SUMMARY.md` (mục lục) và `README.md` (giới thiệu):
+Dự án được tổ chức thành 6 "book" (sách) con, mỗi book có `SUMMARY.md` (mục lục) và `README.md` (giới thiệu):
 
 | Book | Mô tả |
 |------|-------|
 | [cheat-sheet](cheat-sheet/) | Lệnh & thủ thuật nhanh (Git, Bash, Redis, HAProxy, Windows, …) |
 | [cong-nghe](cong-nghe/) | Công nghệ & công cụ (lập trình, database, hạ tầng, AI, …) |
 | [cuoc-song](cuoc-song/) | Kỹ năng mềm, sách và cuộc sống |
-| [devsecops](devsecops/) | Bảo mật & DevOps (Docker, Ansible, VMware, …) |
 | [hoi-dap](hoi-dap/) | Hỏi đáp (SQL, chia sẻ kinh nghiệm) |
 | [lien-he](lien-he/) | Liên hệ, chính sách, fanpage |
 | [prompts](prompts/) | Prompt engineering (ChatGPT, Gemini, coding, …) |
@@ -45,7 +44,6 @@ Dự án được tổ chức thành 7 "book" (sách) con, mỗi book có `SUMMA
 ├── cheat-sheet/              # Book: cheat sheet
 ├── cong-nghe/                # Book: công nghệ
 ├── cuoc-song/                # Book: cuộc sống
-├── devsecops/                # Book: devsecops
 ├── hoi-dap/                  # Book: hỏi đáp
 ├── lien-he/                  # Book: liên hệ
 ├── prompts/                  # Book: prompts

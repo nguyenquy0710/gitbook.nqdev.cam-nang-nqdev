@@ -1,6 +1,16 @@
-# Table of contents
+---
+description: >-
+  Mục DevSecOps của Cẩm nang NQDEV: bảo mật, pentest, Docker, VMware, Ansible
+  và các thực hành DevSecOps.
+---
 
-* [Dựng môi trường phát triển nhanh chóng với docker-php-development](README.md)
+# DevSecOps
+
+Mục này gom các bài viết về bảo mật, pentest và DevSecOps.
+
+## Bài viết trong mục
+
+* [Dựng môi trường phát triển nhanh chóng với docker-php-development](docker-php-development.md)
 * [VMware](vmware/README.md)
   * [Cách ảo hóa macOS Sierra trong VMWare Windows 10](vmware/cach-ao-hoa-macos-sierra-trong-vmware-windows-10.md)
 * [Docker](docker/README.md)
@@ -13,5 +23,7 @@
     * [Lab #3: Tạo ảnh với lệnh COPY](docker/dockerfile/lab-3-tao-anh-voi-lenh-copy.md)
   * [Services](docker/services/README.md)
     * [Harbor](docker/services/harbor.md)
+* [Ansible](ansible/README.md)
+  * [Phần 1: Tìm hiểu về Ansible](ansible/phan-1-tim-hieu-ve-ansible.md)
 * [Pentest](pentest/README.md)
   * [OWASP ZAP — Tìm hiểu và hướng dẫn nhập môn Pentest an toàn](pentest/owasp-zap-tim-hieu-va-huong-dan-su-dung-cho-nguoi-moi.md)

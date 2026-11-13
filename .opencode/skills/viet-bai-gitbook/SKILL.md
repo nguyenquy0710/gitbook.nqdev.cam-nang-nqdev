@@ -17,14 +17,13 @@ Tham khảo format từ các bài viết có sẵn trong mỗi book.
 
 ## Cấu trúc thư mục
 
-7 books:
+6 books:
 
 | Book gốc | Nội dung |
 |---|---|
 | `cheat-sheet/` | Bash, Git, HAProxy, Redis, Wireshark, Windows, Ubuntu |
 | `cong-nghe/` | .NET, Docker, SQL Server, Linux, Node.js, design patterns |
 | `cuoc-song/` | Sách, sức khỏe, đời sống |
-| `devsecops/` | Ansible, Docker, VMware |
 | `hoi-dap/` | Hỏi đáp, SQL |
 | `lien-he/` | Liên hệ, chính sách, sitemap |
 | `prompts/` | AI prompts (ChatGPT, Gemini, coding, writing, business) |
@@ -43,7 +42,7 @@ Bài viết mới lưu **trực tiếp vào thư mục book tương ứng**.
 
 **Ví dụ:** Bài viết thuộc book `cong-nghe/` → lưu tại `cong-nghe/<sub-dir>/bai-viet.md`.
 
-### Book mới (chưa có trong 7 books)
+### Book mới (chưa có trong 6 books)
 
 Tạo thư mục book mới ở root với `SUMMARY.md` + `README.md`. Sau đó thêm entry vào root `SUMMARY.md` và kiểm tra root `book.json` có cần cập nhật title/description không.
 
@@ -63,7 +62,8 @@ Mỗi book có cấu trúc thư mục chuẩn. Trước khi viết, đọc `SUMM
 - Bài về **SQL Server/Elasticsearch/MongoDB** → `databases/`
 - Bài về **.NET/C#/ASP.NET/Node.js/React** → `languages-and-frameworks/`
 - Bài về **NGINX/HAProxy/VPN/Localtunnel** → `infrastructure-and-networking/`
-- Bài về **Ansible/JMeter/ETL** → `devsecops-and-automation/`
+- Bài về **Ansible/JMeter/ETL** → `automation/`
+- Bài về **Docker/VMware/Pentest** → `devsecops/`
 - Bài về **Obsidian/Playwright/AI CLI/WinDbg** → `development-tools/`
 - Bài về **AI/tin tức/so sánh/hướng dẫn chung** → `general-knowledge/`
 - Bài về **thiết kế/microservices/CQRS** → `architecture-and-design/`

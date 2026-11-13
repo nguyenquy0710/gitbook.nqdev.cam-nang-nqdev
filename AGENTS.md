@@ -4,7 +4,7 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 ## Content
 
-7 root "books" (`cheat-sheet/`, `cong-nghe/`, `cuoc-song/`, `devsecops/`, `hoi-dap/`, `lien-he/`, `prompts/`). Each has `SUMMARY.md` (nav TOC) and `README.md` (intro). Root `SUMMARY.md` and `book.json` tie them together for a combined build.
+6 root "books" (`cheat-sheet/`, `cong-nghe/`, `cuoc-song/`, `hoi-dap/`, `lien-he/`, `prompts/`). Each has `SUMMARY.md` (nav TOC) and `README.md` (intro). Root `SUMMARY.md` and `book.json` tie them together for a combined build.
 
 **New articles go directly into the source book's directory** (e.g. `cong-nghe/<sub-dir>/bai-viet.md`), following the existing tree structure. Never create `opcode/`.
 
