@@ -224,6 +224,8 @@
     * [Claude Code Cheatsheet (2026)](development-tools/ai-cli-tools/claude-code/claude-code-cheatsheet-2026.md)
     * [Tổng quan cấu hình Settings trong Claude Code](development-tools/ai-cli-tools/claude-code/tong-quan-cau-hinh-settings-trong-claude-code.md)
     * [Claude Code Workflow — Framework tổ chức dự án phân tầng](development-tools/ai-cli-tools/claude-code/claude-code-workflow.md)
+    * [Các model Claude hiện tại](development-tools/ai-cli-tools/claude-code/cac-model-claude-hien-tai.md)
+    * [Cấu hình model trong Claude Code](development-tools/ai-cli-tools/claude-code/cau-hinh-model-trong-claude-code.md)
   * [OpenCode](development-tools/ai-cli-tools/opencode/README.md)
     * [OpenCode - Personal AI Assistant](development-tools/ai-cli-tools/opencode/opencode-personal-ai-assistant.md)
     * [OpenCode V2: Những thay đổi quan trọng](development-tools/ai-cli-tools/opencode/opencode-v2-nhung-thay-doi-quan-trong.md)
