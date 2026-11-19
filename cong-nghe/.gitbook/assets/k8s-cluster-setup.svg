@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#326CE5"/></marker>
+  </defs>
+  <rect width="900" height="300" fill="#ffffff"/>
+  <text x="450" y="32" font-size="16" font-weight="700" fill="#1F2937" text-anchor="middle">Quy trình dựng cluster self-host bằng kubeadm</text>
+
+  <g>
+    <rect x="16" y="80" width="148" height="90" rx="10" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+    <text x="90" y="104" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">1. Chuẩn bị node</text>
+    <text x="90" y="125" font-size="11" fill="#374151" text-anchor="middle">swap off, module + sysctl</text>
+    <text x="90" y="142" font-size="11" fill="#374151" text-anchor="middle">hosts, hostname</text>
+    <text x="90" y="159" font-size="11" fill="#374151" text-anchor="middle">trên MỌI node</text>
+
+    <rect x="196" y="80" width="148" height="90" rx="10" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+    <text x="270" y="104" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">2. containerd</text>
+    <text x="270" y="125" font-size="11" fill="#374151" text-anchor="middle">repo Docker chính thức</text>
+    <text x="270" y="142" font-size="11" fill="#374151" text-anchor="middle">SystemdCgroup = true</text>
+    <text x="270" y="159" font-size="11" fill="#374151" text-anchor="middle">trên MỌI node</text>
+
+    <rect x="376" y="80" width="148" height="90" rx="10" fill="#326CE5"/>
+    <text x="450" y="104" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3. kubeadm init</text>
+    <text x="450" y="125" font-size="11" fill="#DBEAFE" text-anchor="middle">apiserver + etcd</text>
+    <text x="450" y="142" font-size="11" fill="#DBEAFE" text-anchor="middle">control plane</text>
+    <text x="450" y="159" font-size="11" fill="#DBEAFE" text-anchor="middle">chỉ trên k8s-cp1</text>
+
+    <rect x="556" y="80" width="148" height="90" rx="10" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+    <text x="630" y="104" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">4. CNI Calico</text>
+    <text x="630" y="125" font-size="11" fill="#374151" text-anchor="middle">Pod CIDR khớp init</text>
+    <text x="630" y="142" font-size="11" fill="#374151" text-anchor="middle">CoreDNS chạy</text>
+    <text x="630" y="159" font-size="11" fill="#374151" text-anchor="middle">node chuyển Ready</text>
+
+    <rect x="736" y="80" width="148" height="90" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="810" y="104" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">5. kubeadm join</text>
+    <text x="810" y="125" font-size="11" fill="#166534" text-anchor="middle">token + CA hash</text>
+    <text x="810" y="142" font-size="11" fill="#166534" text-anchor="middle">2 worker vào cluster</text>
+    <text x="810" y="159" font-size="11" fill="#166534" text-anchor="middle">cluster hoàn chỉnh</text>
+  </g>
+
+  <g stroke="#326CE5" stroke-width="1.8" fill="none" marker-end="url(#a)">
+    <path d="M164,125 L196,125"/>
+    <path d="M344,125 L376,125"/>
+    <path d="M524,125 L556,125"/>
+    <path d="M704,125 L736,125"/>
+  </g>
+
+  <rect x="16" y="210" width="868" height="66" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="32" y="234" font-size="12" font-weight="700" fill="#92400E">Lưu ý:</text>
+  <text x="32" y="254" font-size="12" fill="#78350F">Dùng repo pkgs.k8s.io (v1.34) — repo apt kubernetes-xenial cũ đã ngừng hoạt động. Dải Pod CIDR không được trùng mạng LAN.</text>
+  <text x="32" y="270" font-size="12" fill="#78350F">Chưa cài CNI thì node vẫn NotReady — đó là trạng thái bình thường trước bước 4.</text>
+</svg>

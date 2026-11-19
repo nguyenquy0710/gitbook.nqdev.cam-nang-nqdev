@@ -12,6 +12,8 @@ Bài này hướng dẫn dựng một cluster Kubernetes self-host hoàn chỉnh
 [kubernetes-la-gi-kien-truc-va-cac-thanh-phan-cot-loi](kubernetes-la-gi-kien-truc-va-cac-thanh-phan-cot-loi.md)
 {% endcontent-ref %}
 
+<figure><img src="../../.gitbook/assets/k8s-cluster-setup.svg" alt="Quy trình dựng cluster kubeadm: chuẩn bị node, containerd, kubeadm init, CNI Calico, kubeadm join"><figcaption><p>5 bước dựng cluster: chuẩn bị node → containerd → kubeadm init → CNI Calico → kubeadm join</p></figcaption></figure>
+
 ## Yêu cầu
 
 * **Hệ điều hành:** Ubuntu 22.04 hoặc 24.04 LTS, cài mới, đã update (`apt update && apt upgrade -y`).

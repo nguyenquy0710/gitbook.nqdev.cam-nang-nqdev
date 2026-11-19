@@ -26,5 +26,18 @@
       "mode": "subagent",
       "prompt": "{file:agents/cuoc-song-writer.md}"
     }
+  },
+  "mcp": {
+    "servers": {
+      "gitbook-mcp": {
+        "type": "remote",
+        "url": "https://mcp.gitbook.com/mcp",
+        "enabled": true,
+        "headers": {
+          "Authorization": "Bearer {env:GITBOOK_MCP_TOKEN}"
+        },
+        "timeout": 5000
+      }
+    }
   }
 }

@@ -14,6 +14,8 @@ Series này đi theo hướng **self-host bằng kubeadm trên Ubuntu 22.04/24.0
 
 Đọc lần lượt từ bài 1 đến bài 5 — mỗi bài xây trên kết quả của bài trước:
 
+<figure><img src="../../.gitbook/assets/k8s-series-roadmap.svg" alt="Lộ trình series Kubernetes: kiến trúc, cài đặt, cấu hình, vận hành, giám sát"><figcaption><p>Lộ trình 5 bước: từ kiến trúc đến giám sát production</p></figcaption></figure>
+
 | # | Bài viết | Nội dung |
 | - | -------- | -------- |
 | 1 | [Kubernetes là gì? Kiến trúc và các thành phần cốt lõi](kubernetes-la-gi-kien-truc-va-cac-thanh-phan-cot-loi.md) | Declarative model, control plane, worker node, object model, khi nào KHÔNG cần K8s |

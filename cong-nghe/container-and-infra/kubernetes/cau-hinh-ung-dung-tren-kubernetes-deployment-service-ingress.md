@@ -12,6 +12,8 @@ Cluster đã chạy (xem bài cài đặt), giờ đưa ứng dụng lên đúng
 [cai-dat-cluster-kubernetes-bang-kubeadm-tren-ubuntu](cai-dat-cluster-kubernetes-bang-kubeadm-tren-ubuntu.md)
 {% endcontent-ref %}
 
+<figure><img src="../../.gitbook/assets/k8s-app-request-flow.svg" alt="Luồng request: Client vào Ingress Controller, qua Service ClusterIP tới các Pod của Deployment; ConfigMap, Secret inject cấu hình, HPA scale replicas"><figcaption><p>Luồng request Client → Ingress → Service → Pod và các object cấu hình đi kèm</p></figcaption></figure>
+
 ## Bước 1: Tạo Namespace
 
 Namespace gom tài nguyên theo app/môi trường, tránh đặt tên lung tung trong `default`:

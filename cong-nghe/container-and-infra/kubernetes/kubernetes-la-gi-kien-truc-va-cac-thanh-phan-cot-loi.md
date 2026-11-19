@@ -30,27 +30,7 @@ Hai ý tưởng cốt lõi làm nên Kubernetes:
 
 Một cluster gồm **control plane** (bộ não) và các **worker node** (nơi chạy workload):
 
-{% code title="Kiến trúc cluster Kubernetes (ASCII)" overflow="wrap" lineNumbers="false" %}
-```text
-┌────────────────────────── CONTROL PLANE ──────────────────────────┐
-│                                                                   │
-│  kubectl ──► kube-apiserver ◄──► etcd (store toàn bộ trạng thái)  │
-│                   ▲                                               │
-│         ┌─────────┴──────────┐                                    │
-│   kube-scheduler    kube-controller-manager                       │
-│  (chọn node cho Pod)  (reconciliation loops)                      │
-└──────────────────────────────┬────────────────────────────────────┘
-                               │ (watch/report qua apiserver)
-        ┌──────────────────────┼──────────────────────┐
-┌───────┴────────┐    ┌────────┴───────┐    ┌─────────┴──────┐
-│  WORKER NODE 1 │    │  WORKER NODE 2 │    │  WORKER NODE N │
-│  kubelet       │    │  kubelet       │    │  kubelet       │
-│  kube-proxy    │    │  kube-proxy    │    │  kube-proxy    │
-│  containerd    │    │  containerd    │    │  containerd    │
-│  [Pod][Pod]    │    │  [Pod][Pod]    │    │  [Pod]...      │
-└────────────────┘    └────────────────┘    └────────────────┘
-```
-{% endcode %}
+<figure><img src="../../.gitbook/assets/k8s-architecture.svg" alt="Kiến trúc cluster Kubernetes: control plane và các worker node"><figcaption><p>Kiến trúc cluster Kubernetes: control plane (bộ não) và worker node (nơi chạy workload)</p></figcaption></figure>
 
 ### Control plane
 

@@ -8,6 +8,8 @@ description: >-
 
 Dựng được cluster mới là 20% công việc — 80% còn lại là vận hành: debug app, bảo trì node, upgrade version, backup etcd. Bài này tổng hợp quy trình và bộ lệnh dùng hàng ngày cho cluster self-host kubeadm.
 
+<figure><img src="../../.gitbook/assets/k8s-ops-upgrade.svg" alt="Vòng đời upgrade kubeadm: chuẩn bị, backup etcd bắt buộc, upgrade control plane trước, worker sau, verify"><figcaption><p>Quy trình upgrade chuẩn: backup etcd trước, control plane trước worker sau, từng minor một</p></figcaption></figure>
+
 ## Bộ lệnh kubectl hàng ngày
 
 {% tabs %}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#326CE5"/></marker>
+  </defs>
+  <rect width="900" height="320" fill="#ffffff"/>
+  <text x="450" y="32" font-size="16" font-weight="700" fill="#1F2937" text-anchor="middle">Vòng đời upgrade kubeadm: từng minor một, có đường lùi</text>
+
+  <rect x="16" y="72" width="148" height="86" rx="10" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="90" y="98" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">1. Chuẩn bị</text>
+  <text x="90" y="119" font-size="11" fill="#374151" text-anchor="middle">đọc changelog minor mới</text>
+  <text x="90" y="136" font-size="11" fill="#374151" text-anchor="middle">kiểm tra API deprecated</text>
+  <text x="90" y="151" font-size="11" fill="#374151" text-anchor="middle">cluster đang khoẻ</text>
+
+  <rect x="196" y="72" width="148" height="86" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="2"/>
+  <text x="270" y="98" font-size="13" font-weight="700" fill="#991B1B" text-anchor="middle">2. Backup etcd</text>
+  <text x="270" y="119" font-size="11" font-weight="700" fill="#B91C1C" text-anchor="middle">BẮT BUỘC</text>
+  <text x="270" y="136" font-size="11" fill="#7F1D1D" text-anchor="middle">etcdctl snapshot save</text>
+  <text x="270" y="151" font-size="11" fill="#7F1D1D" text-anchor="middle">+ backup Velero</text>
+
+  <rect x="376" y="72" width="148" height="86" rx="10" fill="#326CE5"/>
+  <text x="450" y="98" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3. Control plane</text>
+  <text x="450" y="119" font-size="11" fill="#DBEAFE" text-anchor="middle">upgrade kubeadm</text>
+  <text x="450" y="136" font-size="11" fill="#DBEAFE" text-anchor="middle">upgrade plan / apply</text>
+  <text x="450" y="151" font-size="11" fill="#DBEAFE" text-anchor="middle">k8s-cp1 trước</text>
+
+  <rect x="556" y="72" width="148" height="86" rx="10" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="630" y="98" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">4. Worker</text>
+  <text x="630" y="119" font-size="11" fill="#374151" text-anchor="middle">cordon + drain từng node</text>
+  <text x="630" y="136" font-size="11" fill="#374151" text-anchor="middle">upgrade kubelet/kubectl</text>
+  <text x="630" y="151" font-size="11" fill="#374151" text-anchor="middle">uncordon</text>
+
+  <rect x="736" y="72" width="148" height="86" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="810" y="98" font-size="13" font-weight="700" fill="#166534" text-anchor="middle">5. Verify</text>
+  <text x="810" y="119" font-size="11" fill="#166534" text-anchor="middle">get nodes Ready hết</text>
+  <text x="810" y="136" font-size="11" fill="#166534" text-anchor="middle">get pods -A Running</text>
+  <text x="810" y="151" font-size="11" fill="#166534" text-anchor="middle">test app + backup mới</text>
+
+  <g stroke="#326CE5" stroke-width="1.8" fill="none" marker-end="url(#a)">
+    <path d="M164,115 L196,115"/>
+    <path d="M344,115 L376,115"/>
+    <path d="M524,115 L556,115"/>
+    <path d="M704,115 L736,115"/>
+  </g>
+
+  <rect x="16" y="196" width="868" height="98" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.2"/>
+  <text x="32" y="220" font-size="12" font-weight="700" fill="#1B4F9C">Version skew:</text>
+  <text x="32" y="240" font-size="12" fill="#1F2937">Không nhảy minor (1.33 → 1.34 → 1.35). Control plane trước, worker sau. apiserver luôn là version cao nhất cluster.</text>
+  <text x="32" y="260" font-size="12" fill="#1F2937">kubelet được thấp hơn apiserver tối đa 3 minor nhưng KHÔNG BAO GIỜ cao hơn apiserver.</text>
+  <text x="32" y="280" font-size="12" fill="#B91C1C" font-weight="700">Không có snapshot etcd thì đừng bắt đầu upgrade — lỗi giữa chừng không có đường lùi.</text>
+</svg>

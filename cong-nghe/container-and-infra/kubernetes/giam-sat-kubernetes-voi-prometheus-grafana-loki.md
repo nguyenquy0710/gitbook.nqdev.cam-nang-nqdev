@@ -16,20 +16,7 @@ Ba loại tín hiệu, ba công cụ khác nhau:
 * **Logs:** dòng chữ ứng dụng/container in ra. Loki gom log từ mọi node (qua Promtail hoặc Grafana Alloy), truy vấn bằng LogQL ngay trong Grafana — không cần đánh index nặng như Elasticsearch.
 * **Alerts:** quy tắc "khi metric vượt ngưỡng thì báo". Prometheus đánh giá alert rules, Alertmanager route tới Slack/Telegram/email, trực tiếp hoặc qua webhook.
 
-{% code title="Luồng dữ liệu giám sát" overflow="wrap" lineNumbers="false" %}
-```text
-[node-exporter, kube-state-metrics, kubelet/cAdvisor, app /metrics]
-        │  (Prometheus scrape)
-        ▼
-   Prometheus ──► Alertmanager ──► Slack/Telegram/email
-        │  (alert rules)
-        ▼
-     Grafana ◄──── Loki ◄──── Promtail/Alloy (DaemonSet mọi node)
-   (dashboard + LogQL)          (đọc log container)
-
-[metrics-server] ──► kubectl top + HPA   (luồng riêng, ngắn hạn)
-```
-{% endcode %}
+<figure><img src="../../.gitbook/assets/k8s-monitoring-stack.svg" alt="Stack giám sát Kubernetes: exporters được Prometheus scrape, Alertmanager đẩy cảnh báo, Grafana dashboard, Loki gom log qua Promtail, metrics-server phục vụ kubectl top và HPA"><figcaption><p>Luồng dữ liệu giám sát: metrics (Prometheus), logs (Loki), alerts (Alertmanager) và luồng riêng metrics-server</p></figcaption></figure>
 
 {% hint style="info" %}
 **metrics-server ≠ Prometheus, không thay thế nhau.** metrics-server chỉ giữ số đo CPU/RAM mới nhất trong RAM, phục vụ `kubectl top` và HPA — không lưu lịch sử, không alert, không dashboard. Prometheus lưu time-series dài hạn với hàng nghìn metrics, phục vụ giám sát/cảnh báo/phân tích. Cluster production cần CẢ HAI.

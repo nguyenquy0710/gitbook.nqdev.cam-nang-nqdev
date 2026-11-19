@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#326CE5"/></marker>
+  </defs>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <rect x="16" y="16" width="868" height="218" rx="14" fill="#EAF2FF" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="32" y="40" font-size="15" font-weight="700" fill="#1B4F9C">CONTROL PLANE</text>
+
+  <rect x="40" y="62" width="110" height="54" rx="8" fill="#ffffff" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="95" y="87" font-size="14" font-weight="700" fill="#1B4F9C" text-anchor="middle">kubectl</text>
+  <text x="95" y="104" font-size="11" fill="#4B5563" text-anchor="middle">cli / CI</text>
+
+  <rect x="205" y="62" width="180" height="54" rx="8" fill="#326CE5"/>
+  <text x="295" y="87" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">kube-apiserver</text>
+  <text x="295" y="104" font-size="11" fill="#DBEAFE" text-anchor="middle">REST API duy nhất</text>
+
+  <rect x="450" y="62" width="170" height="54" rx="8" fill="#ffffff" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="535" y="87" font-size="14" font-weight="700" fill="#1B4F9C" text-anchor="middle">etcd</text>
+  <text x="535" y="104" font-size="11" fill="#4B5563" text-anchor="middle">toàn bộ trạng thái</text>
+
+  <rect x="205" y="145" width="180" height="54" rx="8" fill="#ffffff" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="295" y="170" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">kube-scheduler</text>
+  <text x="295" y="187" font-size="11" fill="#4B5563" text-anchor="middle">chọn node cho Pod</text>
+
+  <rect x="450" y="145" width="310" height="54" rx="8" fill="#ffffff" stroke="#326CE5" stroke-width="1.5"/>
+  <text x="605" y="170" font-size="13" font-weight="700" fill="#1B4F9C" text-anchor="middle">kube-controller-manager</text>
+  <text x="605" y="187" font-size="11" fill="#4B5563" text-anchor="middle">các reconciliation loop (Deployment, ReplicaSet, Node...)</text>
+
+  <g stroke="#326CE5" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M150,89 L205,89"/>
+    <path d="M385,89 L450,89"/>
+    <path d="M295,116 L295,145"/>
+    <path d="M400,116 L520,145"/>
+  </g>
+
+  <path d="M295,199 L295,268" stroke="#326CE5" stroke-width="1.6" fill="none"/>
+  <text x="310" y="240" font-size="12" fill="#4B5563">watch / báo cáo trạng thái qua apiserver</text>
+  <path d="M158,268 L742,268" stroke="#326CE5" stroke-width="1.6" fill="none"/>
+  <g stroke="#326CE5" stroke-width="1.6" fill="none" marker-end="url(#a)">
+    <path d="M158,268 L158,300"/>
+    <path d="M450,268 L450,300"/>
+    <path d="M742,268 L742,300"/>
+  </g>
+
+  <g font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <g>
+      <rect x="24" y="300" width="268" height="200" rx="12" fill="#F8FBFF" stroke="#93C5FD" stroke-width="1.5"/>
+      <text x="158" y="325" font-size="14" font-weight="700" fill="#1B4F9C" text-anchor="middle">WORKER NODE 1</text>
+      <rect x="40" y="338" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="158" y="358" font-size="12" fill="#1F2937" text-anchor="middle">kubelet</text>
+      <rect x="40" y="376" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="158" y="396" font-size="12" fill="#1F2937" text-anchor="middle">kube-proxy</text>
+      <rect x="40" y="414" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="158" y="434" font-size="12" fill="#1F2937" text-anchor="middle">containerd (CRI)</text>
+      <rect x="46" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="80" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="124" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="158" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="202" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="236" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+    </g>
+    <g>
+      <rect x="316" y="300" width="268" height="200" rx="12" fill="#F8FBFF" stroke="#93C5FD" stroke-width="1.5"/>
+      <text x="450" y="325" font-size="14" font-weight="700" fill="#1B4F9C" text-anchor="middle">WORKER NODE 2</text>
+      <rect x="332" y="338" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="450" y="358" font-size="12" fill="#1F2937" text-anchor="middle">kubelet</text>
+      <rect x="332" y="376" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="450" y="396" font-size="12" fill="#1F2937" text-anchor="middle">kube-proxy</text>
+      <rect x="332" y="414" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="450" y="434" font-size="12" fill="#1F2937" text-anchor="middle">containerd (CRI)</text>
+      <rect x="338" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="372" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="416" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="450" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="494" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="528" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+    </g>
+    <g>
+      <rect x="608" y="300" width="268" height="200" rx="12" fill="#F8FBFF" stroke="#93C5FD" stroke-width="1.5"/>
+      <text x="742" y="325" font-size="14" font-weight="700" fill="#1B4F9C" text-anchor="middle">WORKER NODE N</text>
+      <rect x="624" y="338" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="742" y="358" font-size="12" fill="#1F2937" text-anchor="middle">kubelet</text>
+      <rect x="624" y="376" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="742" y="396" font-size="12" fill="#1F2937" text-anchor="middle">kube-proxy</text>
+      <rect x="624" y="414" width="236" height="30" rx="6" fill="#ffffff" stroke="#CBD5E1"/><text x="742" y="434" font-size="12" fill="#1F2937" text-anchor="middle">containerd (CRI)</text>
+      <rect x="630" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="664" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="708" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="742" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+      <rect x="786" y="456" width="68" height="30" rx="6" fill="#DCFCE7" stroke="#16A34A"/><text x="820" y="476" font-size="11" fill="#166534" text-anchor="middle">Pod</text>
+    </g>
+  </g>
+</svg>
