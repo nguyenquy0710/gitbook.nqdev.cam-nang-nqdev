@@ -8,6 +8,8 @@ Vietnamese GitBook documentation site. **Not a code project** — no build/lint/
 
 **New articles go directly into the source book's directory** (e.g. `cong-nghe/<sub-dir>/bai-viet.md`), following the existing tree structure. Never create `opcode/`.
 
+**Images:** binary images are NOT committed to this repo. Upload to `nqdev-storage/s3-001` (public) under `gitbook/blogs/<book>/<subdir>/<slug>-NNN.<ext>` and embed via raw URL `https://raw.githubusercontent.com/nqdev-storage/s3-001/main/...`. Use `scripts/upload-image.sh` (see `scripts/README.md`) to automate; requires a push-capable PAT in `S3_001_TOKEN`.
+
 **Build artifact:** `_book/` (not committed; no root `.gitignore`; `.opencode/.gitignore` ignores `node_modules`, `package-lock.json`, `bun.lock`). `.gitbook/` dirs may appear after local `gitbook install` runs.
 
 ## Writing
