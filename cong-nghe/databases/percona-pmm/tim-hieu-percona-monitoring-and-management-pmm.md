@@ -17,6 +17,8 @@ description: "PMM v3.10: kiến trúc, Query Analytics, Advisor, Alerting, Backu
 
 ## Kiến trúc tổng quát
 
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/databases/percona-pmm/pmm-kien-truc-tong-quat.svg" alt="Kiến trúc tổng quát PMM" width="900"><figcaption><p>Kiến trúc tổng quát PMM: Database → PMM Client → PMM Server</p></figcaption></figure>
+
 | Thành phần | Vai trò | Công nghệ |
 | ---------- | ------- | --------- |
 | PMM Server | Lưu metrics, query data, dashboard, alert | Grafana, VictoriaMetrics, ClickHouse, PostgreSQL |
@@ -36,6 +38,8 @@ description: "PMM v3.10: kiến trúc, Query Analytics, Advisor, Alerting, Backu
 * **Hỗ trợ cloud:** Amazon RDS/Aurora, Azure, Google Cloud — thêm instance từ UI, không cần cài agent trên host.
 
 ## Quickstart
+
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/databases/percona-pmm/pmm-quickstart-workflow.svg" alt="PMM Quickstart workflow" width="900"><figcaption><p>Quickstart: Server → Client → Add service → Query Analytics</p></figcaption></figure>
 
 ### Bước 1: Khởi động PMM Server (Docker)
 
@@ -94,6 +98,8 @@ Mở **Query Analytics**; query xuất hiện trong khoảng một phút. User `
 | Engine hỗ trợ | MySQL, PG, Mongo, Valkey/Redis | Tùy exporter | Nhiều | Chỉ PostgreSQL |
 
 ## Cài đặt & vận hành nâng cao
+
+<figure><img src="https://raw.githubusercontent.com/nqdev-storage/s3-001/main/gitbook/blogs/cong-nghe/databases/percona-pmm/pmm-ha-backup-alerting.svg" alt="PMM HA Cluster, Backup và Alerting" width="900"><figcaption><p>PMM HA Cluster (Raft quorum), Backup/Restore lên S3 và Alerting</p></figcaption></figure>
 
 ### HA Cluster (GA từ PMM 3.10)
 
