@@ -1,5 +1,5 @@
 ---
-description: So sánh các model Claude hiện tại: Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5 — giá, context window, cách chọn theo nhu cầu.
+description: "So sánh các model Claude hiện tại: Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5 — giá, context window, cách chọn theo nhu cầu."
 ---
 
 # Các model Claude hiện tại

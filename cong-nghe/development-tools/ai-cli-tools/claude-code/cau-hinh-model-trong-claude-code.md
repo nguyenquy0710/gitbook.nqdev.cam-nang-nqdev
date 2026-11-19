@@ -1,5 +1,5 @@
 ---
-description: Cấu hình model trong Claude Code: alias, thứ tự ưu tiên, opusplan, fallback, effort level, extended context và giới hạn model cho team.
+description: "Cấu hình model trong Claude Code: alias, thứ tự ưu tiên, opusplan, fallback, effort level, extended context và giới hạn model cho team."
 ---
 
 # Cấu hình model trong Claude Code
