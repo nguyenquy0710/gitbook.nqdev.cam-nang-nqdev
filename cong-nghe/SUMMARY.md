@@ -62,6 +62,8 @@
     * [Cẩm nang Elasticsearch: Bộ câu lệnh giám sát – chẩn đoán – tối ưu mà kỹ sư nào cũng cần](databases/elasticsearch/cam-nang-elasticsearch-bo-cau-lenh-giam-sat-chan-doan-toi-uu-ma-ky-su-nao-cung-can.md)
   * [PostgreSQL](databases/postgresql/README.md)
     * [Hướng dẫn export và restore schema PostgreSQL bằng pg_dump và psql](databases/postgresql/huong-dan-export-va-restore-schema-postgresql.md)
+  * [Percona PMM](databases/percona-pmm/README.md)
+    * [Tìm hiểu Percona Monitoring and Management (PMM)](databases/percona-pmm/tim-hieu-percona-monitoring-and-management-pmm.md)
 * [Operating Systems](operating-systems/README.md)
   * [Linux](operating-systems/linux/README.md)
     * [Tập lệnh Linux hay dùng](operating-systems/linux/tap-lenh-linux-hay-dung/README.md)
