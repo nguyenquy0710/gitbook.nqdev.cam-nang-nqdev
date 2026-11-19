@@ -1,0 +1,55 @@
+name: Verify book front matter
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify front matter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check YAML front matter per book
+        run: |
+          python3 -m pip install --quiet pyyaml
+          python3 - <<'PY'
+          import glob, os, sys
+          import yaml
+
+          # Mỗi book là thư mục gốc có SUMMARY.md (cheat-sheet, cong-nghe, ...)
+          books = sorted(os.path.dirname(p) for p in glob.glob("*/SUMMARY.md"))
+          failed = []
+          for book in books:
+              files = sorted(glob.glob(f"{book}/**/*.md", recursive=True))
+              errors = []
+              for path in files:
+                  text = open(path, encoding="utf-8").read()
+                  if not text.startswith("---"):
+                      continue  # không có front matter
+                  end = text.find("\n---", 3)
+                  if end == -1:
+                      errors.append((path, "front matter không đóng (thiếu --- kết thúc)"))
+                      continue
+                  try:
+                      data = yaml.safe_load(text[3:end])
+                      if not isinstance(data, dict):
+                          errors.append((path, "front matter không phải mapping"))
+                  except yaml.YAMLError as e:
+                      errors.append((path, str(e).replace("\n", " ")))
+              print(f"::group::{book} ({len(files)} files, {len(errors)} errors)")
+              for path, msg in errors:
+                  print(f"::error file={path}::{msg}")
+                  print(f"  {path}: {msg}")
+              print("::endgroup::")
+              if errors:
+                  failed.append(book)
+          if failed:
+              sys.exit(f"FAILED books: {', '.join(failed)}")
+          print(f"OK: {len(books)} books passed")
+          PY
