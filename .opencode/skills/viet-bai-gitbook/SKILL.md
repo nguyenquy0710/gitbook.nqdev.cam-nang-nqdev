@@ -263,7 +263,7 @@ Bối cảnh ra đời / lý do bài viết.
 
 ```markdown
 ---
-description: So sánh A và B: ưu nhược điểm
+description: "So sánh A và B: ưu nhược điểm"
 ---
 
 # So sánh A và B
