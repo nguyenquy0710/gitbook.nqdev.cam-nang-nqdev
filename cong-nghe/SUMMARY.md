@@ -242,6 +242,7 @@
     * [Hướng dẫn cài đặt và bắt đầu với OpenCode V2](development-tools/ai-cli-tools/opencode/huong-dan-cai-dat-va-bat-dau-voi-opencode-v2.md)
     * [Hướng dẫn sử dụng CLI và TUI OpenCode](development-tools/ai-cli-tools/opencode/huong-dan-su-dung-cli-va-tui-opencode.md)
     * [Cấu hình chi tiết `opencode.jsonc`](development-tools/ai-cli-tools/opencode/cau-hinh-chi-tiet-opencode-jsonc.md)
+    * [Cấu hình thực chiến opencode.jsonc](development-tools/ai-cli-tools/opencode/cau-hinh-thuc-chien-opencode-jsonc.md)
     * [Tạo agent tùy chỉnh cho OpenCode](development-tools/ai-cli-tools/opencode/tao-agent-tuy-chinh-cho-opencode.md)
     * [Tạo slash command cho OpenCode](development-tools/ai-cli-tools/opencode/tao-command-slash-cho-opencode.md)
     * [Tạo skill cho OpenCode](development-tools/ai-cli-tools/opencode/tao-skill-cho-opencode.md)
