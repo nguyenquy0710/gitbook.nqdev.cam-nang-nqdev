@@ -7,8 +7,8 @@
 
 > Tổng hợp kiến thức, hướng dẫn và tài liệu tham khảo về công nghệ, DevSecOps và cuộc sống — dành cho lập trình viên và kỹ sư công nghệ.
 
-**Tác giả:** Nguyễn Hữu Quý (Nguyễn Quý DevNet) · **Hệ sinh thái:** NQDEV Platform 
-**Phiên bản:** v1.1.1 · **Release:** [Releases](https://github.com/nguyenquy0710/gitbook.nqdev.cam-nang-nqdev/releases)
+**Tác giả:** Nguyễn Hữu Quý (Nguyễn Quý DevNet) · **Hệ sinh thái:** NQDEV Platform  
+**Phiên bản:** v2.0.0 · **Release:** [Releases](https://github.com/nguyenquy0710/gitbook.nqdev.cam-nang-nqdev/releases)
 
 ---
 
@@ -28,7 +28,7 @@ Dự án được tổ chức thành 6 "book" (sách) con, mỗi book có `SUMMA
 | Book | Mô tả |
 |------|-------|
 | [cheat-sheet](cheat-sheet/) | Lệnh & thủ thuật nhanh (Git, Bash, Redis, HAProxy, Windows, …) |
-| [cong-nghe](cong-nghe/) | Công nghệ & công cụ (lập trình, database, hạ tầng, AI, …) |
+| [cong-nghe](cong-nghe/) | Công nghệ & công cụ (lập trình, database, hạ tầng, DevSecOps, AI, …) |
 | [cuoc-song](cuoc-song/) | Kỹ năng mềm, sách và cuộc sống |
 | [hoi-dap](hoi-dap/) | Hỏi đáp (SQL, chia sẻ kinh nghiệm) |
 | [lien-he](lien-he/) | Liên hệ, chính sách, fanpage |
@@ -47,6 +47,7 @@ Dự án được tổ chức thành 6 "book" (sách) con, mỗi book có `SUMMA
 ├── hoi-dap/                  # Book: hỏi đáp
 ├── lien-he/                  # Book: liên hệ
 ├── prompts/                  # Book: prompts
+├── scripts/                  # Tiện ích (upload ảnh, …)
 ├── .github/workflows/        # CI/CD deploy GitBook
 ├── .opencode/                # Cấu hình OpenCode & skills
 └── _book/                    # Artifact build (không commit)
@@ -96,7 +97,11 @@ Mọi đóng góp đều được hoan nghênh! Khi thêm bài viết mới:
 3. Thêm entry vào `SUMMARY.md` của book nguồn, đường dẫn tương đối so với thư mục book.
 4. **Không** tạo thư mục `opcode/`.
 
-Xem thêm chi tiết trong [`AGENTS.md`](AGENTS.md).
+### Ảnh / media
+
+Binary images **không commit** vào repo này. Upload lên `nqdev-storage/s3-001` (public) theo đường dẫn `gitbook/blogs/<book>/<subdir>/<slug>-NNN.<ext>` và nhúng qua raw URL. Dùng [`scripts/upload-image.sh`](scripts/README.md) để tự động hóa (cần PAT có quyền push trong `S3_001_TOKEN`).
+
+Xem thêm chi tiết trong [`AGENTS.md`](AGENTS.md) và [`scripts/README.md`](scripts/README.md).
 
 ## 📄 License
 
