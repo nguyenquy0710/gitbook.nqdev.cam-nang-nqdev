@@ -1,0 +1,39 @@
+# .claudeignore — nội dung AI agent không cần đọc (không phải .gitignore)
+
+# Build artifacts
+_book/
+node_modules/
+.opencode/node_modules/
+.gitbook/
+_build/
+dist/
+build/
+
+# Secrets & môi trường local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.claude/dev.local.json
+.claude/*.share.json
+
+# Draft / tạm
+draft/
+tmp/
+.cache/
+*.log
+
+# Binary & media (ảnh lưu ở nqdev-storage/s3-001, không commit)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.pdf
+*.zip
+
+# VCS
+.git/

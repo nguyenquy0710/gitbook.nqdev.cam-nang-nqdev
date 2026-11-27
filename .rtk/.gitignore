@@ -1,0 +1,6 @@
+*.tmp
+*.cache
+*.log
+.env.local
+node_modules/
+*.rtk

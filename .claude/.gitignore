@@ -1,0 +1,4 @@
+# Cấu hình theo từng dev / từng máy — không commit
+.env
+*.share.json
+dev.local.json

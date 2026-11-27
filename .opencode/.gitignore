@@ -3,3 +3,9 @@ node_modules
 package-lock.json
 bun.lock
 #.gitignore
+
+# Môi trường local & artifact
+.env.local
+*.env
+build/
+dist/

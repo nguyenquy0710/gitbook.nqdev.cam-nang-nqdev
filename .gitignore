@@ -1,0 +1,25 @@
+# draft/ là thư mục tạm để lưu các file draft, không commit các file trong đó trừ .gitkeep
+draft/*
+!draft/.gitkeep
+!draft/docs/
+!draft/docs/.gitkeep
+
+# Build artifact GitBook (chỉ build local, deploy qua workflow)
+_book/
+.gitbook/
+_build/
+
+# Node
+node_modules/
+package-lock.json
+bun.lock
+
+# Môi trường & secrets
+.env
+.env.local
+.env.*.local
+
+# Log / cache
+*.log
+tmp/
+.cache/
